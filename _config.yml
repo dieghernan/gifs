@@ -1,0 +1,66 @@
+remote_theme: dieghernan/chulapa
+repository: dieghernan/gifs
+url: https://dieghernan.github.io
+baseurl: gifs
+title: Incendios Forestales en España
+timezone: "Europe/Madrid"
+og_image: /assets/og_image.png
+author:
+  name: dieghernan
+  location: "Madrid, España"
+
+navbar:
+  expand: "never"
+  brand:
+    title: "GIFs"
+
+footer:
+  links:
+    - label: "StackOverflow"
+      icon: "fab fa-stack-overflow"
+      url: https://stackoverflow.com/users/7877917/dieghernan
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: https://github.com/dieghernan/
+    - label: "Blog"
+      icon: "fas fa-blog"
+      url: "https://dieghernan.github.io/"
+    - label: "RPubs"
+      icon: "fab fa-r-project"
+      url: "https://rpubs.com/dieghernan"
+
+chulapa-skin:
+  autothemer: true
+  skin: deeply
+  vars:
+    font-family-base: "Fira Sans"
+
+googlefonts:
+ - url: https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&display=swap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+      show_sociallinks: true
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - vendor
+  - index.Rmd
+  - R/
+  - renv/
+  - data/
+  - LICENSE
+  
+include:
+ - _pages
+ 
