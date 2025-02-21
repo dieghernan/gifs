@@ -30,9 +30,10 @@ chulapa-skin:
   autothemer: true
   skin: deeply
   vars:
-    font-family-base: '"Fira Sans", sans-serif !default'
-    headings-font-family: '"Fira Sans", sans-serif !default'
-    font-family-monospace: '"Fira Code", monospace !default'
+    font-family-base: "Fira Sans"
+    headings-font-family: "Fira Sans"
+    font-family-monospace: "Fira Code"
+    link-color: '#0275d8'
 googlefonts:
   - url: https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&display=swap
 defaults:
