@@ -17,6 +17,9 @@ library(sysfonts)
 library(ggshadow)
 library(ggtext)
 
+# Extra: utilities
+library(resmush)
+library(sessioninfo)
 
 # 2. Carga datos y depura ----
 gif_fires <- read_csv("data/gif_d2010.csv",
@@ -157,10 +160,10 @@ main <- ggplot(ccaa) +
     title = texttitle,
     subtitle = textsub,
     caption = paste0(
-      "©2022 Diego Hernangómez https://dieghernan.github.io. Las hectáreas se",
-      " refieren únicamente a hectáreas forestales afectadas.\n",
-      "Datos: Estadísticas de Incendios Forestales, MITECO. Estadísticas ",
-      "definitivas y Avances"
+      "©", year(Sys.Date()), " Diego Hernangómez https://dieghernan.github.io.",
+      " Las hectáreas se refieren únicamente a hectáreas forestales",
+      " afectadas.\nDatos: Estadísticas de Incendios Forestales, MITECO.",
+      " Estadísticas definitivas y Avances"
     )
   )
 
@@ -191,12 +194,12 @@ inset1 <- ggplot(years, aes(x = year)) +
   geom_col(aes(y = overall), fill = firepal[5], alpha = 0.6) +
   geom_smooth(aes(y = overall),
     se = FALSE, color = firepal[3],
-    size = 2
+    linewidth = 2
   ) +
   coord_flip() +
   scale_x_reverse(breaks = unique(years$year)) +
   scale_y_continuous(
-    labels = c("-", "50k", "100k", "150k", "200k"),
+    labels = c("-", "", "100", "", "200"),
     breaks = c(0, 50000, 100000, 150000, 200000)
   ) +
   theme_minimal() +
@@ -221,7 +224,7 @@ inset1 <- ggplot(years, aes(x = year)) +
   ) +
   labs(
     x = "",
-    y = "hectáreas",
+    y = "hectáreas (miles)",
     title = texttitleins1,
     subtitle = textsubins1
   )
@@ -327,3 +330,11 @@ ggsave("gif_spain.png", main3,
   dpi = 300, width = 4200, height = 4200,
   units = "px"
 )
+
+# 6. Utilities ----
+
+# Comprime imágenes
+resmush::resmush_dir(overwrite = TRUE, dir = ".")
+
+# Escribe info de sesión
+sessioninfo::session_info(to_file = "sessioninfo.txt")

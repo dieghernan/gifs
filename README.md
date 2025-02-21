@@ -23,6 +23,9 @@ mediante la librería de **R**
 [**mapSpain**](https://ropenspain.github.io/mapSpain/) para generar la base de
 datos `data/gif_d2010.csv`.
 
+La información de la sesión con la que se ha generado la infografía se
+proporcionan en el archivo [sessioninfo.txt](sessioninfo.txt)
+
 ## Referencias
 
 Royé, Dominic. 2021. "Firefly Cartography." June 1,2021.
