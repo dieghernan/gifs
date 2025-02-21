@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Infografía de GIF (Grandes Incendios Forestales)
-subtitle: "Visualización"
+excerpt: |
+    Infografía de GIF (Grandes Incendios Forestales) en base a los datos de MITECO. 
+    Creado con el software R.
 project_links:
     - url: https://github.com/dieghernan/gifs/
       icon: fab fa-github my-2
