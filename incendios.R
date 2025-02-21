@@ -1,14 +1,3 @@
-#
-# munis <- sf::st_drop_geometry(mapSpain::esp_get_capimun())
-#
-#
-# aa2 <- sf::st_drop_geometry(mapSpain::esp_get_munic_siane(epsg=4326))
-#
-#
-#
-# munis[grep("Montit", munis$name), ]
-# aa2[grep("Traba", aa2$name), ]
-
 # GIF España desde 2010
 # Datos obtenidos por scrapeado y depuración de los informes de MITECO
 # Estadísticas de Incendios Forestales:
