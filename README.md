@@ -21,7 +21,7 @@ municipio correspondiente según el INE
 ([link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990))
 mediante la librería de **R**
 [**mapSpain**](https://ropenspain.github.io/mapSpain/) para generar la base de
-datos `data/gif_d2010.csv`.
+datos `rdata/gif_d2010.csv`.
 
 La información de la sesión con la que se ha generado la infografía se
 proporcionan en el archivo [sessioninfo.txt](sessioninfo.txt)
