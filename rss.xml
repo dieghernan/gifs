@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>GIFs | </title>
+		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+		<link>https://dieghernan.github.io/gifs</link>
+		<description>Infografía de GIF (Grandes Incendios Forestales) en España</description>
+		<language>en-US</language>
+		<copyright>(c) 2025, dieghernan</copyright>	
+		<pubDate>Mon, 10 Mar 2025 04:27:00 +0100</pubDate>
+		<lastBuildDate>Mon, 10 Mar 2025 04:27:00 +0100</lastBuildDate>
+		<category>blog</category>
+		<ttl>60</ttl>
+		<atom:link href="https://dieghernan.github.io/gifs/rss.xml" rel="self" type="application/rss+xml" />
+		<image>
+			<title>GIFs | </title>
+			<url>https://dieghernan.github.io/gifs/assets/og_image.png</url>
+			<link>https://dieghernan.github.io/gifs</link>
+			<description>Infografía de GIF (Grandes Incendios Forestales) en España</description>
+		</image></channel>
+</rss>
