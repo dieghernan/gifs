@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
+	<link href="https://dieghernan.github.io/gifs/atom.xml" rel="self" type="application/atom+xml" />
+	<link href="https://dieghernan.github.io/gifs" rel="alternate" type="text/html" />
+	<updated>2025-03-10T03:06:59+00:00</updated>
+	<id>https://dieghernan.github.io/gifs/atom.xml</id>
+	<title>Chulapa 101 | Chulapa Jekyll Theme starter pack</title>
+	<subtitle>Chulapa Jekyll Theme starter pack</subtitle>
+	<author>
+		<name>Your Name</name>
+					
+	</author>
+	<rights>(c) 2025, Your Name</rights>
+	
+	<logo></logo></feed>
