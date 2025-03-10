@@ -1,0 +1,29 @@
+<p><img src="https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png" alt="Incendios forestales en España" /></p>
+
+<p>Infografía creada con <strong>R</strong>. Código disponible en <a href="https://github.com/dieghernan/gifs/">https://github.com/dieghernan/gifs/</a></p>
+
+<p>Infografía inspirada en el trabajo de Dominic Royé
+(<a href="https://github.com/dominicroye">https://github.com/dominicroye</a>) tal y como se muestra en el post <a href="https://dominicroye.github.io/blog/firefly-maps/">Firefly
+cartography</a>.</p>
+
+<h2 id="fuentes-de-datos">Fuentes de datos</h2>
+
+<p>La información está extraída de las <strong>Estadística incendios forestales</strong> del
+MITECO
+(<a href="https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html">link</a>),
+específicamente de Estadísticas Definitivas (hasta 2015) y de Avances
+Informativos (resto). El tratamiento de datos consiste en la extracción del
+listado de GIF y la asignación a cada incendio del código de provincia y de
+municipio correspondiente según el INE
+(<a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736177031&amp;menu=ultiDatos&amp;idp=1254734710990">link</a>)
+mediante la librería de <strong>R</strong>
+<a href="https://ropenspain.github.io/mapSpain/"><strong>mapSpain</strong></a> para generar la base de
+datos <code class="language-plaintext highlighter-rouge">data/gif_d2010.csv</code>.</p>
+
+<p>La información de la sesión con la que se ha generado la infografía se
+proporcionan en el archivo <a href="sessioninfo.txt">sessioninfo.txt</a></p>
+
+<h2 id="referencias">Referencias</h2>
+
+<p>Royé, Dominic. 2021. “Firefly Cartography.” June 1,2021.
+<a href="https://dominicroye.github.io/blog/firefly-maps/">https://dominicroye.github.io/blog/firefly-maps/</a>.</p>
