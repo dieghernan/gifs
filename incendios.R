@@ -22,7 +22,7 @@ library(resmush)
 library(sessioninfo)
 
 # 2. Carga datos y depura ----
-gif_fires <- read_csv("data/gif_d2010.csv",
+gif_fires <- read_csv("rdata/gif_d2010.csv",
   col_types = cols(date = col_date(format = "%Y-%m-%d"))
 )
 
