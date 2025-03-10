@@ -47,6 +47,7 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sitemap
+  - jekyll-remote-theme
 exclude:
   - README.md
   - Gemfile
