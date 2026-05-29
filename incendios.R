@@ -3,7 +3,6 @@
 # Estadísticas de Incendios Forestales:
 # https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html
 
-
 # 1. Librerías ----
 # Data wrangling
 library(tidyverse)
@@ -22,22 +21,26 @@ library(resmush)
 library(sessioninfo)
 
 # 2. Carga datos y depura ----
-gif_fires <- read_csv("rdata/gif_d2010.csv",
-  col_types = cols(date = col_date(format = "%Y-%m-%d"))
-)
+gif_fires <- openxlsx::read.xlsx("rdata/gif_d2010.xlsx", detectDates = TRUE) |>
+  as_tibble()
+gif_fires |>
+  mutate(date = as.character(date)) |>
+  write_csv("rdata/gif_d2010.csv")
+
 
 gif_fires$codmun <- sprintf("%05d", gif_fires$codmun)
 
-munis_sf <- esp_get_capimun(moveCAN = TRUE) %>%
-  select(codmun = LAU_CODE) %>%
+munis_sf <- esp_get_capimun(moveCAN = TRUE) |>
+  select(codmun = LAU_CODE, name_ine = name) |>
   # Trabajo en EPSG:4258 para la visualización (opinativo)
   st_transform(4258)
 
 # Objeto sf a la izquierda para no perder la geometría
-gif_fires_sf <- munis_sf %>%
-  right_join(gif_fires) %>%
+gif_fires_sf <- munis_sf |>
+  right_join(gif_fires) |>
   # Reordeno columnas
-  select(names(gif_fires)) %>%
+  select(names(gif_fires), name_ine) |>
+  relocate(name_ine, .before = munic_name) |>
   arrange(desc(date))
 
 any(st_is_empty(gif_fires_sf))
@@ -58,36 +61,42 @@ font_add_google("Fira Sans", family = "fira")
 firepal <- c("#801100", "#B62203", "#FC6400", "#FF7500", "#FAC000")
 
 
-
 # Paso las coordenadas a columnas para usarlos con geom_glow
-coords <- gif_fires_sf %>%
-  st_drop_geometry() %>%
-  bind_cols(st_coordinates(gif_fires_sf)) %>%
-  group_by(prov_name, munic_name, X, Y) %>%
-  summarise(area_ha = sum(area_forestal_ha)) %>%
+coords <- gif_fires_sf |>
+  st_drop_geometry() |>
+  bind_cols(st_coordinates(gif_fires_sf)) |>
+  group_by(prov_name, munic_name, X, Y) |>
+  summarise(area_ha = sum(area_forestal_ha)) |>
   ungroup()
 
 
 # Extramos shapes auxiliares de españa
-ccaa <- esp_get_ccaa(resolution = 1, year = 2024, moveCAN = TRUE) %>%
+ccaa <- esp_get_ccaa(resolution = 1, year = 2024, moveCAN = TRUE) |>
   st_transform(st_crs(gif_fires_sf))
 
-canbox <- esp_get_can_box(moveCAN = TRUE) %>%
+canbox <- esp_get_can_box(moveCAN = TRUE) |>
   st_transform(st_crs(ccaa))
 
 
 # Prepara el texto de títulos y subtítulos
 
 texttitle <- paste0(
-  "<span style='color:", firepal[3],
+  "<span style='color:",
+  firepal[3],
   ";'>Grandes Incendios Forestales</span>**(GIF)**<sup>1</sup> en España ",
-  "<span style='color:", firepal[3], ";'>(",
-  min(year(gif_fires$date)), "-", max(year(gif_fires$date)), ")"
+  "<span style='color:",
+  firepal[3],
+  ";'>(",
+  min(year(gif_fires$date)),
+  "-",
+  max(year(gif_fires$date)),
+  ")"
 )
 
 textsub <- paste0(
   "<sup>1</sup> Incendios que presentan <span style='color:",
-  firepal[3], ";'>al menos 500 hectáreas forestales quemadas</span>"
+  firepal[3],
+  ";'>al menos 500 hectáreas forestales quemadas</span>"
 )
 
 # Main plot
@@ -98,7 +107,8 @@ main <- ggplot(ccaa) +
   geom_sf(fill = "grey10", color = "grey20") +
   geom_sf(data = canbox, color = "grey20") +
   geom_glowpoint(
-    data = coords, aes(
+    data = coords,
+    aes(
       x = X,
       y = Y,
       size = area_ha
@@ -117,18 +127,20 @@ main <- ggplot(ccaa) +
       decimal.mark = ","
     )
   ) +
-  guides(size = guide_legend(
-    title = "hectáreas forestales quemadas",
-    direction = "horizontal",
-    title.position = "top",
-    keywidth = 10,
-    title.hjust = 0,
-    label.hjust = .5,
-    nrow = 1,
-    byrow = TRUE,
-    reverse = FALSE,
-    label.position = "bottom"
-  )) +
+  guides(
+    size = guide_legend(
+      title = "hectáreas forestales quemadas",
+      direction = "horizontal",
+      title.position = "top",
+      keywidth = 10,
+      title.hjust = 0,
+      label.hjust = .5,
+      nrow = 1,
+      byrow = TRUE,
+      reverse = FALSE,
+      label.position = "bottom"
+    )
+  ) +
   theme_void() +
   theme(
     text = element_text(color = "grey80", family = "fira"),
@@ -136,16 +148,19 @@ main <- ggplot(ccaa) +
     plot.margin = margin(t = 20, l = 20),
     plot.title = element_markdown(size = 110, hjust = .5),
     plot.subtitle = element_markdown(
-      size = 65, hjust = .5,
+      size = 65,
+      hjust = .5,
       margin = margin(t = 10)
     ),
     legend.position = "bottom",
     legend.title = element_text(
-      color = "grey80", size = 50,
+      color = "grey80",
+      size = 50,
       margin = margin(t = 20, b = 10)
     ),
     legend.text = element_text(
-      color = "grey80", size = 70
+      color = "grey80",
+      size = 70
     ),
     plot.caption.position = "plot",
     plot.caption = element_text(
@@ -160,7 +175,9 @@ main <- ggplot(ccaa) +
     title = texttitle,
     subtitle = textsub,
     caption = paste0(
-      "©", year(Sys.Date()), " Diego Hernangómez https://dieghernan.github.io.",
+      "©",
+      year(Sys.Date()),
+      " Diego Hernangómez https://dieghernan.github.io.",
       " Las hectáreas se refieren únicamente a hectáreas forestales",
       " afectadas.\nDatos: Estadísticas de Incendios Forestales, MITECO.",
       " Estadísticas definitivas y Avances"
@@ -175,16 +192,16 @@ ggsave("main.png", main, dpi = 300, width = 4200, height = 4200, units = "px")
 
 # 4. Plot secundario 1 (años) ----
 
-years <- gif_fires %>%
-  mutate(year = year(date)) %>%
-  group_by(year) %>%
+years <- gif_fires |>
+  mutate(year = year(date)) |>
+  group_by(year) |>
   summarise(overall = sum(area_forestal_ha))
 
 
-sum(years$overall) %>% prettyNum(big.mark = ".", decimal.mark = ",")
+sum(years$overall) |> prettyNum(big.mark = ".", decimal.mark = ",")
 
-texttitleins1 <- sum(years$overall) %>%
-  prettyNum(big.mark = ".", decimal.mark = ",") %>%
+texttitleins1 <- sum(years$overall) |>
+  prettyNum(big.mark = ".", decimal.mark = ",") |>
   paste("ha.")
 
 textsubins1 <- "forestales quemadas"
@@ -192,31 +209,34 @@ textsubins1 <- "forestales quemadas"
 
 inset1 <- ggplot(years, aes(x = year)) +
   geom_col(aes(y = overall), fill = firepal[5], alpha = 0.6) +
-  geom_smooth(aes(y = overall),
-    se = FALSE, color = firepal[3],
-    linewidth = 2
-  ) +
+  geom_smooth(aes(y = overall), se = FALSE, color = firepal[3], linewidth = 2) +
   coord_flip() +
   scale_x_reverse(breaks = unique(years$year)) +
   scale_y_continuous(
-    labels = c("-", "", "100", "", "200"),
-    breaks = c(0, 50000, 100000, 150000, 200000)
+    labels = c("-", "", "100", "", "200", "", "300"),
+    breaks = c(0, 50000, 100000, 150000, 200000, 250000, 300000)
   ) +
   theme_minimal() +
   theme(
+    plot.background = element_blank(),
     panel.grid = element_blank(),
     panel.grid.major.x = element_line(
-      color = alpha(firepal[4], .5), linetype = "dashed",
+      color = alpha(firepal[4], .5),
+      linetype = "dashed",
       linewidth = 0.5
     ),
     text = element_text(family = "fira", colour = "grey80"),
     plot.title = element_text(
-      size = 70, face = "bold",
-      color = firepal[3], hjust = 0
+      size = 70,
+      face = "bold",
+      color = firepal[3],
+      hjust = 0
     ),
     plot.subtitle = element_text(
-      size = 45, color = firepal[4],
-      margin = margin(t = -10), hjust = 0
+      size = 45,
+      color = firepal[4],
+      margin = margin(t = -10),
+      hjust = 0
     ),
     axis.title.x = element_text(size = 30, hjust = .5),
     axis.text = element_text(size = 45, colour = "grey80"),
@@ -232,49 +252,64 @@ inset1
 # Comprueba plot con tamaños en el output
 inset1grob <- ggplotGrob(inset1)
 main2 <- main +
-  annotation_custom(inset1grob,
+  annotation_custom(
+    inset1grob,
     xmin = -15,
-    xmax = -9.8, ymin = 36.8, ymax = 42.8
+    xmax = -9.8,
+    ymin = 36.8,
+    ymax = 42.8
   )
 
 # Check visual
-ggsave("main_inset1.png", main2,
-  dpi = 300, width = 4200, height = 4200,
+ggsave(
+  "main_inset1.png",
+  main2,
+  dpi = 300,
+  width = 4200,
+  height = 4200,
   units = "px"
 )
 
 
 # 5. Plot secundario 2 (incendios más graves) ----
 
-topfires <- gif_fires %>%
-  arrange(desc(area_forestal_ha)) %>%
-  slice(1:5) %>%
-  mutate(year = year(date)) %>%
+topfires <- gif_fires |>
+  arrange(desc(area_forestal_ha)) |>
+  slice(1:5) |>
+  mutate(year = year(date)) |>
   # Crea etiquetas
   mutate(
     labs = paste0(
-      munic_name, ", ", prov_name,
-      " (", year, ")"
+      munic_name,
+      ", ",
+      prov_name,
+      " (",
+      year,
+      ")"
     ),
     # Ordena por factores
-    areafct = fct_reorder(paste0(
-      prettyNum(round(area_forestal_ha, 0),
-        big.mark = ".",
-        decimal.mark = ","
+    areafct = fct_reorder(
+      paste0(
+        prettyNum(
+          round(area_forestal_ha, 0),
+          big.mark = ".",
+          decimal.mark = ","
+        ),
+        " ha."
       ),
-      " ha."
-    ), area_forestal_ha)
+      area_forestal_ha
+    )
   )
 
 # Simplifica etiquetas
 topfires$labs <- gsub("/València", "", topfires$labs)
 
 
-
 inset2 <- ggplot(topfires) +
   geom_text(
     aes(
-      x = areafct, y = 3,
+      x = areafct,
+      y = 3,
       label = labs,
       size = area_forestal_ha,
       color = area_forestal_ha
@@ -289,26 +324,30 @@ inset2 <- ggplot(topfires) +
   scale_color_gradientn(colors = rev(firepal[-c(1:2)])) +
   theme_minimal() +
   theme(
+    plot.background = element_blank(),
     panel.grid = element_blank(),
     axis.ticks = element_blank(),
     axis.text.x = element_blank(),
     strip.text = element_text(size = 12),
     text = element_text(family = "fira", color = "grey80"),
     axis.text.y = element_text(
-      size = 38, hjust = 0,
+      size = 38,
+      hjust = 0,
       color = firepal[5],
       margin = margin(l = -20)
     ),
     plot.title.position = "plot",
     plot.title = element_text(
-      size = 70, face = "bold",
+      size = 70,
+      face = "bold",
       color = firepal[3],
       hjust = .8,
       margin = margin(b = 0)
     )
   ) +
   labs(
-    x = "", y = "",
+    x = "",
+    y = "",
     title = "Incendios más destructivos"
   )
 
@@ -319,15 +358,16 @@ inset2
 inset2grob <- ggplotGrob(inset2)
 
 
-
 main3 <- main2 +
-  annotation_custom(inset2grob,
-    xmin = -7, xmax = 6, ymin = 33.5, ymax = 36.6
-  )
+  annotation_custom(inset2grob, xmin = -7, xmax = 6, ymin = 33.5, ymax = 36.6)
 
 
-ggsave("gif_spain.png", main3,
-  dpi = 300, width = 4200, height = 4200,
+ggsave(
+  "gif_spain.png",
+  main3,
+  dpi = 300,
+  width = 4200,
+  height = 4200,
   units = "px"
 )
 
