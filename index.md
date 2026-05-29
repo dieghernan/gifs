@@ -10,9 +10,11 @@ project_links:
       label: GitHub
 ---
 
-![Incendios forestales en España](https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png)
+![Incendios forestales en
+España](https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png)
 
-Infografía creada con **R**. Código disponible en <https://github.com/dieghernan/gifs/>
+Infografía creada con **R**. Código disponible en
+<https://github.com/dieghernan/gifs/>
 
 Infografía inspirada en el trabajo de Dominic Royé
 (<https://github.com/dominicroye>) tal y como se muestra en el post [Firefly
@@ -37,5 +39,6 @@ proporcionan en el archivo [sessioninfo.txt](sessioninfo.txt)
 
 ## Referencias
 
-Royé, Dominic. 2021. "Firefly Cartography." June 1,2021.
+Royé, Dominic. 2021. “Firefly Cartography.” June 1, 2021.
 <https://dominicroye.github.io/blog/firefly-maps/>.
+
