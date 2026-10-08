@@ -43,6 +43,10 @@ defaults:
       header_type: base
       show_sociallinks: true
 
+# Identify the individual publishing this site in JSON-LD.
+publisher:
+  type: Person
+
 # XX. Other settings - no need to modify
 # HTML Compression
 # - https://jch.penibelst.de/
