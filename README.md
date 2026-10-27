@@ -30,3 +30,10 @@ proporcionan en el archivo [sessioninfo.txt](sessioninfo.txt)
 
 Royé, Dominic. 2021. "Firefly Cartography." June 1,2021.
 <https://dominicroye.github.io/blog/firefly-maps/>.
+
+## Author identity and Webmentions
+
+The site keeps its project branding and shows the author's avatar and name in an
+h-card linked to <https://dieghernan.github.io/>. The custom head advertises the
+existing Webmention.io receiver for `dieghernan.github.io`. This enables endpoint
+discovery for incoming mentions; it does not display mentions or send them.

@@ -6,6 +6,8 @@ title: GIFs
 timezone: Europe/Madrid
 og_image: /assets/og_image.png
 author:
+  url: https://dieghernan.github.io/
+  avatar: https://dieghernan.github.io/assets/img/site/avatar.png
   name: dieghernan
   location: Madrid, España
 navbar:
