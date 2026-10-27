@@ -1,9 +1,17 @@
-# Infografía de GIF (Grandes Incendios Forestales)
+# Infografía de grandes incendios forestales
 
-Este repo aloja los datos y scripts necesarios para producir la siguiente
-infografía con **R**:
+Este proyecto reúne los datos y el código **R** utilizados para crear una
+infografía de grandes incendios forestales (GIF) en España. En este contexto,
+GIF se refiere a incendios con al menos 500 hectáreas forestales quemadas.
 
-![](gif_spain.png)
+El conjunto actual contiene 404 registros fechados entre el 27 de febrero de
+2010 y el 21 de septiembre de 2025. Estas fechas describen los registros
+incluidos; no representan un servicio de seguimiento en tiempo real.
+
+[Descargar los datos en CSV](https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv).
+
+
+![Mapa de España con grandes incendios forestales de 2010 a 2025. El tamaño de los círculos naranjas indica las hectáreas forestales quemadas; un gráfico resume la superficie por año.](gif_spain.png)
 
 Infografía inspirada en el trabajo de Dominic Royé
 (<https://github.com/dominicroye>) tal y como se muestra en el post [Firefly
@@ -11,29 +19,24 @@ cartography](https://dominicroye.github.io/blog/firefly-maps/).
 
 ## Fuentes de datos
 
-La información está extraída de las **Estadística incendios forestales** del
+La información está extraída de las **estadísticas de incendios forestales** del
 MITECO
-([link](https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html)),
-específicamente de Estadísticas Definitivas (hasta 2015) y de Avances
-Informativos (resto). El tratamiento de datos consiste en la extracción del
+([Estadísticas del MITECO](https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html)),
+incluidas estadísticas definitivas y avances informativos.
+
+<!-- FIXME: Confirmar por año qué datos son definitivos y cuáles provisionales. -->
+El tratamiento de datos consiste en la extracción del
 listado de GIF y la asignación a cada incendio del código de provincia y de
 municipio correspondiente según el INE
-([link](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990))
-mediante la librería de **R**
+([Códigos de municipios del INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990))
+mediante el paquete de **R**
 [**mapSpain**](https://ropenspain.github.io/mapSpain/) para generar la base de
 datos `rdata/gif_d2010.csv`.
 
 La información de la sesión con la que se ha generado la infografía se
-proporcionan en el archivo [sessioninfo.txt](sessioninfo.txt)
+proporciona en el archivo [sessioninfo.txt](sessioninfo.txt).
 
 ## Referencias
 
-Royé, Dominic. 2021. "Firefly Cartography." June 1,2021.
+Royé, Dominic. 2021. "Firefly Cartography." June 1, 2021.
 <https://dominicroye.github.io/blog/firefly-maps/>.
-
-## Author identity and Webmentions
-
-The site keeps its project branding and shows the author's avatar and name in an
-h-card linked to <https://dieghernan.github.io/>. The custom head advertises the
-existing Webmention.io receiver for `dieghernan.github.io`. This enables endpoint
-discovery for incoming mentions; it does not display mentions or send them.

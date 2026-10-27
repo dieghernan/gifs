@@ -2,7 +2,7 @@
 
 > Proyecto de Diego Hernangómez con datos, código R y una infografía sobre grandes incendios forestales (GIF) en España.
 
-En este proyecto, GIF significa grandes incendios forestales, no el formato de imagen animada. La infografía utiliza estadísticas de incendios del MITECO: estadísticas definitivas hasta 2015 y avances informativos para el resto del conjunto descrito en el proyecto. El tratamiento asigna códigos de provincia y municipio del INE mediante el paquete mapSpain.
+En este proyecto, GIF significa grandes incendios forestales, no el formato de imagen animada. La infografía utiliza estadísticas de incendios del MITECO: estadísticas definitivas y avances informativos. El conjunto actual contiene 404 registros fechados entre el 27 de febrero de 2010 y el 21 de septiembre de 2025; la clasificación por año como definitiva o provisional requiere consultar las fuentes originales. El tratamiento asigna códigos de provincia y municipio del INE mediante el paquete mapSpain.
 
 Los archivos representan el conjunto de datos utilizado para elaborar la infografía, no un servicio de seguimiento de incendios en tiempo real. La visualización está inspirada en el trabajo de Dominic Royé sobre cartografía de luciérnagas.
 

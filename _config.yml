@@ -1,101 +1,138 @@
+# Site configuration
 remote_theme: dieghernan/chulapa
-repository: dieghernan/gifs
-url: https://dieghernan.github.io
-baseurl: gifs
+
+# Site identity and SEO
+locale: es-ES
 title: GIFs
+subtitle: Grandes incendios forestales en España
+description: Infografía de grandes incendios forestales en España, elaborada con R
+  a partir de datos de MITECO.
+url: https://dieghernan.github.io
+baseurl: "/gifs"
+repository: dieghernan/gifs
 timezone: Europe/Madrid
-og_image: /assets/og_image.png
+
+# Sharing images
+og_image: "/gif_spain.png"
+og_image_alt: Mapa de grandes incendios forestales de España de 2010 a 2025, con círculos
+  proporcionales a la superficie forestal quemada y un gráfico anual.
+og_image_width: 4200
+og_image_height: 4200
+og_image_type: image/png
+
+# Author and publisher
 author:
+  name: Diego Hernangómez
   url: https://dieghernan.github.io/
   avatar: https://dieghernan.github.io/assets/img/site/avatar.png
-  name: dieghernan
   location: Madrid, España
+  links:
+  - url: https://x.com/dhernangomez
+    icon: fab fa-square-x-twitter
+    label: Twitter/X
+  - url: https://fosstodon.org/@dhernangomez
+    icon: fa-brands fa-mastodon
+    label: Mastodon
+  - url: https://bsky.app/profile/dieghernan.bsky.social
+    icon: fa-brands fa-square-bluesky
+    label: Bluesky
+  - url: https://github.com/dieghernan/
+    icon: fab fa-github
+    label: GitHub
+  - url: https://stackoverflow.com/users/7877917/dieghernan
+    icon: fab fa-stack-overflow
+    label: Stack Overflow
+  - url: https://orcid.org/0000-0001-8457-4658
+    icon: fa-brands fa-orcid
+    label: ORCID
+publisher:
+  type: Person
+  name: Diego Hernangómez
+  url: https://dieghernan.github.io/
+  image: https://dieghernan.github.io/assets/img/site/avatar.png
+
+# Navigation
 navbar:
   expand: never
   brand:
-    title: '<i class="fa-solid fa-fire"></i>'
+    title: '<i class="fa-solid fa-fire" aria-hidden="true"></i><span class="sr-only">Inicio:
+      grandes incendios forestales</span>'
 footer:
   links:
-    - label: StackOverflow
-      icon: fab fa-stack-overflow
-      url: https://stackoverflow.com/users/7877917/dieghernan
-    - label: GitHub
-      icon: fab fa-github
-      url: https://github.com/dieghernan/
-    - label: Blog
-      icon: fas fa-blog
-      url: https://dieghernan.github.io/
-    - label: RPubs
-      icon: fab fa-r-project
-      url: https://rpubs.com/dieghernan
+  - label: Stack Overflow
+    icon: fab fa-stack-overflow
+    url: https://stackoverflow.com/users/7877917/dieghernan
+  - label: GitHub
+    icon: fab fa-github
+    url: https://github.com/dieghernan/
+  - label: Blog
+    icon: fas fa-blog
+    url: https://dieghernan.github.io/
+  - label: RPubs
+    icon: fab fa-r-project
+    url: https://rpubs.com/dieghernan
+
+# Appearance
+googlefonts:
+- url: https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&display=swap
 chulapa-skin:
   autothemer: true
   skin: deeply
   vars:
-    font-family-base: "Fira Sans"
-    headings-font-family: "Fira Sans"
+    font-family-base: Fira Sans
+    headings-font-family: Fira Sans
     font-family-monospace: '"Fira Code", monospace'
-googlefonts:
-  - url: https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&display=swap
+
+# Content and build settings
 defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-      header_type: base
-      show_sociallinks: true
-
-# Identify the individual publishing this site in JSON-LD.
-publisher:
-  type: Person
-
-# XX. Other settings - no need to modify
-# HTML Compression
-# - https://jch.penibelst.de/
+- scope:
+    path: ''
+  values:
+    layout: default
+    header_type: base
+    show_sociallinks: true
+include:
+- _pages
 compress_html:
   clippings: all
   blanklines: true
-
-plugins:
-  - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jekyll-remote-theme
-
-
-# Exclude these files from production site
-exclude:
-  - LICENSE
-  - README.md
-  - Gemfile
-  - vendor
-  - rdata
-
-include:
- - _pages
-
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
-  footnote_backlink: '&uarr;'
+  footnote_backlink: "&uarr;"
   entity_output: as_char
   toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-# Sass/SCSS
+incremental: false
+exclude:
+- LICENSE
+- README.md
+- Gemfile
+- vendor
+- rdata
+- AGENTS.md
+- Gemfile.lock
+- ".bundle"
+plugins:
+- jekyll-remote-theme
+- jekyll-github-metadata
+- jekyll-include-cache
+- jekyll-sitemap
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  style: compressed
+  quiet_deps: true
+  silence_deprecations:
+  - import
+  - global-builtin
+  - color-functions
+  - abs-percent
+  - function-units
+  - if-function
