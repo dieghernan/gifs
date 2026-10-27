@@ -1,24 +1,39 @@
 {
-  "name": "GIFs - Grandes incendios forestales en España",
+  "name": "GIFs — Grandes incendios forestales en España",
   "short_name": "GIFs",
   "description": "Infografía de grandes incendios forestales en España a partir de datos de MITECO. Elaborada con R.",
+  "id": "/gifs/",
+  "start_url": "/gifs/",
+  "scope": "/gifs/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "lang": "es-ES",
   "icons": [
     {
-      "src": "https://dieghernan.github.io/gifs/assets/favicons/web-app-manifest-192x192.png",
+      "src": "/gifs/assets/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/gifs/assets/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/gifs/assets/favicons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://dieghernan.github.io/gifs/assets/favicons/web-app-manifest-512x512.png",
+      "src": "/gifs/assets/favicons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
-  ],
-  "display": "standalone",
-  "orientation": "any",
-  "background_color": "#1a1a2e",
-  "theme_color": "#1a1a2e",
-  "lang": "es-ES"
+  ]
 }
