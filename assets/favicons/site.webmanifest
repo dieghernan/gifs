@@ -1,0 +1,24 @@
+{
+  "name": "GIFs -- Grandes incendios forestales en España",
+  "short_name": "GIFs",
+  "description": "Infografía de grandes incendios forestales en España a partir de datos de MITECO. Elaborada con R.",
+  "icons": [
+    {
+      "src": "/assets/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "lang": "es-ES"
+}
