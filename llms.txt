@@ -1,0 +1,23 @@
+# Grandes incendios forestales en España
+
+> Proyecto de Diego Hernangómez con datos, código R y una infografía sobre grandes incendios forestales (GIF) en España.
+
+En este proyecto, GIF significa grandes incendios forestales, no el formato de imagen animada. La infografía utiliza estadísticas de incendios del MITECO: estadísticas definitivas hasta 2015 y avances informativos para el resto del conjunto descrito en el proyecto. El tratamiento asigna códigos de provincia y municipio del INE mediante el paquete mapSpain.
+
+Los archivos representan el conjunto de datos utilizado para elaborar la infografía, no un servicio de seguimiento de incendios en tiempo real. La visualización está inspirada en el trabajo de Dominic Royé sobre cartografía de luciérnagas.
+
+## Documentación
+
+- [Infografía y fuentes](https://dieghernan.github.io/gifs/): Página publicada del proyecto.
+- [README](https://raw.githubusercontent.com/dieghernan/gifs/main/README.md): Descripción del tratamiento de datos y referencias.
+- [Contenido de la web](https://raw.githubusercontent.com/dieghernan/gifs/main/index.md): Texto de la infografía en Markdown.
+
+## Datos y reproducibilidad
+
+- [Datos CSV](https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv): Base de datos utilizada por el proyecto.
+- [Repositorio](https://github.com/dieghernan/gifs): Código R y archivos de la infografía.
+- [Licencia](https://raw.githubusercontent.com/dieghernan/gifs/main/LICENSE): Licencia del repositorio; consultar las fuentes para las condiciones de los datos originales.
+
+## Optional
+
+- [Autor](https://dieghernan.github.io/): Web personal de Diego Hernangómez.
