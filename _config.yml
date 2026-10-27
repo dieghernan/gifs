@@ -3,22 +3,23 @@ remote_theme: dieghernan/chulapa
 
 # Site identity and SEO
 locale: es-ES
+og_locale: es_ES
 title: GIFs
 subtitle: Grandes incendios forestales en España
-description: Infografía de grandes incendios forestales en España, elaborada con R
-  a partir de datos de MITECO.
+description: Infografía de grandes incendios forestales en España, elaborada con R a partir de datos de MITECO.
 url: https://dieghernan.github.io
 baseurl: "/gifs"
 repository: dieghernan/gifs
 timezone: Europe/Madrid
 
-# Sharing images
-og_image: "/gif_spain.png"
-og_image_alt: Mapa de grandes incendios forestales de España de 2010 a 2025, con círculos
-  proporcionales a la superficie forestal quemada y un gráfico anual.
-og_image_width: 4200
-og_image_height: 4200
+# Sharing images (use optimized preview; full map remains gif_spain.png on the page)
+og_image: "/assets/og_image.png"
+og_image_alt: Mapa de grandes incendios forestales de España de 2010 a 2025, con círculos proporcionales a la superficie forestal quemada y un gráfico anual.
+og_image_width: 1280
+og_image_height: 640
 og_image_type: image/png
+
+twitter_site: dhernangomez
 
 # Author and publisher
 author:
@@ -55,8 +56,7 @@ publisher:
 navbar:
   expand: never
   brand:
-    title: '<i class="fa-solid fa-fire" aria-hidden="true"></i><span class="sr-only">Inicio:
-      grandes incendios forestales</span>'
+    title: '<i class="fa-solid fa-fire" aria-hidden="true"></i><span class="sr-only">Inicio: grandes incendios forestales</span>'
 footer:
   links:
   - label: Stack Overflow
