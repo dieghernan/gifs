@@ -69,5 +69,5 @@ proporciona en el archivo [sessioninfo.txt](sessioninfo.txt).
 
 ## Referencias
 
-Royé, Dominic. 2021. «Firefly Cartography». 1 de junio de 2021.
-<https://dominicroye.github.io/blog/firefly-maps/>.
+Royé, Dominic. 2021. “Firefly Cartography.” June 1.
+[https://dominicroye.github.io/blog/firefly-maps/](https://dominicroye.github.io/blog/firefly-maps/).
