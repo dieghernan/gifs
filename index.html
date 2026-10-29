@@ -120,6 +120,37 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="https://dieghernan.github.io/gifs/assets/css/custom.css" >
     <link rel="describedby" type="text/plain" href="/gifs/llms.txt">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/gifs/#dataset",
+  "url": "https://dieghernan.github.io/gifs/",
+  "name": "Grandes incendios forestales en España",
+  "description": "Datos de grandes incendios forestales en España con al menos 500 hectáreas forestales quemadas, extraídos de estadísticas definitivas y avances informativos de MITECO. El conjunto contiene 404 registros entre el 27 de febrero de 2010 y el 21 de septiembre de 2025 y no es un servicio de seguimiento en tiempo real.",
+  "license": "https://github.com/dieghernan/gifs/blob/main/LICENSE",
+  "isAccessibleForFree": true,
+  "inLanguage": "es",
+  "creator": {
+    "@type": "Person",
+    "name": "Diego Hernangómez",
+    "url": "https://dieghernan.github.io/",
+    "identifier": "https://orcid.org/0000-0001-8457-4658"
+  },
+  "isBasedOn": "https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html",
+  "spatialCoverage": {"@type": "Place", "name": "España"},
+  "temporalCoverage": "2010-02-27/2025-09-21",
+  "keywords": ["incendios forestales", "grandes incendios forestales", "España", "MITECO", "CSV"],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Grandes incendios forestales en España (CSV)",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv"
+    }
+  ]
+}
+</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c23b83bb-5f33-4256-a5b5-fbc59c1c7ae8" data-domains="dieghernan.github.io"></script>
 <!-- Favicons & PWA -->
 <link rel="icon" type="image/png" href="/gifs/assets/favicons/favicon-96x96.png" sizes="96x96">
@@ -179,7 +210,7 @@ GIF se refiere a incendios con al menos 500 hectáreas forestales quemadas.</p>
 <p>El conjunto actual contiene 404 registros fechados entre el 27 de febrero de
 2010 y el 21 de septiembre de 2025. Estas fechas describen los registros
 incluidos; no representan un servicio de seguimiento en tiempo real.</p>
-<p><a href="https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv">Descargar los datos en CSV</a>.</p>
+<p><a class="btn btn-primary mb-3" href="https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv">Descargar dataset en CSV</a></p>
 <p>Código disponible en <a href="https://github.com/dieghernan/gifs/">https://github.com/dieghernan/gifs/</a>.</p>
 <p>Infografía inspirada en el trabajo de Dominic Royé
 (<a href="https://github.com/dominicroye">https://github.com/dominicroye</a>) tal y como se muestra en el post <a href="https://dominicroye.github.io/blog/firefly-maps/">Firefly
