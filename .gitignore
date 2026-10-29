@@ -5,3 +5,6 @@
 .DS_Store
 .quarto
 dev
+_site/
+.jekyll-cache/
+scripts/__pycache__/

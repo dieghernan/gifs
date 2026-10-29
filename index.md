@@ -1,6 +1,12 @@
 ---
 layout: default
 title: Infografía de grandes incendios forestales
+og_image: https://dieghernan.github.io/gifs/assets/social-preview.jpg
+og_image_alt: Grandes incendios forestales en España, 2010–2025. Mapa oscuro con
+  círculos naranjas proporcionales a la superficie forestal quemada.
+og_image_width: 1200
+og_image_height: 630
+og_image_type: image/jpeg
 excerpt: |
     Infografía de grandes incendios forestales en España a partir de datos de MITECO.
     Elaborada con R.

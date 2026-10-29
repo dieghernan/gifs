@@ -12,12 +12,13 @@ baseurl: "/gifs"
 repository: dieghernan/gifs
 timezone: Europe/Madrid
 
-# Sharing images (use optimized preview; full map remains gif_spain.png on the page)
-og_image: "/assets/og_image.png"
-og_image_alt: Mapa de grandes incendios forestales de España de 2010 a 2025, con círculos proporcionales a la superficie forestal quemada y un gráfico anual.
-og_image_width: 1280
-og_image_height: 640
-og_image_type: image/png
+# Sharing images
+og_image: https://dieghernan.github.io/gifs/assets/social-preview.jpg
+og_image_alt: Grandes incendios forestales en España, 2010–2025. Mapa oscuro con
+  círculos naranjas proporcionales a la superficie forestal quemada.
+og_image_width: 1200
+og_image_height: 630
+og_image_type: image/jpeg
 
 twitter_site: dhernangomez
 
@@ -112,6 +113,7 @@ kramdown:
   enable_coderay: false
 incremental: false
 exclude:
+- scripts
 - LICENSE
 - README.md
 - Gemfile
