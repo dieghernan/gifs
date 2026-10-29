@@ -1,5 +1,6 @@
 ---
 layout: default
+dataset: true
 title: Infografía de grandes incendios forestales
 og_image: https://dieghernan.github.io/gifs/assets/social-preview.jpg
 og_image_alt: Grandes incendios forestales en España, 2010–2025. Mapa oscuro con
@@ -26,7 +27,7 @@ El conjunto actual contiene 404 registros fechados entre el 27 de febrero de
 2010 y el 21 de septiembre de 2025. Estas fechas describen los registros
 incluidos; no representan un servicio de seguimiento en tiempo real.
 
-[Descargar los datos en CSV](https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv).
+<a class="btn btn-primary mb-3" href="https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv">Descargar dataset en CSV</a>
 
 Código disponible en <https://github.com/dieghernan/gifs/>.
 

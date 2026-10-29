@@ -1,4 +1,7 @@
 <link rel="describedby" type="text/plain" href="{{ '/llms.txt' | relative_url }}">
+{% if page.dataset %}
+{% include custom/dataset_jsonld.html %}
+{% endif %}
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c23b83bb-5f33-4256-a5b5-fbc59c1c7ae8" data-domains="dieghernan.github.io"></script>
 <!-- Favicons & PWA -->
 <link rel="icon" type="image/png" href="{{ '/assets/favicons/favicon-96x96.png' | relative_url }}" sizes="96x96">
