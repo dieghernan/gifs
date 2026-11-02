@@ -8,3 +8,4 @@ dev
 _site/
 .jekyll-cache/
 scripts/__pycache__/
+tests/__pycache__/

@@ -5,19 +5,19 @@
   "@id": {{ '/' | absolute_url | append: '#dataset' | jsonify }},
   "url": {{ '/' | absolute_url | jsonify }},
   "name": "Grandes incendios forestales en España",
-  "description": "Datos de grandes incendios forestales en España con al menos 500 hectáreas forestales quemadas, extraídos de estadísticas definitivas y avances informativos de MITECO. El conjunto contiene 404 registros entre el 27 de febrero de 2010 y el 21 de septiembre de 2025 y no es un servicio de seguimiento en tiempo real.",
-  "license": "https://github.com/dieghernan/gifs/blob/main/LICENSE",
+  "description": "Conjunto de 404 registros de grandes incendios forestales en España, fechados entre el 27 de febrero de 2010 y el 21 de septiembre de 2025. Incluye provincia, municipio, sus códigos, fecha y superficie forestal quemada en hectáreas, para incendios de al menos 500 hectáreas forestales. Se recopila de estadísticas definitivas y avances informativos del MITECO, sin distinguir en cada registro su carácter definitivo o provisional. Disponible en CSV; no representa años completos de cobertura ni un servicio de seguimiento en tiempo real.",
   "isAccessibleForFree": true,
   "inLanguage": "es",
   "creator": {
     "@type": "Person",
     "name": "Diego Hernangómez",
     "url": "https://dieghernan.github.io/",
-    "identifier": "https://orcid.org/0000-0001-8457-4658"
+    "sameAs": "https://orcid.org/0000-0001-8457-4658"
   },
   "isBasedOn": "https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html",
   "spatialCoverage": {"@type": "Place", "name": "España"},
   "temporalCoverage": "2010-02-27/2025-09-21",
+  "variableMeasured": ["Provincia", "Código de provincia", "Municipio", "Código de municipio", "Fecha del incendio", "Superficie forestal quemada en hectáreas"],
   "keywords": ["incendios forestales", "grandes incendios forestales", "España", "MITECO", "CSV"],
   "distribution": [
     {
