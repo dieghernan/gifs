@@ -25,6 +25,8 @@ def build():
             raise ValueError("Commit CSV changes before generating its Croissant snapshot.")
     if list(rows[0]) != [field["column"] for field in fields]:
         raise ValueError("CSV columns differ from the documented Croissant fields.")
+    if any(value == "" for row in rows for value in row.values()):
+        raise ValueError("Empty CSV cells require a review of the documented missing-value policy.")
     dates = sorted(row["date"] for row in rows)
     if metadata["dataset"]["temporalCoverage"] != f"{dates[0]}/{dates[-1]}":
         raise ValueError("Dataset temporal coverage does not match the CSV.")
@@ -49,7 +51,7 @@ def build():
     record_set = snapshot["recordSet"]
     dataset["recordSet"] = [{
         "@type": "cr:RecordSet", "@id": record_set, "name": record_set,
-        "description": "Un registro por incendio incluido en el CSV; los municipios pueden repetirse.",
+        "description": "Un registro por incendio incluido en el CSV; los municipios y las fechas pueden repetirse. No se declara una clave única ni se distingue el estado definitivo o provisional de cada registro. No hay celdas vacías en esta instantánea; no se infieren valores ausentes ni se completan series anuales.",
         "field": [{
             "@type": "cr:Field", "@id": f'{record_set}/{field["column"]}',
             "name": field["column"], "description": field["description"],

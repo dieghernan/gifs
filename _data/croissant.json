@@ -124,13 +124,13 @@
       "@type": "cr:RecordSet",
       "@id": "fires",
       "name": "fires",
-      "description": "Un registro por incendio incluido en el CSV; los municipios pueden repetirse.",
+      "description": "Un registro por incendio incluido en el CSV; los municipios y las fechas pueden repetirse. No se declara una clave única ni se distingue el estado definitivo o provisional de cada registro. No hay celdas vacías en esta instantánea; no se infieren valores ausentes ni se completan series anuales.",
       "field": [
         {
           "@type": "cr:Field",
           "@id": "fires/prov_name",
           "name": "prov_name",
-          "description": "Nombre de la provincia.",
+          "description": "Nombre de la provincia asociado al registro. Se conserva la grafía del CSV; no es un identificador estable.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -145,7 +145,7 @@
           "@type": "cr:Field",
           "@id": "fires/cpro",
           "name": "cpro",
-          "description": "Código provincial tal como aparece en el CSV; se conserva como texto.",
+          "description": "Código provincial del registro, conservado como texto con la representación del CSV; no se añaden ceros iniciales ni se actualizan códigos históricos.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -160,7 +160,7 @@
           "@type": "cr:Field",
           "@id": "fires/munic_name",
           "name": "munic_name",
-          "description": "Nombre del municipio asociado al registro.",
+          "description": "Nombre del municipio asociado al incendio, conservado como aparece en el CSV. No describe necesariamente todos los municipios afectados.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -175,7 +175,7 @@
           "@type": "cr:Field",
           "@id": "fires/cmun",
           "name": "cmun",
-          "description": "Código municipal dentro de la provincia, conservado como texto sin modificar su representación.",
+          "description": "Código municipal dentro de la provincia, conservado como texto. No es único a escala nacional; no se rellena con ceros ni se sustituye por un código vigente.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -190,7 +190,7 @@
           "@type": "cr:Field",
           "@id": "fires/codmun",
           "name": "codmun",
-          "description": "Código combinado del municipio tal como aparece en la fuente; no identifica un incendio de forma única.",
+          "description": "Código combinado provincial y municipal tal como se almacena en el CSV, conservado como texto sin rellenar ceros. Puede repetirse entre incendios y no es una clave de registro.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -205,7 +205,7 @@
           "@type": "cr:Field",
           "@id": "fires/date",
           "name": "date",
-          "description": "Fecha consignada en el registro, en formato ISO 8601 (AAAA-MM-DD).",
+          "description": "Fecha consignada para el incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo.",
           "dataType": "sc:Date",
           "source": {
             "fileObject": {
@@ -220,7 +220,7 @@
           "@type": "cr:Field",
           "@id": "fires/area_forestal_ha",
           "name": "area_forestal_ha",
-          "description": "Superficie forestal quemada expresada en hectáreas, para incendios de al menos 500 hectáreas forestales.",
+          "description": "Superficie forestal quemada declarada para el incendio, en hectáreas (1 ha = 10.000 m²). No es superficie total quemada ni una medida calculada a partir del mapa. El conjunto selecciona incendios de al menos 500 hectáreas forestales.",
           "dataType": "sc:Float",
           "source": {
             "fileObject": {
