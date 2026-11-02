@@ -80,9 +80,7 @@
       "@type": "@vocab"
     },
     "dct": "http://purl.org/dc/terms/",
-    "description": {
-      "@container": "@language"
-    },
+    "description": "sc:description",
     "equivalentProperty": "cr:equivalentProperty",
     "examples": {
       "@id": "cr:examples",
@@ -100,9 +98,7 @@
     "jsonPath": "cr:jsonPath",
     "key": "cr:key",
     "md5": "cr:md5",
-    "name": {
-      "@container": "@language"
-    },
+    "name": "sc:name",
     "parentField": "cr:parentField",
     "path": "cr:path",
     "recordSet": "cr:recordSet",

@@ -20,6 +20,9 @@ class CroissantTests(unittest.TestCase):
         self.assertEqual(json.loads((ROOT / "_site/croissant.json").read_text(encoding="utf-8")), descriptor)
         self.assertEqual(descriptor["conformsTo"], "http://mlcommons.org/croissant/1.1")
         self.assertNotIn("version", descriptor)  # No numbered data release exists.
+        # Google rejects language-container objects in the embedded context.
+        self.assertEqual(descriptor["@context"]["name"], "sc:name")
+        self.assertEqual(descriptor["@context"]["description"], "sc:description")
         content = subprocess.check_output(["git", "show", "HEAD:rdata/gif_d2010.csv"], cwd=ROOT)
         file, = descriptor["distribution"]
         self.assertEqual(file["sha256"], hashlib.sha256(content).hexdigest())
