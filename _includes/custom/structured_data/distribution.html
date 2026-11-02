@@ -1,0 +1,7 @@
+{
+  "@type": "DataDownload",
+  "name": {{ include.file.name | jsonify }},
+  "encodingFormat": {{ include.file.encodingFormat | jsonify }},
+  "dateModified": {{ site.data.structured_data.publication.dateModified | jsonify }},
+  "contentUrl": {{ include.file.contentUrl | jsonify }}
+}
