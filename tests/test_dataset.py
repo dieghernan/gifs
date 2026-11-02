@@ -23,6 +23,10 @@ class DatasetTests(unittest.TestCase):
         self.assertGreaterEqual(len(dataset["description"]), 50)
         self.assertLessEqual(len(dataset["description"]), 5000)
         self.assertEqual(dataset["creator"]["sameAs"], "https://orcid.org/0000-0001-8457-4658")
+        self.assertEqual(dataset["license"], "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html")
+        self.assertEqual(dataset["isBasedOn"]["publisher"]["alternateName"], "MITECO")
+        self.assertEqual(dataset["isBasedOn"]["url"], "https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-datos.html")
+        self.assertIn("Origen de los datos", dataset["creditText"])
         self.assertIn("Superficie forestal quemada en hectáreas", dataset["variableMeasured"])
         download, = dataset["distribution"]
         self.assertEqual(download["encodingFormat"], "text/csv")
