@@ -12,7 +12,9 @@ its role as a downloadable distribution for existing consumers.
   terms, publication dates and the pinned CSV revision/path.
 - `_data/croissant_fields.json`: the seven columns, types and descriptions.
 - `_data/croissant_context.json`: the JSON-LD context from mlcroissant 1.1.1's
-  Croissant 1.1 context, with Spanish as the default language.
+  Croissant 1.1 context, with Spanish as the default language. The `name` and
+  `description` aliases use plain Schema.org IRIs: Google Rich Results rejects
+  their language-container definitions, even though mlcroissant accepts them.
 - `rdata/gif_d2010.csv`: the existing data, without conversions or edits.
 
 `build_croissant.py` writes `croissant.json` and `_data/croissant.json` from
