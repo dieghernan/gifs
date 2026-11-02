@@ -18,6 +18,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/requirements-croissant.txt
+      - name: Install Croissant validator
+        run: python -m pip install -r scripts/requirements-croissant.txt
+      - name: Check generated Croissant metadata
+        run: python scripts/build_croissant.py --check
+      - name: Validate Croissant descriptor
+        run: mlcroissant validate --jsonld croissant.json
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -34,7 +45,7 @@ jobs:
           JEKYLL_ENV: production
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check dataset metadata
-        run: python3 -m unittest discover -s tests -p test_dataset.py
+        run: python -m unittest discover -s tests
       - name: Upload built site
         uses: actions/upload-pages-artifact@v5
         with:

@@ -1,0 +1,44 @@
+[
+  {
+    "column": "prov_name",
+    "label": "Provincia",
+    "dataType": "sc:Text",
+    "description": "Nombre de la provincia."
+  },
+  {
+    "column": "cpro",
+    "label": "Código de provincia",
+    "dataType": "sc:Text",
+    "description": "Código provincial tal como aparece en el CSV; se conserva como texto."
+  },
+  {
+    "column": "munic_name",
+    "label": "Municipio",
+    "dataType": "sc:Text",
+    "description": "Nombre del municipio asociado al registro."
+  },
+  {
+    "column": "cmun",
+    "label": "Código de municipio",
+    "dataType": "sc:Text",
+    "description": "Código municipal dentro de la provincia, conservado como texto sin modificar su representación."
+  },
+  {
+    "column": "codmun",
+    "label": "Código INE del municipio",
+    "dataType": "sc:Text",
+    "description": "Código combinado del municipio tal como aparece en la fuente; no identifica un incendio de forma única."
+  },
+  {
+    "column": "date",
+    "label": "Fecha del incendio",
+    "dataType": "sc:Date",
+    "description": "Fecha consignada en el registro, en formato ISO 8601 (AAAA-MM-DD)."
+  },
+  {
+    "column": "area_forestal_ha",
+    "label": "Superficie forestal quemada",
+    "dataType": "sc:Float",
+    "description": "Superficie forestal quemada expresada en hectáreas, para incendios de al menos 500 hectáreas forestales."
+  }
+]

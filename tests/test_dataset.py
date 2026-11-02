@@ -15,6 +15,8 @@ class DatasetTests(unittest.TestCase):
         schemas = [json.loads(raw) for raw in re.findall(
             r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', html, re.S)]
         dataset, = [item for item in schemas if item.get("@type") == "Dataset"]
+        descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
+        self.assertEqual(dataset, descriptor)
         with (ROOT / "rdata/gif_d2010.csv").open(encoding="utf-8", newline="") as stream:
             records = list(csv.DictReader(stream))
         dates = sorted(row["date"] for row in records)
@@ -34,8 +36,11 @@ class DatasetTests(unittest.TestCase):
         download, = dataset["distribution"]
         self.assertEqual(download["encodingFormat"], "text/csv")
         self.assertEqual(download["dateModified"], dataset["dateModified"])
+        snapshot = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]
         self.assertEqual(download["contentUrl"],
-                         "https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv")
+                         f'https://raw.githubusercontent.com/dieghernan/gifs/{snapshot["sourceRevision"]}/{snapshot["sourcePath"]}')
+        self.assertIn("sc:DataDownload", download["@type"])
+        self.assertIn("cr:FileObject", download["@type"])
         self.assertIn(download["contentUrl"], html)
         self.assertNotIn('content="noindex', html)
 

@@ -58,5 +58,10 @@
         "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv"
       }
     ]
+  },
+  "croissant": {
+    "sourceRevision": "098c25ce7d1e628002a1b3bba73f9c9ee7d726b6",
+    "sourcePath": "rdata/gif_d2010.csv",
+    "recordSet": "fires"
   }
 }

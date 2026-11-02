@@ -14,3 +14,9 @@ CSV changes; do not use the website build date.
 
 Build with `bundle exec jekyll build`, then run
 `py -m unittest discover -s tests` to verify the rendered metadata against the CSV.
+
+## Croissant
+
+The public Dataset now embeds the generated `_data/croissant.json`, also
+served as `/croissant.json`. See `scripts/README-croissant.md` for generation,
+validation, immutable source URLs and the official-reader integration test.
