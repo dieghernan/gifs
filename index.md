@@ -44,10 +44,18 @@ Cartography](https://dominicroye.github.io/blog/firefly-maps/).
 
 Los datos proceden de las **estadísticas de incendios forestales** del
 Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO)
-([Estadísticas del MITECO](https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html)),
+([Estadísticas del MITECO](https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-datos.html)),
 incluidas estadísticas definitivas y avances informativos. El conjunto
 combina ambas fuentes sin identificar en cada registro si el dato es
 definitivo o provisional.
+
+Origen de los datos: Ministerio para la Transición Ecológica y el Reto
+Demográfico (MITECO). Recopilación y adaptación: Diego Hernangómez. Los datos
+se reutilizan conforme al [aviso legal del MITECO](https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html),
+con obligación de citar la fuente y conservar las condiciones y metadatos
+originales. La licencia MIT del repositorio corresponde al código y la
+documentación. Este proyecto es independiente y no implica participación ni
+respaldo del Ministerio.
 
 <!-- FIXME: Confirmar por año qué datos son definitivos y cuáles provisionales. -->
 El listado de GIF se recopila en `rdata/gif_d2010.xlsx`. El script
