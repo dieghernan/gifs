@@ -11,7 +11,7 @@
     "@id": "https://dieghernan.github.io/gifs/#author"
   },
   "license": "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html",
-  "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio.",
+  "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio. Cruce municipal: Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.",
   "isBasedOn": {
     "@type": "CreativeWork",
     "name": "Estadísticas de incendios forestales del MITECO",
@@ -146,10 +146,10 @@
       ],
       "@id": "egif-parts-csv",
       "name": "Partes EGIF de grandes incendios forestales",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/egif_parts.csv",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/322b9053d3f878ea50fbbbc62335f82854f1260d/rdata/egif_parts.csv",
       "encodingFormat": "text/csv",
-      "contentSize": "182758 bytes",
-      "sha256": "8475817e549ef23d3811f02b199310f68f1483eb3e237800df83b68cb82af6f2",
+      "contentSize": "184054 bytes",
+      "sha256": "17068ca17d5f5d6faf98c1e7f1273b85f73e11ef32de306228e2318915f62f23",
       "dateModified": "2026-11-03"
     },
     {
@@ -159,10 +159,10 @@
       ],
       "@id": "egif-parts-csv-json",
       "name": "Partes EGIF de grandes incendios forestales (JSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/egif_parts.json",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/322b9053d3f878ea50fbbbc62335f82854f1260d/rdata/egif_parts.json",
       "encodingFormat": "application/json",
-      "contentSize": "553309 bytes",
-      "sha256": "02ad3e81f57f03ecf61ec93fc4dfdecd8750d0b87097f08dd12602a2b833e406",
+      "contentSize": "564087 bytes",
+      "sha256": "94c40bdfe59275a07524b901872e7532000dfbea5008fdb6fb12c95d3d39afa3",
       "dateModified": "2026-11-03"
     },
     {
@@ -172,10 +172,10 @@
       ],
       "@id": "egif-parts-csv-geojson",
       "name": "Partes EGIF de grandes incendios forestales (GeoJSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/egif_parts.geojson",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/322b9053d3f878ea50fbbbc62335f82854f1260d/rdata/egif_parts.geojson",
       "encodingFormat": "application/geo+json",
-      "contentSize": "678109 bytes",
-      "sha256": "e62235d4a538ad624807e093505ea4860e9e8d5e7dc62c92f9dfc31ccbdfb31e",
+      "contentSize": "690203 bytes",
+      "sha256": "b9646a72122046142997dcd922c172c928a70a104a29ab62654b39c5be5c4e3f",
       "dateModified": "2026-11-03"
     },
     {
@@ -185,7 +185,7 @@
       ],
       "@id": "gif-csv",
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/gif_d2010.csv",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/322b9053d3f878ea50fbbbc62335f82854f1260d/rdata/gif_d2010.csv",
       "encodingFormat": "text/csv",
       "contentSize": "127390 bytes",
       "sha256": "58ea27ca24beeb266191923d1817e8a77ecc5cdc1ce577760c668c83f99805ec",
@@ -198,7 +198,7 @@
       ],
       "@id": "gif-csv-json",
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (JSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/gif_d2010.json",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/322b9053d3f878ea50fbbbc62335f82854f1260d/rdata/gif_d2010.json",
       "encodingFormat": "application/json",
       "contentSize": "327088 bytes",
       "sha256": "3b574cf81d50573bf4025377e0c8c65fae79cdb5248bedea68655d6da216d23a",
@@ -211,7 +211,7 @@
       ],
       "@id": "gif-csv-geojson",
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (GeoJSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/gif_d2010.geojson",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/322b9053d3f878ea50fbbbc62335f82854f1260d/rdata/gif_d2010.geojson",
       "encodingFormat": "application/geo+json",
       "contentSize": "470971 bytes",
       "sha256": "1be051c0272e3a7c4dcc22affa08a4fa52895f04b647a286ab1676eb4c793fa3",
@@ -226,7 +226,7 @@
     "inLanguage": "es"
   },
   "version": "2.0.0-dev",
-  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio 040a637f37a732b765685b110a48b1700f7331be; sin DOI de versión.",
+  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio 322b9053d3f878ea50fbbbc62335f82854f1260d; sin DOI de versión.",
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",
@@ -989,7 +989,7 @@
           "@type": "cr:Field",
           "@id": "parts/geo_codmun",
           "name": "geo_codmun",
-          "description": "Código municipal obtenido por intersección del punto EGIF con límites GISCO 2024. No sustituye el código declarado ni describe todos los municipios afectados.",
+          "description": "Código municipal obtenido por intersección del punto EGIF con límites IGN SIANE 2024 (resolución 3). No sustituye el código declarado ni describe todos los municipios afectados.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -1002,9 +1002,24 @@
         },
         {
           "@type": "cr:Field",
+          "@id": "parts/geo_boundary_code",
+          "name": "geo_boundary_code",
+          "description": "Código de la unidad territorial SIANE que contiene el punto. Puede identificar un territorio no municipal; solo geo_codmun identifica municipios. Vacío si no hay un cruce inequívoco.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geo_boundary_code"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
           "@id": "parts/geo_municipality",
           "name": "geo_municipality",
-          "description": "Municipio obtenido del cruce espacial con límites GISCO 2024, que pueden diferir de los límites del año del incendio.",
+          "description": "Municipio obtenido del cruce espacial con límites IGN SIANE 2024 (resolución 3), que pueden diferir de los límites del año del incendio.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -1019,7 +1034,7 @@
           "@type": "cr:Field",
           "@id": "parts/municipality_check",
           "name": "municipality_check",
-          "description": "Resultado del cruce espacial: coincidencia, discrepancia, código declarado no disponible, fuera de límites, múltiples límites o no comprobado.",
+          "description": "Resultado del cruce espacial con IGN SIANE: coincidencia, discrepancia, código declarado no disponible, territorio no municipal, fuera de límites, múltiples límites o no comprobado.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
