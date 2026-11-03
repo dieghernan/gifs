@@ -57,7 +57,11 @@ publisher:
 navbar:
   expand: never
   brand:
-    title: '<i class="fa-solid fa-fire" aria-hidden="true"></i><span class="sr-only">Inicio: grandes incendios forestales</span>'
+    title: '<i class="fas fa-fire mr-1" aria-hidden="true"></i> GIFs'
+  nav:
+  - title: '<i class="fab fa-github mr-1" aria-hidden="true"></i> GitHub'
+    url: https://github.com/dieghernan/gifs
+
 footer:
   links:
   - label: Stack Overflow
