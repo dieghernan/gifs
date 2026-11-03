@@ -1,224 +1,183 @@
-# Metodología de recopilación y validación
+# Metodología de recopilación y conciliación
 
-Fecha de revisión: **3 de noviembre de 2026**. Este documento describe la
-versión revisada de los datos y los controles de publicación de esta
-actualización.
+Versión en desarrollo de la migración a EGIF. Fuentes descargadas el
+3 de noviembre de 2026. La metodología anterior se conserva en
+[data-raw/legacy/METODOLOGIA.md](data-raw/legacy/METODOLOGIA.md).
 
-## Alcance y unidad de observación
+## Fuentes y prioridad
 
-El conjunto reúne grandes incendios forestales (GIF) en España desde 2010.
-Se incluyen incendios con al menos 500 hectáreas de superficie forestal
-quemada. Cada fila representa un incendio, incluso cuando afecta a varios
-municipios o provincias. No se incluyen todos los incendios forestales ni
-se ofrece un seguimiento en tiempo real.
+Se conserva la base anterior de 449 incendios como referencia inmutable,
+incluidas las fechas de 2012 ya recuperadas y las decisiones territoriales
+documentadas. El Excel original queda archivado y deja de ser el maestro.
 
-Los archivos [CSV](rdata/gif_d2010.csv) y [Excel](rdata/gif_d2010.xlsx)
-contienen los mismos siete campos: `prov_name`, `cpro`, `munic_name`, `cmun`,
-`codmun`, `date` y `area_forestal_ha`. La fecha representa el inicio del
-incendio, con la excepción convencional de 2012 explicada más adelante.
-La superficie se expresa en hectáreas forestales, no en superficie total
-afectada cuando esta incluye terrenos no forestales.
+La fuente principal es [EGIF](https://servicio.mapa.gob.es/incendios/Search/Publico).
+Se importan las 14 exportaciones completas de 2010–2023, con
+149.290 partes en total. No se interpreta «Cerrado Revisión» como
+prueba de cobertura anual completa. Se conserva literalmente el estado del
+parte y se documentan recuentos por año y provincia.
 
-## Fuentes y criterios de prioridad
+Los registros anteriores sin correspondencia conservan su
+[informe o avance de origen](data-raw/legacy/sources.csv). La ausencia en
+una exportación no basta para excluir un incendio. En 2023 no aparecen
+registros de Barcelona, Girona, Lleida, Tarragona, Navarra, Las Palmas ni
+Santa Cruz de Tenerife. La ausencia de filas por provincia no prueba por sí
+sola que no hubiera incendios.
 
-La fuente principal es el Ministerio para la Transición Ecológica y el Reto
-Demográfico (MITECO), mediante sus
-[estadísticas definitivas](https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-datos.html)
-y [avances informativos](https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-avances.html).
-Para esta revisión se utilizaron estadísticas definitivas de 2010–2021 y
-avances provisionales de 2022–2026. La clasificación corresponde a las
-fuentes consultadas en esta revisión; debe comprobarse de nuevo al actualizar
-el conjunto. Los siete campos de datos no incluyen una columna de estado.
+## Unidades e identificadores
 
-Se prioriza el listado definitivo sobre el avance del mismo año. Un cambio
-de nombre, origen o ámbito territorial requiere comprobar que se trata del
-mismo incendio antes de sustituir el registro. No se emparejan incendios
-únicamente por tener superficies parecidas ni por ser las únicas filas
-sin correspondencia.
+- `egif_part_id` identifica una fila de EGIF y se conserva como texto.
+- `fire_id` identifica un incendio del registro propio. Es estable y no se
+  renumera al ordenar, cambiar superficies o añadir datos.
+- `data-raw/fire-registry.csv` enlaza ambos niveles y conserva la
+  correspondencia con cada fila de la base anterior.
+- Un incendio puede tener varios partes provinciales. Las agrupaciones
+  son explícitas; no se deducen únicamente de superficies similares.
 
-Las fuentes complementarias sirven para resolver identidades, topónimos y
-afecciones territoriales. No sustituyen la superficie forestal del MITECO
-por estimaciones de prensa, superficies municipales o estimaciones de
-satélite. Los nombres de archivo que contienen «def» no bastan para decidir
-la prioridad: se contrasta el contenido con el listado definitivo actual.
+El producto de partes contiene 329 filas. El umbral de 500 ha
+se aplica después de agrupar los partes vinculados. Se leen también los
+partes menores de 500 ha, de modo que pueden incorporarse a un GIF si
+existe una agrupación documentada. Los partes sin asignar que superan el
+umbral se conservan como partes, sin inventar un identificador de incendio.
+La selección no garantiza que se hayan descubierto todas las agrupaciones
+posibles de partes menores de 500 ha.
 
-### Recopilación y extracción
+La vista de incendios contiene 455 registros. Conserva
+9 correspondencias anteriores pendientes y no suma automáticamente
+los 8 partes seleccionados sin asignar. Por ello, sus agregados
+describen la vista conciliada y no un recuento nacional definitivo.
+Puntagorda y Arafo (2023) se conservan con el avance oficial y el estado
+`fallback_no_egif_coverage`: la provincia 38 no contiene partes en esa
+exportación. Se distinguen de las identidades pendientes. El generador
+exige revisar este estado si una nueva exportación incorpora partes
+provinciales.
 
-1. Se localizan los informes anuales desde las páginas oficiales y se
-   conservan sus enlaces, año y carácter definitivo o provisional.
-2. Se extraen las tablas individuales de GIF de los PDF. Cuando el texto
-   no permite leer la tabla, se utiliza OCR y comprobación visual; fue
-   necesario para la tabla de 2010. Se revisan separadores decimales,
-   separadores de millares y filas partidas entre páginas.
-3. Para 2019 se contrasta la tabla definitiva de Power BI mediante la
-   captura aportada por el mantenedor. El PDF consultado no mostraba el
-   listado individual. La transcripción de las 15 filas suma 30.789,09 ha,
-   igual al total visible. No se presenta como una descarga automatizada
-   de Power BI.
-4. Para 2026 se contrasta el listado estructurado publicado en la
-   [estimación provisional del MITECO](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html).
-   Es una fuente mutable. El último incendio incluido en el archivo tiene
-   fecha 26/09/2026; esto no equivale a una cobertura anual completa.
-5. Se cruzan los registros por año, fecha y municipio, con revisión de las
-   excepciones. Se comparan las superficies con aritmética decimal y se
-   conservan los valores anteriores en la auditoría de trabajo.
+## Conciliación y cambios
 
-## Tratamiento de los registros
+Los enlaces revisados se basan en fecha, provincia y municipio, variantes
+documentadas de nombres y decisiones territoriales de la base anterior.
+Las asociaciones históricas de Lobios/Portugal, Fonfría/Portugal y
+As Neves/Portugal se conservan como inferencias identificadas.
 
-Los nombres de municipio y provincia son la referencia para comprobar los
-códigos. Se corrigen erratas y se normalizan los textos en español,
-respetando los nombres propios y sus tildes. Las descripciones territoriales
-pueden conservar varios municipios o provincias indicados por el MITECO.
+La revisión documental de 2016–2017 enlaza Olmedo de Camaces con el parte
+de Sancti-Spíritus, Puente del Congosto con Medinilla y Palacios del Sil
+con Páramo del Sil. Los informes definitivos y EGIF coinciden en municipio,
+fecha y superficie forestal; las denominaciones anteriores procedían de
+los avances. Se conservan los identificadores de incendio y se actualiza
+el municipio de referencia mediante `reference_location=egif_origin` en
+el registro. Las fuentes y páginas constan en
+`data-raw/reconciliation/2016-2017.json`. Esta decisión no añade ni elimina
+incendios ni altera sus superficies.
 
-Los códigos se contrastan con la
-[codificación municipal del INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990).
-`cpro` corresponde a dos dígitos, `cmun` a tres y `codmun` a su concatenación
-de cinco dígitos. Los archivos actuales pueden representarlos numéricamente,
-sin ceros iniciales; al compararlos o reutilizarlos deben reconstruirse esas
-anchuras. La coherencia aritmética del código no demuestra por sí sola que
-el municipio sea correcto.
+La revisión de 2022 enlaza Legarda/Guirguillano, Arguedas/Valtierra,
+Gallipienzo/San Martín de Unx y Castejón de Tornos con los partes
+`2022310181`, `2022310292`, `2022310162` y `2022440038`. La documentación
+del Gobierno de Navarra, del Parlamento, de Protección Civil y del BOA
+permite relacionar las denominaciones. Se adoptan fecha y superficie EGIF,
+conservando los identificadores y las referencias territoriales anteriores.
+Las discrepancias de fecha entre las fuentes quedan en las notas. El parte
+`2022310161` de Valtierra del 17 de junio sigue sin asignar: no se suma
+al de Arguedas del día 18 sin evidencia de que correspondan al mismo fuego.
+Las decisiones constan en `data-raw/reconciliation/2022-2023.json`.
 
-Cuando hay varios municipios, los códigos corresponden al primero de la
-descripción y a su provincia. Se conserva una sola fila y la superficie del
-incendio completo: no se reparte entre municipios ni se suma a la cifra del
-avance que sustituye. Los cambios de orden territorial se trasladan también
-a los códigos.
+La Junta de Andalucía trató Bonares-Almonte (25–28 de julio de 2022)
+como un incendio operativo. La relación entre esa agrupación y los dos
+partes EGIF requiere revisión antes de conciliar la entrada provisional
+de Almonte. El registro incorporado de Bonares queda identificado como
+posible agrupación pendiente; no prueba la existencia de un incendio
+independiente.
 
-Las superficies y las fechas simples se actualizan con el definitivo cuando
-la identidad del incendio está establecida. Las incorporaciones,
-exclusiones y asociaciones dudosas de esta auditoría se resolvieron mediante
-decisiones expresas del mantenedor. CSV y Excel se ordenan por fecha
-ascendente y, para una misma fecha, por superficie descendente.
+En Hermisende y Oímbra, las coordenadas ETRS89 caen en los municipios
+españoles de referencia y coinciden en fecha con la base anterior, aunque
+EGIF declara origen Portugal. Se marca la correspondencia como espacial
+y se conserva el origen declarado.
 
-### Excepciones y decisiones relevantes
+Hellín/Moratalla (2012) utiliza los partes `2012020224` y `2012300087`;
+el informe confirma un solo incendio. Andilla (2012) utiliza
+`2012460247` y `2012120050`; coinciden detección y extinción y su suma
+reproduce el total del informe. Ontinyent (2010) utiliza `2010460119` y
+`2010030107`, con detección y extinción coincidentes y superficie conjunta
+coincidente con la base anterior. No existe una clave EGIF común en estos
+extractos; las asociaciones quedan registradas para revisión.
 
-| Caso | Tratamiento aplicado | Limitación o fundamento |
-| --- | --- | --- |
-| 2012: fechas | Se conserva `2012-12-31` en los 41 incendios. | Es una fecha convencional para identificar el año; el informe utilizado no aporta fechas individuales. No permite análisis de estacionalidad. |
-| 2012: Hellín / Moratalla | Una fila, Albacete / Murcia, código 02037 y 6.549,47 ha. | Se unifican las dos entradas provinciales del mismo incendio; se conserva su superficie conjunta. |
-| 2013: Fonfría | Se conserva Fonfría, Zamora, 49071, 01/08/2013 y 837,56 ha. | El MITECO indica origen en Portugal; el mantenedor confirma Fonfría como municipio español afectado. |
-| 2016: Bolbaite | Sustituye a Chella con código 46073 y 1.564,32 ha. | Se adopta el listado definitivo. |
-| 2016: San Justo / Encinedo | Una fila: San Justo (San Ciprián) / Encinedo (Santa Eulalia de Cabrera), Zamora / León, 49189, 11/09/2016 y 1.197,52 ha. | La información contemporánea conecta ambos ámbitos; se sustituye la cifra anterior, sin sumarla. |
-| 2017: exclusiones | Se retiran Ibias, 20/04, 647,79 ha; Allande, 14/10, 661,06 ha; Ponteareas, 15/10, 645,18 ha. | No figuran como registros independientes en el listado definitivo. Se conservan las otras entradas de Allande y Ponteareas. |
-| 2017: As Neves / Portugal | Se conserva As Neves, Pontevedra, 36034, 15/10/2017, con 3.084,52 ha. | Asociación aprobada con la entrada Portugal del definitivo. El origen portugués está documentado, pero no se obtuvo un identificador EGIF común: la correspondencia sigue siendo una inferencia. |
-| 2017: Vega de Pas | Se incorpora Cantabria, 39097, 10/03/2017 y 675 ha. | Registro del definitivo ausente en el archivo anterior. |
-| 2019: definitivo | Se actualizan nueve superficies y la fecha de Salas a 02/03; se incorpora Encinedo, León, 24067, 06/01 y 539,54 ha. | Los 15 registros suman el total visible en Power BI. |
-| 2020: Villalcampo y Torvizcón | Se excluye Villalcampo, 19/10, 664,29 ha; se incorpora Torvizcón, Granada, 18179, 28/12 y 617,51 ha. | Se sigue el listado definitivo. |
-| 2021: Santa Coloma / Bellprat | Santa Coloma de Queralt / Bellprat, Tarragona / Barcelona, 43139, 24/07/2021 y 1.312,79 ha. | Se adopta el orden de origen y la fecha del definitivo, conservando ambos municipios. |
-| 2021: Genalguacil | Sustituye a Jubrique con código 29057, 08/09/2021 y 8.651,26 ha. | Se adopta el listado definitivo. |
+EGIF sustituye las superficies de los registros vinculados, conservando
+los valores anteriores y sus diferencias en la auditoría. Esto incluye
+las revisiones de Chulilla y Llocnou de Sant Jeroni en 2012 y las revisiones
+de los avances de 2022–2023. Se incorporan los partes de Cocentaina (2012),
+Ibias y Allande (2017), Bonares, Torres de Albánchez y Jódar (2022), sin
+correspondencia en la selección anterior. Ibias y Allande se habían
+excluido al seguir el informe definitivo; reaparecen al adoptar EGIF como
+fuente principal. Su agrupación puede revisarse si aparece nueva evidencia.
 
-Para San Justo / Encinedo se consultó la
-[información contemporánea de ICAL publicada en Astorga Digital](https://www.astorgadigital.com/intervienen-incendio-santa-eulalia-crabrera/)
-y una [ponencia del CIFP de Almázcara](https://pfcyl.es/sites/default/files/eventos/adjuntos/coco-cipalmazcara.pdf).
-Para el origen portugués de As Neves se consultó el
-[Diario de Sesiones del Parlamento de Galicia del 17/10/2017](https://www.parlamentodegalicia.es/sitios/web/BibliotecaDiarioSesions/D100044.pdf).
-Estas referencias sustentan el contexto territorial, no una nueva medición
-de superficie.
+Los candidatos por proximidad de fecha y provincia se publican como
+candidatos, nunca como enlaces confirmados. En Tineo, por ejemplo, no se
+asigna un mismo parte a dos registros anteriores.
 
-## Resultados agregados y fuentes anuales
+## Coordenadas y municipios
 
-El archivo revisado contiene **449 incendios** y suma
-**1.311.239,9728 ha** de superficie forestal quemada. Se conserva la precisión
-de la fuente, incluida la de los registros provisionales de 2026. Las fechas
-del primer y último registro son 27/02/2010 y 26/09/2026.
+Los productos incluyen `longitude` y `latitude` en **EPSG:4326**, en grados
+decimales, sin desplazar Canarias y sin intercambiar los ejes. Se conserva
+la coordenada original con su huso y datum. La transformación utiliza sf y
+PROJ: ETRS89/UTM, REGCAN95/UTM, WGS84/UTM o ED50/UTM cuando el datum está
+declarado. Nunca se supone ED50 o ETRS89 cuando falta.
 
-Los totales siguientes se calculan sobre las filas del archivo; no son la
-superficie quemada por todos los incendios de España. Las sumas entre años
-pueden incluir terrenos quemados más de una vez y no representan una huella
-territorial única. Las cifras definitivas y provisionales se distinguen por
-año en la tabla.
+De los 329 partes seleccionados, 202 tienen coordenadas interpretables,
+125 carecen de datum y dos carecen de coordenadas. En estos últimos las
+columnas geográficas quedan vacías. Vacío significa desconocido, no cero.
 
-| Año | Incendios | Superficie forestal (ha) | Fuente utilizada |
-| --- | ---: | ---: | --- |
-| 2010 | 11 | 12.538,79 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/publicacion2010_def_tcm30-132568.pdf) |
-| 2011 | 24 | 26.034,47 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/losincendiosforestalesenespanaano2011_tcm30-132591.pdf) |
-| 2012 | 41 | 135.580,04 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2012_tcm30-132581.pdf) |
-| 2013 | 17 | 19.690,12 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2013_tcm30-132601.pdf) |
-| 2014 | 7 | 9.805,83 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/incendios_forestales_en_espana_2014_tcm30-425396.pdf) |
-| 2015 | 16 | 39.790,32 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/iiff_2015_def_tcm30-442974.pdf) |
-| 2016 | 22 | 33.323,70 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2016.pdf) |
-| 2017 | 54 | 99.666,48 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf) |
-| 2018 | 3 | 4.924,57 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2018.pdf) |
-| 2019 | 15 | 30.789,09 | [Definitiva, Power BI](https://app.powerbi.com/view?r=eyJrIjoiYzE0MzhkZGItYzZlOC00NGU1LTlkNWUtZjdkZjY1NTM1MWFhIiwidCI6ImRlODFhNTc4LTgxYWEtNGQzNS1hNWQ0LWZlZWQ4MTZiMTY1NCIsImMiOjl9) |
-| 2020 | 19 | 34.186,78 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2020.pdf) |
-| 2021 | 18 | 47.230,07 | [Definitiva](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2021.pdf) |
-| 2022 | 57 | 216.441,75 | [Avance provisional](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf) |
-| 2023 | 19 | 52.823,97 | [Avance provisional](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf) |
-| 2024 | 16 | 16.564,03 | [Avance provisional](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf) |
-| 2025 | 63 | 310.108,07 | [Avance provisional](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf) |
-| 2026 | 47 | 221.741,89 | [Avance provisional](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html) |
-| **Total** | **449** | **1.311.239,97** | Cifras redondeadas a dos decimales para esta tabla. |
+Los GeoJSON conservan una Feature por registro y todas sus propiedades,
+con identificadores de parte o incendio como `id`. Las geometrías son Point
+en orden longitud/latitud, sin desplazar Canarias. Si faltan coordenadas,
+`geometry` es nulo. No se incluyen perímetros ni se eliminan esos registros.
 
-El [PDF de 2019](https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2019.pdf)
-se conserva como referencia anual, pero el contraste individual se realizó
-con el Power BI enlazado en la tabla. El avance de 2019 sirvió como contraste
-inicial y fue sustituido por ese listado definitivo.
+La vista de incendios toma el punto del primer parte vinculado con
+coordenadas interpretables y lo identifica en `location_part_id`; no es
+un centroide ni representa el perímetro completo. Para los demás se utiliza
+una capital municipal IGN, con `location_method=municipal_seat`. Las
+coordenadas de respaldo no se presentan como coordenadas de inicio.
 
-## Validaciones realizadas
+Los puntos se cruzan con límites municipales IGN SIANE 2024 (resolución 3) mediante
+`mapSpain::esp_get_munic_siane(year = 2024, resolution = 3, moveCAN = FALSE)`. Se conservan por separado
+el municipio declarado y `geo_codmun`/`geo_municipality`. Una discrepancia
+no provoca una corrección automática: puede reflejar error, redondeo,
+origen exterior, proximidad a un límite o cambios de límites municipales.
+No se asigna el municipio más cercano a puntos fuera de los límites.
+Los territorios no municipales se conservan en `geo_boundary_code`, con
+`municipality_check=non_municipal_territory` y `geo_codmun` vacío.
+La caché registra explícitamente fuente, año y resolución; el generador
+rechaza una fuente distinta de IGN SIANE 2024, resolución 3.
 
-- **Integridad de formatos:** 449 filas en CSV y Excel, con igualdad de
-  valores en las siete columnas tras leer ambos archivos de forma
-  independiente con **readr** y **openxlsx**.
-- **Orden:** fecha ascendente y superficie descendente para los empates,
-  verificado sobre el archivo final.
-- **Duplicados exactos:** no se encontraron filas idénticas. Esta prueba no
-  demuestra por sí sola que no existan duplicados de un incendio con
-  descripciones distintas; esos casos requieren el contraste documental.
-- **Códigos territoriales:** comprobación de nombres y códigos, corrección
-  de incoherencias y verificación de la composición `cpro` + `cmun` =
-  `codmun` tras completar los ceros iniciales.
-- **Contraste documental:** revisión anual de fechas, municipios y
-  superficies, con las decisiones territoriales descritas arriba. Las
-  fechas de 2012 se excluyen de la afirmación de coincidencia de fechas
-  reales.
-- **Superficies:** el CSV de comparación de trabajo contiene 449 filas y no
-  deja diferencias de superficie respecto de las fuentes seleccionadas.
-  La comprobación exacta detectó y corrigió tres diferencias residuales de
-  0,01 ha: Esgos (2017), Robledo de Chavela y Vilar de Barrio (2020).
-- **Control de 2019:** 15 registros y 30.789,09 ha, coincidentes con la tabla
-  definitiva visible en Power BI.
-- **Control agregado:** recuentos y sumas anuales calculados directamente
-  desde el CSV y reconciliados con el total del archivo.
+## Reproducción y comprobaciones
 
-La carpeta local `gifs-miteco-audit/` conserva informes, extracciones,
-captura de Power BI, valores anteriores, decisiones y el archivo
-`comparacion-registros.csv`. Está excluida de Git. Este documento conserva
-en el repositorio la síntesis metodológica, las decisiones relevantes y
-los enlaces públicos, sin depender de esa carpeta para su lectura.
+1. Los ZIP originales se conservan en `data-raw/egif/` con SHA-256,
+   fecha de descarga, recuentos y estado observado. No se dispone de
+   capturas de los filtros; el año se verifica en cada fila de `Campania`.
+2. `scripts/egif.py` lee los XLSX sin Excel ni dependencias Python externas.
+3. `scripts/build_dataset.py` valida identificadores, años, duplicados,
+   superficies y relaciones; utiliza aritmética decimal exacta.
+4. `scripts/geolocate_parts.R` genera la transformación y el contraste
+   municipal; se valida que sus entradas sigan coincidiendo con los partes.
+5. `py scripts/build_dataset.py --check` comprueba todos los productos
+   frente a las fuentes versionadas. Las pruebas cubren agrupaciones,
+   umbrales, duplicados, respaldo y coordenadas desconocidas.
 
-## Limitaciones y mantenimiento
+El diccionario de campos está en `_data/egif_part_fields.json` y
+`_data/croissant_fields.json`. El JSON-LD principal es una colección
+`DataCatalog` con dos `Dataset`, uno por tarjeta y unidad de observación.
+Cada conjunto tiene su descriptor Croissant, con claves, campos opcionales
+y huellas de sus descargas CSV, JSON y GeoJSON. No se atribuye el DOI de la
+versión archivada 1.0.0 a estos datos en desarrollo.
 
-No quedan decisiones abiertas por año en esta revisión. Esto no convierte
-los avances en estadísticas definitivas ni elimina las incertidumbres
-documentadas de Fonfría y As Neves. Las fuentes provisionales deben revisarse
-cuando el MITECO publique nuevas versiones.
+## Auditoría y limitaciones
 
-El mapa generado con **mapSpain** utiliza capitales municipales como
-ubicaciones de referencia. Los puntos no representan el lugar exacto de
-inicio ni el perímetro del incendio. Un registro intermunicipal se sitúa
-mediante el primer municipio; no debe interpretarse como una distribución
-espacial de toda la superficie afectada.
+- [Diferencias por incendio](rdata/audit/egif-comparison.csv).
+- [Partes sin asignar](rdata/audit/egif-unassigned-parts.csv).
+- [Candidatos sin confirmar](rdata/audit/egif-candidates.csv).
+- [Cobertura observada por provincia](rdata/audit/egif-coverage.csv).
+- [Recuentos y agregados](rdata/audit/egif-summary.json).
 
-Los mapas y las imágenes para compartir se regeneran desde los datos
-revisados. El JSON-LD de Dataset y el descriptor Croissant comparten
-descripción, fechas, fuentes y condiciones de reutilización. Croissant
-apunta a una revisión Git inmutable del CSV y declara su tamaño y SHA-256.
-La compilación de Jekyll, el validador oficial de Croissant y las pruebas
-de integración comprueban los productos antes de publicar. La comprobación
-del despliegue se realiza después del envío a GitHub.
-
-En futuras actualizaciones se debe registrar la fecha de consulta, la
-versión de la fuente y los cambios aplicados; repetir las comprobaciones
-de identidad, formato, códigos, orden y agregados; actualizar este
-documento y regenerar los productos derivados. Una URL oficial mutable
-no permite reconstruir por sí sola una versión histórica: conviene
-conservar una copia de trabajo de la fuente utilizada.
-
-## Atribución y reutilización
-
-Origen de los datos: MITECO. Recopilación y adaptación: Diego HH.
-La reutilización debe respetar el
-[aviso legal del MITECO](https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html).
-La licencia MIT del repositorio corresponde al código y la documentación;
-no sustituye las condiciones de la fuente de datos. El proyecto es
-independiente y no implica participación ni respaldo del Ministerio.
+No se suman las superficies de los productos de partes e incendios.
+Las superficies acumuladas pueden incluir terrenos quemados varias veces
+y no representan una huella territorial única. Las fuentes de respaldo
+mantienen sus limitaciones y carácter provisional; no se completan años
+ni se eliminan registros por ausencia en EGIF. Los casos pendientes quedan
+explícitos hasta disponer de evidencia suficiente.

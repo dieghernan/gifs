@@ -1,4 +1,28 @@
-# Preparación de la primera release
+# Publicaciones
+
+## Versión 2.0.0
+
+Publicación de la migración a EGIF el 3 de noviembre de 2026. Contiene
+329 partes seleccionados de 2010–2023 y una vista conciliada de 455
+registros de incendios de 2010–2026, disponibles como CSV, JSON y GeoJSON.
+La superficie de la vista es de 1.311.632,4776 ha; no es un recuento
+nacional definitivo. Quedan nueve identidades anteriores y ocho partes
+sin correspondencia confirmada, documentados en
+`data-raw/reconciliation/OPEN-CASES.md`.
+
+`CITATION.cff` es la fuente de la cita, versión, autoría y condiciones de
+reutilización. No se utiliza `.zenodo.json`. La licencia personalizada de
+Zenodo debe distinguir datos MITECO, código y documentación MIT,
+cartografía IGN CC BY 4.0 y avisos de terceros. El campo `license-url`
+del CFF no garantiza que la integración de GitHub conserve esa distinción:
+comprobar y corregir la ficha archivada antes de cerrar la publicación.
+
+El DOI de versión se incorporará al CFF después de que Zenodo archive la
+release, sin mover la etiqueta. El catálogo JSON-LD enlaza el DOI general;
+cuando exista el DOI de versión identificará la colección. Los dos
+conjuntos hijos enlazan el catálogo y no se apropian de su DOI.
+
+## Archivo de la primera release
 
 Versión: `1.0.0`; etiqueta: `v1.0.0`. Fecha: 3 de noviembre de 2026.
 Release publicada: [v1.0.0](https://github.com/dieghernan/gifs/releases/tag/v1.0.0).

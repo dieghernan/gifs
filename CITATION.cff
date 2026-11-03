@@ -1,3 +1,4 @@
+# Release metadata; the version DOI is added after Zenodo archives the tag.
 cff-version: 1.2.0
 message: >-
   If you use this dataset, please cite it using the preferred-citation
@@ -6,22 +7,24 @@ message: >-
 type: dataset
 title: Grandes incendios forestales en España
 abstract: >-
-  Dataset of 449 large forest fires in Spain with at least 500 hectares of
-  forest area burned, dated between 27 February 2010 and 26 September 2026.
-  Compiled and adapted from MITECO final statistics for 2010–2021 and
-  provisional reports for 2022–2026. Each record includes municipality and
-  province names, INE codes, date and forest area burned in hectares.
-  Dates in 2012 identify the year only. The dataset does not provide complete
-  annual coverage or real-time monitoring. Code and documentation use the MIT
-  license; data reuse follows the MITECO legal notice.
+  Collection of 329 selected EGIF forest-fire reports from 2010–2023 and
+  a reconciled view of 455 fire records from 2010–2026. EGIF takes priority
+  where a documented correspondence exists; official MITECO reports and
+  provisional bulletins provide fallback data. Available as CSV, JSON and
+  GeoJSON with stable fire and report identifiers, forest areas, provenance,
+  notes and EPSG:4326 coordinates where interpretable. Nine legacy identities
+  and eight selected reports remain unmatched. The collection does not provide
+  complete annual coverage or a definitive national fire count. Data reuse
+  follows the MITECO legal notice. Code and documentation use the MIT license.
+  Derived municipal geography: CartoBase ANE 2006–2024, CC BY 4.0, ign.es.
+  Bundled third-party assets retain their own notices.
 
 authors:
 - family-names: Hernangómez
   given-names: Diego
   orcid: https://orcid.org/0000-0001-8457-4658
-version: 1.0.0
+version: 2.0.0
 date-released: 2026-11-03
-doi: 10.5281/zenodo.23929997
 license-url: https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html
 preferred-citation:
   type: data
@@ -30,9 +33,8 @@ preferred-citation:
   - family-names: Hernangómez
     given-names: Diego
     orcid: https://orcid.org/0000-0001-8457-4658
-  version: 1.0.0
+  version: 2.0.0
   year: '2026'
-  doi: 10.5281/zenodo.23929997
   url: https://dieghernan.github.io/gifs/
   license-url: https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html
 repository-code: https://github.com/dieghernan/gifs
@@ -43,6 +45,8 @@ keywords:
 - MITECO
 - forest area burned
 - wildfires
+- EGIF
+- GeoJSON
 references:
 - type: data
   title: Estadísticas de incendios forestales
