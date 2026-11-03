@@ -24,12 +24,13 @@ def render(width, height, filename):
     draw = ImageDraw.Draw(canvas)
 
     def project(lon, lat):
-        inset_shift = 160 if lat < 36.4 and lon < -8 else 0
-        return ((565 + (lon + 10) * 48 + inset_shift) * sx,
+        return ((565 + (lon + 10) * 48) * sx,
                 (95 + (44.5 - lat) * 52) * sy)
 
     regions = json.loads((ASSETS / "regions.geojson").read_text())
     for feature in regions["features"]:
+        if feature["properties"]["codauto"] == "05":
+            continue
         geometry = feature["geometry"]
         polygons = ([geometry["coordinates"]] if geometry["type"] == "Polygon"
                     else geometry["coordinates"])
@@ -45,6 +46,8 @@ def render(width, height, filename):
     with (ROOT / "data-derived/fire-map-locations.csv").open(encoding="utf-8") as stream:
         locations = {row["fire_id"]: row for row in csv.DictReader(stream)}
     for row in records:
+        if row["cpro"] in {"35", "38"}:
+            continue
         if not row["longitude"] or not row["latitude"]:
             continue
         location = locations[row["fire_id"]]

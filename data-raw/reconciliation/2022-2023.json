@@ -1,0 +1,100 @@
+[
+  {
+    "fire_id": "GIF-7281e1aa82f057b7",
+    "legacy_row": 255,
+    "egif_part_ids": [
+      "2022310181"
+    ],
+    "decision": "confirmed_match",
+    "reference": "Legarda / Guirguillano",
+    "source_urls": [
+      "https://navarramasvoluntaria.navarra.es/es/noticias/el-sector-publico-y-seis-empresas-privadas-regeneran-el-monte-quemado-de-legarda-hace-tres-anos-con-un-proyecto-medioambiental-innovador",
+      "https://www.proteccioncivil.es/documents/20121/685150/INFORME%2BIIFF%2B2022-FINAL_DICIEMBRE.pdf/a9cf0986-be76-d244-283a-4d3295309fae?download=true&t=1686294608575&version=1.0"
+    ],
+    "source_locators": [
+      "Description of the June 2022 fire",
+      "Incendios con intervención UME"
+    ],
+    "reason": "El Gobierno de Navarra documenta el incendio del 18 de junio en Legarda y Guirguillano; Protección Civil enlaza ambas denominaciones. EGIF registra Legarda el 18 de junio. Se sustituyen la fecha y la superficie provisionales por las del parte.",
+    "reviewed_on": "2026-11-03"
+  },
+  {
+    "fire_id": "GIF-471ff1b8e4885ec3",
+    "legacy_row": 256,
+    "egif_part_ids": [
+      "2022310292"
+    ],
+    "decision": "confirmed_match",
+    "reference": "Arguedas / Valtierra",
+    "source_urls": [
+      "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/PRES10071.pdf",
+      "https://www.proteccioncivil.es/documents/20121/685150/INFORME%2BIIFF%2B2022-FINAL_DICIEMBRE.pdf/a9cf0986-be76-d244-283a-4d3295309fae?download=true&t=1686294608575&version=1.0"
+    ],
+    "source_locators": [
+      "PRES10071: PDF pp. 30–32",
+      "Incendios con intervención UME"
+    ],
+    "reason": "La comparecencia oficial documenta la evacuación de Arguedas y Valtierra por el incendio del 18 de junio; Protección Civil identifica el episodio como Arguedas/Valtierra. Se enlaza el parte de Arguedas del 18 de junio. No se suma el parte 2022310161 de Valtierra del 17 de junio: su relación no está acreditada.",
+    "reviewed_on": "2026-11-03"
+  },
+  {
+    "fire_id": "GIF-a1acba8f726b5191",
+    "legacy_row": 257,
+    "egif_part_ids": [
+      "2022310162"
+    ],
+    "decision": "confirmed_match",
+    "reference": "Gallipienzo / San Martín de Unx",
+    "source_urls": [
+      "https://parlamentodenavarra.es/sites/default/files/diarios-sesiones/PRES10071.pdf",
+      "https://www.proteccioncivil.es/documents/20121/685150/INFORME%2BIIFF%2B2022-FINAL_DICIEMBRE.pdf/a9cf0986-be76-d244-283a-4d3295309fae?download=true&t=1686294608575&version=1.0"
+    ],
+    "source_locators": [
+      "PRES10071: PDF pp. 30–32",
+      "Incendios con intervención UME"
+    ],
+    "reason": "La comparecencia oficial sitúa un foco en San Martín de Unx el 18 de junio; Protección Civil lo denomina Gallipienzo/San Martín de Unx. EGIF registra San Martín de Unx el 18 de junio. Las fuentes difieren en la fecha inicial; se adopta la fecha del parte EGIF y su superficie forestal.",
+    "reviewed_on": "2026-11-03"
+  },
+  {
+    "fire_id": "GIF-d3656cf67fe458ef",
+    "legacy_row": 258,
+    "egif_part_ids": [
+      "2022440038"
+    ],
+    "decision": "confirmed_match",
+    "reference": "Castejón de Tornos / Tornos",
+    "source_urls": [
+      "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?BASE=BOLE&CMD=VERDOC&DOCN=007927189&SEC=BUSQUEDA_AVANZADA&SEPARADOR="
+    ],
+    "source_locators": [
+      "Description of the June 2022 fire"
+    ],
+    "reason": "El BOA documenta el incendio del 20 de junio que afectó a Castejón de Tornos, Tornos, Báguena y Burbáguena. El único parte EGIF forestal de gran superficie en Teruel ese día registra Tornos y cuatro municipios afectados. Se conserva la denominación anterior como referencia y se adopta la superficie EGIF.",
+    "reviewed_on": "2026-11-03"
+  },
+  {
+    "fire_id": "GIF-34a3266664245183",
+    "legacy_row": 320,
+    "egif_part_ids": [],
+    "decision": "fallback_no_egif_coverage",
+    "source_urls": [
+      "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf"
+    ],
+    "reason": "Se conserva el avance oficial MITECO: la exportación EGIF de 2023 no contiene ningún parte de la provincia 38. Esta ausencia no implica ausencia de incendios. Revisar si una nueva instantánea incorpora cobertura provincial.",
+    "coverage_evidence": "rdata/audit/egif-coverage.csv: year=2023, cpro=38, parts=0",
+    "reviewed_on": "2026-11-03"
+  },
+  {
+    "fire_id": "GIF-1f4ae71b69e25dd5",
+    "legacy_row": 321,
+    "egif_part_ids": [],
+    "decision": "fallback_no_egif_coverage",
+    "source_urls": [
+      "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf"
+    ],
+    "reason": "Se conserva el avance oficial MITECO: la exportación EGIF de 2023 no contiene ningún parte de la provincia 38. Esta ausencia no implica ausencia de incendios. Revisar si una nueva instantánea incorpora cobertura provincial.",
+    "coverage_evidence": "rdata/audit/egif-coverage.csv: year=2023, cpro=38, parts=0",
+    "reviewed_on": "2026-11-03"
+  }
+]

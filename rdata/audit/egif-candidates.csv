@@ -1,17 +1,4 @@
 fire_id,legacy_date,legacy_municipality,egif_part_id,egif_date,egif_municipality,egif_area_ha,day_difference,evidence
-GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310161,2022-06-17,VALTIERRA,1785.4909,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310162,2022-06-18,SAN MARTÍN DE UNX,5227.1253,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310181,2022-06-18,LEGARDA,4281.3734,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310292,2022-06-18,ARGUEDAS,1765.1100,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-471ff1b8e4885ec3,2022-06-19,Arguedas/Valtierra,2022310161,2022-06-17,VALTIERRA,1785.4909,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-471ff1b8e4885ec3,2022-06-19,Arguedas/Valtierra,2022310162,2022-06-18,SAN MARTÍN DE UNX,5227.1253,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-471ff1b8e4885ec3,2022-06-19,Arguedas/Valtierra,2022310181,2022-06-18,LEGARDA,4281.3734,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-471ff1b8e4885ec3,2022-06-19,Arguedas/Valtierra,2022310292,2022-06-18,ARGUEDAS,1765.1100,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-a1acba8f726b5191,2022-06-20,Gallipienzo/San Martín de Unx,2022310161,2022-06-17,VALTIERRA,1785.4909,-3,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-a1acba8f726b5191,2022-06-20,Gallipienzo/San Martín de Unx,2022310162,2022-06-18,SAN MARTÍN DE UNX,5227.1253,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-a1acba8f726b5191,2022-06-20,Gallipienzo/San Martín de Unx,2022310181,2022-06-18,LEGARDA,4281.3734,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-a1acba8f726b5191,2022-06-20,Gallipienzo/San Martín de Unx,2022310292,2022-06-18,ARGUEDAS,1765.1100,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-d3656cf67fe458ef,2022-06-20,Castejón de Tornos,2022440038,2022-06-20,TORNOS,1380.9566,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
 GIF-fa623e8aec7151c1,2022-07-24,Quintanilla del Coco,2022090115,2022-07-24,TEJADA,1808.0400,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
 GIF-00f29a94a1ed52ad,2022-07-26,Almonte,2022210076,2022-07-25,ALMONTE,912.7900,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
 GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023330741,2023-03-29,PILOÑA,420.0800,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match

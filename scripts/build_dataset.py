@@ -177,6 +177,19 @@ def selected_parts(parts, minimum=Decimal(500)):
                   key=lambda row: (row["date"], row["egif_part_id"]))
 
 
+def validate_fallback_coverage(baseline, registry, coverage):
+    available = {(row["year"], row["cpro"]): int(row["parts"]) for row in coverage}
+    for entry in registry:
+        if entry["match_status"] != "fallback_no_egif_coverage":
+            continue
+        if not entry["legacy_row"] or entry["egif_part_ids"]:
+            raise ValueError("Coverage fallback requires a legacy record without linked parts")
+        old = baseline[int(entry["legacy_row"]) - 1]
+        key = (old["date"][:4], old["cpro"].zfill(2))
+        if available.get(key) != 0:
+            raise ValueError("Review coverage fallback: the export is absent or now contains provincial records")
+
+
 def build_fire_view(baseline, registry, parts, source_urls, centers=None):
     fires, audit = [], []
     covered = set()
@@ -285,6 +298,8 @@ def build(root=ROOT, prepare_locations=False):
             coverage.append({"year": str(year), "cpro": province, "parts": str(provinces[province]),
                              "coverage_status": "records_available_not_proof_of_completeness" if provinces[province] else "no_records_in_export"})
     registry = read_csv(raw / "fire-registry.csv")
+    baseline = read_csv(raw / "legacy/fires.csv")
+    validate_fallback_coverage(baseline, registry, coverage)
     link_parts(parts, registry)
     selected = selected_parts(parts)
     if prepare_locations:
@@ -327,6 +342,7 @@ def build(root=ROOT, prepare_locations=False):
                "unassigned_selected_parts": len(unassigned), "fire_view_records": len(fires),
                "fire_view_area_ha": str(sum(Decimal(row["area_forestal_ha"]) for row in fires)),
                "pending_legacy_matches": sum(row["match_status"] == "pending_egif_match" for row in registry),
+               "coverage_fallback_records": sum(row["match_status"] == "fallback_no_egif_coverage" for row in registry),
                "fire_view_note": "La vista conserva registros anteriores pendientes de conciliación; no se suman partes sin asignar a esos registros.",
                "years": [{"year": year, "fires": sum(row["date"].startswith(str(year)) for row in fires),
                           "area_ha": str(sum(Decimal(row["area_forestal_ha"]) for row in fires if row["date"].startswith(str(year))))}

@@ -17,10 +17,11 @@
   ],
   "source_parts": 149290,
   "selected_parts": 329,
-  "unassigned_selected_parts": 12,
+  "unassigned_selected_parts": 8,
   "fire_view_records": 455,
-  "fire_view_area_ha": "1315234.5723",
-  "pending_legacy_matches": 15,
+  "fire_view_area_ha": "1311632.4776",
+  "pending_legacy_matches": 9,
+  "coverage_fallback_records": 2,
   "fire_view_note": "La vista conserva registros anteriores pendientes de conciliación; no se suman partes sin asignar a esos registros.",
   "years": [
     {
@@ -86,7 +87,7 @@
     {
       "year": 2022,
       "fires": 60,
-      "area_ha": "216718.7128"
+      "area_ha": "213116.6181"
     },
     {
       "year": 2023,

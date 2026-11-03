@@ -42,9 +42,14 @@ La selección no garantiza que se hayan descubierto todas las agrupaciones
 posibles de partes menores de 500 ha.
 
 La vista de incendios contiene 455 registros. Conserva
-15 correspondencias anteriores pendientes y no suma automáticamente
-los 12 partes seleccionados sin asignar. Por ello, sus agregados
+9 correspondencias anteriores pendientes y no suma automáticamente
+los 8 partes seleccionados sin asignar. Por ello, sus agregados
 describen la vista conciliada y no un recuento nacional definitivo.
+Puntagorda y Arafo (2023) se conservan con el avance oficial y el estado
+`fallback_no_egif_coverage`: la provincia 38 no contiene partes en esa
+exportación. Se distinguen de las identidades pendientes. El generador
+exige revisar este estado si una nueva exportación incorpora partes
+provinciales.
 
 ## Conciliación y cambios
 
@@ -62,6 +67,24 @@ el municipio de referencia mediante `reference_location=egif_origin` en
 el registro. Las fuentes y páginas constan en
 `data-raw/reconciliation/2016-2017.json`. Esta decisión no añade ni elimina
 incendios ni altera sus superficies.
+
+La revisión de 2022 enlaza Legarda/Guirguillano, Arguedas/Valtierra,
+Gallipienzo/San Martín de Unx y Castejón de Tornos con los partes
+`2022310181`, `2022310292`, `2022310162` y `2022440038`. La documentación
+del Gobierno de Navarra, del Parlamento, de Protección Civil y del BOA
+permite relacionar las denominaciones. Se adoptan fecha y superficie EGIF,
+conservando los identificadores y las referencias territoriales anteriores.
+Las discrepancias de fecha entre las fuentes quedan en las notas. El parte
+`2022310161` de Valtierra del 17 de junio sigue sin asignar: no se suma
+al de Arguedas del día 18 sin evidencia de que correspondan al mismo fuego.
+Las decisiones constan en `data-raw/reconciliation/2022-2023.json`.
+
+La Junta de Andalucía trató Bonares-Almonte (25–28 de julio de 2022)
+como un incendio operativo. La relación entre esa agrupación y los dos
+partes EGIF requiere revisión antes de conciliar la entrada provisional
+de Almonte. El registro incorporado de Bonares queda identificado como
+posible agrupación pendiente; no prueba la existencia de un incendio
+independiente.
 
 En Hermisende y Oímbra, las coordenadas ETRS89 caen en los municipios
 españoles de referencia y coinciden en fecha con la base anterior, aunque

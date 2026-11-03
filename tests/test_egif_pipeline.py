@@ -10,11 +10,48 @@ import unittest
 import zipfile
 
 from scripts.build_dataset import (ROOT, build_fire_view, link_parts,
-                                  read_csv, selected_parts, geojson)
+                                  read_csv, selected_parts, geojson,
+                                  validate_fallback_coverage)
 from scripts.egif import read_export
 
 
 class EgifPipelineTests(unittest.TestCase):
+    def test_coverage_fallback_is_rechecked_when_exports_change(self):
+        baseline = [{'date': '2023-07-15', 'cpro': '38'}]
+        registry = [{'legacy_row': '1', 'egif_part_ids': '',
+                     'match_status': 'fallback_no_egif_coverage'}]
+        validate_fallback_coverage(baseline, registry, [{'year': '2023', 'cpro': '38', 'parts': '0'}])
+        for coverage in [[], [{'year': '2023', 'cpro': '38', 'parts': '1'}]]:
+            with self.subTest(coverage=coverage):
+                with self.assertRaisesRegex(ValueError, 'Review coverage fallback'):
+                    validate_fallback_coverage(baseline, registry, coverage)
+        registry[0]['egif_part_ids'] = '2023380001'
+        with self.assertRaisesRegex(ValueError, 'without linked parts'):
+            validate_fallback_coverage(baseline, registry, [{'year': '2023', 'cpro': '38', 'parts': '0'}])
+
+    def test_documented_2022_links_and_canary_fallback_keep_stable_ids(self):
+        fires = {row['fire_id']: row for row in read_csv(ROOT / 'rdata/gif_d2010.csv')}
+        decisions = json.loads((ROOT / 'data-raw/reconciliation/2022-2023.json').read_text(encoding='utf-8'))
+        parts = {row['egif_part_id']: row for row in read_csv(ROOT / 'rdata/egif_parts.csv')}
+        baseline = read_csv(ROOT / 'data-raw/legacy/fires.csv')
+        for decision in decisions:
+            fire = fires[decision['fire_id']]
+            old = baseline[decision['legacy_row'] - 1]
+            with self.subTest(fire=fire['fire_id']):
+                self.assertEqual(fire['match_status'], decision['decision'])
+                if decision['egif_part_ids']:
+                    part_id, = decision['egif_part_ids']
+                    self.assertEqual(fire['egif_part_ids'], part_id)
+                    self.assertEqual(fire['date'], parts[part_id]['date'])
+                    self.assertEqual(Decimal(fire['area_forestal_ha']), Decimal(parts[part_id]['area_forestal_ha']))
+                    self.assertEqual(fire['source'], 'EGIF')
+                else:
+                    self.assertEqual(fire['egif_part_ids'], '')
+                    self.assertEqual(fire['date'], old['date'])
+                    self.assertEqual(fire['area_forestal_ha'], old['area_forestal_ha'])
+                    self.assertEqual(fire['source'], 'MITECO provisional bulletin')
+        self.assertEqual(parts['2022310161']['fire_id'], '')
+
     def test_documented_municipality_corrections_preserve_fire_identity(self):
         fires = {row['fire_id']: row for row in read_csv(ROOT / 'rdata/gif_d2010.csv')}
         evidence = json.loads((ROOT / 'data-raw/reconciliation/2016-2017.json').read_text(encoding='utf-8'))

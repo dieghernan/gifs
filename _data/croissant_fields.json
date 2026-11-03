@@ -93,7 +93,7 @@
     "column": "match_status",
     "label": "match_status",
     "dataType": "sc:Text",
-    "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes."
+    "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones, identidades pendientes y respaldo sin cobertura EGIF provincial (fallback_no_egif_coverage)."
   },
   {
     "column": "notes",

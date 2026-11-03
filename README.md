@@ -7,8 +7,10 @@ en R de la infografía.
 La versión en desarrollo ofrece **329 partes EGIF de 2010–2023** y una
 **vista conciliada de 455 registros de incendios de 2010–2026**. Los dos
 archivos describen datos relacionados: no deben sumarse ni contarse sus
-filas como si tuvieran la misma unidad. Hay 15 registros anteriores y
-12 partes seleccionados cuya correspondencia sigue pendiente.
+filas como si tuvieran la misma unidad. Hay 9 registros anteriores y
+8 partes seleccionados cuya correspondencia sigue pendiente. Otros dos
+registros se conservan con el avance oficial porque su provincia no tiene
+partes en la exportación EGIF de 2023.
 
 EGIF tiene prioridad cuando existe una correspondencia documentada. Los
 registros sin correspondencia conservan su informe o avance de origen.

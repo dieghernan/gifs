@@ -30,6 +30,10 @@ El campo opcional `reference_location=egif_origin` sustituye el municipio
 de referencia anterior por el origen del primer parte enlazado cuando
 existe una corrección documental. Si está vacío se conserva la referencia
 anterior. No equivale a una lista de todos los municipios afectados.
+`fallback_no_egif_coverage` conserva un registro del avance cuando su año
+y provincia no tienen partes en la exportación; el generador rechaza ese
+estado si cambia la cobertura. Las identidades sin resolver y la evidencia
+necesaria se detallan en `reconciliation/OPEN-CASES.md`.
 
 Regenerar coordenadas cuando cambien las fuentes, las agrupaciones o los
 alias municipales:

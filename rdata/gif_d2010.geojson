@@ -8741,80 +8741,12 @@
     },
     {
       "type": "Feature",
-      "id": "GIF-7281e1aa82f057b7",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.7737096,
-          42.7116259
-        ]
-      },
-      "properties": {
-        "prov_name": "Navarra",
-        "cpro": "31",
-        "munic_name": "Legarda/Guirguillano",
-        "cmun": "147",
-        "codmun": "31147",
-        "date": "2022-06-19",
-        "area_forestal_ha": 6247.64,
-        "source": "MITECO provisional bulletin",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf",
-        "source_date": null,
-        "data_status": "provisional",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
-        "fire_id": "GIF-7281e1aa82f057b7",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -1.7737096,
-        "latitude": 42.7116259,
-        "location_method": "municipal_seat",
-        "location_part_id": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "GIF-471ff1b8e4885ec3",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.5975856,
-          42.1774712
-        ]
-      },
-      "properties": {
-        "prov_name": "Navarra",
-        "cpro": "31",
-        "munic_name": "Arguedas/Valtierra",
-        "cmun": "032",
-        "codmun": "31032",
-        "date": "2022-06-19",
-        "area_forestal_ha": 2060.38,
-        "source": "MITECO provisional bulletin",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf",
-        "source_date": null,
-        "data_status": "provisional",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
-        "fire_id": "GIF-471ff1b8e4885ec3",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -1.5975856,
-        "latitude": 42.1774712,
-        "location_method": "municipal_seat",
-        "location_part_id": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "GIF-a1acba8f726b5191",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.4097449,
-          42.5236399
+          -1.56107660899549,
+          42.5238090738179
         ]
       },
       "properties": {
@@ -8823,22 +8755,90 @@
         "munic_name": "Gallipienzo/San Martín de Unx",
         "cmun": "110",
         "codmun": "31110",
-        "date": "2022-06-20",
-        "area_forestal_ha": 6598.64,
-        "source": "MITECO provisional bulletin",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf",
-        "source_date": null,
-        "data_status": "provisional",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
+        "date": "2022-06-18",
+        "area_forestal_ha": 5227.1253,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 2034.2708,
+        "area_non_wooded_ha": 3192.8545,
         "fire_id": "GIF-a1acba8f726b5191",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -1.4097449,
-        "latitude": 42.5236399,
-        "location_method": "municipal_seat",
-        "location_part_id": null
+        "egif_part_ids": "2022310162",
+        "match_status": "confirmed_match",
+        "notes": "La comparecencia oficial sitúa un foco en San Martín de Unx el 18 de junio; Protección Civil lo denomina Gallipienzo/San Martín de Unx. EGIF registra San Martín de Unx el 18 de junio. Las fuentes difieren en la fecha inicial; se adopta la fecha del parte EGIF y su superficie forestal.",
+        "longitude": -1.56107660899549,
+        "latitude": 42.5238090738179,
+        "location_method": "egif_part",
+        "location_part_id": "2022310162"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GIF-7281e1aa82f057b7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.77197561962991,
+          42.7114349342277
+        ]
+      },
+      "properties": {
+        "prov_name": "Navarra",
+        "cpro": "31",
+        "munic_name": "Legarda/Guirguillano",
+        "cmun": "147",
+        "codmun": "31147",
+        "date": "2022-06-18",
+        "area_forestal_ha": 4281.3734,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 2847.8682,
+        "area_non_wooded_ha": 1433.5052,
+        "fire_id": "GIF-7281e1aa82f057b7",
+        "egif_part_ids": "2022310181",
+        "match_status": "confirmed_match",
+        "notes": "El Gobierno de Navarra documenta el incendio del 18 de junio en Legarda y Guirguillano; Protección Civil enlaza ambas denominaciones. EGIF registra Legarda el 18 de junio. Se sustituyen la fecha y la superficie provisionales por las del parte.",
+        "longitude": -1.77197561962991,
+        "latitude": 42.7114349342277,
+        "location_method": "egif_part",
+        "location_part_id": "2022310181"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GIF-471ff1b8e4885ec3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.57954332026749,
+          42.1875360306362
+        ]
+      },
+      "properties": {
+        "prov_name": "Navarra",
+        "cpro": "31",
+        "munic_name": "Arguedas/Valtierra",
+        "cmun": "032",
+        "codmun": "31032",
+        "date": "2022-06-18",
+        "area_forestal_ha": 1765.11,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 935.76,
+        "area_non_wooded_ha": 829.35,
+        "fire_id": "GIF-471ff1b8e4885ec3",
+        "egif_part_ids": "2022310292",
+        "match_status": "confirmed_match",
+        "notes": "La comparecencia oficial documenta la evacuación de Arguedas y Valtierra por el incendio del 18 de junio; Protección Civil identifica el episodio como Arguedas/Valtierra. Se enlaza el parte de Arguedas del 18 de junio. No se suma el parte 2022310161 de Valtierra del 17 de junio: su relación no está acreditada.",
+        "longitude": -1.57954332026749,
+        "latitude": 42.1875360306362,
+        "location_method": "egif_part",
+        "location_part_id": "2022310292"
       }
     },
     {
@@ -8847,8 +8847,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.4278666,
-          40.9974504
+          -1.39340741755349,
+          40.9747325824556
         ]
       },
       "properties": {
@@ -8858,21 +8858,21 @@
         "cmun": "065",
         "codmun": "44065",
         "date": "2022-06-20",
-        "area_forestal_ha": 1350.0,
-        "source": "MITECO provisional bulletin",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf",
-        "source_date": null,
-        "data_status": "provisional",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
+        "area_forestal_ha": 1380.9566,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 421.3266,
+        "area_non_wooded_ha": 959.63,
         "fire_id": "GIF-d3656cf67fe458ef",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -1.4278666,
-        "latitude": 40.9974504,
-        "location_method": "municipal_seat",
-        "location_part_id": null
+        "egif_part_ids": "2022440038",
+        "match_status": "confirmed_match",
+        "notes": "El BOA documenta el incendio del 20 de junio que afectó a Castejón de Tornos, Tornos, Báguena y Burbáguena. El único parte EGIF forestal de gran superficie en Teruel ese día registra Tornos y cuatro municipios afectados. Se conserva la denominación anterior como referencia y se adopta la superficie EGIF.",
+        "longitude": -1.39340741755349,
+        "latitude": 40.9747325824556,
+        "location_method": "egif_part",
+        "location_part_id": "2022440038"
       }
     },
     {
@@ -9854,7 +9854,7 @@
         "fire_id": "GIF-36456fe2cf5e5a3c",
         "egif_part_ids": "2022210075",
         "match_status": "new_egif_record",
-        "notes": "Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.",
+        "notes": "Parte de Bonares conservado como registro EGIF. La Junta de Andalucía trató Bonares-Almonte (25–28 de julio de 2022) como un único incendio operativo. La posible agrupación con el registro previo de Almonte sigue pendiente; no interpretar esta fila como prueba de un incendio independiente.",
         "longitude": -6.65900432716876,
         "latitude": 37.3077483220532,
         "location_method": "egif_part",
@@ -11077,8 +11077,8 @@
         "area_non_wooded_ha": null,
         "fire_id": "GIF-34a3266664245183",
         "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
+        "match_status": "fallback_no_egif_coverage",
+        "notes": "Se conserva el avance oficial MITECO: la exportación EGIF de 2023 no contiene ningún parte de la provincia 38. Esta ausencia no implica ausencia de incendios. Revisar si una nueva instantánea incorpora cobertura provincial.",
         "longitude": -17.9896594,
         "latitude": 28.7747213,
         "location_method": "municipal_seat",
@@ -11111,8 +11111,8 @@
         "area_non_wooded_ha": null,
         "fire_id": "GIF-1f4ae71b69e25dd5",
         "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
+        "match_status": "fallback_no_egif_coverage",
+        "notes": "Se conserva el avance oficial MITECO: la exportación EGIF de 2023 no contiene ningún parte de la provincia 38. Esta ausencia no implica ausencia de incendios. Revisar si una nueva instantánea incorpora cobertura provincial.",
         "longitude": -16.4182074,
         "latitude": 28.3399923,
         "location_method": "municipal_seat",
