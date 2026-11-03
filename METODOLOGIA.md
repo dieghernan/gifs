@@ -124,8 +124,10 @@ No se asigna el municipio más cercano a puntos fuera de los límites.
    umbrales, duplicados, respaldo y coordenadas desconocidas.
 
 El diccionario de campos está en `_data/egif_part_fields.json` y
-`_data/croissant_fields.json`. El descriptor Croissant describe los dos
-recursos, sus claves, campos opcionales y huellas; no atribuye el DOI de la
+`_data/croissant_fields.json`. El JSON-LD principal es una colección
+`DataCatalog` con dos `Dataset`, uno por tarjeta y unidad de observación.
+Cada conjunto tiene su descriptor Croissant, con claves, campos opcionales
+y huellas de sus descargas CSV, JSON y GeoJSON. No se atribuye el DOI de la
 versión archivada 1.0.0 a estos datos en desarrollo.
 
 ## Auditoría y limitaciones

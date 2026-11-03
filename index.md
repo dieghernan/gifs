@@ -34,9 +34,9 @@ registros sin correspondencia conservan su informe o avance de origen.
 Las exportaciones no prueban cobertura anual completa; en 2023 no hay
 registros de siete provincias. No es un servicio de seguimiento en tiempo real.
 
-{% include custom/download_card.html %}
-
 ![Mapa de incendios con coordenadas EGIF cuando están disponibles y ubicaciones municipales de respaldo. El tamaño representa la superficie forestal quemada.](gif_spain.png)
+
+{% include custom/download_card.html %}
 
 El producto principal, `rdata/egif_parts.csv`, contiene una fila por parte,
 con `egif_part_id`, `fire_id` cuando está asignado, datos de origen,

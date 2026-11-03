@@ -1,6 +1,6 @@
 # Project structured data
 
-This layer generates only the project's Dataset JSON-LD. It does not replace
+This layer generates the project's DataCatalog and its two Dataset descriptions. It does not replace
 or modify Chulapa's structured data or the existing author normalization plugin.
 
 `_data/structured_data.json` holds the dataset description, source, creators,
@@ -20,7 +20,10 @@ index and `_data/citation.json`. The download card reads that same JSON;
 Run the citation generator before regenerating Croissant. Both generators
 support `--check`, and CI checks both outputs before publication.
 
-`dataset.html` embeds the generated Croissant Dataset JSON-LD. The older
+`dataset.html` embeds `_data/catalog.json`: one DataCatalog containing the
+part and fire Datasets. Standalone Croissant descriptors are served at
+`/croissant/parts.json` and `/croissant/fires.json`. The global
+`/croissant.json` is retained for compatibility. The older
 `release.html` and `distribution.html` partials are not used by that descriptor.
 The distribution shares the dataset's modification date. Review it when the
 CSV changes; do not use the website build date.

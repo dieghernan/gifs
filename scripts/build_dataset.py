@@ -323,6 +323,10 @@ def build(root=ROOT, prepare_locations=False):
                           "area_ha": str(sum(Decimal(row["area_forestal_ha"]) for row in fires if row["date"].startswith(str(year))))}
                          for year in sorted({int(row["date"][:4]) for row in fires})]}
     return {
+        "_data/dataset_summary.json": json.dumps({
+            "selected_parts": len(selected), "selected_part_points": sum(bool(part["longitude"]) for part in selected),
+            "fire_view_records": len(fires), "fire_view_points": sum(bool(row["longitude"]) for row in fires),
+        }, ensure_ascii=False, indent=2) + "\n",
         "rdata/egif_parts.csv": csv_text(selected, PART_FIELDS),
         "rdata/gif_d2010.csv": csv_text(fires, FIRE_FIELDS),
         "rdata/egif_parts.json": typed_json(selected),

@@ -1,7 +1,9 @@
 # Metadatos Croissant
 
-El descriptor describe dos unidades relacionadas: partes EGIF y una vista
-conciliada de incendios. Cada recurso está disponible en CSV, JSON y GeoJSON.
+`catalog.json` describe una colección `DataCatalog` con dos `Dataset`:
+partes EGIF y una vista conciliada de incendios. Cada conjunto tiene su
+descriptor Croissant en `croissant/parts.json` o `croissant/fires.json` y
+está disponible en CSV, JSON y GeoJSON.
 Los RecordSet extraen el JSON mediante JSONPath para conservar códigos
 como texto y distinguir valores nulos sin depender de inferencias del CSV.
 
@@ -13,9 +15,12 @@ como texto y distinguir valores nulos sin depender de inferencias del CSV.
 - `_data/croissant_context.json`: contexto Croissant 1.1.
 - `CITATION.cff`: cita de la versión archivada 1.0.0; no se atribuye su DOI a la migración.
 
-`build_croissant.py` genera `croissant.json` y `_data/croissant.json`.
-La página incorpora el mismo descriptor una sola vez. No editar esos
-archivos generados a mano. La versión en desarrollo no tiene DOI propio.
+`build_croissant.py` genera el catálogo, su copia en `_data/catalog.json`
+y los descriptores individuales. La página incorpora una sola colección
+con sus dos conjuntos. `croissant.json` y `_data/croissant.json` conservan
+el descriptor global por compatibilidad; no son el JSON-LD principal de
+la página. No editar los archivos generados a mano. La versión en
+desarrollo no tiene DOI propio.
 
 ## Generar y verificar
 
@@ -26,7 +31,8 @@ Guardar los cambios de CSV y JSON en un commit local, actualizar
 ```sh
 py scripts/build_croissant.py
 py scripts/build_croissant.py --check
-mlcroissant validate --jsonld croissant.json
+mlcroissant validate --jsonld croissant/parts.json
+mlcroissant validate --jsonld croissant/fires.json
 ruby scripts/citation.rb --check
 bundle exec jekyll build
 py -m unittest discover -s tests

@@ -1,6 +1,7 @@
 """Build reproducible Croissant metadata from the project metadata and CSV."""
 
 import argparse
+import copy
 import csv
 import hashlib
 import io
@@ -88,16 +89,45 @@ def build():
     return json.dumps(dataset, ensure_ascii=False, indent=2) + "\n"
 
 
+def build_documents():
+    combined = json.loads(build())
+    metadata = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))
+    datasets = []
+    documents = {"croissant.json": combined, "_data/croissant.json": combined}
+    for resource in metadata["croissant"]["resources"]:
+        dataset = copy.deepcopy(combined)
+        dataset["@context"]["@base"] = HOME
+        dataset["@id"] = HOME + "#dataset-" + resource["recordSet"]
+        dataset["url"] = dataset["@id"]
+        dataset["name"] = resource["name"]
+        dataset["description"] = resource["description"]
+        dataset["includedInDataCatalog"] = {"@id": HOME + "#catalog"}
+        dataset["distribution"] = [item for item in dataset["distribution"]
+                                   if item["@id"] in {resource["id"], resource["id"] + "-json", resource["id"] + "-geojson"}]
+        dataset["recordSet"] = [item for item in dataset["recordSet"] if item["@id"] == resource["recordSet"]]
+        with (ROOT / resource["path"]).open(encoding="utf-8", newline="") as stream:
+            dates = sorted(row["date"] for row in csv.DictReader(stream))
+        dataset["temporalCoverage"] = f"{dates[0]}/{dates[-1]}"
+        datasets.append(dataset)
+        documents[f'croissant/{resource["recordSet"]}.json'] = dataset
+    catalog = {key: combined[key] for key in ("name", "description", "creator", "license", "creditText", "version", "datePublished", "dateModified", "isAccessibleForFree", "inLanguage", "temporalCoverage")}
+    catalog.update({"@context": {"@vocab": "https://schema.org/", "@language": "es"}, "@type": "DataCatalog",
+                    "@id": HOME + "#catalog", "url": HOME, "dataset": datasets})
+    documents.update({"catalog.json": catalog, "_data/catalog.json": catalog})
+    return {path: json.dumps(value, ensure_ascii=False, indent=2) + "\n" for path, value in documents.items()}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated metadata is stale.")
     args = parser.parse_args()
-    output = build()
-    for path in (ROOT / "croissant.json", ROOT / "_data/croissant.json"):
+    for relative, output in build_documents().items():
+        path = ROOT / relative
         if args.check:
             if not path.exists() or path.read_text(encoding="utf-8") != output:
                 raise SystemExit(f"Stale descriptor: {path}. Run scripts/build_croissant.py.")
         else:
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(output, encoding="utf-8", newline="\n")
 
 

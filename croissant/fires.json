@@ -1,0 +1,581 @@
+{
+  "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
+  "description": "Una fila por incendio registrado, con fire_id estable. EGIF tiene prioridad en registros vinculados; los demás conservan informes o avances y su estado de conciliación. Hay casos pendientes. Los campos vacíos representan información desconocida o no aplicable; no se rellenan con cero. Las coordenadas son una ubicación de referencia, no un perímetro.",
+  "isAccessibleForFree": true,
+  "inLanguage": "es",
+  "creator": {
+    "@type": "Person",
+    "name": "Diego HH",
+    "url": "https://dieghernan.github.io/",
+    "sameAs": "https://orcid.org/0000-0001-8457-4658",
+    "@id": "https://dieghernan.github.io/gifs/#author"
+  },
+  "license": "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html",
+  "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio.",
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Estadísticas de incendios forestales del MITECO",
+    "url": "https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-datos.html",
+    "publisher": {
+      "@type": "GovernmentOrganization",
+      "name": "Ministerio para la Transición Ecológica y el Reto Demográfico",
+      "alternateName": "MITECO",
+      "url": "https://www.miteco.gob.es/"
+    },
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2010 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/publicacion2010_def_tcm30-132568.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2011 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/losincendiosforestalesenespanaano2011_tcm30-132591.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2012 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2012_tcm30-132581.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2013 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2013_tcm30-132601.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2014 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/incendios_forestales_en_espana_2014_tcm30-425396.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2015 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/iiff_2015_def_tcm30-442974.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2016 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2016.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2017 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2018 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2018.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2019 (definitiva)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiYzE0MzhkZGItYzZlOC00NGU1LTlkNWUtZjdkZjY1NTM1MWFhIiwidCI6ImRlODFhNTc4LTgxYWEtNGQzNS1hNWQ0LWZlZWQ4MTZiMTY1NCIsImMiOjl9"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2020 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2020.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2021 (definitiva)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2021.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2022 (avance)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2023 (avance)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2024 (avance)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2025 (avance)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "MITECO: grandes incendios forestales de 2026 (avance)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "EGIF: exportaciones de partes de 2010–2023, descargadas el 03/11/2026",
+        "url": "https://servicio.mapa.gob.es/incendios/Search/Publico"
+      }
+    ]
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "España"
+  },
+  "temporalCoverage": "2010-02-27/2026-09-26",
+  "variableMeasured": [
+    "Provincia",
+    "Código de provincia",
+    "Municipio",
+    "Código de municipio",
+    "Fecha del incendio",
+    "Superficie forestal quemada en hectáreas"
+  ],
+  "keywords": [
+    "incendios forestales",
+    "grandes incendios forestales",
+    "España",
+    "MITECO",
+    "CSV",
+    "superficie forestal quemada",
+    "hectáreas",
+    "municipios"
+  ],
+  "distribution": [
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "gif-csv",
+      "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/gif_d2010.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "127390 bytes",
+      "sha256": "58ea27ca24beeb266191923d1817e8a77ecc5cdc1ce577760c668c83f99805ec",
+      "dateModified": "2026-11-03"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "gif-csv-json",
+      "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (JSON)",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/gif_d2010.json",
+      "encodingFormat": "application/json",
+      "contentSize": "327088 bytes",
+      "sha256": "3b574cf81d50573bf4025377e0c8c65fae79cdb5248bedea68655d6da216d23a",
+      "dateModified": "2026-11-03"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "gif-csv-geojson",
+      "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (GeoJSON)",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/040a637f37a732b765685b110a48b1700f7331be/rdata/gif_d2010.geojson",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "470971 bytes",
+      "sha256": "1be051c0272e3a7c4dcc22affa08a4fa52895f04b647a286ab1676eb4c793fa3",
+      "dateModified": "2026-11-03"
+    }
+  ],
+  "measurementTechnique": "Importación reproducible de ZIP/XLSX EGIF completos, normalización de tipos y conciliación mediante un registro estable de incendios y partes. Umbral de 500 ha aplicado después de agrupaciones explícitas. Se conservan las descripciones territoriales de la base anterior; las asociaciones inferidas se identifican. Las coordenadas con huso y datum conocidos se transforman a EPSG:4326; los incendios sin coordenadas utilizables emplean una capital municipal identificada como referencia. Se conservan los registros anteriores sin correspondencia y no se suman automáticamente partes sin asignar a la vista de incendios.",
+  "subjectOf": {
+    "@type": "CreativeWork",
+    "name": "Metodología de recopilación y validación",
+    "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
+    "inLanguage": "es"
+  },
+  "version": "2.0.0-dev",
+  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio 040a637f37a732b765685b110a48b1700f7331be; sin DOI de versión.",
+  "@context": {
+    "@language": "es",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "description": "sc:description",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "name": "sc:name",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "@base": "https://dieghernan.github.io/gifs/"
+  },
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/gifs/#dataset-fires",
+  "url": "https://dieghernan.github.io/gifs/#dataset-fires",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "datePublished": "2025-02-21",
+  "dateModified": "2026-11-03",
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "fires",
+      "name": "fires",
+      "description": "Una fila por incendio registrado, con fire_id estable. EGIF tiene prioridad en registros vinculados; los demás conservan informes o avances y su estado de conciliación. Hay casos pendientes. Los campos vacíos representan información desconocida o no aplicable; no se rellenan con cero. Las coordenadas son una ubicación de referencia, no un perímetro.",
+      "key": {
+        "@id": "fires/fire_id"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "fires/prov_name",
+          "name": "prov_name",
+          "description": "Provincia declarada en el parte EGIF; en la vista de incendios se conserva la descripción territorial anterior cuando existe.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].prov_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/cpro",
+          "name": "cpro",
+          "description": "Código de provincia de dos dígitos, como texto. En partes procede del número de parte; en incendios identifica la provincia de referencia.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cpro"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/munic_name",
+          "name": "munic_name",
+          "description": "Municipio de origen declarado en EGIF; puede indicar Portugal u otra provincia. En la vista de incendios se conserva la descripción territorial de referencia anterior.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].munic_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/cmun",
+          "name": "cmun",
+          "description": "Código municipal de tres dígitos, como texto. Vacío si el nombre declarado no puede vincularse inequívocamente al diccionario municipal.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cmun"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/codmun",
+          "name": "codmun",
+          "description": "Código INE municipal de cinco dígitos, como texto. Puede diferir del municipio obtenido mediante coordenadas; no se sustituye automáticamente.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].codmun"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/date",
+          "name": "date",
+          "description": "Fecha de detección EGIF o fecha de inicio de la fuente de respaldo, en formato AAAA-MM-DD. No es la fecha de descarga.",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/area_forestal_ha",
+          "name": "area_forestal_ha",
+          "description": "Superficie forestal quemada en hectáreas. En partes corresponde solo al parte; en incendios suma exclusivamente los partes vinculados o conserva la fuente de respaldo.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_forestal_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/fire_id",
+          "name": "fire_id",
+          "description": "Identificador propio y estable del incendio. En partes sin correspondencia revisada permanece vacío; no se infiere un incendio nuevo automáticamente.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].fire_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/egif_part_ids",
+          "name": "egif_part_ids",
+          "description": "Números de parte EGIF vinculados al incendio, separados por punto y coma. Vacío cuando solo se dispone de una fuente de respaldo.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].egif_part_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/source",
+          "name": "source",
+          "description": "Fuente utilizada en esta fila: EGIF, informe anual MITECO o avance provisional MITECO.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/source_url",
+          "name": "source_url",
+          "description": "Enlace a la fuente de datos utilizada.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/source_date",
+          "name": "source_date",
+          "description": "Fecha de descarga de la fuente EGIF en formato AAAA-MM-DD. Vacía para las fuentes anteriores cuya fecha de descarga no se conserva.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/data_status",
+          "name": "data_status",
+          "description": "egif_export identifica una exportación EGIF y no garantiza cobertura anual completa; definitive_report y provisional distinguen las fuentes de respaldo.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].data_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/area_wooded_ha",
+          "name": "area_wooded_ha",
+          "description": "Superficie forestal arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_wooded_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/area_non_wooded_ha",
+          "name": "area_non_wooded_ha",
+          "description": "Superficie forestal no arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_non_wooded_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/match_status",
+          "name": "match_status",
+          "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].match_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/notes",
+          "name": "notes",
+          "description": "Notas de procedencia, agrupación territorial y decisiones de conciliación. Vacío si no se necesita una aclaración específica.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/longitude",
+          "name": "longitude",
+          "description": "Longitud en grados decimales, EPSG:4326, orden longitud/latitud. Vacía en partes cuyo datum o coordenadas no se pueden interpretar.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].longitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/latitude",
+          "name": "latitude",
+          "description": "Latitud en grados decimales, EPSG:4326, orden longitud/latitud. No utiliza el desplazamiento cartográfico de Canarias.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].latitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/location_method",
+          "name": "location_method",
+          "description": "Método de ubicación: coordenadas originales transformadas o parte de referencia EGIF; municipal_seat indica una capital municipal de respaldo. unknown_crs y missing_coordinates no proporcionan coordenadas de origen interpretables.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].location_method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/location_part_id",
+          "name": "location_part_id",
+          "description": "Parte EGIF del que se toma el punto de referencia del incendio. Puede ser uno de varios partes; no es un centroide del incendio. Vacío para ubicaciones municipales.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].location_part_id"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "includedInDataCatalog": {
+    "@id": "https://dieghernan.github.io/gifs/#catalog"
+  }
+}

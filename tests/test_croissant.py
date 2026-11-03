@@ -14,6 +14,20 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class CroissantTests(unittest.TestCase):
+    def test_catalog_jsonld_resolves_to_one_catalog_and_two_datasets(self):
+        import rdflib
+        from rdflib.namespace import RDF
+
+        catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
+        graph = rdflib.Graph().parse(data=json.dumps(catalog), format="json-ld")
+        schema = rdflib.Namespace("https://schema.org/")
+        self.assertEqual(len(list(graph.subjects(RDF.type, schema.DataCatalog))), 1)
+        datasets = set(graph.objects(rdflib.URIRef(catalog["@id"]), schema.dataset))
+        self.assertEqual(datasets, {rdflib.URIRef("https://dieghernan.github.io/gifs/#dataset-parts"),
+                                    rdflib.URIRef("https://dieghernan.github.io/gifs/#dataset-fires")})
+        for dataset in datasets:
+            self.assertIn((dataset, RDF.type, schema.Dataset), graph)
+
     def test_descriptor_matches_generated_resources_and_keys(self):
         descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
         self.assertEqual(json.loads(build()), descriptor)
@@ -35,26 +49,23 @@ class CroissantTests(unittest.TestCase):
         import mlcroissant
 
         metadata = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))
-        descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
-        mapping = None
-        if os.environ.get("GIFS_LOCAL_SNAPSHOT") == "1":
-            # Local branch commits are not downloadable until explicitly pushed.
-            mapping = {}
-            for resource in metadata["croissant"]["resources"]:
-                mapping[resource["id"]] = ROOT / resource["path"]
-                mapping[resource["id"] + "-json"] = ROOT / resource["structuredPath"]
-                mapping[resource["id"] + "-geojson"] = ROOT / resource["geoPath"]
-        dataset = mlcroissant.Dataset(jsonld=str(ROOT / "croissant.json"), mapping=mapping)
         for resource in metadata["croissant"]["resources"]:
+            mapping = None
+            if os.environ.get("GIFS_LOCAL_SNAPSHOT") == "1":
+                base = "https://dieghernan.github.io/gifs/"
+                mapping = {base + resource["id"]: ROOT / resource["path"],
+                           base + resource["id"] + "-json": ROOT / resource["structuredPath"],
+                           base + resource["id"] + "-geojson": ROOT / resource["geoPath"]}
+            dataset = mlcroissant.Dataset(jsonld=str(ROOT / f'croissant/{resource["recordSet"]}.json'), mapping=mapping)
             with (ROOT / resource["path"]).open(encoding="utf-8", newline="") as stream:
                 expected = list(csv.DictReader(stream))
-            loaded = list(dataset.records(record_set=resource["recordSet"]))
+            loaded = list(dataset.records(record_set="https://dieghernan.github.io/gifs/" + resource["recordSet"]))
             self.assertEqual(len(loaded), len(expected))
             fields = json.loads((ROOT / resource["fields"]).read_text(encoding="utf-8"))
             for actual, row in zip(loaded, expected):
                 for field in fields:
                     name = field["column"]
-                    value = actual[resource["recordSet"] + "/" + name]
+                    value = actual["https://dieghernan.github.io/gifs/" + resource["recordSet"] + "/" + name]
                     if isinstance(value, bytes):
                         value = value.decode("utf-8")
                     with self.subTest(record=row[resource["key"]], column=name):

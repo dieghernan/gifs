@@ -30,7 +30,9 @@ jobs:
       - name: Check generated EGIF products
         run: python scripts/build_dataset.py --check
       - name: Validate Croissant descriptor
-        run: mlcroissant validate --jsonld croissant.json
+        run: |
+          mlcroissant validate --jsonld croissant/parts.json
+          mlcroissant validate --jsonld croissant/fires.json
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
