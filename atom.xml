@@ -3,14 +3,15 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="https://dieghernan.github.io/gifs/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="https://dieghernan.github.io/gifs" rel="alternate" type="text/html" />
-	<updated>2026-11-03T08:56:21+01:00</updated>
+	<updated>2026-11-03T14:31:55+01:00</updated>
 	<id>https://dieghernan.github.io/gifs/atom.xml</id>
 	<title>GIFs | Grandes incendios forestales en España</title>
 	<subtitle>Grandes incendios forestales en España</subtitle>
+	
 	<author>
-		<name>dieghernan</name>
-		<uri>https://x.com/dhernangomez</uri>			
+		<name>Diego HH</name>
+		<uri>https://dieghernan.github.io/</uri>
 	</author>
-	<rights>(c) 2026, dieghernan</rights>
+	<rights>(c) 2026, Diego HH</rights>
 	
 	<logo>https://dieghernan.github.io/gifs/assets/social-preview.jpg</logo></feed>
