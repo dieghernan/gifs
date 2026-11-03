@@ -225,8 +225,12 @@
     "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
     "inLanguage": "es"
   },
-  "version": "2.0.0-dev",
-  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio fa5787126c672a185fbfc5763506c68dc3fc58ba; sin DOI de versión.",
+  "version": "2.0.0",
+  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://github.com/dieghernan/gifs/releases/tag/v2.0.0",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://doi.org/10.5281/zenodo.23929996"
+  },
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",

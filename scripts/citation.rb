@@ -8,7 +8,7 @@ cff = YAML.safe_load_file(File.join(root, "CITATION.cff"), permitted_classes: [D
 citation = cff.fetch("preferred-citation")
 metadata = JSON.parse(File.read(File.join(root, "_data/structured_data.json"), encoding: "UTF-8"))
 %w[version doi authors].each do |field|
-  abort "CITATION.cff has inconsistent #{field}" unless cff.fetch(field) == citation.fetch(field)
+  abort "CITATION.cff has inconsistent #{field}" unless cff[field] == citation[field]
 end
 names = citation.fetch("authors").map do |author|
   initials = author.fetch("given-names").split.map { |name| "#{name[0]}." }.join(" ")
@@ -17,27 +17,28 @@ end.join("; ")
 bib_authors = citation.fetch("authors").map do |author|
   "#{author.fetch('family-names')}, #{author.fetch('given-names')}"
 end.join(" and ")
-doi_url = "https://doi.org/#{citation.fetch('doi')}"
+doi_url = citation["doi"] && "https://doi.org/#{citation['doi']}"
+release_url = "#{cff.fetch('repository-code')}/releases/tag/v#{citation.fetch('version')}"
+citation_url = doi_url || release_url
 concept_url = "https://doi.org/#{metadata.fetch('archive').fetch('conceptDoi')}"
-text = "#{names} (#{citation.fetch('year')}). #{citation.fetch('title')} (Version #{citation.fetch('version')}) [Data set]. #{doi_url}"
+text = "#{names} (#{citation.fetch('year')}). #{citation.fetch('title')} (Version #{citation.fetch('version')}) [Data set]. #{citation_url}"
 bibtex = <<~BIBTEX
   @misc{hernangomez_grandes_incendios,
     author = {#{bib_authors}},
     title = {#{citation.fetch('title')}},
     year = {#{citation.fetch('year')}},
     version = {#{citation.fetch('version')}},
-    doi = {#{citation.fetch('doi')}},
-    url = {#{citation.fetch('url')}},
+  #{citation['doi'] ? "  doi = {#{citation['doi']}},\n" : ""}  url = {#{citation_url}},
     note = {Data set}
   }
 BIBTEX
 release = {
   "version" => citation.fetch("version"),
   "dateReleased" => cff.fetch("date-released").to_s,
-  "doi" => citation.fetch("doi"),
+  "doi" => citation["doi"],
   "doiUrl" => doi_url,
   "conceptDoiUrl" => concept_url,
-  "releaseUrl" => "#{cff.fetch('repository-code')}/releases/tag/v#{citation.fetch('version')}",
+  "releaseUrl" => release_url,
   "citeAs" => text,
   "bibtex" => bibtex
 }
@@ -47,7 +48,7 @@ block = <<~MARKDOWN
 
   > #{names} (#{citation.fetch('year')}). *#{citation.fetch('title')}*
   > (Version #{citation.fetch('version')}) [Data set].
-  > #{doi_url}
+  > #{citation_url}
 
   <details markdown="1">
   <summary>Referencia en BibTeX</summary>

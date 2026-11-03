@@ -35,8 +35,9 @@ class DatasetTests(unittest.TestCase):
         descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
         self.assertEqual(descriptor["creator"]["name"], "Diego HH")
         self.assertIn("EGIF", descriptor["description"])
-        self.assertEqual(descriptor["version"], "2.0.0-dev")
-        self.assertNotIn("identifier", descriptor)
+        citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
+        self.assertEqual(descriptor["version"], citation["version"])
+        self.assertEqual(descriptor.get("identifier"), citation["doiUrl"])
 
     def test_catalog_contains_two_independent_datasets_matching_the_cards(self):
         html = (ROOT / "_site/index.html").read_text(encoding="utf-8")

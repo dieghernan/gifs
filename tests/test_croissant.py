@@ -14,6 +14,17 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class CroissantTests(unittest.TestCase):
+    def test_archive_doi_describes_the_collection_and_not_its_children(self):
+        catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
+        citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
+        self.assertEqual(catalog['isPartOf']['@id'], citation['conceptDoiUrl'])
+        self.assertEqual(catalog.get('identifier'), citation['doiUrl'])
+        for dataset in catalog['dataset']:
+            with self.subTest(dataset=dataset['@id']):
+                self.assertEqual(dataset['isPartOf'], {'@id': catalog['@id']})
+                self.assertNotIn('identifier', dataset)
+                self.assertNotIn('sameAs', dataset)
+
     def test_catalog_jsonld_resolves_to_one_catalog_and_two_datasets(self):
         import rdflib
         from rdflib.namespace import RDF
@@ -34,8 +45,9 @@ class CroissantTests(unittest.TestCase):
         self.assertEqual(json.loads((ROOT / "_data/croissant.json").read_text(encoding="utf-8")), descriptor)
         self.assertEqual(json.loads((ROOT / "_site/croissant.json").read_text(encoding="utf-8")), descriptor)
         self.assertEqual(descriptor["conformsTo"], "http://mlcommons.org/croissant/1.1")
-        self.assertEqual(descriptor["version"], "2.0.0-dev")
-        self.assertNotIn("identifier", descriptor)
+        citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
+        self.assertEqual(descriptor["version"], citation["version"])
+        self.assertEqual(descriptor.get("identifier"), citation["doiUrl"])
         self.assertEqual(descriptor["@context"]["name"], "sc:name")
         resources = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]["resources"]
         for download, record_set, resource in zip(descriptor["distribution"][::3], descriptor["recordSet"], resources):

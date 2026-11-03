@@ -17,6 +17,11 @@ Chulapa continues to generate its own page and author metadata.
 Run `ruby scripts/citation.rb` to generate the citation sections in README and
 index and `_data/citation.json`. The download card reads that same JSON;
 `build_croissant.py` uses it for `version`, `identifier`, `sameAs` and `citeAs`.
+Before Zenodo assigns a version DOI, the citation uses the tagged GitHub
+release URL. After archiving, add the DOI to both citation fields in
+`CITATION.cff` and regenerate without moving the published tag. The catalog
+identifies the archived collection and links the concept DOI through
+`isPartOf`. The child datasets link the catalog and have no separate DOI.
 Run the citation generator before regenerating Croissant. Both generators
 support `--check`, and CI checks both outputs before publication.
 

@@ -1,6 +1,10 @@
 # Historial de cambios
 
-## Sin publicar
+## 2.0.0 — 2026-11-03
+
+- Publicación de 329 partes EGIF y una vista conciliada de 455 registros, con nueve identidades anteriores y ocho partes pendientes documentados y dos registros de Canarias de 2023 conservados por falta de cobertura EGIF provincial.
+- Conciliación documental de tres cambios municipales de 2016–2017 y cuatro incendios de 2022, manteniendo los identificadores estables y adoptando fechas y superficies EGIF.
+- Previews para compartir sin el recuadro de Canarias; las descargas conservan sus coordenadas reales y la infografía mantiene su desplazamiento cartográfico.
 
 - Límites y diccionario municipales derivados de IGN SIANE mediante mapSpain, con fuente, año y resolución registrados y separación de códigos de territorios no municipales.
 

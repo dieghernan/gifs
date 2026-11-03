@@ -79,8 +79,8 @@ corresponde a la versión archivada **1.0.0**, anterior a esta migración.
 ## Cómo citar
 
 > Hernangómez, D. (2026). *Grandes incendios forestales en España*
-> (Version 1.0.0) [Data set].
-> https://doi.org/10.5281/zenodo.23929997
+> (Version 2.0.0) [Data set].
+> https://github.com/dieghernan/gifs/releases/tag/v2.0.0
 
 <details markdown="1">
 <summary>Referencia en BibTeX</summary>
@@ -90,9 +90,8 @@ corresponde a la versión archivada **1.0.0**, anterior a esta migración.
   author = {Hernangómez, Diego},
   title = {Grandes incendios forestales en España},
   year = {2026},
-  version = {1.0.0},
-  doi = {10.5281/zenodo.23929997},
-  url = {https://dieghernan.github.io/gifs/},
+  version = {2.0.0},
+  url = {https://github.com/dieghernan/gifs/releases/tag/v2.0.0},
   note = {Data set}
 }
 ```

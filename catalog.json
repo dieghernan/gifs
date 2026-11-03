@@ -10,7 +10,7 @@
   },
   "license": "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html",
   "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio. Cruce municipal: Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.",
-  "version": "2.0.0-dev",
+  "version": "2.0.0",
   "datePublished": "2025-02-21",
   "dateModified": "2026-11-03",
   "isAccessibleForFree": true,
@@ -212,8 +212,11 @@
         "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
         "inLanguage": "es"
       },
-      "version": "2.0.0-dev",
-      "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio fa5787126c672a185fbfc5763506c68dc3fc58ba; sin DOI de versión.",
+      "version": "2.0.0",
+      "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://github.com/dieghernan/gifs/releases/tag/v2.0.0",
+      "isPartOf": {
+        "@id": "https://dieghernan.github.io/gifs/#catalog"
+      },
       "@context": {
         "@language": "es",
         "@vocab": "https://schema.org/",
@@ -1228,8 +1231,11 @@
         "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
         "inLanguage": "es"
       },
-      "version": "2.0.0-dev",
-      "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio fa5787126c672a185fbfc5763506c68dc3fc58ba; sin DOI de versión.",
+      "version": "2.0.0",
+      "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://github.com/dieghernan/gifs/releases/tag/v2.0.0",
+      "isPartOf": {
+        "@id": "https://dieghernan.github.io/gifs/#catalog"
+      },
       "@context": {
         "@language": "es",
         "@vocab": "https://schema.org/",
@@ -1621,5 +1627,10 @@
         "@id": "https://dieghernan.github.io/gifs/#catalog"
       }
     }
-  ]
+  ],
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "@id": "https://doi.org/10.5281/zenodo.23929996"
+  },
+  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://github.com/dieghernan/gifs/releases/tag/v2.0.0"
 }

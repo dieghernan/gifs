@@ -77,7 +77,10 @@ def build():
     if "developmentVersion" in metadata:
         dataset["citeAs"] = f'Diego HH. Grandes incendios forestales en España ({metadata["developmentVersion"]}). Instantánea del repositorio {snapshot["sourceRevision"]}; sin DOI de versión.'
     if "developmentVersion" not in metadata:
-        dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"], citeAs=citation["citeAs"])
+        dataset["citeAs"] = citation["citeAs"]
+        if citation.get("doiUrl"):
+            dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"])
+    dataset["isPartOf"] = {"@type": "CreativeWork", "@id": citation["conceptDoiUrl"]}
     dataset.update({
         "@context": context, "@type": "Dataset", "@id": HOME + "#dataset",
         "url": HOME, "conformsTo": "http://mlcommons.org/croissant/1.1",
@@ -102,6 +105,9 @@ def build_documents():
         dataset["name"] = resource["name"]
         dataset["description"] = resource["description"]
         dataset["includedInDataCatalog"] = {"@id": HOME + "#catalog"}
+        dataset["isPartOf"] = {"@id": HOME + "#catalog"}
+        dataset.pop("identifier", None)
+        dataset.pop("sameAs", None)
         dataset["distribution"] = [item for item in dataset["distribution"]
                                    if item["@id"] in {resource["id"], resource["id"] + "-json", resource["id"] + "-geojson"}]
         dataset["recordSet"] = [item for item in dataset["recordSet"] if item["@id"] == resource["recordSet"]]
@@ -113,6 +119,10 @@ def build_documents():
     catalog = {key: combined[key] for key in ("name", "description", "creator", "license", "creditText", "version", "datePublished", "dateModified", "isAccessibleForFree", "inLanguage", "temporalCoverage")}
     catalog.update({"@context": {"@vocab": "https://schema.org/", "@language": "es"}, "@type": "DataCatalog",
                     "@id": HOME + "#catalog", "url": HOME, "dataset": datasets})
+    catalog["isPartOf"] = combined["isPartOf"]
+    for key in ("identifier", "sameAs", "citeAs"):
+        if key in combined:
+            catalog[key] = combined[key]
     documents.update({"catalog.json": catalog, "_data/catalog.json": catalog})
     return {path: json.dumps(value, ensure_ascii=False, indent=2) + "\n" for path, value in documents.items()}
 
