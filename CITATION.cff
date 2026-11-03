@@ -19,8 +19,8 @@ authors:
 - family-names: Hernangómez
   given-names: Diego
   orcid: https://orcid.org/0000-0001-8457-4658
-# Proposed first release; add the actual release date and DOI when assigned.
 version: 1.0.0
+date-released: 2026-11-03
 license-url: https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html
 preferred-citation:
   type: data
@@ -30,6 +30,7 @@ preferred-citation:
     given-names: Diego
     orcid: https://orcid.org/0000-0001-8457-4658
   version: 1.0.0
+  year: '2026'
   url: https://dieghernan.github.io/gifs/
   license-url: https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html
 repository-code: https://github.com/dieghernan/gifs

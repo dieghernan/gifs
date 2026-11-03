@@ -1,7 +1,7 @@
 # Preparación de la primera release
 
-Estado: borrador local. Versión propuesta: `1.0.0`; etiqueta: `v1.0.0`.
-La fecha de publicación y el DOI están pendientes de asignación.
+Versión: `1.0.0`; etiqueta: `v1.0.0`. Fecha: 3 de noviembre de 2026.
+El DOI se incorporará cuando Zenodo lo asigne.
 
 ## Notas de la release
 
