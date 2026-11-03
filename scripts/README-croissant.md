@@ -10,6 +10,8 @@ its role as a downloadable distribution for existing consumers.
 
 - `_data/structured_data.json`: dataset description, creators, source, reuse
   terms, publication dates and the pinned CSV revision/path.
+- `CITATION.cff`: release version, date, DOI and preferred citation, generated
+  into `_data/citation.json` by `ruby scripts/citation.rb`.
 - `_data/croissant_fields.json`: the seven columns, types and descriptions.
 - `_data/croissant_context.json`: the JSON-LD context from mlcroissant 1.1.1's
   Croissant 1.1 context, with Spanish as the default language. The `name` and
@@ -29,6 +31,8 @@ Install the pinned validator into a Python 3.12 virtual environment:
 
 ```sh
 python -m pip install -r scripts/requirements-croissant.txt -r scripts/requirements-microformats.txt
+ruby scripts/citation.rb
+ruby scripts/citation.rb --check
 python scripts/build_croissant.py
 python scripts/build_croissant.py --check
 mlcroissant validate --jsonld croissant.json
@@ -79,7 +83,8 @@ also requires replacing the social preview image in the repository settings.
 
 Version 1.0.0 is archived at <https://doi.org/10.5281/zenodo.23929997>.
 The descriptor includes its version, DOI and citation in `version`,
-`identifier` and `citeAs`.
+`identifier`, `sameAs` and `citeAs`. The release card uses the same citation
+metadata and downloads the immutable CSV snapshot, rather than the main branch.
 The dataset's reuse terms remain the MITECO legal notice, not the code's MIT
 license. Existing provisional/final-data and completeness limitations remain.
 

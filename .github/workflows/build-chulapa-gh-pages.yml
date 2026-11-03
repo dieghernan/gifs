@@ -35,6 +35,8 @@ jobs:
           ruby-version: '3.4'
           bundler-cache: true
           working-directory: .
+      - name: Check generated citation
+        run: ruby scripts/citation.rb --check
       - name: Set up Pages
         id: pages
         uses: actions/configure-pages@v6

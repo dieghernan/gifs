@@ -14,6 +14,7 @@ HOME = "https://dieghernan.github.io/gifs/"
 
 def build():
     metadata = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))
+    citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
     fields = json.loads((ROOT / "_data/croissant_fields.json").read_text(encoding="utf-8"))
     snapshot = metadata["croissant"]
     # Git blob bytes avoid platform-dependent CRLF conversions in the checksum.
@@ -33,6 +34,10 @@ def build():
 
     context = json.loads((ROOT / "_data/croissant_context.json").read_text(encoding="utf-8"))
     dataset = dict(metadata["dataset"])
+    dataset.update({
+        "version": citation["version"], "identifier": citation["doiUrl"],
+        "sameAs": citation["doiUrl"], "citeAs": citation["citeAs"],
+    })
     dataset.update({
         "@context": context, "@type": "Dataset", "@id": HOME + "#dataset",
         "url": HOME, "conformsTo": "http://mlcommons.org/croissant/1.1",
