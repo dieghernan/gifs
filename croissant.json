@@ -1,8 +1,5 @@
 {
   "name": "Grandes incendios forestales en España",
-  "version": "1.0.0",
-  "identifier": "https://doi.org/10.5281/zenodo.23929997",
-  "citeAs": "Hernangómez, Diego. (2026). Grandes incendios forestales en España (v1.0.0) [Conjunto de datos]. Zenodo. https://doi.org/10.5281/zenodo.23929997",
   "description": "Conjunto de 449 grandes incendios forestales en España, con al menos 500 hectáreas forestales quemadas, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye municipios, provincias, códigos INE, fecha y superficie forestal en hectáreas; una fila por incendio. Recopilado del MITECO: estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026. En 2012, 31/12 es una fecha convencional que solo identifica el año. Disponible en CSV; no representa cobertura anual completa ni seguimiento en tiempo real.",
   "isAccessibleForFree": true,
   "inLanguage": "es",
@@ -158,6 +155,10 @@
     "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
     "inLanguage": "es"
   },
+  "version": "1.0.0",
+  "identifier": "https://doi.org/10.5281/zenodo.23929997",
+  "sameAs": "https://doi.org/10.5281/zenodo.23929997",
+  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 1.0.0) [Data set]. https://doi.org/10.5281/zenodo.23929997",
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",

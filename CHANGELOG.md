@@ -1,5 +1,10 @@
 # Historial de cambios
 
+## Sin publicar
+
+- Tarjeta de descarga del CSV con tamaño, fecha, versión, SHA-256 y DOI, adaptada a móvil y escritorio.
+- Cita y metadatos de la versión generados desde `CITATION.cff`, con referencia en BibTeX y comprobación de coherencia antes de publicar.
+
 ## 1.0.0 — 2026-11-03
 
 Primera versión auditada del conjunto de grandes incendios forestales en

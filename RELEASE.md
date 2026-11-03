@@ -5,6 +5,19 @@ Release publicada: [v1.0.0](https://github.com/dieghernan/gifs/releases/tag/v1.0
 DOI de la versión: [10.5281/zenodo.23929997](https://doi.org/10.5281/zenodo.23929997).
 DOI general: [10.5281/zenodo.23929996](https://doi.org/10.5281/zenodo.23929996).
 
+El registro de Zenodo está publicado como Dataset. Su aviso de derechos
+distingue las condiciones de reutilización del MITECO para los datos de la
+licencia MIT del código y la documentación, y conserva los avisos de terceros.
+El archivo de la release permanece asociado al commit etiquetado; la
+incorporación posterior del DOI no mueve esa etiqueta.
+
+La cita y los metadatos de la versión se mantienen desde `CITATION.cff`:
+
+```sh
+ruby scripts/citation.rb
+py scripts/build_croissant.py
+```
+
 ## Notas de la release
 
 ### Grandes incendios forestales en España — v1.0.0
