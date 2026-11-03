@@ -1,0 +1,19 @@
+{
+  "download_date": "2026-11-03",
+  "egif": {
+    "url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+    "zip": "Xlsx_20261103_214830.zip",
+    "sha256": "535fe6f4e6b805e2c239de75e1c7dd7d64feaab46db127b394540d078a6e0bb1",
+    "workbook": "Xlsx_20261103_214830_1.xlsx",
+    "records": 15997,
+    "parts_at_least_500_ha": 44,
+    "scope": "Campania 2012; el archivo contiene registros de toda España. No se conserva una captura de los filtros de la consulta."
+  },
+  "report": {
+    "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2012_tcm30-132581.pdf",
+    "sha256": "10c8c2d2fe4e2924dc44a9d5827153797b292260158aaaff71272943595862cf",
+    "pdf_page": 77,
+    "printed_page": 76,
+    "table": 37
+  }
+}

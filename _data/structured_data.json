@@ -8,7 +8,7 @@
   },
   "dataset": {
     "name": "Grandes incendios forestales en España",
-    "description": "Conjunto de 449 grandes incendios forestales en España, con al menos 500 hectáreas forestales quemadas, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye municipios, provincias, códigos INE, fecha y superficie forestal en hectáreas; una fila por incendio. Recopilado del MITECO: estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026. En 2012, 31/12 es una fecha convencional que solo identifica el año. Disponible en CSV; no representa cobertura anual completa ni seguimiento en tiempo real.",
+    "description": "Conjunto de 449 grandes incendios forestales en España, con al menos 500 hectáreas forestales quemadas, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye municipios, provincias, códigos INE, fecha y superficie forestal en hectáreas; una fila por incendio. Recopilado del MITECO: estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026. Las fechas de 2012 se han contrastado con el informe definitivo y EGIF. Disponible en CSV; no representa cobertura anual completa ni seguimiento en tiempo real.",
     "isAccessibleForFree": true,
     "inLanguage": "es",
     "creator": {
@@ -148,7 +148,7 @@
         "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv"
       }
     ],
-    "measurementTechnique": "Recopilación y contraste de listados anuales de grandes incendios forestales del MITECO; extracción de tablas PDF, OCR con comprobación visual cuando es necesario, transcripción de la tabla definitiva Power BI de 2019 y lectura del listado provisional de 2026. Normalización de nombres y códigos INE y una fila por incendio, sin repartir su superficie entre municipios. Los códigos corresponden al primer municipio y provincia mencionados. Las fechas de 2012 son convencionales; la asociación As Neves/Portugal de 2017 es una inferencia documentada.",
+    "measurementTechnique": "Recopilación y contraste de listados anuales de grandes incendios forestales del MITECO; extracción de tablas PDF, OCR con comprobación visual cuando es necesario, transcripción de la tabla definitiva Power BI de 2019 y lectura del listado provisional de 2026. Normalización de nombres y códigos INE y una fila por incendio, sin repartir su superficie entre municipios. Los códigos corresponden al primer municipio y provincia mencionados. Las fechas de 2012 se contrastan entre el cuadro 37 del informe definitivo y EGIF; se mantienen las superficies del informe mientras se revisan las discrepancias; la asociación As Neves/Portugal de 2017 es una inferencia documentada.",
     "subjectOf": {
       "@type": "CreativeWork",
       "name": "Metodología de recopilación y validación",

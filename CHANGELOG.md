@@ -2,6 +2,8 @@
 
 ## Sin publicar
 
+- Recuperadas las fechas de inicio de los 41 incendios de 2012, contrastadas entre el informe definitivo y EGIF, con auditoría reproducible de partes provinciales y discrepancias de superficie.
+
 - Tarjeta de descarga del CSV con tamaño, fecha, versión, SHA-256 y DOI, adaptada a móvil y escritorio.
 - Cita y metadatos de la versión generados desde `CITATION.cff`, con referencia en BibTeX y comprobación de coherencia antes de publicar.
 

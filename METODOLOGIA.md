@@ -15,7 +15,7 @@ se ofrece un seguimiento en tiempo real.
 Los archivos [CSV](rdata/gif_d2010.csv) y [Excel](rdata/gif_d2010.xlsx)
 contienen los mismos siete campos: `prov_name`, `cpro`, `munic_name`, `cmun`,
 `codmun`, `date` y `area_forestal_ha`. La fecha representa el inicio del
-incendio, con la excepción convencional de 2012 explicada más adelante.
+incendio. Las fechas de 2012 se han contrastado con dos fuentes oficiales.
 La superficie se expresa en hectáreas forestales, no en superficie total
 afectada cuando esta incluye terrenos no forestales.
 
@@ -94,7 +94,7 @@ ascendente y, para una misma fecha, por superficie descendente.
 
 | Caso | Tratamiento aplicado | Limitación o fundamento |
 | --- | --- | --- |
-| 2012: fechas | Se conserva `2012-12-31` en los 41 incendios. | Es una fecha convencional para identificar el año; el informe utilizado no aporta fechas individuales. No permite análisis de estacionalidad. |
+| 2012: fechas | Se recuperan las fechas de inicio de los 41 incendios. | Coinciden entre el cuadro 37 del informe definitivo (página impresa 76, página 77 del PDF) y la exportación EGIF del 03/11/2026. La tabla principal no incluía fechas, pero el anexo sí las aporta. |
 | 2012: Hellín / Moratalla | Una fila, Albacete / Murcia, código 02037 y 6.549,47 ha. | Se unifican las dos entradas provinciales del mismo incendio; se conserva su superficie conjunta. |
 | 2013: Fonfría | Se conserva Fonfría, Zamora, 49071, 01/08/2013 y 837,56 ha. | El MITECO indica origen en Portugal; el mantenedor confirma Fonfría como municipio español afectado. |
 | 2016: Bolbaite | Sustituye a Chella con código 46073 y 1.564,32 ha. | Se adopta el listado definitivo. |
@@ -114,6 +114,43 @@ Para el origen portugués de As Neves se consultó el
 [Diario de Sesiones del Parlamento de Galicia del 17/10/2017](https://www.parlamentodegalicia.es/sitios/web/BibliotecaDiarioSesions/D100044.pdf).
 Estas referencias sustentan el contexto territorial, no una nueva medición
 de superficie.
+
+### Conciliación de EGIF de 2012
+
+La exportación del 03/11/2026 contiene 15.997 partes, todos con estado
+«Migración», y 44 partes con al menos 500 ha forestales. No se interpreta ese
+estado como prueba suficiente de prioridad sobre el informe definitivo.
+Nuestra selección conserva 41 incendios y 135.580,04 ha.
+
+Los 37 emparejamientos directos restantes coinciden en superficie. Dos casos
+requieren agrupar partes provinciales:
+
+- Hellín/Moratalla: partes `2012020224` y `2012300087`, con 5.207,28 y
+  1.342,19 ha, que suman las 6.549,47 ha del registro. El informe identifica
+  expresamente un único incendio. Fecha: 01/07/2012.
+- Andilla: partes `2012460247` (Valencia) y `2012120050` (Castellón), con
+  9.451,65 y 10.613,25 ha, que suman las 20.064,90 ha del informe. Coinciden
+  las horas de detección y extinción. Se registra la asociación como
+  conciliación territorial; no existe una clave común en este extracto.
+
+Quedan estas diferencias, sin aplicar a los datos publicados:
+
+| Caso | Informe definitivo y conjunto actual (ha) | EGIF (ha) | Diferencia (ha) |
+| --- | ---: | ---: | ---: |
+| Llocnou de Sant Jeroni | 1.331,08 | 1.330,94 | −0,14 |
+| Chulilla | 3.703,33 | 5.713,65 | +2.010,32 |
+| Cocentaina | 495,03; fuera del conjunto | 541,02 | +45,99; pasa el umbral |
+
+Tras las dos agrupaciones, la selección EGIF tendría 42 incendios y
+138.131,24 ha. Su diferencia de 2.551,20 ha respecto del conjunto actual
+incluye las 541,02 ha completas de la posible incorporación de Cocentaina.
+No debe confundirse con la revisión de 45,99 ha de ese incendio.
+
+La carpeta versionada [rdata/audit/2012](rdata/audit/2012/README.md) conserva
+extractos, identificadores, fechas, diferencias, huellas SHA-256 de los
+originales y las decisiones pendientes. El cruce se reproduce con
+`py scripts/audit_egif_2012.py`. El script solo aplica las fechas confirmadas
+cuando se ejecuta con `--apply-dates`; nunca sustituye superficies.
 
 ## Resultados agregados y fuentes anuales
 
@@ -169,8 +206,7 @@ inicial y fue sustituido por ese listado definitivo.
   `codmun` tras completar los ceros iniciales.
 - **Contraste documental:** revisión anual de fechas, municipios y
   superficies, con las decisiones territoriales descritas arriba. Las
-  fechas de 2012 se excluyen de la afirmación de coincidencia de fechas
-  reales.
+  fechas de 2012 coinciden entre el anexo del informe y EGIF.
 - **Superficies:** el CSV de comparación de trabajo contiene 449 filas y no
   deja diferencias de superficie respecto de las fuentes seleccionadas.
   La comprobación exacta detectó y corrigió tres diferencias residuales de
@@ -188,8 +224,11 @@ los enlaces públicos, sin depender de esa carpeta para su lectura.
 
 ## Limitaciones y mantenimiento
 
-No quedan decisiones abiertas por año en esta revisión. Esto no convierte
-los avances en estadísticas definitivas ni elimina las incertidumbres
+La conciliación EGIF de 2012 deja abiertas las diferencias de superficie
+de Chulilla y Llocnou de Sant Jeroni y la posible incorporación de Cocentaina.
+Se conservan las superficies y el recuento del informe definitivo hasta
+resolverlas. Esto no convierte los avances en estadísticas definitivas ni
+elimina las incertidumbres
 documentadas de Fonfría y As Neves. Las fuentes provisionales deben revisarse
 cuando el MITECO publique nuevas versiones.
 

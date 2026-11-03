@@ -27,7 +27,11 @@ class DatasetTests(unittest.TestCase):
                                  row["codmun"].zfill(5))
         year_2012 = [row for row in records if row["date"].startswith("2012-")]
         self.assertEqual(len(year_2012), 41)
-        self.assertEqual({row["date"] for row in year_2012}, {"2012-12-31"})
+        with (ROOT / "rdata/audit/2012/comparison.csv").open(encoding="utf-8", newline="") as stream:
+            confirmed = {row["codmun"]: row["date"] for row in csv.DictReader(stream)}
+        self.assertEqual({row["codmun"].zfill(5): row["date"] for row in year_2012}, confirmed)
+        self.assertEqual(min(row["date"] for row in year_2012), "2012-01-08")
+        self.assertEqual(max(row["date"] for row in year_2012), "2012-09-23")
         year_2019 = [row for row in records if row["date"].startswith("2019-")]
         self.assertEqual(len(year_2019), 15)
         self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in year_2019),
@@ -35,7 +39,7 @@ class DatasetTests(unittest.TestCase):
         descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
         self.assertEqual(descriptor["creator"]["name"], "Diego HH")
         self.assertEqual(descriptor["creator"]["url"], "https://dieghernan.github.io/")
-        self.assertIn("convencional", descriptor["description"])
+        self.assertIn("EGIF", descriptor["description"])
         self.assertIn("inferencia", descriptor["measurementTechnique"])
         self.assertEqual(len(descriptor["isBasedOn"]["hasPart"]), 17)
         self.assertEqual(descriptor["subjectOf"]["url"],

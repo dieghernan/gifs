@@ -42,9 +42,9 @@ El CSV incluye la provincia, el municipio y sus códigos, la fecha y la
 superficie forestal quemada en hectáreas. Los códigos deben leerse como texto
 para conservar los ceros iniciales.
 
-En los registros de 2012, `2012-12-31` es una fecha convencional para
-identificar el año: el informe utilizado no aporta fechas individuales.
-No debe interpretarse como la fecha real de inicio de esos incendios.
+Las fechas de inicio de los 41 incendios de 2012 se han recuperado del
+informe definitivo y contrastado con EGIF. Las diferencias de superficie
+entre ambas fuentes se documentan en la metodología.
 
 Cada fila representa un incendio. Cuando la descripción menciona varios
 municipios o provincias, se conserva un único registro y su superficie

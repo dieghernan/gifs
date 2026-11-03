@@ -33,7 +33,7 @@
     "column": "date",
     "label": "Fecha del incendio",
     "dataType": "sc:Date",
-    "description": "Fecha consignada para el incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo. Para los registros de 2012 se utiliza 2012-12-31 como fecha convencional que identifica únicamente el año, porque la tabla fuente no aporta fechas individuales; no representa una fecha de inicio confirmada."
+    "description": "Fecha de inicio del incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo. Las fechas de 2012 se han contrastado entre el cuadro 37 del informe definitivo y EGIF."
   },
   {
     "column": "area_forestal_ha",

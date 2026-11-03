@@ -4,7 +4,7 @@
 
 En este proyecto, GIF significa grandes incendios forestales, no el formato de imagen animada. La infografía utiliza estadísticas de incendios del MITECO: estadísticas definitivas y avances informativos. El conjunto actual contiene 449 registros fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026; Se utilizan estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026, según la revisión del 3 de noviembre de 2026. Los códigos INE se contrastan con los nombres de municipio y provincia. mapSpain aporta las ubicaciones municipales de referencia del mapa.
 
-En los registros de 2012, la fecha 2012-12-31 es convencional y solo identifica el año; no es una fecha de inicio confirmada.
+Las fechas de inicio de 2012 se han contrastado entre el cuadro 37 del informe definitivo y EGIF; se conservan las superficies del informe mientras se revisan las discrepancias.
 
 Los archivos representan el conjunto de datos utilizado para elaborar la infografía, no un servicio de seguimiento de incendios en tiempo real. La visualización está inspirada en el trabajo de Dominic Royé sobre cartografía de luciérnagas.
 
