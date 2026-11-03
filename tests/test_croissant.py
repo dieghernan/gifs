@@ -8,12 +8,46 @@ from pathlib import Path
 import subprocess
 import unittest
 
-from scripts.build_croissant import build
+from scripts.build_croissant import build, spatial_coverage
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class CroissantTests(unittest.TestCase):
+    def test_spatial_box_uses_latitude_longitude_and_preserves_canary_coordinates(self):
+        place = {'@type': 'Place', 'name': 'España'}
+        collection = {'features': [
+            {'geometry': {'type': 'Point', 'coordinates': [-17.9, 28.6]}},
+            {'geometry': None},
+            {'geometry': {'type': 'Point', 'coordinates': [2.4, 43.2]}},
+        ]}
+        coverage = spatial_coverage(place, [collection])
+        self.assertEqual(coverage['name'], 'España')
+        self.assertEqual(coverage['geo']['@type'], 'GeoShape')
+        self.assertEqual(coverage['geo']['box'], '28.6 -17.9 43.2 2.4')
+        self.assertNotIn('geo', place)
+        self.assertEqual(spatial_coverage(place, [{'features': [{'geometry': None}]}]), place)
+
+    def test_each_dataset_box_matches_its_geolocated_records(self):
+        catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
+        resources = json.loads((ROOT / '_data/structured_data.json').read_text(encoding='utf-8'))['croissant']['resources']
+        all_points = []
+        for dataset, resource in zip(catalog['dataset'], resources):
+            collection = json.loads((ROOT / resource['geoPath']).read_text(encoding='utf-8'))
+            points = [feature['geometry']['coordinates'] for feature in collection['features'] if feature['geometry']]
+            all_points.extend(points)
+            with self.subTest(dataset=dataset['@id']):
+                south, west, north, east = map(float, dataset['spatialCoverage']['geo']['box'].split())
+                self.assertEqual((west, south, east, north), (
+                    min(point[0] for point in points), min(point[1] for point in points),
+                    max(point[0] for point in points), max(point[1] for point in points)))
+                self.assertLess(west, -13)
+                self.assertLess(south, 30)
+        south, west, north, east = map(float, catalog['spatialCoverage']['geo']['box'].split())
+        self.assertEqual((west, south, east, north), (
+            min(point[0] for point in all_points), min(point[1] for point in all_points),
+            max(point[0] for point in all_points), max(point[1] for point in all_points)))
+
     def test_archive_doi_describes_the_collection_and_not_its_children(self):
         catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
         citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))

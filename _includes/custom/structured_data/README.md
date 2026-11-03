@@ -22,6 +22,13 @@ release URL. After archiving, add the DOI to both citation fields in
 `CITATION.cff` and regenerate without moving the published tag. The catalog
 identifies the archived collection and links the concept DOI through
 `isPartOf`. The child datasets link the catalog and have no separate DOI.
+`spatialCoverage` preserves the place name España and adds a `GeoShape.box`
+computed from the available GeoJSON points for each dataset. Its order is
+south latitude, west longitude, north latitude, east longitude, as required
+by Google's Dataset documentation. The catalog uses the combined extent.
+Null geometries are excluded and Canary Islands coordinates remain real.
+The box describes available point locations, including municipal fallbacks;
+it does not represent burned perimeters or complete territorial coverage.
 Run the citation generator before regenerating Croissant. Both generators
 support `--check`, and CI checks both outputs before publication.
 
