@@ -1,6 +1,6 @@
 {
   "name": "Grandes incendios forestales en España",
-  "description": "Conjunto de 404 registros de grandes incendios forestales en España, fechados entre el 27 de febrero de 2010 y el 21 de septiembre de 2025. Incluye provincia, municipio, sus códigos, fecha y superficie forestal quemada en hectáreas, para incendios de al menos 500 hectáreas forestales. Se recopila de estadísticas definitivas y avances informativos del MITECO, sin distinguir en cada registro su carácter definitivo o provisional. Disponible en CSV; no representa años completos de cobertura ni un servicio de seguimiento en tiempo real.",
+  "description": "Conjunto de 451 registros de grandes incendios forestales en España, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye provincia, municipio, sus códigos, fecha y superficie forestal quemada en hectáreas, para incendios de al menos 500 hectáreas forestales. Se recopila de estadísticas definitivas y avances informativos del MITECO, sin distinguir en cada registro su carácter definitivo o provisional. Disponible en CSV; no representa años completos de cobertura ni un servicio de seguimiento en tiempo real.",
   "isAccessibleForFree": true,
   "inLanguage": "es",
   "creator": {
@@ -27,7 +27,7 @@
     "@type": "Place",
     "name": "España"
   },
-  "temporalCoverage": "2010-02-27/2025-09-21",
+  "temporalCoverage": "2010-02-27/2026-09-26",
   "variableMeasured": [
     "Provincia",
     "Código de provincia",
@@ -54,11 +54,11 @@
       ],
       "@id": "gif-csv",
       "name": "Grandes incendios forestales en España (CSV)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/098c25ce7d1e628002a1b3bba73f9c9ee7d726b6/rdata/gif_d2010.csv",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b93d776d5b6129c9f9109fafa455ecee949019bd/rdata/gif_d2010.csv",
       "encodingFormat": "text/csv",
-      "contentSize": "20742 bytes",
-      "sha256": "86d83860f5848188090d69fd6b21e4ae6ea9acc9531417bc52d7e5f0abba7d58",
-      "dateModified": "2026-05-29"
+      "contentSize": "23249 bytes",
+      "sha256": "fa151b011a95f0dfaac831a632e33ce20587a715909ff7df61b2540e6dd32624",
+      "dateModified": "2026-11-03"
     }
   ],
   "@context": {
@@ -118,7 +118,7 @@
   "url": "https://dieghernan.github.io/gifs/",
   "conformsTo": "http://mlcommons.org/croissant/1.1",
   "datePublished": "2025-02-21",
-  "dateModified": "2026-05-29",
+  "dateModified": "2026-11-03",
   "recordSet": [
     {
       "@type": "cr:RecordSet",

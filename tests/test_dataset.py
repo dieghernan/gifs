@@ -26,7 +26,7 @@ class DatasetTests(unittest.TestCase):
         self.assertLessEqual(len(dataset["description"]), 5000)
         self.assertEqual(dataset["creator"]["sameAs"], "https://orcid.org/0000-0001-8457-4658")
         self.assertEqual(dataset["datePublished"], "2025-02-21")
-        self.assertEqual(dataset["dateModified"], "2026-05-29")
+        self.assertEqual(dataset["dateModified"], "2026-11-03")
         self.assertIn("superficie forestal quemada", dataset["keywords"])
         self.assertEqual(dataset["license"], "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html")
         self.assertEqual(dataset["isBasedOn"]["publisher"]["alternateName"], "MITECO")

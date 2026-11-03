@@ -28,6 +28,13 @@ gif_fires |>
   write_csv("rdata/gif_d2010.csv")
 
 
+gif_fires |>
+  as_tibble() |>
+  mutate(y = year(date)) |>
+  group_by(y) |>
+  summarise(ha_total = sum(area_forestal_ha)) |>
+  arrange(desc(y))
+
 gif_fires$codmun <- sprintf("%05d", gif_fires$codmun)
 
 munis_sf <- esp_get_capimun(moveCAN = TRUE) |>
@@ -375,6 +382,7 @@ ggsave(
 
 # Comprime imágenes
 resmush::resmush_dir(overwrite = TRUE, dir = ".")
+xfun::optipng()
 
 # Escribe info de sesión
 sessioninfo::session_info(to_file = "sessioninfo.txt")

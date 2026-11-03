@@ -3,7 +3,7 @@ layout: default
 dataset: true
 title: Infografía de grandes incendios forestales
 og_image: https://dieghernan.github.io/gifs/assets/social-preview.jpg
-og_image_alt: Grandes incendios forestales en España, 2010–2025. Mapa oscuro con
+og_image_alt: Grandes incendios forestales en España, 2010–2026. Mapa oscuro con
   círculos naranjas proporcionales a la superficie forestal quemada.
 og_image_width: 1200
 og_image_height: 630
@@ -17,14 +17,14 @@ project_links:
       label: GitHub
 ---
 
-![Mapa de España con grandes incendios forestales de 2010 a 2025. El tamaño de los círculos naranjas indica las hectáreas forestales quemadas; un gráfico resume la superficie por año.](https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png)
+![Mapa de España con grandes incendios forestales de 2010 a 2026. El tamaño de los círculos naranjas indica las hectáreas forestales quemadas; un gráfico resume la superficie por año.](https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png)
 
 Este proyecto reúne los datos y el código en **R** utilizados para crear una
 infografía de grandes incendios forestales (GIF) en España. En este contexto,
 GIF se refiere a incendios con al menos 500 hectáreas forestales quemadas.
 
-El conjunto actual contiene 404 registros fechados entre el 27 de febrero de
-2010 y el 21 de septiembre de 2025. Estas fechas corresponden al primer y al último
+El conjunto actual contiene 451 registros fechados entre el 27 de febrero de
+2010 y el 26 de septiembre de 2026. Estas fechas corresponden al primer y al último
 registro del archivo, no a años completos de cobertura. El conjunto no es un
 servicio de seguimiento de incendios en tiempo real.
 
