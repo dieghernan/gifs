@@ -24,12 +24,13 @@ def render(width, height, filename):
     draw = ImageDraw.Draw(canvas)
 
     def project(lon, lat):
-        inset_shift = 160 if lat < 36.4 and lon < -8 else 0
-        return ((565 + (lon + 10) * 48 + inset_shift) * sx,
+        return ((565 + (lon + 10) * 48) * sx,
                 (95 + (44.5 - lat) * 52) * sy)
 
     regions = json.loads((ASSETS / "regions.geojson").read_text())
     for feature in regions["features"]:
+        if feature["properties"]["codauto"] == "05":
+            continue
         geometry = feature["geometry"]
         polygons = ([geometry["coordinates"]] if geometry["type"] == "Polygon"
                     else geometry["coordinates"])
@@ -39,29 +40,34 @@ def render(width, height, filename):
             for ring in polygon[1:]:
                 draw.polygon([project(*point[:2]) for point in ring], fill="black")
 
-    with (ASSETS / "municipal-centers.csv").open(encoding="utf-8") as stream:
-        centers = {row["codmun"].zfill(5): (float(row["lon"]), float(row["lat"]))
-                   for row in csv.DictReader(stream)}
     totals = {}
     with (ROOT / "rdata/gif_d2010.csv").open(encoding="utf-8") as stream:
         records = list(csv.DictReader(stream))
+    with (ROOT / "data-derived/fire-map-locations.csv").open(encoding="utf-8") as stream:
+        locations = {row["fire_id"]: row for row in csv.DictReader(stream)}
     for row in records:
-        code = row["codmun"].zfill(5)
-        if code not in centers:
-            raise ValueError(f"Missing municipal center: {code}")
-        totals[code] = totals.get(code, 0) + float(row["area_forestal_ha"])
+        if row["cpro"] in {"35", "38"}:
+            continue
+        if not row["longitude"] or not row["latitude"]:
+            continue
+        location = locations[row["fire_id"]]
+        if (abs(float(location["source_longitude"]) - float(row["longitude"])) > 1e-10
+                or abs(float(location["source_latitude"]) - float(row["latitude"])) > 1e-10):
+            raise ValueError("Map locations are stale; run incendios.R first")
+        point = (float(location["map_longitude"]), float(location["map_latitude"]))
+        totals[point] = totals.get(point, 0) + float(row["area_forestal_ha"])
 
     glow = Image.new("RGB", canvas.size)
     glow_draw = ImageDraw.Draw(glow)
-    for code, area in totals.items():
-        x, y = project(*centers[code])
+    for point, area in totals.items():
+        x, y = project(*point)
         r = max(1.6, math.sqrt(area) * .047) * sx
         glow_draw.ellipse((x-r*2, y-r*2, x+r*2, y+r*2), fill="#b62203")
     from PIL import ImageChops
     canvas = ImageChops.add(canvas, glow.filter(ImageFilter.GaussianBlur(12*SCALE)))
     draw = ImageDraw.Draw(canvas)
-    for code, area in sorted(totals.items(), key=lambda item: -item[1]):
-        x, y = project(*centers[code])
+    for point, area in sorted(totals.items(), key=lambda item: -item[1]):
+        x, y = project(*point)
         r = max(1.6, math.sqrt(area) * .047) * sx
         draw.ellipse((x-r, y-r, x+r, y+r), fill=ORANGE)
 

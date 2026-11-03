@@ -1,6 +1,6 @@
 # Project structured data
 
-This layer generates only the project's Dataset JSON-LD. It does not replace
+This layer generates the project's DataCatalog and its two Dataset descriptions. It does not replace
 or modify Chulapa's structured data or the existing author normalization plugin.
 
 `_data/structured_data.json` holds the dataset description, source, creators,
@@ -17,18 +17,28 @@ Chulapa continues to generate its own page and author metadata.
 Run `ruby scripts/citation.rb` to generate the citation sections in README and
 index and `_data/citation.json`. The download card reads that same JSON;
 `build_croissant.py` uses it for `version`, `identifier`, `sameAs` and `citeAs`.
+Before Zenodo assigns a version DOI, the citation uses the tagged GitHub
+release URL. After archiving, add the DOI to both citation fields in
+`CITATION.cff` and regenerate without moving the published tag. The catalog
+identifies the archived collection and links the concept DOI through
+`isPartOf`. The child datasets link the catalog and have no separate DOI.
 Run the citation generator before regenerating Croissant. Both generators
 support `--check`, and CI checks both outputs before publication.
 
-`dataset.html` embeds the generated Croissant Dataset JSON-LD. The older
+`dataset.html` embeds `_data/catalog.json`: one DataCatalog containing the
+part and fire Datasets. Standalone Croissant descriptors are served at
+`/croissant/parts.json` and `/croissant/fires.json`. The global
+`/croissant.json` is retained for compatibility. The older
 `release.html` and `distribution.html` partials are not used by that descriptor.
 The distribution shares the dataset's modification date. Review it when the
 CSV changes; do not use the website build date.
 
 `measurementTechnique` describes collection and processing. `subjectOf`
 links to `METODOLOGIA.md`, and `isBasedOn.hasPart` lists the annual MITECO
-sources. The description and field metadata retain the conventional 2012
-dates and the provisional status of the recent annual sources.
+sources. The description and field metadata document EGIF source priority, nullable
+coordinates and unresolved matches. The development descriptor includes
+part and fire resources in CSV and typed JSON; it does not reuse the
+archived release DOI for the development data.
 
 Build with `bundle exec jekyll build`, then run
 `py -m unittest discover -s tests` to verify the rendered metadata against the CSV.

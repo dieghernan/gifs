@@ -1,5 +1,6 @@
 # GIF España desde 2010
-# Datos obtenidos por scrapeado y depuración de los informes de MITECO
+Sys.setlocale("LC_CTYPE", "English_United States.utf8")
+# Datos generados desde exportaciones EGIF y fuentes MITECO de respaldo.
 # Estadísticas de Incendios Forestales:
 # https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-incendios.html
 
@@ -17,15 +18,19 @@ library(ggshadow)
 library(ggtext)
 
 # Extra: utilities
-library(resmush)
 library(sessioninfo)
 
 # 2. Carga datos y depura ----
-gif_fires <- openxlsx::read.xlsx("rdata/gif_d2010.xlsx", detectDates = TRUE) |>
-  as_tibble()
-gif_fires |>
-  mutate(date = as.character(date)) |>
-  write_csv("rdata/gif_d2010.csv")
+gif_fires <- read_csv(
+  "rdata/gif_d2010.csv",
+  col_types = cols(
+    .default = col_character(),
+    date = col_date(),
+    area_forestal_ha = col_double(),
+    longitude = col_double(),
+    latitude = col_double()
+  )
+)
 
 sum(gif_fires$area_forestal_ha)
 
@@ -36,22 +41,37 @@ gif_fires |>
   summarise(ha_total = sum(area_forestal_ha)) |>
   arrange(desc(y))
 
-gif_fires$codmun <- sprintf("%05d", gif_fires$codmun)
-
-munis_sf <- esp_get_capimun(moveCAN = TRUE) |>
-  select(codmun = LAU_CODE, name_ine = name) |>
-  # Trabajo en EPSG:4258 para la visualización (opinativo)
-  st_transform(4258)
-
-# Objeto sf a la izquierda para no perder la geometría
-gif_fires_sf <- munis_sf |>
-  right_join(gif_fires) |>
-  # Reordeno columnas
-  select(names(gif_fires), name_ine) |>
-  relocate(name_ine, .before = munic_name) |>
+gif_fires_sf <- gif_fires |>
+  filter(!is.na(longitude), !is.na(latitude)) |>
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326, remove = FALSE) |>
+  st_transform(4258) |>
+  mutate(name_ine = munic_name) |>
   arrange(desc(date))
 
+canary_points <- gif_fires_sf$cpro %in% c("35", "38")
+if (any(canary_points)) {
+  map_geometry <- st_geometry(gif_fires_sf)
+  map_geometry[canary_points] <- st_geometry(esp_move_can(gif_fires_sf[
+    canary_points,
+  ]))
+  st_geometry(gif_fires_sf) <- map_geometry
+}
+
 any(st_is_empty(gif_fires_sf))
+
+dir.create("data-derived", showWarnings = FALSE)
+display_xy <- st_coordinates(gif_fires_sf)
+write.csv(
+  data.frame(
+    fire_id = gif_fires_sf$fire_id,
+    source_longitude = gif_fires_sf$longitude,
+    source_latitude = gif_fires_sf$latitude,
+    map_longitude = display_xy[, 1],
+    map_latitude = display_xy[, 2]
+  ),
+  "data-derived/fire-map-locations.csv",
+  row.names = FALSE
+)
 
 # Expect FALSE
 
@@ -59,7 +79,11 @@ any(st_is_empty(gif_fires_sf))
 
 # Preparo fuentes y colores
 
-font_add_google("Fira Sans", family = "fira")
+font_add(
+  "fira",
+  regular = "scripts/assets/fira-sans/FiraSans-Regular.ttf",
+  bold = "scripts/assets/fira-sans/FiraSans-Bold.ttf"
+)
 
 # Colores básicos del plot
 # https://www.schemecolor.com/fire-color-scheme.php
@@ -204,7 +228,7 @@ main <- ggplot(ccaa) +
       " Diego HH https://dieghernan.github.io.",
       " Las hectáreas se refieren únicamente a hectáreas forestales",
       " afectadas.\nDatos: Estadísticas de Incendios Forestales, MITECO.",
-      " Estadísticas definitivas y Avances"
+      " EGIF, informes y avances. Ubicación EGIF o referencia municipal."
     )
   )
 
@@ -404,6 +428,4 @@ ggsave(
 # Escribe info de sesión
 sessioninfo::session_info(to_file = "sessioninfo.txt")
 
-# Comprime imágenes
-resmush::resmush_dir(overwrite = TRUE, dir = ".")
-xfun::optipng()
+# La compresión adicional de imágenes se realiza por separado.

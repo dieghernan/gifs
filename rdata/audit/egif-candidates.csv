@@ -1,0 +1,17 @@
+fire_id,legacy_date,legacy_municipality,egif_part_id,egif_date,egif_municipality,egif_area_ha,day_difference,evidence
+GIF-fa623e8aec7151c1,2022-07-24,Quintanilla del Coco,2022090115,2022-07-24,TEJADA,1808.0400,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-00f29a94a1ed52ad,2022-07-26,Almonte,2022210076,2022-07-25,ALMONTE,912.7900,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023330741,2023-03-29,PILOÑA,420.0800,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023331156,2023-03-27,TINEO,10080.0000,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023331157,2023-03-28,TINEO,1191.2000,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023331158,2023-03-29,ALLANDE,2442.3700,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023331159,2023-03-29,ALLANDE,626.3300,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-2357f3867a4f5c84,2023-03-29,Tineo,2023331160,2023-03-29,ALLANDE,1179.9000,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-94e394419d015099,2023-03-29,Piloña,2023330741,2023-03-29,PILOÑA,420.0800,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-94e394419d015099,2023-03-29,Piloña,2023331156,2023-03-27,TINEO,10080.0000,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-94e394419d015099,2023-03-29,Piloña,2023331157,2023-03-28,TINEO,1191.2000,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-94e394419d015099,2023-03-29,Piloña,2023331158,2023-03-29,ALLANDE,2442.3700,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-94e394419d015099,2023-03-29,Piloña,2023331159,2023-03-29,ALLANDE,626.3300,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-94e394419d015099,2023-03-29,Piloña,2023331160,2023-03-29,ALLANDE,1179.9000,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-305fbf8112a656b6,2023-04-05,Valdés,2023330792,2023-04-08,ALLANDE,444.0800,3,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
+GIF-ac5cdf799b785c28,2023-04-08,Allande,2023330792,2023-04-08,ALLANDE,444.0800,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match

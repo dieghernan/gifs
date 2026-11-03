@@ -1,0 +1,113 @@
+{
+  "egif_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "source_parts": 149290,
+  "selected_parts": 329,
+  "unassigned_selected_parts": 8,
+  "fire_view_records": 455,
+  "fire_view_area_ha": "1311632.4776",
+  "pending_legacy_matches": 9,
+  "coverage_fallback_records": 2,
+  "fire_view_note": "La vista conserva registros anteriores pendientes de conciliación; no se suman partes sin asignar a esos registros.",
+  "years": [
+    {
+      "year": 2010,
+      "fires": 11,
+      "area_ha": "12538.7900"
+    },
+    {
+      "year": 2011,
+      "fires": 24,
+      "area_ha": "26034.4700"
+    },
+    {
+      "year": 2012,
+      "fires": 42,
+      "area_ha": "138131.2400"
+    },
+    {
+      "year": 2013,
+      "fires": 17,
+      "area_ha": "19690.1200"
+    },
+    {
+      "year": 2014,
+      "fires": 7,
+      "area_ha": "9805.8300"
+    },
+    {
+      "year": 2015,
+      "fires": 16,
+      "area_ha": "39790.3200"
+    },
+    {
+      "year": 2016,
+      "fires": 22,
+      "area_ha": "33323.7000"
+    },
+    {
+      "year": 2017,
+      "fires": 56,
+      "area_ha": "100975.3500"
+    },
+    {
+      "year": 2018,
+      "fires": 3,
+      "area_ha": "4924.5668"
+    },
+    {
+      "year": 2019,
+      "fires": 15,
+      "area_ha": "30789.0900"
+    },
+    {
+      "year": 2020,
+      "fires": 19,
+      "area_ha": "34186.7767"
+    },
+    {
+      "year": 2021,
+      "fires": 18,
+      "area_ha": "47230.0747"
+    },
+    {
+      "year": 2022,
+      "fires": 60,
+      "area_ha": "213116.6181"
+    },
+    {
+      "year": 2023,
+      "fires": 19,
+      "area_ha": "52681.5385"
+    },
+    {
+      "year": 2024,
+      "fires": 16,
+      "area_ha": "16564.03"
+    },
+    {
+      "year": 2025,
+      "fires": 63,
+      "area_ha": "310108.07"
+    },
+    {
+      "year": 2026,
+      "fires": 47,
+      "area_ha": "221741.8928"
+    }
+  ]
+}

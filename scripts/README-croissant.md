@@ -1,93 +1,56 @@
-# Croissant pilot
+# Metadatos Croissant
 
-The dataset is published as Croissant 1.1 at
-<https://dieghernan.github.io/gifs/croissant.json>. The landing page embeds the
-same descriptor once, with the existing Dataset identifier. Its CSV resource
-has both Croissant FileObject and Schema.org DataDownload types, preserving
-its role as a downloadable distribution for existing consumers.
+`catalog.json` describe una colección `DataCatalog` con dos `Dataset`:
+partes EGIF y una vista conciliada de incendios. Cada conjunto tiene su
+descriptor Croissant en `croissant/parts.json` o `croissant/fires.json` y
+está disponible en CSV, JSON y GeoJSON.
+Los RecordSet extraen el JSON mediante JSONPath para conservar códigos
+como texto y distinguir valores nulos sin depender de inferencias del CSV.
 
-## Sources
+## Fuentes
 
-- `_data/structured_data.json`: dataset description, creators, source, reuse
-  terms, publication dates and the pinned CSV revision/path.
-- `CITATION.cff`: release version, date, DOI and preferred citation, generated
-  into `_data/citation.json` by `ruby scripts/citation.rb`.
-- `_data/croissant_fields.json`: the seven columns, types and descriptions.
-- `_data/croissant_context.json`: the JSON-LD context from mlcroissant 1.1.1's
-  Croissant 1.1 context, with Spanish as the default language. The `name` and
-  `description` aliases use plain Schema.org IRIs: Google Rich Results rejects
-  their language-container definitions, even though mlcroissant accepts them.
-- `rdata/gif_d2010.csv`: the existing data, without conversions or edits.
+- `_data/structured_data.json`: descripción, procedencia, versión en desarrollo y recursos.
+- `_data/egif_part_fields.json`: campos del producto de partes.
+- `_data/croissant_fields.json`: campos de la vista de incendios.
+- `_data/croissant_context.json`: contexto Croissant 1.1.
+- `CITATION.cff`: cita de la versión archivada 1.0.0; no se atribuye su DOI a la migración.
 
-`build_croissant.py` writes `croissant.json` and `_data/croissant.json` from
-these sources. The latter is embedded by the existing Dataset include; the
-former is served unchanged by GitHub Pages. Do not hand-edit generated files.
-The old release/distribution includes remain available but the public Dataset
-now comes from the generated Croissant descriptor.
+`build_croissant.py` genera el catálogo, su copia en `_data/catalog.json`
+y los descriptores individuales. La página incorpora una sola colección
+con sus dos conjuntos. `croissant.json` y `_data/croissant.json` conservan
+el descriptor global por compatibilidad; no son el JSON-LD principal de
+la página. No editar los archivos generados a mano. La versión en
+desarrollo no tiene DOI propio.
 
-## Generate and verify
+## Generar y verificar
 
-Install the pinned validator into a Python 3.12 virtual environment:
+Primero reconstruir los productos como indica `data-raw/README.md`.
+Guardar los cambios de CSV y JSON en un commit local, actualizar
+`croissant.sourceRevision` al commit que los contiene y ejecutar:
 
 ```sh
-python -m pip install -r scripts/requirements-croissant.txt -r scripts/requirements-microformats.txt
-ruby scripts/citation.rb
+py scripts/build_croissant.py
+py scripts/build_croissant.py --check
+mlcroissant validate --jsonld croissant/parts.json
+mlcroissant validate --jsonld croissant/fires.json
 ruby scripts/citation.rb --check
-python scripts/build_croissant.py
-python scripts/build_croissant.py --check
-mlcroissant validate --jsonld croissant.json
 bundle exec jekyll build
-python -m unittest discover -s tests
+py -m unittest discover -s tests
 ```
 
-The integration test uses the official library to download the real immutable
-CSV, verify its hash and read every record. It compares every code, name,
-date and area with the local CSV. Municipality codes are text; dates are dates;
-area values are numeric hectares. No record key is asserted because several
-fires can share a municipality and date.
+Las huellas y tamaños proceden de los bytes Git para evitar diferencias
+CRLF entre sistemas. Las pruebas del lector oficial recorren los dos
+productos y verifican códigos, tipos, coordenadas y datos ausentes.
 
-```python
-import mlcroissant as mlc
+Una rama sin push no está disponible en las URL públicas. Para verificar
+la lectura del lector oficial sobre los mismos archivos locales, en PowerShell:
 
-dataset = mlc.Dataset("https://dieghernan.github.io/gifs/croissant.json")
-records = dataset.records(record_set="fires")
-first = next(iter(records))
+```powershell
+$env:GIFS_LOCAL_SNAPSHOT = '1'
+py -m unittest discover -s tests
+Remove-Item Env:GIFS_LOCAL_SNAPSHOT
 ```
 
-The library can represent text as UTF-8 bytes. Consumers can decode these
-values as needed; the descriptor does not coerce identifiers to integers.
-
-## Update data
-
-Commit CSV content changes first, then update `croissant.sourceRevision` to a
-commit containing that snapshot, review dates and coverage, and regenerate.
-Hashes and sizes use Git blob bytes to avoid Windows newline conversions.
-The official reader's integration test confirms that the pinned URL and the
-current CSV contain the same records and that the checksum is correct.
-
-Update the record count and date range in `README.md`, `index.md` and
-`llms.txt`, together with the dataset description and temporal coverage in
-`_data/structured_data.json`. Review the publication modification date and
-the landing page's `last_modified_at`; keep the original publication date.
-
-Regenerate the sharing cards with Pillow installed:
-
-```sh
-python scripts/social_banners.py
-```
-
-The generator reads the current CSV to update the map and year range in
-`assets/social-preview.jpg` and `assets/github-preview.jpg`. Review both
-images and their alt text after regeneration. Updating the local GitHub card
-also requires replacing the social preview image in the repository settings.
-
-Version 1.0.0 is archived at <https://doi.org/10.5281/zenodo.23929997>.
-The descriptor includes its version, DOI and citation in `version`,
-`identifier`, `sameAs` and `citeAs`. The release card uses the same citation
-metadata and downloads the immutable CSV snapshot, rather than the main branch.
-The dataset's reuse terms remain the MITECO legal notice, not the code's MIT
-license. Existing provisional/final-data and completeness limitations remain.
-
-The workflow checks regeneration, validates Croissant, builds Jekyll and runs
-the integration tests before publication. Neither Chulapa's markup nor the
-visible landing-page content is replaced.
+Esta opción utiliza el mapeo de archivos del lector oficial, sin modificar
+el descriptor ni sustituir sus datos por mocks. La prueba de descarga
+pública queda para después del push autorizado.

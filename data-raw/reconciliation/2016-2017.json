@@ -1,0 +1,53 @@
+[
+  {
+    "fire_id": "GIF-848a944fc67755e9",
+    "legacy_row": 137,
+    "egif_part_id": "2016370174",
+    "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2016.pdf",
+    "pdf_page": 13,
+    "previous_reference": "Olmedo de Camaces",
+    "definitive_reference": "Sancti-Spíritus",
+    "decision": "Link the existing fire to the EGIF part and use its origin municipality.",
+    "criteria": [
+      "Official provisional-to-definitive municipality correction",
+      "Same detection date",
+      "Same forest area",
+      "Definitive municipality agrees with EGIF"
+    ],
+    "source_sha256": "583a85dcea44b2c2e9a91804c0f89115865aebfd28f94829ea23b52b80475cf3"
+  },
+  {
+    "fire_id": "GIF-cc8a844beb015652",
+    "legacy_row": 156,
+    "egif_part_id": "2017050154",
+    "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf",
+    "pdf_page": 13,
+    "previous_reference": "Puente del Congosto / Medinilla",
+    "definitive_reference": "Medinilla",
+    "decision": "Link the existing fire to the EGIF part and use its origin municipality.",
+    "criteria": [
+      "Official provisional-to-definitive municipality correction",
+      "Same detection date",
+      "Same forest area",
+      "Definitive municipality agrees with EGIF"
+    ],
+    "source_sha256": "0e70d0f585a00aa4ff253c6efa36b9b704134f61749c423c1629ad4708cdccea"
+  },
+  {
+    "fire_id": "GIF-739f9d1720f45c4a",
+    "legacy_row": 167,
+    "egif_part_id": "2017240751",
+    "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf",
+    "pdf_page": 15,
+    "previous_reference": "Palacios del Sil",
+    "definitive_reference": "Páramo del Sil",
+    "decision": "Link the existing fire to the EGIF part and use its origin municipality.",
+    "criteria": [
+      "Official provisional-to-definitive municipality correction",
+      "Same detection date",
+      "Same forest area",
+      "Definitive municipality agrees with EGIF"
+    ],
+    "source_sha256": "0e70d0f585a00aa4ff253c6efa36b9b704134f61749c423c1629ad4708cdccea"
+  }
+]
