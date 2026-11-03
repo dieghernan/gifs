@@ -4,7 +4,7 @@
 <div class="dataset-downloads">
   {% for resource in resources %}
   {% assign dataset_id = site.data.catalog.url | append: '#dataset-' | append: resource.recordSet %}
-  {% assign dataset = site.data.catalog.dataset | where: '@id', dataset_id | first %}
+  {% assign dataset = site.data.catalog.hasPart | where: '@id', dataset_id | first %}
   {% if resource.recordSet == 'parts' %}
     {% assign title = 'Partes EGIF' %}
     {% assign description = 'Partes de grandes incendios forestales de 2010–2023, con identificadores, superficies, causa, procedencia y coordenadas. Un incendio puede tener varios partes.' %}

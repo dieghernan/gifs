@@ -2,7 +2,7 @@
 
 ## Sin publicar
 
-- Relaciones `isPartOf` expresadas como URL de la colección para cumplir los tipos admitidos por Google; el catálogo sigue enlazado mediante `includedInDataCatalog`.
+- JSON-LD alineado con Celestial Data: colección `Dataset` con dos conjuntos hijos mediante `hasPart`, DOI exclusivo de la colección y relaciones `isPartOf` expresadas como URL.
 - JSON-LD con el nombre de España y una caja geográfica calculada desde los puntos disponibles de cada conjunto, incluidas las coordenadas reales de Canarias.
 - Compresión local sin pérdida de los PNG con OptiPNG, también al regenerar la infografía cuando la herramienta está disponible.
 

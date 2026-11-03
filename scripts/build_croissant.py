@@ -101,7 +101,7 @@ def build():
             dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"])
     dataset["isPartOf"] = citation["conceptDoiUrl"]
     dataset.update({
-        "@context": context, "@type": "Dataset", "@id": HOME + "#dataset",
+        "@context": context, "@type": "Dataset", "@id": HOME + "#collection",
         "url": HOME, "conformsTo": "http://mlcommons.org/croissant/1.1",
         **metadata["publication"],
     })
@@ -124,7 +124,6 @@ def build_documents():
         dataset["url"] = dataset["@id"]
         dataset["name"] = resource["name"]
         dataset["description"] = resource["description"]
-        dataset["includedInDataCatalog"] = {"@id": HOME + "#catalog"}
         dataset["isPartOf"] = citation.get("doiUrl") or HOME
         dataset.pop("identifier", None)
         dataset.pop("sameAs", None)
@@ -139,8 +138,8 @@ def build_documents():
         datasets.append(dataset)
         documents[f'croissant/{resource["recordSet"]}.json'] = dataset
     catalog = {key: combined[key] for key in ("name", "description", "creator", "license", "creditText", "version", "datePublished", "dateModified", "isAccessibleForFree", "inLanguage", "temporalCoverage", "spatialCoverage")}
-    catalog.update({"@context": {"@vocab": "https://schema.org/", "@language": "es"}, "@type": "DataCatalog",
-                    "@id": HOME + "#catalog", "url": HOME, "dataset": datasets})
+    catalog.update({"@context": {"@vocab": "https://schema.org/", "@language": "es"}, "@type": "Dataset",
+                    "@id": HOME + "#collection", "url": HOME, "hasPart": datasets})
     catalog["isPartOf"] = combined["isPartOf"]
     for key in ("identifier", "sameAs", "citeAs"):
         if key in combined:

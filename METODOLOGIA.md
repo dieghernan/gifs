@@ -162,10 +162,11 @@ rechaza una fuente distinta de IGN SIANE 2024, resolución 3.
 
 El diccionario de campos está en `_data/egif_part_fields.json` y
 `_data/croissant_fields.json`. El JSON-LD principal es una colección
-`DataCatalog` con dos `Dataset`, uno por tarjeta y unidad de observación.
+`Dataset` con dos hijos en `hasPart`, uno por tarjeta y unidad de observación.
 Cada conjunto tiene su descriptor Croissant, con claves, campos opcionales
-y huellas de sus descargas CSV, JSON y GeoJSON. No se atribuye el DOI de la
-versión archivada 1.0.0 a estos datos en desarrollo.
+y huellas de sus descargas CSV, JSON y GeoJSON. El DOI de la versión archivada
+2.0.0 identifica la colección; los hijos se relacionan con ella mediante la
+URL del DOI en `isPartOf`, sin atribuirse ese identificador como propio.
 
 ## Auditoría y limitaciones
 

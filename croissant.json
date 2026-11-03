@@ -288,7 +288,7 @@
     "transform": "cr:transform"
   },
   "@type": "Dataset",
-  "@id": "https://dieghernan.github.io/gifs/#dataset",
+  "@id": "https://dieghernan.github.io/gifs/#collection",
   "url": "https://dieghernan.github.io/gifs/",
   "conformsTo": "http://mlcommons.org/croissant/1.1",
   "datePublished": "2025-02-21",

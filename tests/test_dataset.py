@@ -39,23 +39,23 @@ class DatasetTests(unittest.TestCase):
         self.assertEqual(descriptor["version"], citation["version"])
         self.assertEqual(descriptor.get("identifier"), citation["doiUrl"])
 
-    def test_catalog_contains_two_independent_datasets_matching_the_cards(self):
+    def test_collection_contains_two_independent_datasets_matching_the_cards(self):
         html = (ROOT / "_site/index.html").read_text(encoding="utf-8")
         schemas = [json.loads(raw) for raw in re.findall(
             r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', html, re.S)]
-        catalog, = [item for item in schemas if item.get("@type") == "DataCatalog"]
+        catalog, = [item for item in schemas if item.get("@type") == "Dataset" and 'hasPart' in item]
         self.assertEqual(catalog, json.loads((ROOT / "catalog.json").read_text(encoding="utf-8")))
         self.assertEqual(catalog, json.loads((ROOT / "_data/catalog.json").read_text(encoding="utf-8")))
         self.assertNotIn("distribution", catalog)
         self.assertNotIn("recordSet", catalog)
-        self.assertEqual(len(catalog["dataset"]), 2)
+        self.assertEqual(len(catalog["hasPart"]), 2)
         self.assertEqual(catalog["creator"]["sameAs"], "https://orcid.org/0000-0001-8457-4658")
         self.assertEqual(catalog["license"], "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html")
         snapshot = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]
-        for dataset, resource in zip(catalog["dataset"], snapshot["resources"]):
+        for dataset, resource in zip(catalog["hasPart"], snapshot["resources"]):
             with self.subTest(dataset=resource["recordSet"]):
                 self.assertEqual(dataset["@type"], "Dataset")
-                self.assertEqual(dataset["includedInDataCatalog"], {"@id": catalog["@id"]})
+                self.assertNotIn('includedInDataCatalog', dataset)
                 self.assertEqual(dataset["@id"], "https://dieghernan.github.io/gifs/#dataset-" + resource["recordSet"])
                 self.assertEqual(dataset, json.loads((ROOT / f'croissant/{resource["recordSet"]}.json').read_text(encoding="utf-8")))
                 self.assertEqual(dataset, json.loads((ROOT / f'_site/croissant/{resource["recordSet"]}.json').read_text(encoding="utf-8")))

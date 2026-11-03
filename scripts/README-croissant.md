@@ -1,6 +1,6 @@
 # Metadatos Croissant
 
-`catalog.json` describe una colección `DataCatalog` con dos `Dataset`:
+`catalog.json` describe una colección `Dataset` con dos hijos en `hasPart`:
 partes EGIF y una vista conciliada de incendios. Cada conjunto tiene su
 descriptor Croissant en `croissant/parts.json` o `croissant/fires.json` y
 está disponible en CSV, JSON y GeoJSON.
@@ -13,7 +13,7 @@ como texto y distinguir valores nulos sin depender de inferencias del CSV.
 - `_data/egif_part_fields.json`: campos del producto de partes.
 - `_data/croissant_fields.json`: campos de la vista de incendios.
 - `_data/croissant_context.json`: contexto Croissant 1.1.
-- `CITATION.cff`: cita de la versión archivada 1.0.0; no se atribuye su DOI a la migración.
+- `CITATION.cff`: cita y DOI de la versión archivada 2.0.0, que identifican la colección y no cada conjunto hijo.
 
 `build_croissant.py` genera el catálogo, su copia en `_data/catalog.json`
 y los descriptores individuales. La página incorpora una sola colección

@@ -29,10 +29,10 @@
     "@vocab": "https://schema.org/",
     "@language": "es"
   },
-  "@type": "DataCatalog",
-  "@id": "https://dieghernan.github.io/gifs/#catalog",
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/gifs/#collection",
   "url": "https://dieghernan.github.io/gifs/",
-  "dataset": [
+  "hasPart": [
     {
       "name": "Partes EGIF de grandes incendios forestales",
       "description": "Una fila por parte seleccionado. egif_part_id es único. fire_id puede estar vacío si la correspondencia con un incendio está pendiente. Los campos vacíos representan información ausente o no interpretable, nunca ceros inferidos. No se deben contar filas como incendios ni sumarse este recurso y la vista fires.",
@@ -1050,10 +1050,7 @@
             }
           ]
         }
-      ],
-      "includedInDataCatalog": {
-        "@id": "https://dieghernan.github.io/gifs/#catalog"
-      }
+      ]
     },
     {
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
@@ -1637,10 +1634,7 @@
             }
           ]
         }
-      ],
-      "includedInDataCatalog": {
-        "@id": "https://dieghernan.github.io/gifs/#catalog"
-      }
+      ]
     }
   ],
   "isPartOf": "https://doi.org/10.5281/zenodo.23929996",

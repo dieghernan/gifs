@@ -32,7 +32,7 @@ class CroissantTests(unittest.TestCase):
         catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
         resources = json.loads((ROOT / '_data/structured_data.json').read_text(encoding='utf-8'))['croissant']['resources']
         all_points = []
-        for dataset, resource in zip(catalog['dataset'], resources):
+        for dataset, resource in zip(catalog['hasPart'], resources):
             collection = json.loads((ROOT / resource['geoPath']).read_text(encoding='utf-8'))
             points = [feature['geometry']['coordinates'] for feature in collection['features'] if feature['geometry']]
             all_points.extend(points)
@@ -53,22 +53,24 @@ class CroissantTests(unittest.TestCase):
         citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
         self.assertEqual(catalog['isPartOf'], citation['conceptDoiUrl'])
         self.assertEqual(catalog.get('identifier'), citation['doiUrl'])
-        for dataset in catalog['dataset']:
+        for dataset in catalog['hasPart']:
             with self.subTest(dataset=dataset['@id']):
                 self.assertEqual(dataset['isPartOf'], citation['doiUrl'] or 'https://dieghernan.github.io/gifs/')
-                self.assertEqual(dataset['includedInDataCatalog'], {'@id': catalog['@id']})
+                self.assertNotIn('includedInDataCatalog', dataset)
                 self.assertNotIn('identifier', dataset)
                 self.assertNotIn('sameAs', dataset)
 
-    def test_catalog_jsonld_resolves_to_one_catalog_and_two_datasets(self):
+    def test_collection_jsonld_resolves_to_one_parent_and_two_child_datasets(self):
         import rdflib
         from rdflib.namespace import RDF
 
         catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
         graph = rdflib.Graph().parse(data=json.dumps(catalog), format="json-ld")
         schema = rdflib.Namespace("https://schema.org/")
-        self.assertEqual(len(list(graph.subjects(RDF.type, schema.DataCatalog))), 1)
-        datasets = set(graph.objects(rdflib.URIRef(catalog["@id"]), schema.dataset))
+        self.assertEqual(len(list(graph.subjects(RDF.type, schema.DataCatalog))), 0)
+        self.assertEqual(len(list(graph.subjects(RDF.type, schema.Dataset))), 3)
+        self.assertIn((rdflib.URIRef(catalog['@id']), RDF.type, schema.Dataset), graph)
+        datasets = set(graph.objects(rdflib.URIRef(catalog["@id"]), schema.hasPart))
         self.assertEqual(datasets, {rdflib.URIRef("https://dieghernan.github.io/gifs/#dataset-parts"),
                                     rdflib.URIRef("https://dieghernan.github.io/gifs/#dataset-fires")})
         for dataset in datasets:
