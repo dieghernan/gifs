@@ -51,11 +51,12 @@ class CroissantTests(unittest.TestCase):
     def test_archive_doi_describes_the_collection_and_not_its_children(self):
         catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
         citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
-        self.assertEqual(catalog['isPartOf']['@id'], citation['conceptDoiUrl'])
+        self.assertEqual(catalog['isPartOf'], citation['conceptDoiUrl'])
         self.assertEqual(catalog.get('identifier'), citation['doiUrl'])
         for dataset in catalog['dataset']:
             with self.subTest(dataset=dataset['@id']):
-                self.assertEqual(dataset['isPartOf'], {'@id': catalog['@id']})
+                self.assertEqual(dataset['isPartOf'], citation['doiUrl'] or 'https://dieghernan.github.io/gifs/')
+                self.assertEqual(dataset['includedInDataCatalog'], {'@id': catalog['@id']})
                 self.assertNotIn('identifier', dataset)
                 self.assertNotIn('sameAs', dataset)
 

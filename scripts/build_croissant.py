@@ -99,7 +99,7 @@ def build():
         dataset["citeAs"] = citation["citeAs"]
         if citation.get("doiUrl"):
             dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"])
-    dataset["isPartOf"] = {"@type": "CreativeWork", "@id": citation["conceptDoiUrl"]}
+    dataset["isPartOf"] = citation["conceptDoiUrl"]
     dataset.update({
         "@context": context, "@type": "Dataset", "@id": HOME + "#dataset",
         "url": HOME, "conformsTo": "http://mlcommons.org/croissant/1.1",
@@ -114,6 +114,7 @@ def build():
 def build_documents():
     combined = json.loads(build())
     metadata = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))
+    citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
     datasets = []
     documents = {"croissant.json": combined, "_data/croissant.json": combined}
     for resource in metadata["croissant"]["resources"]:
@@ -124,7 +125,7 @@ def build_documents():
         dataset["name"] = resource["name"]
         dataset["description"] = resource["description"]
         dataset["includedInDataCatalog"] = {"@id": HOME + "#catalog"}
-        dataset["isPartOf"] = {"@id": HOME + "#catalog"}
+        dataset["isPartOf"] = citation.get("doiUrl") or HOME
         dataset.pop("identifier", None)
         dataset.pop("sameAs", None)
         dataset["distribution"] = [item for item in dataset["distribution"]

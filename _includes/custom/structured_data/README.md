@@ -21,7 +21,10 @@ Before Zenodo assigns a version DOI, the citation uses the tagged GitHub
 release URL. After archiving, add the DOI to both citation fields in
 `CITATION.cff` and regenerate without moving the published tag. The catalog
 identifies the archived collection and links the concept DOI through
-`isPartOf`. The child datasets link the catalog and have no separate DOI.
+`isPartOf` as a URL. The child datasets link the catalog through
+`includedInDataCatalog` and use the archived collection's DOI URL for
+`isPartOf`; they have no separate DOI. Google accepts Dataset or URL values
+for `isPartOf`, so the DataCatalog is not used as that property's object.
 `spatialCoverage` preserves the place name España and adds a `GeoShape.box`
 computed from the available GeoJSON points for each dataset. Its order is
 south latitude, west longitude, north latitude, east longitude, as required
