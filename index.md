@@ -75,7 +75,8 @@ Origen de los datos: MITECO. Recopilación y adaptación: Diego HH. Los datos
 se reutilizan conforme al [aviso legal del MITECO](https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html).
 La licencia MIT corresponde al código y la documentación. El proyecto es
 independiente y no implica respaldo del Ministerio. La cartografía municipal
-procede de GISCO y las capitales municipales, de IGN mediante mapSpain.
+y las capitales municipales proceden de IGN mediante SIANE y mapSpain.
+Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.
 
 La [metodología](https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md) y la [guía de datos](https://github.com/dieghernan/gifs/blob/main/data-raw/README.md)
 describen la prioridad de fuentes, las agrupaciones y las limitaciones.

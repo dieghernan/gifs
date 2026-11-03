@@ -8,7 +8,7 @@ El Excel anterior se conserva solo como archivo histórico.
 - `legacy/gif_d2010.xlsx`: Excel histórico, no utilizado por el generador.
 - `legacy/sources.csv`: enlaces anuales de informes y avances de respaldo.
 - `fire-registry.csv`: identificadores estables, enlaces a partes y decisiones.
-- `municipalities.csv`: diccionario GISCO 2024; códigos como texto.
+- `municipalities.csv`: diccionario IGN SIANE 2024 (resolución 3); códigos como texto.
 - `municipality-aliases.csv`: variantes explícitas de nombres EGIF.
 - `municipal-centers-4326.csv`: capitales municipales IGN sin desplazar Canarias.
 

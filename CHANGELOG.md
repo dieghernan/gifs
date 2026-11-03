@@ -2,6 +2,8 @@
 
 ## Sin publicar
 
+- Límites y diccionario municipales derivados de IGN SIANE mediante mapSpain, con fuente, año y resolución registrados y separación de códigos de territorios no municipales.
+
 - Tarjetas de descarga tras la infografía, con formato y tamaño de archivo; JSON-LD como catálogo con dos conjuntos independientes y descriptores Croissant por conjunto.
 
 - Productos GeoJSON de partes e incendios en EPSG:4326, con todas sus propiedades y geometría nula cuando no hay coordenadas interpretables.

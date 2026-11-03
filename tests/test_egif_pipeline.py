@@ -15,6 +15,12 @@ from scripts.egif import read_export
 
 
 class EgifPipelineTests(unittest.TestCase):
+    def test_geolocation_provenance_is_pinned_to_ign_siane(self):
+        locations = read_csv(ROOT / 'data-derived/egif-locations.csv')
+        self.assertEqual({row['boundary_source'] for row in locations}, {'IGN CartoBase ANE / SIANE'})
+        self.assertEqual({row['boundary_year'] for row in locations}, {'2024'})
+        self.assertEqual({row['boundary_resolution'] for row in locations}, {'3'})
+
     def test_geojson_preserves_canary_coordinates_null_geometry_and_properties(self):
         rows = [{'egif_part_id': '2021386009', 'longitude': '-16.5', 'latitude': '28.2', 'notes': 'Canarias', 'area_forestal_ha': '500.0001'},
                 {'egif_part_id': '2010200006', 'longitude': '', 'latitude': '', 'notes': 'Sin datum', 'area_forestal_ha': '500'}]
@@ -121,10 +127,15 @@ class EgifPipelineTests(unittest.TestCase):
             if row['source'] == 'EGIF':
                 self.assertEqual(sum(Decimal(by_id[key]['area_forestal_ha']) for key in row['egif_part_ids'].split(';')), Decimal(row['area_forestal_ha']))
         # The source and geometric municipality must remain distinct when they disagree.
-        discrepant = by_id['2021040012']
-        self.assertEqual(discrepant['codmun'], '04068')
-        self.assertEqual(discrepant['geo_codmun'], '04033')
+        discrepant = by_id['2017490409']
+        self.assertEqual(discrepant['codmun'], '49065')
+        self.assertEqual(discrepant['geo_codmun'], '37328')
         self.assertEqual(discrepant['municipality_check'], 'differs_from_declared')
+        self.assertEqual(by_id['2021040012']['geo_codmun'], '04068')
+        territory = by_id['2022230066']
+        self.assertEqual(territory['geo_boundary_code'], '53050')
+        self.assertEqual(territory['geo_codmun'], '')
+        self.assertEqual(territory['municipality_check'], 'non_municipal_territory')
         canary = next(row for row in parts if row['datum'] == 'REGCAN95')
         self.assertLess(float(canary['longitude']), -13)
         self.assertLess(float(canary['latitude']), 30)

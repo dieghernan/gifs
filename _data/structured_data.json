@@ -18,7 +18,7 @@
       "sameAs": "https://orcid.org/0000-0001-8457-4658"
     },
     "license": "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html",
-    "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio.",
+    "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio. Cruce municipal: Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.",
     "isBasedOn": {
       "@type": "CreativeWork",
       "name": "Estadísticas de incendios forestales del MITECO",

@@ -44,7 +44,7 @@ PART_MAP = {
 PART_FIELDS = ["egif_part_id", "fire_id"] + [field for field in PART_MAP.values()
                if field != "egif_part_id"] + ["cpro", "cmun", "codmun", "date", "source", "source_url",
                "source_date", "source_file", "match_status", "notes", "longitude", "latitude",
-               "source_epsg", "location_method", "geo_codmun", "geo_municipality", "municipality_check"]
+               "source_epsg", "location_method", "geo_codmun", "geo_boundary_code", "geo_municipality", "municipality_check"]
 AUDIT_FIELDS = ["fire_id", "legacy_date", "legacy_municipality", "legacy_area_ha", "egif_part_ids",
                 "egif_date", "egif_area_ha", "difference_ha", "match_status", "notes"]
 
@@ -139,7 +139,7 @@ def normalize_part(row, source, municipalities):
     part.update(fire_id="", source="EGIF", source_url=source["source_url"],
                 source_date=source["download_date"], source_file=source["path"],
                 match_status="unassigned_part", notes="", longitude="", latitude="", source_epsg="",
-                location_method="not_processed", geo_codmun="", geo_municipality="", municipality_check="not_checked")
+                location_method="not_processed", geo_codmun="", geo_boundary_code="", geo_municipality="", municipality_check="not_checked")
     return part
 
 
@@ -289,9 +289,12 @@ def build(root=ROOT, prepare_locations=False):
         raise ValueError("Geolocation cache is stale; prepare and geolocate the selected parts again")
     for part in selected:
         location = locations[part["egif_part_id"]]
+        if (location.get("boundary_source") != "IGN CartoBase ANE / SIANE"
+                or location.get("boundary_year") != "2024" or location.get("boundary_resolution") != "3"):
+            raise ValueError("Geolocation must use the pinned IGN SIANE municipal boundaries")
         if any(part[field] != location[field] for field in ("coordinate_x", "coordinate_y", "utm_zone", "datum")) or part["codmun"] != location["declared_codmun"]:
             raise ValueError(f"Stale geolocation for part {part['egif_part_id']}")
-        part.update({field: location[field] for field in ("longitude", "latitude", "source_epsg", "geo_codmun", "geo_municipality", "municipality_check")})
+        part.update({field: location[field] for field in ("longitude", "latitude", "source_epsg", "geo_codmun", "geo_boundary_code", "geo_municipality", "municipality_check")})
         part["location_method"] = location["location_status"]
     source_urls = {int(row["year"]): row["source_url"] for row in read_csv(raw / "legacy/sources.csv")}
     centers = {row["codmun"]: row for row in read_csv(raw / "municipal-centers-4326.csv")}

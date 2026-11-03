@@ -102,12 +102,16 @@ un centroide ni representa el perímetro completo. Para los demás se utiliza
 una capital municipal IGN, con `location_method=municipal_seat`. Las
 coordenadas de respaldo no se presentan como coordenadas de inicio.
 
-Los puntos se cruzan con límites municipales GISCO 2024 mediante
-`mapSpain::esp_get_munic(moveCAN = FALSE)`. Se conservan por separado
+Los puntos se cruzan con límites municipales IGN SIANE 2024 (resolución 3) mediante
+`mapSpain::esp_get_munic_siane(year = 2024, resolution = 3, moveCAN = FALSE)`. Se conservan por separado
 el municipio declarado y `geo_codmun`/`geo_municipality`. Una discrepancia
 no provoca una corrección automática: puede reflejar error, redondeo,
 origen exterior, proximidad a un límite o cambios de límites municipales.
 No se asigna el municipio más cercano a puntos fuera de los límites.
+Los territorios no municipales se conservan en `geo_boundary_code`, con
+`municipality_check=non_municipal_territory` y `geo_codmun` vacío.
+La caché registra explícitamente fuente, año y resolución; el generador
+rechaza una fuente distinta de IGN SIANE 2024, resolución 3.
 
 ## Reproducción y comprobaciones
 

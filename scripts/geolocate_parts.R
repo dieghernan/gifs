@@ -21,9 +21,12 @@ locations <- data.frame(
   latitude = NA_real_,
   location_status = "unknown_crs",
   geo_codmun = NA_character_,
+  geo_boundary_code = NA_character_,
   geo_municipality = NA_character_,
   municipality_check = "not_checked",
   boundary_year = "2024",
+  boundary_source = "IGN CartoBase ANE / SIANE",
+  boundary_resolution = "3",
   stringsAsFactors = FALSE
 )
 
@@ -62,11 +65,12 @@ for (epsg in unique(locations$source_epsg[valid])) {
 }
 
 if (any(valid)) {
-  boundaries <- mapSpain::esp_get_munic(
+  boundaries <- mapSpain::esp_get_munic_siane(
     year = 2024,
+    resolution = 3,
     moveCAN = FALSE,
     epsg = 4326,
-    cache_dir = "dev/egif-geometry"
+    cache_dir = "dev/egif-geometry-siane"
   ) |>
     sf::st_make_valid() |>
     sf::st_transform(3035)
@@ -83,8 +87,13 @@ if (any(valid)) {
     i <- idx[j]
     hit <- hits[[j]]
     if (length(hit) == 1) {
+      locations$geo_boundary_code[i] <- boundaries$LAU_CODE[hit]
+      if (!substr(boundaries$LAU_CODE[hit], 1, 2) %in% sprintf("%02d", 1:52)) {
+        locations$municipality_check[i] <- "non_municipal_territory"
+        next
+      }
       locations$geo_codmun[i] <- boundaries$LAU_CODE[hit]
-      locations$geo_municipality[i] <- boundaries$LAU_NAME[hit]
+      locations$geo_municipality[i] <- boundaries$name[hit]
       locations$municipality_check[i] <- if (is.na(parts$codmun[i])) {
         "declared_code_unavailable"
       } else if (parts$codmun[i] == locations$geo_codmun[i]) {

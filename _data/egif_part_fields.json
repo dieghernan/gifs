@@ -279,18 +279,24 @@
     "column": "geo_codmun",
     "label": "geo_codmun",
     "dataType": "sc:Text",
-    "description": "Código municipal obtenido por intersección del punto EGIF con límites GISCO 2024. No sustituye el código declarado ni describe todos los municipios afectados."
+    "description": "Código municipal obtenido por intersección del punto EGIF con límites IGN SIANE 2024 (resolución 3). No sustituye el código declarado ni describe todos los municipios afectados."
+  },
+  {
+    "column": "geo_boundary_code",
+    "label": "geo_boundary_code",
+    "dataType": "sc:Text",
+    "description": "Código de la unidad territorial SIANE que contiene el punto. Puede identificar un territorio no municipal; solo geo_codmun identifica municipios. Vacío si no hay un cruce inequívoco."
   },
   {
     "column": "geo_municipality",
     "label": "geo_municipality",
     "dataType": "sc:Text",
-    "description": "Municipio obtenido del cruce espacial con límites GISCO 2024, que pueden diferir de los límites del año del incendio."
+    "description": "Municipio obtenido del cruce espacial con límites IGN SIANE 2024 (resolución 3), que pueden diferir de los límites del año del incendio."
   },
   {
     "column": "municipality_check",
     "label": "municipality_check",
     "dataType": "sc:Text",
-    "description": "Resultado del cruce espacial: coincidencia, discrepancia, código declarado no disponible, fuera de límites, múltiples límites o no comprobado."
+    "description": "Resultado del cruce espacial con IGN SIANE: coincidencia, discrepancia, código declarado no disponible, territorio no municipal, fuera de límites, múltiples límites o no comprobado."
   }
 ]

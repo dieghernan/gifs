@@ -47,6 +47,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -98,6 +99,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -149,6 +151,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -200,6 +203,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -251,6 +255,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -302,6 +307,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -353,6 +359,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -404,6 +411,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -455,6 +463,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -506,6 +515,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -557,6 +567,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -608,6 +619,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -659,6 +671,7 @@
     "source_epsg": null,
     "location_method": "missing_coordinates",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -710,6 +723,7 @@
     "source_epsg": null,
     "location_method": "missing_coordinates",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -761,6 +775,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -812,6 +827,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -863,6 +879,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -914,6 +931,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -965,6 +983,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1016,6 +1035,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1067,6 +1087,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1118,6 +1139,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1169,6 +1191,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1220,6 +1243,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1271,6 +1295,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1322,6 +1347,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1373,6 +1399,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1424,6 +1451,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1475,6 +1503,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1526,6 +1555,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1577,6 +1607,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1628,6 +1659,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1679,6 +1711,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1730,6 +1763,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1781,6 +1815,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1832,6 +1867,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1883,6 +1919,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1934,6 +1971,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -1985,6 +2023,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2036,6 +2075,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2087,6 +2127,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2138,6 +2179,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2189,6 +2231,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2240,6 +2283,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2291,6 +2335,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2342,6 +2387,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2393,6 +2439,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2444,6 +2491,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2495,6 +2543,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2546,6 +2595,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2597,6 +2647,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2648,6 +2699,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2699,6 +2751,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2750,6 +2803,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2801,6 +2855,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2852,6 +2907,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2903,6 +2959,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -2954,6 +3011,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3005,6 +3063,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3056,6 +3115,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3107,6 +3167,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3158,6 +3219,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3209,6 +3271,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3260,6 +3323,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3311,6 +3375,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3362,6 +3427,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3413,6 +3479,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3464,6 +3531,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3515,6 +3583,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3566,6 +3635,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3617,6 +3687,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3668,6 +3739,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3719,6 +3791,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3770,6 +3843,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3821,6 +3895,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3872,6 +3947,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3923,6 +3999,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -3974,6 +4051,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4025,6 +4103,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4076,6 +4155,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4127,6 +4207,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4178,6 +4259,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4229,6 +4311,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4280,6 +4363,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4331,6 +4415,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4382,6 +4467,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4433,6 +4519,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4484,6 +4571,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4535,6 +4623,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4586,6 +4675,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4637,6 +4727,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4688,6 +4779,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4739,6 +4831,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4790,6 +4883,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4841,6 +4935,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4892,6 +4987,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4943,6 +5039,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -4994,6 +5091,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5045,6 +5143,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5096,6 +5195,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5147,6 +5247,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5198,6 +5299,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5249,6 +5351,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5300,6 +5403,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5351,6 +5455,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5402,6 +5507,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5453,6 +5559,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5504,6 +5611,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5555,6 +5663,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5606,6 +5715,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5657,6 +5767,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5708,6 +5819,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5759,6 +5871,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5810,6 +5923,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5861,6 +5975,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5912,6 +6027,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -5963,6 +6079,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6014,6 +6131,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6065,6 +6183,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6116,6 +6235,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6167,6 +6287,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "46073",
+    "geo_boundary_code": "46073",
     "geo_municipality": "Bolbaite",
     "municipality_check": "matches_declared"
   },
@@ -6218,6 +6339,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "46083",
+    "geo_boundary_code": "46083",
     "geo_municipality": "Carcaixent",
     "municipality_check": "matches_declared"
   },
@@ -6269,6 +6391,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "02044",
+    "geo_boundary_code": "02044",
     "geo_municipality": "Liétor",
     "municipality_check": "matches_declared"
   },
@@ -6320,6 +6443,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "10037",
+    "geo_boundary_code": "10037",
     "geo_municipality": "Cáceres",
     "municipality_check": "matches_declared"
   },
@@ -6371,6 +6495,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "12016",
+    "geo_boundary_code": "12016",
     "geo_municipality": "Artana",
     "municipality_check": "matches_declared"
   },
@@ -6422,7 +6547,8 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "38027",
-    "geo_municipality": "Paso, El",
+    "geo_boundary_code": "38027",
+    "geo_municipality": "El Paso",
     "municipality_check": "matches_declared"
   },
   {
@@ -6473,6 +6599,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6524,6 +6651,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6575,6 +6703,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6626,6 +6755,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6677,6 +6807,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10107",
+    "geo_boundary_code": "10107",
     "geo_municipality": "Jerte",
     "municipality_check": "matches_declared"
   },
@@ -6728,6 +6859,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "31227",
+    "geo_boundary_code": "31227",
     "geo_municipality": "Tafalla",
     "municipality_check": "matches_declared"
   },
@@ -6779,7 +6911,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "41031",
-    "geo_municipality": "Castillo de las Guardas, El",
+    "geo_boundary_code": "41031",
+    "geo_municipality": "El Castillo de las Guardas",
     "municipality_check": "matches_declared"
   },
   {
@@ -6830,7 +6963,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "03042",
-    "geo_municipality": "Benitachell / Poble Nou de Benitatxell, el",
+    "geo_boundary_code": "03042",
+    "geo_municipality": "el Poble Nou de Benitatxell/Benitachell",
     "municipality_check": "matches_declared"
   },
   {
@@ -6881,6 +7015,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -6932,6 +7067,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32053",
+    "geo_boundary_code": "32053",
     "geo_municipality": "Oímbra",
     "municipality_check": "matches_declared"
   },
@@ -6983,6 +7119,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -7034,6 +7171,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49189",
+    "geo_boundary_code": "49189",
     "geo_municipality": "San Justo",
     "municipality_check": "matches_declared"
   },
@@ -7085,6 +7223,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24070",
+    "geo_boundary_code": "24070",
     "geo_municipality": "Fabero",
     "municipality_check": "matches_declared"
   },
@@ -7136,6 +7275,7 @@
     "source_epsg": null,
     "location_method": "unknown_crs",
     "geo_codmun": null,
+    "geo_boundary_code": null,
     "geo_municipality": null,
     "municipality_check": "not_checked"
   },
@@ -7187,6 +7327,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "37279",
+    "geo_boundary_code": "37279",
     "geo_municipality": "Sancti-Spíritus",
     "municipality_check": "matches_declared"
   },
@@ -7238,7 +7379,8 @@
     "source_epsg": "25831",
     "location_method": "source_coordinates",
     "geo_codmun": "25903",
-    "geo_municipality": "Guingueta d'Àneu, La",
+    "geo_boundary_code": "25903",
+    "geo_municipality": "la Guingueta d'Àneu",
     "municipality_check": "matches_declared"
   },
   {
@@ -7289,6 +7431,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "37078",
+    "geo_boundary_code": "37078",
     "geo_municipality": "Candelario",
     "municipality_check": "matches_declared"
   },
@@ -7340,6 +7483,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "39097",
+    "geo_boundary_code": "39097",
     "geo_municipality": "Vega de Pas",
     "municipality_check": "matches_declared"
   },
@@ -7391,6 +7535,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24115",
+    "geo_boundary_code": "24115",
     "geo_municipality": "Ponferrada",
     "municipality_check": "matches_declared"
   },
@@ -7442,6 +7587,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24016",
+    "geo_boundary_code": "24016",
     "geo_municipality": "Benuza",
     "municipality_check": "matches_declared"
   },
@@ -7493,6 +7639,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33027",
+    "geo_boundary_code": "33027",
     "geo_municipality": "Grandas de Salime",
     "municipality_check": "matches_declared"
   },
@@ -7544,6 +7691,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33001",
+    "geo_boundary_code": "33001",
     "geo_municipality": "Allande",
     "municipality_check": "matches_declared"
   },
@@ -7595,6 +7743,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33028",
+    "geo_boundary_code": "33028",
     "geo_municipality": "Ibias",
     "municipality_check": "matches_declared"
   },
@@ -7646,6 +7795,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10040",
+    "geo_boundary_code": "10040",
     "geo_municipality": "Calzadilla",
     "municipality_check": "matches_declared"
   },
@@ -7697,6 +7847,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21050",
+    "geo_boundary_code": "21050",
     "geo_municipality": "Moguer",
     "municipality_check": "matches_declared"
   },
@@ -7748,6 +7899,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "46902",
+    "geo_boundary_code": "46902",
     "geo_municipality": "Gátova",
     "municipality_check": "matches_declared"
   },
@@ -7799,6 +7951,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21049",
+    "geo_boundary_code": "21049",
     "geo_municipality": "Minas de Riotinto",
     "municipality_check": "matches_declared"
   },
@@ -7850,6 +8003,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "02086",
+    "geo_boundary_code": "02086",
     "geo_municipality": "Yeste",
     "municipality_check": "matches_declared"
   },
@@ -7901,6 +8055,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49157",
+    "geo_boundary_code": "49157",
     "geo_municipality": "Pino del Oro",
     "municipality_check": "matches_declared"
   },
@@ -7952,6 +8107,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "16042",
+    "geo_boundary_code": "16042",
     "geo_municipality": "Campillo de Altobuey",
     "municipality_check": "matches_declared"
   },
@@ -8003,6 +8159,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "23081",
+    "geo_boundary_code": "23081",
     "geo_municipality": "Segura de la Sierra",
     "municipality_check": "matches_declared"
   },
@@ -8054,6 +8211,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32085",
+    "geo_boundary_code": "32085",
     "geo_municipality": "Verín",
     "municipality_check": "matches_declared"
   },
@@ -8105,6 +8263,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05165",
+    "geo_boundary_code": "05165",
     "geo_municipality": "Navarredonda de Gredos",
     "municipality_check": "matches_declared"
   },
@@ -8156,6 +8315,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24067",
+    "geo_boundary_code": "24067",
     "geo_municipality": "Encinedo",
     "municipality_check": "matches_declared"
   },
@@ -8207,6 +8367,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05124",
+    "geo_boundary_code": "05124",
     "geo_municipality": "Medinilla",
     "municipality_check": "matches_declared"
   },
@@ -8258,6 +8419,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05101",
+    "geo_boundary_code": "05101",
     "geo_municipality": "Hoyocasero",
     "municipality_check": "matches_declared"
   },
@@ -8308,9 +8470,10 @@
     "latitude": 41.2801171245416,
     "source_epsg": "25830",
     "location_method": "source_coordinates",
-    "geo_codmun": "49065",
-    "geo_municipality": "Fermoselle",
-    "municipality_check": "matches_declared"
+    "geo_codmun": "37328",
+    "geo_boundary_code": "37328",
+    "geo_municipality": "Trabanca",
+    "municipality_check": "differs_from_declared"
   },
   {
     "year": "2017",
@@ -8360,7 +8523,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21036",
-    "geo_municipality": "Granada de Río-Tinto, La",
+    "geo_boundary_code": "21036",
+    "geo_municipality": "La Granada de Río-Tinto",
     "municipality_check": "matches_declared"
   },
   {
@@ -8411,6 +8575,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "41009",
+    "geo_boundary_code": "41009",
     "geo_municipality": "Almadén de la Plata",
     "municipality_check": "matches_declared"
   },
@@ -8462,6 +8627,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49233",
+    "geo_boundary_code": "49233",
     "geo_municipality": "Vegalatrave",
     "municipality_check": "matches_declared"
   },
@@ -8513,6 +8679,7 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "35025",
+    "geo_boundary_code": "35025",
     "geo_municipality": "Tejeda",
     "municipality_check": "matches_declared"
   },
@@ -8564,6 +8731,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33028",
+    "geo_boundary_code": "33028",
     "geo_municipality": "Ibias",
     "municipality_check": "matches_declared"
   },
@@ -8615,6 +8783,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32042",
+    "geo_boundary_code": "32042",
     "geo_municipality": "Lobios",
     "municipality_check": "matches_declared"
   },
@@ -8666,6 +8835,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33022",
+    "geo_boundary_code": "33022",
     "geo_municipality": "Degaña",
     "municipality_check": "matches_declared"
   },
@@ -8717,6 +8887,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24110",
+    "geo_boundary_code": "24110",
     "geo_municipality": "Páramo del Sil",
     "municipality_check": "matches_declared"
   },
@@ -8768,6 +8939,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27012",
+    "geo_boundary_code": "27012",
     "geo_municipality": "Cervantes",
     "municipality_check": "matches_declared"
   },
@@ -8819,6 +8991,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24202",
+    "geo_boundary_code": "24202",
     "geo_municipality": "Villablino",
     "municipality_check": "matches_declared"
   },
@@ -8870,6 +9043,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27012",
+    "geo_boundary_code": "27012",
     "geo_municipality": "Cervantes",
     "municipality_check": "matches_declared"
   },
@@ -8921,6 +9095,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32042",
+    "geo_boundary_code": "32042",
     "geo_municipality": "Lobios",
     "municipality_check": "matches_declared"
   },
@@ -8972,6 +9147,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33001",
+    "geo_boundary_code": "33001",
     "geo_municipality": "Allande",
     "municipality_check": "matches_declared"
   },
@@ -9023,6 +9199,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33028",
+    "geo_boundary_code": "33028",
     "geo_municipality": "Ibias",
     "municipality_check": "matches_declared"
   },
@@ -9074,6 +9251,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24016",
+    "geo_boundary_code": "24016",
     "geo_municipality": "Benuza",
     "municipality_check": "matches_declared"
   },
@@ -9125,6 +9303,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32076",
+    "geo_boundary_code": "32076",
     "geo_municipality": "San Cristovo de Cea",
     "municipality_check": "matches_declared"
   },
@@ -9176,6 +9355,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32007",
+    "geo_boundary_code": "32007",
     "geo_municipality": "Baños de Molgas",
     "municipality_check": "matches_declared"
   },
@@ -9227,6 +9407,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32046",
+    "geo_boundary_code": "32046",
     "geo_municipality": "Melón",
     "municipality_check": "matches_declared"
   },
@@ -9278,6 +9459,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32029",
+    "geo_boundary_code": "32029",
     "geo_municipality": "Chandrexa de Queixa",
     "municipality_check": "matches_declared"
   },
@@ -9329,6 +9511,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32057",
+    "geo_boundary_code": "32057",
     "geo_municipality": "Parada de Sil",
     "municipality_check": "matches_declared"
   },
@@ -9380,6 +9563,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32031",
+    "geo_boundary_code": "32031",
     "geo_municipality": "Esgos",
     "municipality_check": "matches_declared"
   },
@@ -9431,6 +9615,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32043",
+    "geo_boundary_code": "32043",
     "geo_municipality": "Maceda",
     "municipality_check": "matches_declared"
   },
@@ -9482,7 +9667,8 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32034",
-    "geo_municipality": "Gudiña, A",
+    "geo_boundary_code": "32034",
+    "geo_municipality": "A Gudiña",
     "municipality_check": "matches_declared"
   },
   {
@@ -9533,6 +9719,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33011",
+    "geo_boundary_code": "33011",
     "geo_municipality": "Cangas del Narcea",
     "municipality_check": "matches_declared"
   },
@@ -9584,6 +9771,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33001",
+    "geo_boundary_code": "33001",
     "geo_municipality": "Allande",
     "municipality_check": "matches_declared"
   },
@@ -9635,6 +9823,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36042",
+    "geo_boundary_code": "36042",
     "geo_municipality": "Ponteareas",
     "municipality_check": "matches_declared"
   },
@@ -9686,6 +9875,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36030",
+    "geo_boundary_code": "36030",
     "geo_municipality": "Mondariz",
     "municipality_check": "matches_declared"
   },
@@ -9737,6 +9927,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36021",
+    "geo_boundary_code": "36021",
     "geo_municipality": "Gondomar",
     "municipality_check": "matches_declared"
   },
@@ -9788,7 +9979,8 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36034",
-    "geo_municipality": "Neves, As",
+    "geo_boundary_code": "36034",
+    "geo_municipality": "As Neves",
     "municipality_check": "declared_code_unavailable"
   },
   {
@@ -9839,6 +10031,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36050",
+    "geo_boundary_code": "36050",
     "geo_municipality": "Salvaterra de Miño",
     "municipality_check": "matches_declared"
   },
@@ -9890,6 +10083,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36035",
+    "geo_boundary_code": "36035",
     "geo_municipality": "Nigrán",
     "municipality_check": "matches_declared"
   },
@@ -9941,6 +10135,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36005",
+    "geo_boundary_code": "36005",
     "geo_municipality": "Caldas de Reis",
     "municipality_check": "matches_declared"
   },
@@ -9992,6 +10187,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36055",
+    "geo_boundary_code": "36055",
     "geo_municipality": "Tui",
     "municipality_check": "matches_declared"
   },
@@ -10043,6 +10239,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27035",
+    "geo_boundary_code": "27035",
     "geo_municipality": "Negueira de Muñiz",
     "municipality_check": "matches_declared"
   },
@@ -10094,6 +10291,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "12051",
+    "geo_boundary_code": "12051",
     "geo_municipality": "Culla",
     "municipality_check": "matches_declared"
   },
@@ -10145,6 +10343,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24151",
+    "geo_boundary_code": "24151",
     "geo_municipality": "Santa Colomba de Curueño",
     "municipality_check": "matches_declared"
   },
@@ -10196,6 +10395,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21052",
+    "geo_boundary_code": "21052",
     "geo_municipality": "Nerva",
     "municipality_check": "matches_declared"
   },
@@ -10247,6 +10447,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "46150",
+    "geo_boundary_code": "46150",
     "geo_municipality": "Llutxent",
     "municipality_check": "matches_declared"
   },
@@ -10298,6 +10499,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24067",
+    "geo_boundary_code": "24067",
     "geo_municipality": "Encinedo",
     "municipality_check": "matches_declared"
   },
@@ -10349,6 +10551,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33059",
+    "geo_boundary_code": "33059",
     "geo_municipality": "Salas",
     "municipality_check": "matches_declared"
   },
@@ -10399,9 +10602,10 @@
     "latitude": 42.6975835742633,
     "source_epsg": "25829",
     "location_method": "source_coordinates",
-    "geo_codmun": "15072",
-    "geo_municipality": "Rianxo",
-    "municipality_check": "differs_from_declared"
+    "geo_codmun": "15033",
+    "geo_boundary_code": "15033",
+    "geo_municipality": "Dodro",
+    "municipality_check": "matches_declared"
   },
   {
     "year": "2019",
@@ -10451,6 +10655,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21011",
+    "geo_boundary_code": "21011",
     "geo_municipality": "Beas",
     "municipality_check": "matches_declared"
   },
@@ -10502,7 +10707,8 @@
     "source_epsg": "25831",
     "location_method": "source_coordinates",
     "geo_codmun": "43152",
-    "geo_municipality": "Torre de l'Espanyol, La",
+    "geo_boundary_code": "43152",
+    "geo_municipality": "La Torre de l'Espanyol",
     "municipality_check": "matches_declared"
   },
   {
@@ -10553,6 +10759,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05082",
+    "geo_boundary_code": "05082",
     "geo_municipality": "Gavilanes",
     "municipality_check": "matches_declared"
   },
@@ -10604,6 +10811,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "45168",
+    "geo_boundary_code": "45168",
     "geo_municipality": "Toledo",
     "municipality_check": "matches_declared"
   },
@@ -10655,6 +10863,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "45013",
+    "geo_boundary_code": "45013",
     "geo_municipality": "Almorox",
     "municipality_check": "matches_declared"
   },
@@ -10706,6 +10915,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "04091",
+    "geo_boundary_code": "04091",
     "geo_municipality": "Terque",
     "municipality_check": "matches_declared"
   },
@@ -10757,6 +10967,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "03023",
+    "geo_boundary_code": "03023",
     "geo_municipality": "Beneixama",
     "municipality_check": "matches_declared"
   },
@@ -10808,6 +11019,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "50206",
+    "geo_boundary_code": "50206",
     "geo_municipality": "Perdiguera",
     "municipality_check": "matches_declared"
   },
@@ -10859,6 +11071,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "16029",
+    "geo_boundary_code": "16029",
     "geo_municipality": "Barchín del Hoyo",
     "municipality_check": "matches_declared"
   },
@@ -10910,6 +11123,7 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "35005",
+    "geo_boundary_code": "35005",
     "geo_municipality": "Artenara",
     "municipality_check": "matches_declared"
   },
@@ -10961,6 +11175,7 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "35032",
+    "geo_boundary_code": "35032",
     "geo_municipality": "Valleseco",
     "municipality_check": "matches_declared"
   },
@@ -11012,6 +11227,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21056",
+    "geo_boundary_code": "21056",
     "geo_municipality": "Paterna del Campo",
     "municipality_check": "matches_declared"
   },
@@ -11063,6 +11279,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33073",
+    "geo_boundary_code": "33073",
     "geo_municipality": "Tineo",
     "municipality_check": "matches_declared"
   },
@@ -11114,7 +11331,8 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "35020",
-    "geo_municipality": "Aldea de San Nicolás, La",
+    "geo_boundary_code": "35020",
+    "geo_municipality": "La Aldea de San Nicolás",
     "municipality_check": "matches_declared"
   },
   {
@@ -11165,6 +11383,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33073",
+    "geo_boundary_code": "33073",
     "geo_municipality": "Tineo",
     "municipality_check": "matches_declared"
   },
@@ -11216,6 +11435,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32028",
+    "geo_boundary_code": "32028",
     "geo_municipality": "Cualedro",
     "municipality_check": "matches_declared"
   },
@@ -11267,6 +11487,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "28125",
+    "geo_boundary_code": "28125",
     "geo_municipality": "Robledo de Chavela",
     "municipality_check": "matches_declared"
   },
@@ -11318,6 +11539,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "10148",
+    "geo_boundary_code": "10148",
     "geo_municipality": "Plasencia",
     "municipality_check": "matches_declared"
   },
@@ -11369,6 +11591,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49087",
+    "geo_boundary_code": "49087",
     "geo_municipality": "Gallegos del Río",
     "municipality_check": "matches_declared"
   },
@@ -11420,6 +11643,7 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "38016",
+    "geo_boundary_code": "38016",
     "geo_municipality": "Garafía",
     "municipality_check": "matches_declared"
   },
@@ -11471,6 +11695,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10035",
+    "geo_boundary_code": "10035",
     "geo_municipality": "Cabezuela del Valle",
     "municipality_check": "matches_declared"
   },
@@ -11522,6 +11747,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21004",
+    "geo_boundary_code": "21004",
     "geo_municipality": "Almonaster la Real",
     "municipality_check": "matches_declared"
   },
@@ -11573,6 +11799,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32089",
+    "geo_boundary_code": "32089",
     "geo_municipality": "Vilar de Barrio",
     "municipality_check": "matches_declared"
   },
@@ -11624,6 +11851,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32042",
+    "geo_boundary_code": "32042",
     "geo_municipality": "Lobios",
     "municipality_check": "matches_declared"
   },
@@ -11675,6 +11903,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32092",
+    "geo_boundary_code": "32092",
     "geo_municipality": "Vilariño de Conso",
     "municipality_check": "matches_declared"
   },
@@ -11726,6 +11955,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32028",
+    "geo_boundary_code": "32028",
     "geo_municipality": "Cualedro",
     "municipality_check": "matches_declared"
   },
@@ -11777,6 +12007,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32029",
+    "geo_boundary_code": "32029",
     "geo_municipality": "Chandrexa de Queixa",
     "municipality_check": "matches_declared"
   },
@@ -11828,6 +12059,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32044",
+    "geo_boundary_code": "32044",
     "geo_municipality": "Manzaneda",
     "municipality_check": "matches_declared"
   },
@@ -11879,7 +12111,8 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32048",
-    "geo_municipality": "Mezquita, A",
+    "geo_boundary_code": "32048",
+    "geo_municipality": "A Mezquita",
     "municipality_check": "matches_declared"
   },
   {
@@ -11930,6 +12163,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "39007",
+    "geo_boundary_code": "39007",
     "geo_municipality": "Arredondo",
     "municipality_check": "matches_declared"
   },
@@ -11981,6 +12215,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "18179",
+    "geo_boundary_code": "18179",
     "geo_municipality": "Torvizcón",
     "municipality_check": "matches_declared"
   },
@@ -12032,6 +12267,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "04029",
+    "geo_boundary_code": "04029",
     "geo_municipality": "Berja",
     "municipality_check": "matches_declared"
   },
@@ -12082,9 +12318,10 @@
     "latitude": 37.180264689862,
     "source_epsg": "25830",
     "location_method": "source_coordinates",
-    "geo_codmun": "04033",
-    "geo_municipality": "Castro de Filabres",
-    "municipality_check": "differs_from_declared"
+    "geo_codmun": "04068",
+    "geo_boundary_code": "04068",
+    "geo_municipality": "Olula de Castro",
+    "municipality_check": "matches_declared"
   },
   {
     "year": "2021",
@@ -12134,6 +12371,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "31250",
+    "geo_boundary_code": "31250",
     "geo_municipality": "Bera",
     "municipality_check": "matches_declared"
   },
@@ -12185,6 +12423,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "39090",
+    "geo_boundary_code": "39090",
     "geo_municipality": "Udías",
     "municipality_check": "matches_declared"
   },
@@ -12236,6 +12475,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "39083",
+    "geo_boundary_code": "39083",
     "geo_municipality": "Soba",
     "municipality_check": "matches_declared"
   },
@@ -12287,6 +12527,7 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "38005",
+    "geo_boundary_code": "38005",
     "geo_municipality": "Arico",
     "municipality_check": "matches_declared"
   },
@@ -12338,6 +12579,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "13038",
+    "geo_boundary_code": "13038",
     "geo_municipality": "Chillón",
     "municipality_check": "matches_declared"
   },
@@ -12389,6 +12631,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "02074",
+    "geo_boundary_code": "02074",
     "geo_municipality": "Tobarra",
     "municipality_check": "matches_declared"
   },
@@ -12440,6 +12683,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "02044",
+    "geo_boundary_code": "02044",
     "geo_municipality": "Liétor",
     "municipality_check": "matches_declared"
   },
@@ -12491,6 +12735,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21077",
+    "geo_boundary_code": "21077",
     "geo_municipality": "Villarrasa",
     "municipality_check": "matches_declared"
   },
@@ -12542,6 +12787,7 @@
     "source_epsg": "25831",
     "location_method": "source_coordinates",
     "geo_codmun": "43139",
+    "geo_boundary_code": "43139",
     "geo_municipality": "Santa Coloma de Queralt",
     "municipality_check": "matches_declared"
   },
@@ -12593,6 +12839,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "16274",
+    "geo_boundary_code": "16274",
     "geo_municipality": "Víllora",
     "municipality_check": "matches_declared"
   },
@@ -12644,7 +12891,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05241",
-    "geo_municipality": "Tiemblo, El",
+    "geo_boundary_code": "05241",
+    "geo_municipality": "El Tiemblo",
     "municipality_check": "matches_declared"
   },
   {
@@ -12695,6 +12943,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05239",
+    "geo_boundary_code": "05239",
     "geo_municipality": "Sotalbo",
     "municipality_check": "matches_declared"
   },
@@ -12746,6 +12995,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "37285",
+    "geo_boundary_code": "37285",
     "geo_municipality": "San Felices de los Gallegos",
     "municipality_check": "matches_declared"
   },
@@ -12797,6 +13047,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "06006",
+    "geo_boundary_code": "06006",
     "geo_municipality": "Alburquerque",
     "municipality_check": "matches_declared"
   },
@@ -12848,6 +13099,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27052",
+    "geo_boundary_code": "27052",
     "geo_municipality": "Ribas de Sil",
     "municipality_check": "matches_declared"
   },
@@ -12899,6 +13151,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "29057",
+    "geo_boundary_code": "29057",
     "geo_municipality": "Genalguacil",
     "municipality_check": "matches_declared"
   },
@@ -12950,6 +13203,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49094",
+    "geo_boundary_code": "49094",
     "geo_municipality": "Hermisende",
     "municipality_check": "declared_code_unavailable"
   },
@@ -13001,6 +13255,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49100",
+    "geo_boundary_code": "49100",
     "geo_municipality": "Lubián",
     "municipality_check": "matches_declared"
   },
@@ -13052,6 +13307,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "29065",
+    "geo_boundary_code": "29065",
     "geo_municipality": "Júzcar",
     "municipality_check": "matches_declared"
   },
@@ -13103,6 +13359,7 @@
     "source_epsg": "25831",
     "location_method": "source_coordinates",
     "geo_codmun": "25034",
+    "geo_boundary_code": "25034",
     "geo_municipality": "Artesa de Segre",
     "municipality_check": "matches_declared"
   },
@@ -13154,6 +13411,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49176",
+    "geo_boundary_code": "49176",
     "geo_municipality": "Riofrío de Aliste",
     "municipality_check": "matches_declared"
   },
@@ -13205,6 +13463,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "50189",
+    "geo_boundary_code": "50189",
     "geo_municipality": "Nonaspe",
     "municipality_check": "matches_declared"
   },
@@ -13256,6 +13515,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "31249",
+    "geo_boundary_code": "31249",
     "geo_municipality": "Valtierra",
     "municipality_check": "matches_declared"
   },
@@ -13307,6 +13567,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "45168",
+    "geo_boundary_code": "45168",
     "geo_municipality": "Toledo",
     "municipality_check": "matches_declared"
   },
@@ -13358,6 +13619,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "31217",
+    "geo_boundary_code": "31217",
     "geo_municipality": "San Martín de Unx",
     "municipality_check": "matches_declared"
   },
@@ -13409,6 +13671,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "31147",
+    "geo_boundary_code": "31147",
     "geo_municipality": "Legarda",
     "municipality_check": "matches_declared"
   },
@@ -13460,6 +13723,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "31032",
+    "geo_boundary_code": "31032",
     "geo_municipality": "Arguedas",
     "municipality_check": "matches_declared"
   },
@@ -13511,6 +13775,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "44219",
+    "geo_boundary_code": "44219",
     "geo_municipality": "Tornos",
     "municipality_check": "matches_declared"
   },
@@ -13562,6 +13827,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "46254",
+    "geo_boundary_code": "46254",
     "geo_municipality": "Venta del Moro",
     "municipality_check": "matches_declared"
   },
@@ -13613,6 +13879,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10108",
+    "geo_boundary_code": "10108",
     "geo_municipality": "Ladrillar",
     "municipality_check": "matches_declared"
   },
@@ -13664,6 +13931,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "37078",
+    "geo_boundary_code": "37078",
     "geo_municipality": "Candelario",
     "municipality_check": "matches_declared"
   },
@@ -13715,6 +13983,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10057",
+    "geo_boundary_code": "10057",
     "geo_municipality": "Casas de Miravete",
     "municipality_check": "matches_declared"
   },
@@ -13766,8 +14035,9 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": null,
+    "geo_boundary_code": "53050",
     "geo_municipality": null,
-    "municipality_check": "outside_boundaries"
+    "municipality_check": "non_municipal_territory"
   },
   {
     "year": "2022",
@@ -13817,7 +14087,8 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27047",
-    "geo_municipality": "Pobra do Brollón, A",
+    "geo_boundary_code": "27047",
+    "geo_municipality": "A Pobra do Brollón",
     "municipality_check": "matches_declared"
   },
   {
@@ -13868,6 +14139,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32017",
+    "geo_boundary_code": "32017",
     "geo_municipality": "Carballeda de Valdeorras",
     "municipality_check": "matches_declared"
   },
@@ -13919,6 +14191,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "29070",
+    "geo_boundary_code": "29070",
     "geo_municipality": "Mijas",
     "municipality_check": "matches_declared"
   },
@@ -13970,6 +14243,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32092",
+    "geo_boundary_code": "32092",
     "geo_municipality": "Vilariño de Conso",
     "municipality_check": "matches_declared"
   },
@@ -14021,6 +14295,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "40139",
+    "geo_boundary_code": "40139",
     "geo_municipality": "Navafría",
     "municipality_check": "matches_declared"
   },
@@ -14072,6 +14347,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49069",
+    "geo_boundary_code": "49069",
     "geo_municipality": "Figueruela de Arriba",
     "municipality_check": "matches_declared"
   },
@@ -14123,6 +14399,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49180",
+    "geo_boundary_code": "49180",
     "geo_municipality": "Roelos de Sayago",
     "municipality_check": "matches_declared"
   },
@@ -14174,6 +14451,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05057",
+    "geo_boundary_code": "05057",
     "geo_municipality": "Cebreros",
     "municipality_check": "matches_declared"
   },
@@ -14225,7 +14503,8 @@
     "source_epsg": "25831",
     "location_method": "source_coordinates",
     "geo_codmun": "08182",
-    "geo_municipality": "Pont de Vilomara i Rocafort, El",
+    "geo_boundary_code": "08182",
+    "geo_municipality": "El Pont de Vilomara i Rocafort",
     "municipality_check": "matches_declared"
   },
   {
@@ -14276,6 +14555,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24115",
+    "geo_boundary_code": "24115",
     "geo_municipality": "Ponferrada",
     "municipality_check": "matches_declared"
   },
@@ -14327,6 +14607,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32053",
+    "geo_boundary_code": "32053",
     "geo_municipality": "Oímbra",
     "municipality_check": "declared_code_unavailable"
   },
@@ -14378,6 +14659,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49099",
+    "geo_boundary_code": "49099",
     "geo_municipality": "Losacio",
     "municipality_check": "matches_declared"
   },
@@ -14429,6 +14711,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32053",
+    "geo_boundary_code": "32053",
     "geo_municipality": "Oímbra",
     "municipality_check": "declared_code_unavailable"
   },
@@ -14480,6 +14763,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49269",
+    "geo_boundary_code": "49269",
     "geo_municipality": "Villaseco del Pan",
     "municipality_check": "matches_declared"
   },
@@ -14531,6 +14815,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "50038",
+    "geo_boundary_code": "50038",
     "geo_municipality": "Ateca",
     "municipality_check": "matches_declared"
   },
@@ -14582,6 +14867,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "19305",
+    "geo_boundary_code": "19305",
     "geo_municipality": "Valdepeñas de la Sierra",
     "municipality_check": "matches_declared"
   },
@@ -14633,7 +14919,8 @@
     "source_epsg": "4083",
     "location_method": "source_coordinates",
     "geo_codmun": "38031",
-    "geo_municipality": "Realejos, Los",
+    "geo_boundary_code": "38031",
+    "geo_municipality": "Los Realejos",
     "municipality_check": "matches_declared"
   },
   {
@@ -14684,6 +14971,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "09378",
+    "geo_boundary_code": "09378",
     "geo_municipality": "Tejada",
     "municipality_check": "matches_declared"
   },
@@ -14735,6 +15023,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "49098",
+    "geo_boundary_code": "49098",
     "geo_municipality": "Losacino",
     "municipality_check": "matches_declared"
   },
@@ -14786,6 +15075,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "13011",
+    "geo_boundary_code": "13011",
     "geo_municipality": "Almadén",
     "municipality_check": "matches_declared"
   },
@@ -14837,6 +15127,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "13052",
+    "geo_boundary_code": "13052",
     "geo_municipality": "Malagón",
     "municipality_check": "matches_declared"
   },
@@ -14888,6 +15179,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "19151",
+    "geo_boundary_code": "19151",
     "geo_municipality": "Humanes",
     "municipality_check": "matches_declared"
   },
@@ -14939,6 +15231,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21014",
+    "geo_boundary_code": "21014",
     "geo_municipality": "Bonares",
     "municipality_check": "matches_declared"
   },
@@ -14990,6 +15283,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "21005",
+    "geo_boundary_code": "21005",
     "geo_municipality": "Almonte",
     "municipality_check": "matches_declared"
   },
@@ -15041,6 +15335,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "45162",
+    "geo_boundary_code": "45162",
     "geo_municipality": "Sevilleja de la Jara",
     "municipality_check": "matches_declared"
   },
@@ -15092,6 +15387,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32085",
+    "geo_boundary_code": "32085",
     "geo_municipality": "Verín",
     "municipality_check": "matches_declared"
   },
@@ -15143,6 +15439,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "15011",
+    "geo_boundary_code": "15011",
     "geo_municipality": "Boiro",
     "municipality_check": "matches_declared"
   },
@@ -15194,6 +15491,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "23053",
+    "geo_boundary_code": "23053",
     "geo_municipality": "Jódar",
     "municipality_check": "matches_declared"
   },
@@ -15245,6 +15543,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "36005",
+    "geo_boundary_code": "36005",
     "geo_municipality": "Caldas de Reis",
     "municipality_check": "matches_declared"
   },
@@ -15296,6 +15595,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "05221",
+    "geo_boundary_code": "05221",
     "geo_municipality": "Santa Cruz del Valle",
     "municipality_check": "matches_declared"
   },
@@ -15347,6 +15647,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "24020",
+    "geo_boundary_code": "24020",
     "geo_municipality": "Boca de Huérgano",
     "municipality_check": "matches_declared"
   },
@@ -15398,6 +15699,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32017",
+    "geo_boundary_code": "32017",
     "geo_municipality": "Carballeda de Valdeorras",
     "municipality_check": "matches_declared"
   },
@@ -15449,6 +15751,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32029",
+    "geo_boundary_code": "32029",
     "geo_municipality": "Chandrexa de Queixa",
     "municipality_check": "matches_declared"
   },
@@ -15500,6 +15803,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32039",
+    "geo_boundary_code": "32039",
     "geo_municipality": "Laza",
     "municipality_check": "matches_declared"
   },
@@ -15551,6 +15855,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10171",
+    "geo_boundary_code": "10171",
     "geo_municipality": "Santibáñez el Alto",
     "municipality_check": "matches_declared"
   },
@@ -15602,7 +15907,8 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32035",
-    "geo_municipality": "Irixo, O",
+    "geo_boundary_code": "32035",
+    "geo_municipality": "O Irixo",
     "municipality_check": "matches_declared"
   },
   {
@@ -15653,7 +15959,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "03135",
-    "geo_municipality": "Vall d'Ebo, la",
+    "geo_boundary_code": "03135",
+    "geo_municipality": "la Vall d'Ebo",
     "municipality_check": "matches_declared"
   },
   {
@@ -15704,6 +16011,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "50030",
+    "geo_boundary_code": "50030",
     "geo_municipality": "Añón de Moncayo",
     "municipality_check": "matches_declared"
   },
@@ -15755,6 +16063,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "12049",
+    "geo_boundary_code": "12049",
     "geo_municipality": "Costur",
     "municipality_check": "matches_declared"
   },
@@ -15806,6 +16115,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "12022",
+    "geo_boundary_code": "12022",
     "geo_municipality": "Bejís",
     "municipality_check": "matches_declared"
   },
@@ -15857,6 +16167,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "32041",
+    "geo_boundary_code": "32041",
     "geo_municipality": "Lobeira",
     "municipality_check": "matches_declared"
   },
@@ -15908,7 +16219,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "18906",
-    "geo_municipality": "Guájares, Los",
+    "geo_boundary_code": "18906",
+    "geo_municipality": "Los Guájares",
     "municipality_check": "matches_declared"
   },
   {
@@ -15959,6 +16271,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "48090",
+    "geo_boundary_code": "48090",
     "geo_municipality": "Balmaseda",
     "municipality_check": "matches_declared"
   },
@@ -16010,6 +16323,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33005",
+    "geo_boundary_code": "33005",
     "geo_municipality": "Belmonte de Miranda",
     "municipality_check": "matches_declared"
   },
@@ -16061,6 +16375,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "12133",
+    "geo_boundary_code": "12133",
     "geo_municipality": "Villanueva de Viver",
     "municipality_check": "matches_declared"
   },
@@ -16112,6 +16427,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33073",
+    "geo_boundary_code": "33073",
     "geo_municipality": "Tineo",
     "municipality_check": "matches_declared"
   },
@@ -16163,6 +16479,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27004",
+    "geo_boundary_code": "27004",
     "geo_municipality": "Baleira",
     "municipality_check": "matches_declared"
   },
@@ -16214,6 +16531,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "33050",
+    "geo_boundary_code": "33050",
     "geo_municipality": "Ponga",
     "municipality_check": "matches_declared"
   },
@@ -16265,6 +16583,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33073",
+    "geo_boundary_code": "33073",
     "geo_municipality": "Tineo",
     "municipality_check": "matches_declared"
   },
@@ -16316,6 +16635,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33073",
+    "geo_boundary_code": "33073",
     "geo_municipality": "Tineo",
     "municipality_check": "matches_declared"
   },
@@ -16367,6 +16687,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "33045",
+    "geo_boundary_code": "33045",
     "geo_municipality": "Parres",
     "municipality_check": "matches_declared"
   },
@@ -16418,6 +16739,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33001",
+    "geo_boundary_code": "33001",
     "geo_municipality": "Allande",
     "municipality_check": "matches_declared"
   },
@@ -16469,6 +16791,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33001",
+    "geo_boundary_code": "33001",
     "geo_municipality": "Allande",
     "municipality_check": "matches_declared"
   },
@@ -16520,6 +16843,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33001",
+    "geo_boundary_code": "33001",
     "geo_municipality": "Allande",
     "municipality_check": "matches_declared"
   },
@@ -16571,6 +16895,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "33012",
+    "geo_boundary_code": "33012",
     "geo_municipality": "Cangas de Onís",
     "municipality_check": "matches_declared"
   },
@@ -16622,6 +16947,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "33005",
+    "geo_boundary_code": "33005",
     "geo_municipality": "Belmonte de Miranda",
     "municipality_check": "matches_declared"
   },
@@ -16673,6 +16999,7 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "10146",
+    "geo_boundary_code": "10146",
     "geo_municipality": "Pinofranqueado",
     "municipality_check": "matches_declared"
   },
@@ -16724,6 +17051,7 @@
     "source_epsg": "25829",
     "location_method": "source_coordinates",
     "geo_codmun": "27061",
+    "geo_boundary_code": "27061",
     "geo_municipality": "Trabada",
     "municipality_check": "matches_declared"
   },
@@ -16775,7 +17103,8 @@
     "source_epsg": "25830",
     "location_method": "source_coordinates",
     "geo_codmun": "46175",
-    "geo_municipality": "Montitxelvo / Montichelvo",
+    "geo_boundary_code": "46175",
+    "geo_municipality": "Montitxelvo/Montichelvo",
     "municipality_check": "matches_declared"
   }
 ]
