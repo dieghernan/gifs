@@ -423,6 +423,15 @@ ggsave(
   units = "px"
 )
 
+# Compresión local sin pérdida cuando OptiPNG está disponible.
+optipng <- Sys.which("optipng")
+if (nzchar(optipng)) {
+  system2(
+    optipng,
+    c("-quiet", "-o2", "main.png", "main_inset1.png", "gif_spain.png")
+  )
+}
+
 # 6. Utilities ----
 
 # Escribe info de sesión

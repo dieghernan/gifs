@@ -17,10 +17,14 @@ cartografía IGN CC BY 4.0 y avisos de terceros. El campo `license-url`
 del CFF no garantiza que la integración de GitHub conserve esa distinción:
 comprobar y corregir la ficha archivada antes de cerrar la publicación.
 
-El DOI de versión se incorporará al CFF después de que Zenodo archive la
-release, sin mover la etiqueta. El catálogo JSON-LD enlaza el DOI general;
-cuando exista el DOI de versión identificará la colección. Los dos
-conjuntos hijos enlazan el catálogo y no se apropian de su DOI.
+Release publicada: [v2.0.0](https://github.com/dieghernan/gifs/releases/tag/v2.0.0).
+DOI de versión: [10.5281/zenodo.23932940](https://doi.org/10.5281/zenodo.23932940).
+DOI general: [10.5281/zenodo.23929996](https://doi.org/10.5281/zenodo.23929996).
+El DOI de versión se incorpora al CFF después del archivado, sin mover la
+etiqueta publicada. El catálogo JSON-LD identifica la colección con ese
+DOI y enlaza el DOI general. Los dos conjuntos hijos enlazan el catálogo
+y no se apropian de su DOI. La ficha de Zenodo se publica como Dataset
+con un aviso de derechos personalizado que separa los ámbitos anteriores.
 
 ## Archivo de la primera release
 

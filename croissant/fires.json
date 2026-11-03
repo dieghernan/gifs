@@ -187,7 +187,7 @@
     "inLanguage": "es"
   },
   "version": "2.0.0",
-  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://github.com/dieghernan/gifs/releases/tag/v2.0.0",
+  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://doi.org/10.5281/zenodo.23932940",
   "isPartOf": {
     "@id": "https://dieghernan.github.io/gifs/#catalog"
   },
