@@ -81,6 +81,14 @@ coords <- gif_fires_sf |>
 ccaa <- esp_get_ccaa(resolution = 1, year = 2024, moveCAN = TRUE) |>
   st_transform(st_crs(gif_fires_sf))
 
+provincias <- esp_get_prov(resolution = 1, year = 2024, moveCAN = TRUE) |>
+  st_transform(st_crs(ccaa))
+
+can_provincias <- esp_get_can_provinces(
+  moveCAN = TRUE,
+  epsg = st_crs(ccaa)$epsg
+)
+
 canbox <- esp_get_can_box(moveCAN = TRUE) |>
   st_transform(st_crs(ccaa))
 
@@ -111,8 +119,16 @@ textsub <- paste0(
 showtext_auto()
 
 main <- ggplot(ccaa) +
-  geom_sf(fill = "grey10", color = "grey20") +
-  geom_sf(data = canbox, color = "grey20") +
+  geom_sf(fill = "grey10", color = NA) +
+  geom_sf(data = provincias, fill = NA, color = "grey18", linewidth = 0.15) +
+  geom_sf(fill = NA, color = "grey28", linewidth = 0.25) +
+  geom_sf(
+    data = can_provincias,
+    color = "grey18",
+    linewidth = 0.15,
+    linetype = "dashed"
+  ) +
+  geom_sf(data = canbox, color = "grey28", linewidth = 0.25) +
   geom_glowpoint(
     data = coords,
     aes(
