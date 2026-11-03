@@ -69,6 +69,8 @@ gráfico anual también resume únicamente los registros incluidos en el conjunt
 La información de la sesión con la que se ha generado la infografía se
 proporciona en el archivo [sessioninfo.txt](sessioninfo.txt).
 
+El [historial de cambios](CHANGELOG.md) resume las novedades de cada versión.
+
 ## Referencias
 
 Royé, Dominic. 2021. “Firefly Cartography.” June 1.

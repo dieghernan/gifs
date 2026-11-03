@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, please cite it using the preferred-citation
+  information.
+
+type: dataset
+title: Grandes incendios forestales en España
+abstract: >-
+  Dataset of 449 large forest fires in Spain with at least 500 hectares of
+  forest area burned, dated between 27 February 2010 and 26 September 2026.
+  Compiled and adapted from MITECO final statistics for 2010–2021 and
+  provisional reports for 2022–2026. Each record includes municipality and
+  province names, INE codes, date and forest area burned in hectares.
+  Dates in 2012 identify the year only. The dataset does not provide complete
+  annual coverage or real-time monitoring. Code and documentation use the MIT
+  license; data reuse follows the MITECO legal notice.
+
+authors:
+- family-names: Hernangómez
+  given-names: Diego
+  orcid: https://orcid.org/0000-0001-8457-4658
+# Proposed first release; add the actual release date and DOI when assigned.
+version: 1.0.0
+license-url: https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html
+preferred-citation:
+  type: data
+  title: Grandes incendios forestales en España
+  authors:
+  - family-names: Hernangómez
+    given-names: Diego
+    orcid: https://orcid.org/0000-0001-8457-4658
+  version: 1.0.0
+  url: https://dieghernan.github.io/gifs/
+  license-url: https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html
+repository-code: https://github.com/dieghernan/gifs
+url: https://dieghernan.github.io/gifs/
+keywords:
+- forest fires
+- Spain
+- MITECO
+- forest area burned
+- wildfires
+references:
+- type: data
+  title: Estadísticas de incendios forestales
+  authors:
+  - name: Ministerio para la Transición Ecológica y el Reto Demográfico
+  url: https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-datos.html
+- type: data
+  title: Avances informativos de incendios forestales
+  authors:
+  - name: Ministerio para la Transición Ecológica y el Reto Demográfico
+  url: https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-avances.html
