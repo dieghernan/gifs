@@ -46,6 +46,10 @@ la infografía. Los identificadores y códigos deben leerse como texto. Ambos pr
 se ofrecen también en JSON con tipos explícitos y valores nulos para datos
 ausentes.
 
+Ambos productos están disponibles en GeoJSON, con puntos en EPSG:4326 y
+las mismas propiedades. Canarias conserva su ubicación real. Los registros
+sin coordenadas interpretables permanecen con geometría nula.
+
 Las columnas `longitude` y `latitude` utilizan **EPSG:4326**, sin desplazar
 Canarias. `location_method` distingue las coordenadas EGIF de las capitales
 municipales utilizadas como referencia. En partes sin datum conocido o sin

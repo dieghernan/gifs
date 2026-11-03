@@ -8,6 +8,7 @@ from decimal import Decimal
 import hashlib
 import io
 import json
+import math
 from pathlib import Path
 import re
 import unicodedata
@@ -61,13 +62,35 @@ def csv_text(rows, fields):
     return stream.getvalue()
 
 
-def typed_json(rows):
+def typed_records(rows):
     records = []
     for row in rows:
         records.append({key: None if value == "" else float(value)
                         if key.startswith("area_") or key in {"longitude", "latitude"} else value
                         for key, value in row.items()})
-    return json.dumps(records, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
+    return records
+
+
+def typed_json(rows):
+    return json.dumps(typed_records(rows), ensure_ascii=False, indent=2, allow_nan=False) + "\n"
+
+
+def geojson(rows, key):
+    features = []
+    for properties in typed_records(rows):
+        longitude, latitude = properties["longitude"], properties["latitude"]
+        geometry = None
+        if longitude is not None or latitude is not None:
+            if longitude is None or latitude is None:
+                raise ValueError("A GeoJSON point requires both longitude and latitude")
+            if not (math.isfinite(longitude) and math.isfinite(latitude)
+                    and -180 <= longitude <= 180 and -90 <= latitude <= 90):
+                raise ValueError("Invalid EPSG:4326 coordinates")
+            geometry = {"type": "Point", "coordinates": [longitude, latitude]}
+        features.append({"type": "Feature", "id": properties[key],
+                         "geometry": geometry, "properties": properties})
+    return json.dumps({"type": "FeatureCollection", "features": features},
+                      ensure_ascii=False, indent=2, allow_nan=False) + "\n"
 
 
 def clean(value):
@@ -304,6 +327,8 @@ def build(root=ROOT, prepare_locations=False):
         "rdata/gif_d2010.csv": csv_text(fires, FIRE_FIELDS),
         "rdata/egif_parts.json": typed_json(selected),
         "rdata/gif_d2010.json": typed_json(fires),
+        "rdata/egif_parts.geojson": geojson(selected, "egif_part_id"),
+        "rdata/gif_d2010.geojson": geojson(fires, "fire_id"),
         "rdata/audit/egif-comparison.csv": csv_text(comparison, AUDIT_FIELDS),
         "rdata/audit/egif-unassigned-parts.csv": csv_text(unassigned, PART_FIELDS),
         "rdata/audit/egif-coverage.csv": csv_text(coverage, ["year", "cpro", "parts", "coverage_status"]),

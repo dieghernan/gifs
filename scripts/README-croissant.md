@@ -1,7 +1,7 @@
 # Metadatos Croissant
 
 El descriptor describe dos unidades relacionadas: partes EGIF y una vista
-conciliada de incendios. Cada recurso está disponible en CSV y JSON.
+conciliada de incendios. Cada recurso está disponible en CSV, JSON y GeoJSON.
 Los RecordSet extraen el JSON mediante JSONPath para conservar códigos
 como texto y distinguir valores nulos sin depender de inferencias del CSV.
 

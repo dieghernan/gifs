@@ -10,11 +10,42 @@ import unittest
 import zipfile
 
 from scripts.build_dataset import (ROOT, build_fire_view, link_parts,
-                                  read_csv, selected_parts)
+                                  read_csv, selected_parts, geojson)
 from scripts.egif import read_export
 
 
 class EgifPipelineTests(unittest.TestCase):
+    def test_geojson_preserves_canary_coordinates_null_geometry_and_properties(self):
+        rows = [{'egif_part_id': '2021386009', 'longitude': '-16.5', 'latitude': '28.2', 'notes': 'Canarias', 'area_forestal_ha': '500.0001'},
+                {'egif_part_id': '2010200006', 'longitude': '', 'latitude': '', 'notes': 'Sin datum', 'area_forestal_ha': '500'}]
+        collection = json.loads(geojson(rows, 'egif_part_id'))
+        self.assertEqual(collection['type'], 'FeatureCollection')
+        self.assertEqual(len(collection['features']), 2)
+        point, missing = collection['features']
+        self.assertEqual(point['id'], '2021386009')
+        self.assertEqual(point['geometry'], {'type': 'Point', 'coordinates': [-16.5, 28.2]})
+        self.assertEqual(point['properties']['area_forestal_ha'], 500.0001)
+        self.assertIsNone(missing['geometry'])
+        self.assertEqual(missing['properties']['notes'], 'Sin datum')
+        self.assertNotIn('crs', collection)
+
+    def test_geojson_rejects_incomplete_or_invalid_coordinates(self):
+        for longitude, latitude in [('1', ''), ('181', '28'), ('nan', '28')]:
+            with self.subTest(longitude=longitude, latitude=latitude):
+                with self.assertRaises(ValueError):
+                    geojson([{'fire_id': 'fire', 'longitude': longitude, 'latitude': latitude}], 'fire_id')
+
+    def test_geojson_products_keep_every_record_and_match_typed_json(self):
+        for stem, key in [('egif_parts', 'egif_part_id'), ('gif_d2010', 'fire_id')]:
+            with self.subTest(product=stem):
+                records = json.loads((ROOT / f'rdata/{stem}.json').read_text(encoding='utf-8'))
+                collection = json.loads((ROOT / f'rdata/{stem}.geojson').read_text(encoding='utf-8'))
+                self.assertEqual(len(collection['features']), len(records))
+                self.assertEqual([feature['properties'] for feature in collection['features']], records)
+                self.assertEqual([feature['id'] for feature in collection['features']], [row[key] for row in records])
+                null_count = sum(feature['geometry'] is None for feature in collection['features'])
+                self.assertEqual(null_count, sum(row['longitude'] is None for row in records))
+
     def test_display_displacement_applies_only_to_canary_points(self):
         locations = read_csv(ROOT / 'data-derived/fire-map-locations.csv')
         fires = {row['fire_id']: row for row in read_csv(ROOT / 'rdata/gif_d2010.csv')}

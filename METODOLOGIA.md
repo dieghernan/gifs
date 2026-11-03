@@ -91,6 +91,11 @@ De los 329 partes seleccionados, 202 tienen coordenadas interpretables,
 125 carecen de datum y dos carecen de coordenadas. En estos últimos las
 columnas geográficas quedan vacías. Vacío significa desconocido, no cero.
 
+Los GeoJSON conservan una Feature por registro y todas sus propiedades,
+con identificadores de parte o incendio como `id`. Las geometrías son Point
+en orden longitud/latitud, sin desplazar Canarias. Si faltan coordenadas,
+`geometry` es nulo. No se incluyen perímetros ni se eliminan esos registros.
+
 La vista de incendios toma el punto del primer parte vinculado con
 coordenadas interpretables y lo identifica en `location_part_id`; no es
 un centroide ni representa el perímetro completo. Para los demás se utiliza

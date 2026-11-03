@@ -24,7 +24,7 @@ class CroissantTests(unittest.TestCase):
         self.assertNotIn("identifier", descriptor)
         self.assertEqual(descriptor["@context"]["name"], "sc:name")
         resources = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]["resources"]
-        for download, record_set, resource in zip(descriptor["distribution"][::2], descriptor["recordSet"], resources):
+        for download, record_set, resource in zip(descriptor["distribution"][::3], descriptor["recordSet"], resources):
             with self.subTest(resource=resource["path"]):
                 content = subprocess.check_output(["git", "show", "HEAD:" + resource["path"]], cwd=ROOT)
                 self.assertEqual(download["sha256"], hashlib.sha256(content).hexdigest())
@@ -43,6 +43,7 @@ class CroissantTests(unittest.TestCase):
             for resource in metadata["croissant"]["resources"]:
                 mapping[resource["id"]] = ROOT / resource["path"]
                 mapping[resource["id"] + "-json"] = ROOT / resource["structuredPath"]
+                mapping[resource["id"] + "-geojson"] = ROOT / resource["geoPath"]
         dataset = mlcroissant.Dataset(jsonld=str(ROOT / "croissant.json"), mapping=mapping)
         for resource in metadata["croissant"]["resources"]:
             with (ROOT / resource["path"]).open(encoding="utf-8", newline="") as stream:

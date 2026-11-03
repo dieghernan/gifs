@@ -48,6 +48,16 @@ def build():
             "encodingFormat": "application/json", "contentSize": f"{len(structured_content)} bytes",
             "sha256": hashlib.sha256(structured_content).hexdigest(), "dateModified": metadata["publication"]["dateModified"],
         })
+        geo_content = subprocess.check_output(["git", "show", f'HEAD:{resource["geoPath"]}'], cwd=ROOT)
+        if json.loads(geo_content) != json.loads((ROOT / resource["geoPath"]).read_text(encoding="utf-8")):
+            raise ValueError("Commit GeoJSON changes before generating its Croissant snapshot.")
+        distributions.append({
+            "@type": ["cr:FileObject", "sc:DataDownload"], "@id": file_id + "-geojson",
+            "name": resource["name"] + " (GeoJSON)",
+            "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/" + snapshot["sourceRevision"] + "/" + resource["geoPath"],
+            "encodingFormat": "application/geo+json", "contentSize": f"{len(geo_content)} bytes",
+            "sha256": hashlib.sha256(geo_content).hexdigest(), "dateModified": metadata["publication"]["dateModified"],
+        })
         record_sets.append({
             "@type": "cr:RecordSet", "@id": record_set, "name": record_set,
             "description": resource["description"], "key": {"@id": f'{record_set}/{resource["key"]}'},

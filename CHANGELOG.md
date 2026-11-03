@@ -2,6 +2,8 @@
 
 ## Sin publicar
 
+- Productos GeoJSON de partes e incendios en EPSG:4326, con todas sus propiedades y geometría nula cuando no hay coordenadas interpretables.
+
 - Migración a fuentes EGIF estructuradas de 2010–2023, con una fila por parte, identificadores estables, notas, procedencia y una vista de incendios que conserva informes y avances de respaldo.
 - Coordenadas EPSG:4326, contraste municipal y distinción explícita de ubicaciones municipales de respaldo; se conservan las coordenadas originales y los casos sin datum.
 - Excel anterior archivado; generación reproducible de CSV, auditorías y metadatos desde fuentes versionadas.

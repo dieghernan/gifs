@@ -25,6 +25,11 @@ la infografía. Los identificadores y códigos deben leerse como texto. Ambos pr
 se ofrecen también en JSON con tipos explícitos y valores nulos para datos
 ausentes. Croissant utiliza el JSON para evitar inferencias de tipos del CSV.
 
+También se ofrecen `rdata/egif_parts.geojson` y `rdata/gif_d2010.geojson`,
+con puntos en EPSG:4326 y las mismas propiedades que los JSON. Canarias
+conserva su ubicación real. Los registros sin coordenadas interpretables
+permanecen en el archivo con `geometry: null`; no se dibujan puntos ficticios.
+
 Las columnas `longitude` y `latitude` utilizan **EPSG:4326**, sin desplazar
 Canarias. `location_method` distingue las coordenadas EGIF de las capitales
 municipales utilizadas como referencia. En partes sin datum conocido o sin
