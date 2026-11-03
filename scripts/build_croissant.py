@@ -15,56 +15,53 @@ HOME = "https://dieghernan.github.io/gifs/"
 def build():
     metadata = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))
     citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
-    fields = json.loads((ROOT / "_data/croissant_fields.json").read_text(encoding="utf-8"))
     snapshot = metadata["croissant"]
-    # Git blob bytes avoid platform-dependent CRLF conversions in the checksum.
-    content = subprocess.check_output(
-        ["git", "show", f'HEAD:{snapshot["sourcePath"]}'], cwd=ROOT)
-    rows = list(csv.DictReader(io.StringIO(content.decode("utf-8"))))
-    with (ROOT / snapshot["sourcePath"]).open(encoding="utf-8", newline="") as stream:
-        if rows != list(csv.DictReader(stream)):
-            raise ValueError("Commit CSV changes before generating its Croissant snapshot.")
-    if list(rows[0]) != [field["column"] for field in fields]:
-        raise ValueError("CSV columns differ from the documented Croissant fields.")
-    if any(value == "" for row in rows for value in row.values()):
-        raise ValueError("Empty CSV cells require a review of the documented missing-value policy.")
-    dates = sorted(row["date"] for row in rows)
+    distributions, record_sets, all_dates = [], [], []
+    for resource in snapshot["resources"]:
+        fields = json.loads((ROOT / resource["fields"]).read_text(encoding="utf-8"))
+        content = subprocess.check_output(["git", "show", f'HEAD:{resource["path"]}'], cwd=ROOT)
+        rows = list(csv.DictReader(io.StringIO(content.decode("utf-8"))))
+        with (ROOT / resource["path"]).open(encoding="utf-8", newline="") as stream:
+            if rows != list(csv.DictReader(stream)):
+                raise ValueError("Commit CSV changes before generating its Croissant snapshot.")
+        if list(rows[0]) != [field["column"] for field in fields]:
+            raise ValueError("CSV columns differ from the documented Croissant fields.")
+        keys = [row[resource["key"]] for row in rows]
+        if len(set(keys)) != len(keys) or not all(keys):
+            raise ValueError(f"Invalid record key: {resource['key']}")
+        all_dates.extend(row["date"] for row in rows)
+        file_id, record_set = resource["id"], resource["recordSet"]
+        distributions.append({
+            "@type": ["cr:FileObject", "sc:DataDownload"], "@id": file_id,
+            "name": resource["name"], "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/" + snapshot["sourceRevision"] + "/" + resource["path"],
+            "encodingFormat": "text/csv", "contentSize": f"{len(content)} bytes",
+            "sha256": hashlib.sha256(content).hexdigest(), "dateModified": metadata["publication"]["dateModified"],
+        })
+        record_sets.append({
+            "@type": "cr:RecordSet", "@id": record_set, "name": record_set,
+            "description": resource["description"], "key": {"@id": f'{record_set}/{resource["key"]}'},
+            "field": [{"@type": "cr:Field", "@id": f'{record_set}/{field["column"]}', "name": field["column"],
+                       "description": field["description"], "dataType": field["dataType"],
+                       "source": {"fileObject": {"@id": file_id}, "extract": {"column": field["column"]}}}
+                      for field in fields],
+        })
+    dates = sorted(all_dates)
     if metadata["dataset"]["temporalCoverage"] != f"{dates[0]}/{dates[-1]}":
         raise ValueError("Dataset temporal coverage does not match the CSV.")
 
     context = json.loads((ROOT / "_data/croissant_context.json").read_text(encoding="utf-8"))
     dataset = dict(metadata["dataset"])
-    dataset.update({
-        "version": citation["version"], "identifier": citation["doiUrl"],
-        "sameAs": citation["doiUrl"], "citeAs": citation["citeAs"],
-    })
+    dataset["version"] = metadata.get("developmentVersion", citation["version"])
+    if "developmentVersion" not in metadata:
+        dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"], citeAs=citation["citeAs"])
     dataset.update({
         "@context": context, "@type": "Dataset", "@id": HOME + "#dataset",
         "url": HOME, "conformsTo": "http://mlcommons.org/croissant/1.1",
         **metadata["publication"],
     })
     dataset["creator"] = {**dataset["creator"], "@id": HOME + "#author"}
-    dataset["distribution"] = [{
-        "@type": ["cr:FileObject", "sc:DataDownload"], "@id": "gif-csv",
-        "name": metadata["dataset"]["distribution"][0]["name"],
-        "contentUrl": ("https://raw.githubusercontent.com/dieghernan/gifs/"
-                       + snapshot["sourceRevision"] + "/" + snapshot["sourcePath"]),
-        "encodingFormat": "text/csv", "contentSize": f"{len(content)} bytes",
-        "sha256": hashlib.sha256(content).hexdigest(),
-        "dateModified": metadata["publication"]["dateModified"],
-    }]
-    record_set = snapshot["recordSet"]
-    dataset["recordSet"] = [{
-        "@type": "cr:RecordSet", "@id": record_set, "name": record_set,
-        "description": "Un registro por incendio incluido en el CSV; los municipios y las fechas pueden repetirse. No se declara una clave única ni se distingue el estado definitivo o provisional de cada registro. No hay celdas vacías en esta instantánea; no se infieren valores ausentes ni se completan series anuales.",
-        "field": [{
-            "@type": "cr:Field", "@id": f'{record_set}/{field["column"]}',
-            "name": field["column"], "description": field["description"],
-            "dataType": field["dataType"],
-            "source": {"fileObject": {"@id": "gif-csv"},
-                       "extract": {"column": field["column"]}},
-        } for field in fields],
-    }]
+    dataset["distribution"] = distributions
+    dataset["recordSet"] = record_sets
     return json.dumps(dataset, ensure_ascii=False, indent=2) + "\n"
 
 

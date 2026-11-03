@@ -1,17 +1,18 @@
-{% assign release = site.data.citation %}
+{% assign resources = site.data.structured_data.croissant.resources %}
 {% assign snapshot = site.data.structured_data.croissant %}
-{% assign csv = site.data.croissant.distribution | first %}
-{% assign size_kb = csv.contentSize | remove: ' bytes' | plus: 0 | divided_by: 1000.0 | round: 1 | replace: '.', ',' %}
 <section class="card dataset-download text-center" aria-labelledby="download-heading">
   <div class="card-header">
-    <h2 class="h5 mb-0" id="download-heading">Grandes incendios forestales</h2>
+    <h2 class="h5 mb-0" id="download-heading">Datos de grandes incendios forestales</h2>
   </div>
   <div class="card-body">
-    <p class="card-text">Municipio, provincia, fecha y superficie forestal quemada.</p>
-    <a class="btn btn-primary" href="https://raw.githubusercontent.com/dieghernan/gifs/{{ snapshot.sourceRevision }}/{{ snapshot.sourcePath }}">Descargar CSV · {{ size_kb }} kB</a>
+    <p class="card-text">Partes EGIF y vista conciliada de incendios, con procedencia, notas y coordenadas EPSG:4326 cuando están disponibles.</p>
+    {% for resource in resources %}
+    <p><a class="btn btn-primary" href="https://raw.githubusercontent.com/dieghernan/gifs/{{ snapshot.sourceRevision }}/{{ resource.path }}">{{ resource.name | escape }} · CSV</a></p>
+    {% endfor %}
+    <p class="small mb-0">No sumar ambos archivos: un incendio puede tener varios partes. Las correspondencias pendientes están identificadas.</p>
   </div>
   <div class="card-footer small">
-    <p class="mb-1">Publicado: <time datetime="{{ release.dateReleased }}">{{ release.dateReleased }}</time> · v{{ release.version | escape }}<br>SHA-256: <code title="{{ csv.sha256 }}">{{ csv.sha256 | slice: 0, 12 }}</code></p>
-    <p class="dataset-download-doi mb-0"><a href="{{ release.doiUrl }}">doi:{{ release.doi | escape }}</a></p>
+    <p class="mb-1">Versión en desarrollo {{ site.data.structured_data.developmentVersion }}. Descargas EGIF: 03/11/2026.</p>
+    <p class="dataset-download-doi mb-0"><a href="{{ site.data.citation.doiUrl }}">Versión archivada 1.0.0 y su DOI</a></p>
   </div>
 </section>

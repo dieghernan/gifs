@@ -114,6 +114,11 @@ kramdown:
   enable_coderay: false
 incremental: false
 exclude:
+- data-raw
+- data-derived
+- gifs-miteco-audit
+- dev
+- tests
 - scripts
 - LICENSE
 - README.md

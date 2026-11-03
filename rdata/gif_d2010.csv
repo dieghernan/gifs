@@ -1,450 +1,456 @@
-prov_name,cpro,munic_name,cmun,codmun,date,area_forestal_ha
-Gipuzkoa,20,Hondarribia,36,20036,2010-02-27,500
-Zaragoza,50,Sos del Rey Católico,248,50248,2010-03-17,794.13
-Salamanca,37,Villarino de los Aires,364,37364,2010-07-30,982.53
-León,24,Barjas,11,24011,2010-08-08,1077.66
-León,24,Encinedo,67,24067,2010-08-09,577
-León,24,Benuza,16,24016,2010-08-24,990
-Ourense,32,Laza,39,32039,2010-08-29,1715
-Ourense,32,Chandrexa de Queixa,29,32029,2010-08-30,698.06
-Valencia,46,Ontinyent,184,46184,2010-09-06,2512.06
-Valencia,46,Rafelguaraf,209,46209,2010-09-07,2059.35
-Murcia,30,Calasparra,13,30013,2010-09-07,633
-Cantabria,39,Vega de Pas,97,39097,2011-02-07,530
-Cantabria,39,Arredondo,7,39007,2011-03-24,768.6
-Valencia,46,Benicolet,57,46057,2011-04-08,1449.3
-Zamora,49,Lubián,100,49100,2011-04-09,538
-Illes Balears,7,Sant Joan de Labritja,50,7050,2011-05-25,1443.19
-Ourense,32,Carballeda de Valdeorras,17,32017,2011-08-13,512.65
-Ávila,5,Navalacruz,157,5157,2011-08-19,709.45
-León,24,Encinedo,67,24067,2011-09-09,654
-Málaga,29,Mijas,70,29070,2011-09-11,576.95
-Ourense,32,Manzaneda,44,32044,2011-10-13,3236.7
-Ourense,32,Lobios,42,32042,2011-10-13,2424.42
-Ourense,32,Maceda,43,32043,2011-10-14,722.74
-Ourense,32,Monterrei,50,32050,2011-10-15,1097.32
-Ourense,32,Viana do Bolo,86,32086,2011-10-15,979.83
-Ourense,32,Montederramo,49,32049,2011-10-15,770
-Ourense,32,Maceda,43,32043,2011-10-16,978.62
-Asturias,33,Cangas del Narcea,11,33011,2011-10-16,727.27
-Ourense,32,Vilariño de Conso,92,32092,2011-10-17,1486.15
-Asturias,33,Cangas del Narcea,11,33011,2011-10-17,901
-Ourense,32,Manzaneda,44,32044,2011-10-17,828.93
-Ourense,32,Laza,39,32039,2011-10-17,821.7
-Ourense,32,Manzaneda,44,32044,2011-10-18,1285.45
-León,24,Castrillo de Cabrera,43,24043,2011-10-18,580
-Asturias,33,Allande,1,33001,2011-10-23,2012.2
-Zamora,49,Pías,154,49154,2012-01-08,1115
-Málaga,29,Pujerra,81,29081,2012-02-04,797.65
-Zamora,49,Hermisende,94,49094,2012-02-28,2329.76
-Ourense,32,A Veiga,83,32083,2012-02-28,554.42
-Huesca,22,Montanuy,157,22157,2012-03-08,2730
-León,24,Truchas,172,24172,2012-03-09,905
-León,24,Palacios del Sil,109,24109,2012-03-11,519.43
-Asturias,33,Cangas del Narcea,11,33011,2012-03-26,698.5
-Asturias,33,Piloña,49,33049,2012-03-26,692.23
-A Coruña,15,A Capela,18,15018,2012-03-31,804.94
-Tarragona,43,Rasquera,121,43121,2012-05-15,2735.04
-Valencia,46,Chelva,106,46106,2012-06-01,702.29
-Valencia,46,Llocnou de Sant Jeroni,153,46153,2012-06-12,1331.08
-Barcelona,8,Castellet i la Gornal,58,8058,2012-06-12,567.9
-Valencia,46,Cortes de Pallás,99,46099,2012-06-28,28879.1
-Valencia,46,Andilla,38,46038,2012-06-29,20064.9
-Albacete / Murcia,2,Hellín / Moratalla,37,2037,2012-07-01,6549.47
-Santa Cruz de Tenerife,38,Adeje,1,38001,2012-07-15,6512
-Santa Cruz de Tenerife,38,El Paso,27,38027,2012-07-16,752
-Girona,17,La Jonquera,86,17086,2012-07-22,8729.8
-Cáceres,10,Caminomorisco,41,10041,2012-07-23,620
-Guadalajara,19,Chequilla,104,19104,2012-08-01,1125.55
-Cáceres,10,Gata,84,10084,2012-08-03,646.03
-Santa Cruz de Tenerife,38,Alajeró,3,38003,2012-08-04,2676.81
-Santa Cruz de Tenerife,38,Villa de Mazo,53,38053,2012-08-04,2028
-Ourense,32,O Barco de Valdeorras,9,32009,2012-08-10,1749.88
-Salamanca,37,Valdehijaderos,332,37332,2012-08-11,1034.51
-Guadalajara,19,El Cubillo de Uceda,102,19102,2012-08-11,836.8
-Ciudad Real,13,Navas de Estena,60,13060,2012-08-11,511.12
-Alicante,3,Torremanzanas/la Torre de les Maçanes,132,3132,2012-08-12,705.92
-Ávila,5,Solana de Ávila,236,5236,2012-08-18,1242.4
-Zamora,49,Cubo de Benavente,57,49057,2012-08-18,650.46
-León,24,Castrocontrigo,47,24047,2012-08-19,11592
-Navarra,31,Aras,26,31026,2012-08-21,620.49
-Zaragoza,50,Calcena,69,50069,2012-08-27,4281.07
-Madrid,28,Robledo de Chavela,125,28125,2012-08-27,1488.07
-Málaga,29,Coín,42,29042,2012-08-30,8037.14
-León,24,Riello,132,24132,2012-09-01,882
-Toledo,45,El Real de San Vicente,144,45144,2012-09-01,606.68
-Zamora,49,Pedralba de la Pradería,145,49145,2012-09-22,2571.27
-Valencia,46,Chulilla,112,46112,2012-09-23,3703.33
-León,24,Valdefresno,175,24175,2013-05-14,599.5
-Toledo,45,Almorox,13,45013,2013-07-16,1251.3
-Valencia,46,Ayora,44,46044,2013-07-25,606.68
-Illes Balears,7,Andratx,5,7005,2013-07-26,2347.1
-Cáceres,10,Trujillo,195,10195,2013-07-26,1378.13
-Guadalajara,19,Tortuero,288,19288,2013-07-31,919
-Zamora,49,Fonfría,71,49071,2013-08-01,837.56
-Ávila,5,Cebreros,57,5057,2013-08-03,1095.01
-Zamora,49,Villardiegua de la Ribera,265,49265,2013-08-22,1643.4
-Ourense,32,Cualedro,28,32028,2013-08-24,883
-Ourense,32,Cualedro,28,32028,2013-08-24,690.3
-Pontevedra,36,Oia,36,36036,2013-08-26,1824
-Zamora,49,Hermisende,94,49094,2013-09-04,1592.47
-Pontevedra,36,Ponte Caldelas,43,36043,2013-09-04,689.63
-A Coruña,15,Carnota,20,15020,2013-09-11,2166.48
-A Coruña,15,Negreira,56,15056,2013-09-11,646.2
-Girona,17,Vilopriu,232,17232,2013-11-11,520.36
-Cantabria,39,Arredondo,7,39007,2014-03-09,533.6
-Almería,4,Alhama de Almería,11,4011,2014-03-25,3259
-Almería,4,Lucainena de las Torres,60,4060,2014-04-20,1550.48
-Tarragona,43,Tivissa,150,43150,2014-06-15,872.93
-Guadalajara,19,Cogolludo,92,19092,2014-07-17,1735.5
-Guadalajara,19,Bustares,57,19057,2014-07-18,1227.67
-Burgos,9,Mecerreyes,208,9208,2014-09-01,626.65
-Alicante,3,La Vall d'Ebo,135,3135,2015-05-14,1761.16
-Zaragoza,50,Luna,151,50151,2015-07-04,7160.99
-Jaén,23,Quesada,73,23073,2015-07-05,9756.76
-Granada,18,Lújar,124,18124,2015-07-08,1582.9
-León,24,Quintana del Castillo,123,24123,2015-07-15,2209
-Toledo,45,Navalcán,110,45110,2015-07-16,961.35
-Zamora,49,Trabazos,223,49223,2015-07-21,878.02
-León,24,Lucillo,90,24090,2015-07-26,1113
-Barcelona,8,Òdena,143,8143,2015-07-26,1059.4
-Asturias,33,Tineo,73,33073,2015-07-27,553.14
-Soria,42,Burgo de Osma-Ciudad de Osma,43,42043,2015-07-28,528.08
-Cáceres,10,Acebo,3,10003,2015-08-06,6830.99
-Cáceres,10,Logrosán,109,10109,2015-08-10,776.2
-Ourense,32,Cualedro,28,32028,2015-08-30,1490.09
-Asturias,33,Boal,7,33007,2015-12-19,2554
-Asturias,33,Tineo,73,33073,2015-12-20,575.24
-Valencia,46,Bolbaite,73,46073,2016-06-15,1564.32
-Valencia,46,Carcaixent,83,46083,2016-06-16,2239.58
-Albacete,2,Liétor,44,2044,2016-06-30,871
-Cáceres,10,Cáceres,37,10037,2016-07-23,1394.36
-Castellón,12,Artana,16,12016,2016-07-25,1487.41
-Santa Cruz de Tenerife,38,El Paso,27,38027,2016-08-03,4648.41
-Pontevedra,36,Arbo,1,36001,2016-08-10,1992.05
-A Coruña,15,Santiago de Compostela,78,15078,2016-08-10,825.18
-A Coruña,15,Porto do Son,71,15071,2016-08-10,823.08
-A Coruña,15,Porto do Son,71,15071,2016-08-10,714.67
-Cáceres,10,Jerte,107,10107,2016-08-18,1093.98
-Navarra,31,Tafalla,227,31227,2016-08-25,1454.1
-Sevilla,41,El Castillo de las Guardas,31,41031,2016-08-28,1829.04
-Alicante,3,Benitachell/el Poble Nou de Benitatxell,42,3042,2016-09-04,685.05
-Ourense,32,Entrimo,30,32030,2016-09-06,2973.94
-Ourense,32,Oímbra,53,32053,2016-09-06,1363.25
-Ourense,32,Muíños,51,32051,2016-09-06,745.45
-Zamora / León,49,San Justo (San Ciprián) / Encinedo (Santa Eulalia de Cabrera),189,49189,2016-09-11,1197.52
-León,24,Fabero,70,24070,2016-09-12,2544.19
-Ourense,32,Cualedro,28,32028,2016-09-12,1588.44
-Salamanca,37,Olmedo de Camaces,223,37223,2016-09-24,656.43
-Lleida,25,La Guingueta d'Àneu,903,25903,2016-10-29,632.25
-Salamanca,37,Candelario,78,37078,2017-01-25,516.6
-Cantabria,39,Vega de Pas,97,39097,2017-03-10,675
-León,24,Ponferrada,115,24115,2017-04-19,1251.04
-León,24,Benuza,16,24016,2017-04-20,798.34
-Asturias,33,Allande,1,33001,2017-04-20,745.25
-Asturias,33,Grandas de Salime,27,33027,2017-04-20,590.49
-Huelva,21,Moguer,50,21050,2017-06-24,8071.93
-Cáceres,10,Calzadilla,40,10040,2017-06-24,606.81
-Valencia,46,Gátova,902,46902,2017-06-28,1212.71
-Huelva,21,Minas de Riotinto,49,21049,2017-07-03,777.13
-Albacete,2,Yeste,86,2086,2017-07-27,3074.43
-Zamora,49,Pino del Oro,157,49157,2017-07-29,2355.69
-Cuenca,16,Campillo de Altobuey,42,16042,2017-07-31,1009
-Ourense,32,Verín,85,32085,2017-08-03,1372.18
-Jaén,23,Segura de la Sierra,81,23081,2017-08-03,683.91
-Ávila,5,Navarredonda de Gredos,165,5165,2017-08-07,541.22
-León,24,Encinedo,67,24067,2017-08-21,9816.66
-Salamanca,37,Puente del Congosto,261,37261,2017-08-24,1719.95
-Zamora,49,Fermoselle,65,49065,2017-08-26,1632.44
-Ávila,5,Hoyocasero,101,5101,2017-08-26,924.04
-Huelva,21,La Granada de Río-Tinto,36,21036,2017-09-08,4161.46
-Sevilla,41,Almadén de la Plata,9,41009,2017-09-08,1165.92
-Zamora,49,Vegalatrave,233,49233,2017-09-09,527.26
-Las Palmas,35,Tejeda,25,35025,2017-09-20,1825.79
-Asturias,33,Ibias,28,33028,2017-10-09,2662.41
-Ourense,32,Lobios,42,32042,2017-10-10,683.43
-Asturias,33,Degaña,22,33022,2017-10-11,1953.53
-Lugo,27,Cervantes,12,27012,2017-10-12,864
-León,24,Palacios del Sil,109,24109,2017-10-12,573.5
-Lugo,27,Cervantes,12,27012,2017-10-13,1893.32
-León,24,Villablino,202,24202,2017-10-13,719.44
-Ourense,32,Lobios,42,32042,2017-10-14,3485.46
-Asturias,33,Ibias,28,33028,2017-10-14,3379.8
-Pontevedra,36,Ponteareas,42,36042,2017-10-15,8729.4
-Ourense,32,Melón,46,32046,2017-10-15,5970.7
-Pontevedra,36,As Neves,34,36034,2017-10-15,3084.52
-Ourense,32,A Gudiña,34,32034,2017-10-15,1809.14
-Ourense,32,Baños de Molgas,7,32007,2017-10-15,1599.97
-León,24,Benuza,16,24016,2017-10-15,1521.76
-Ourense,32,San Cristovo de Cea,76,32076,2017-10-15,1520.34
-Pontevedra,36,Tui,55,36055,2017-10-15,1512.59
-Pontevedra,36,Nigrán,35,36035,2017-10-15,1484.03
-Pontevedra,36,Gondomar,21,36021,2017-10-15,1384.92
-Ourense,32,Parada de Sil,57,32057,2017-10-15,1275.62
-Pontevedra,36,Caldas de Reis,5,36005,2017-10-15,1067.87
-Asturias,33,Cangas del Narcea,11,33011,2017-10-15,962.9
-Pontevedra,36,Salvaterra de Miño,50,36050,2017-10-15,770.14
-Ourense,32,Chandrexa de Queixa,29,32029,2017-10-15,742.35
-Ourense,32,Esgos,31,32031,2017-10-15,573.04
-Pontevedra,36,Mondariz,30,36030,2017-10-15,568.89
-Ourense,32,Maceda,43,32043,2017-10-15,560
-Asturias,33,Allande,1,33001,2017-10-15,553.8
-Lugo,27,Negueira de Muñiz,35,27035,2017-10-16,1104
-Castellón,12,Culla,51,12051,2017-12-29,600.36
-León,24,Santa Colomba de Curueño,151,24151,2018-05-12,645
-Huelva,21,Nerva,52,21052,2018-08-02,1327.28
-Valencia,46,Llutxent,150,46150,2018-08-06,2952.29
-León,24,Encinedo,67,24067,2019-01-06,539.54
-Asturias,33,Salas,59,33059,2019-03-02,770.22
-A Coruña,15,Dodro,33,15033,2019-03-25,1192.71
-Huelva,21,Beas,11,21011,2019-06-01,1574.56
-Tarragona,43,La Torre de l'Espanyol,152,43152,2019-06-26,4281.51
-Toledo,45,Almorox,13,45013,2019-06-28,3014.48
-Ávila,5,Gavilanes,82,5082,2019-06-28,1414.86
-Toledo,45,Toledo,168,45168,2019-06-28,1017.64
-Almería,4,Terque,91,4091,2019-07-13,1119.8
-Alicante,3,Beneixama,23,3023,2019-07-15,841.08
-Zaragoza,50,Perdiguera,206,50206,2019-07-23,592.1
-Cuenca,16,Barchín del Hoyo,29,16029,2019-07-30,2591
-Las Palmas,35,Artenara,5,35005,2019-08-10,1164.08
-Las Palmas,35,Valleseco,32,35032,2019-08-17,9179.51
-Huelva,21,Paterna del Campo,56,21056,2019-09-12,1496
-Asturias,33,Tineo,73,33073,2020-02-15,770.29
-Las Palmas,35,La Aldea de San Nicolás,20,35020,2020-02-22,930.47
-Asturias,33,Tineo,73,33073,2020-02-23,566.18
-Ourense,32,Cualedro,28,32028,2020-07-29,1036.72
-Madrid,28,Robledo de Chavela,125,28125,2020-08-02,1073.06
-Cáceres,10,Plasencia,148,10148,2020-08-03,558.5
-Zamora,49,Gallegos del Río,87,49087,2020-08-15,1151.43
-Santa Cruz de Tenerife,38,Garafía,16,38016,2020-08-21,1061.26
-Huelva,21,Almonaster la Real,4,21004,2020-08-27,14953.52
-Cáceres,10,Cabezuela del Valle,35,10035,2020-08-27,4068.76
-Ourense,32,Lobios,42,32042,2020-09-12,2025.95
-Ourense,32,Vilar de Barrio,89,32089,2020-09-12,504.62
-Ourense,32,Cualedro,28,32028,2020-09-13,1309.56
-Ourense,32,Vilariño de Conso,92,32092,2020-09-13,817.29
-Ourense,32,Manzaneda,44,32044,2020-09-13,810.52
-Ourense,32,Chandrexa de Queixa,29,32029,2020-09-13,705.74
-Ourense,32,A Mezquita,48,32048,2020-09-14,649.9
-Cantabria,39,Arredondo,7,39007,2020-11-21,575.5
-Granada,18,Torvizcón,179,18179,2020-12-28,617.51
-Almería,4,Berja,29,4029,2021-01-22,624.61
-Almería,4,Olula de Castro,68,4068,2021-02-01,689.39
-Navarra / Gipuzkoa / Francia,31,Bera-Lesaka-Irún,250,31250,2021-02-20,1068.17
-Cantabria,39,Udías,90,39090,2021-02-20,729.8
-Cantabria,39,Soba,83,39083,2021-03-29,783.11
-Santa Cruz de Tenerife,38,Arico,5,38005,2021-05-20,3052
-Ciudad Real,13,Chillón/Almadén,38,13038,2021-07-12,868.94
-Albacete,2,Liétor,44,2044,2021-07-24,1932.74
-Tarragona / Barcelona,43,Santa Coloma de Queralt / Bellprat,139,43139,2021-07-24,1312.79
-Huelva,21,Villarrasa,77,21077,2021-07-24,787.48
-Albacete,2,Tobarra,74,2074,2021-07-24,556.51
-Cuenca,16,Víllora,274,16274,2021-07-25,501.96
-Ávila,5,El Tiemblo,241,5241,2021-08-06,622.27
-Ávila,5,Sotalbo,239,5239,2021-08-14,21138.66
-Salamanca,37,San Felices de los Gallegos,285,37285,2021-08-17,1735.23
-Badajoz,6,Alburquerque,6,6006,2021-08-18,697.55
-Lugo,27,Ribas de Sil,52,27052,2021-09-06,1477.6
-Málaga,29,Genalguacil,57,29057,2021-09-08,8651.26
-Zamora,49,Hermisende,94,49094,2022-01-28,1421.13
-Zamora,49,Lubián,100,49100,2022-02-25,503
-Málaga,29,Júzcar,65,29065,2022-06-08,4553.53
-Zamora,49,Riofrío de Aliste,176,49176,2022-06-15,24073.86
-Lleida,25,Artesa de Segre,34,25034,2022-06-15,2504.9
-Zaragoza,50,Nonaspe,189,50189,2022-06-16,1110
-Toledo,45,Toledo,168,45168,2022-06-17,1738
-Navarra,31,Legarda/Guirguillano,147,31147,2022-06-19,6247.64
-Navarra,31,Arguedas/Valtierra,32,31032,2022-06-19,2060.38
-Navarra,31,Gallipienzo/San Martín de Unx,110,31110,2022-06-20,6598.64
-Teruel,44,Castejón de Tornos,65,44065,2022-06-20,1350
-Valencia,46,Venta del Moro,254,46254,2022-07-03,1330.6
-Cáceres / Salamanca,10,Ladrillar/Monsagro,108,10108,2022-07-11,10438.58
-Salamanca,37,Candelario,78,37078,2022-07-11,507.9
-Lugo,27,A Pobra do Brollón/Saa,47,27047,2022-07-14,12768.22
-Ourense,32,Carballeda de Valdeorras/Riodolas,17,32017,2022-07-14,12607.23
-Cáceres,10,Casas de Miravete,57,10057,2022-07-14,2728.9
-Ourense,32,Vilariño de Conso,92,32092,2022-07-15,6999.36
-Málaga,29,Mijas,70,29070,2022-07-15,1788.33
-Zamora,49,Figueruela de Arriba,69,49069,2022-07-15,1151.32
-Ciudad Real,13,Montiel,57,13057,2022-07-15,799.08
-Segovia,40,Navafría,139,40139,2022-07-15,758.51
-Zamora,49,Roelos de Sayago,180,49180,2022-07-15,648.84
-Ávila,5,Cebreros,57,5057,2022-07-16,4071.92
-Zamora,49,Losacio,99,49099,2022-07-17,26181.96
-Barcelona,8,El Pont de Vilomara i Rocafort,182,8182,2022-07-17,1502.64
-León,24,Ponferrada,115,24115,2022-07-17,1405.6
-Ourense,32,Oímbra (Videferre),53,32053,2022-07-17,901.33
-Zaragoza,50,Ateca,38,50038,2022-07-18,11004.1
-Ourense,32,Oímbra (Rabal),53,32053,2022-07-18,1931.08
-Zamora,49,Villaseco,269,49269,2022-07-18,589.28
-Guadalajara,19,Valdepeñas de la Sierra,305,19305,2022-07-19,2478.29
-Santa Cruz de Tenerife,38,Los Realejos,31,38031,2022-07-21,2739.3
-Burgos,9,Quintanilla del Coco,295,9295,2022-07-24,1819.69
-Zamora,49,Losacino,98,49098,2022-07-24,690.8
-Ciudad Real,13,Malagón,52,13052,2022-07-25,1819.05
-Ciudad Real,13,Almadén,11,13011,2022-07-25,1563.74
-Guadalajara,19,Humanes,151,19151,2022-07-25,974.62
-Huelva,21,Almonte,5,21005,2022-07-26,880.79
-Toledo,45,Sevilleja de la Jara,162,45162,2022-07-29,538.5
-Ourense,32,Verín,85,32085,2022-08-03,706.76
-A Coruña,15,Boiro,11,15011,2022-08-04,2058.75
-Pontevedra,36,Caldas de Reis,5,36005,2022-08-04,561.39
-Ávila,5,Santa Cruz del Valle,221,5221,2022-08-05,1495.32
-León,24,Boca de Huérgano,20,24020,2022-08-07,1154.85
-Ourense,32,Laza/Camba,39,32039,2022-08-09,2828.18
-Ourense,32,Chandrexa de Queixa,29,32029,2022-08-09,616.22
-Ourense,32,Carballeda de Valdeorras/Casaio,17,32017,2022-08-09,526.45
-Cáceres,10,Santibáñez el Alto,171,10171,2022-08-10,910.36
-Ourense,32,O Irixo,35,32035,2022-08-10,508.65
-Alicante,3,Vall d' Ebo,135,3135,2022-08-13,10609.05
-Zaragoza,50,Añón de Moncayo,30,50030,2022-08-13,5213.16
-Castellón,12,Costur,49,12049,2022-08-14,734.51
-Castellón / Valencia,12,Bejis,22,12022,2022-08-15,16944.63
-Ourense,32,Lobeira,41,32041,2022-08-24,625.2
-Granada,18,Los Guajares,906,18906,2022-09-08,4439.63
-Bizkaia / Burgos,48,Balmaseda (VI) / Valle de Mena (BU),90,48090,2022-10-23,728
-Asturias,33,Belmonte de Miranda,5,33005,2023-03-09,700
-Castellón / Teruel,12,Villanueva de Viver/San Agustín,133,12133,2023-03-23,4220.58
-Asturias,33,Piloña,49,33049,2023-03-23,552
-Lugo,27,Baleira,4,27004,2023-03-28,1590.05
-Asturias,33,Ponga,50,33050,2023-03-28,701.4
-Asturias,33,Parres,45,33045,2023-03-29,1078.7
-Asturias,33,Tineo,73,33073,2023-03-29,725
-Asturias,33,Cangas de Onís,12,33012,2023-03-29,701
-Asturias,33,Tineo,73,33073,2023-03-29,556.6
-Asturias,33,Piloña,49,33049,2023-03-29,546
-Asturias,33,Belmonte de Miranda,5,33005,2023-03-31,678.9
-Asturias,33,Piloña,49,33049,2023-04-03,500
-Asturias,33,Valdés,34,33034,2023-04-05,9750
-Asturias,33,Allande,1,33001,2023-04-08,550
-Cáceres,10,Pinofranqueado,146,10146,2023-05-17,10470.13
-Santa Cruz de Tenerife,38,Puntagorda,29,38029,2023-07-15,2600
-Santa Cruz de Tenerife,38,Arafo,4,38004,2023-08-15,12529.9
-Lugo,27,Trabada,61,27061,2023-10-12,2296.53
-Valencia,46,Montitxelvo,175,46175,2023-11-02,2077.18
-Cantabria,39,Soba,83,39083,2024-01-26,1715
-Almería,4,Enix,41,4041,2024-02-09,580.85
-Cantabria,39,Rionansa,63,39063,2024-04-06,592.66
-Alicante,3,Tàrbena,127,3127,2024-04-14,543.67
-Almería,4,Níjar,66,4066,2024-06-06,2122.19
-Badajoz,6,Cabeza del Buey,23,6023,2024-07-05,754.91
-Badajoz,6,La Coronada,39,6039,2024-07-19,779.73
-Cáceres,10,Talavan,178,10178,2024-07-20,728.55
-Badajoz,6,Ribera del Fresno,113,6113,2024-07-24,1138.77
-Badajoz,6,Puebla del Maestre,105,6105,2024-07-24,943.8
-Ciudad Real,13,Argamasilla de Calatrava,20,13020,2024-07-24,702.05
-Cuenca,16,Valverdejo,237,16237,2024-07-30,2226.98
-Toledo,45,La Estrella,65,45065,2024-08-06,1829.54
-Jaén,23,Andújar,5,23005,2024-08-18,786.88
-León,24,Astorga,8,24008,2024-08-19,589.74
-Madrid,28,Tres Cantos,903,28903,2024-08-22,528.71
-Almería,4,Huércal de Almería,52,4052,2025-05-03,1305
-Sevilla,41,Burguillos / Castilblanco de los Arroyos,19,41019,2025-06-10,1377.07
-Cáceres,10,Campo Lugar,43,10043,2025-06-16,836.97
-Cáceres,10,Cáceres / Trujillo,37,10037,2025-06-17,1050.66
-Badajoz,6,Casas de Don Pedro,33,6033,2025-06-20,761.59
-Lleida,25,Torrefeta i Florejacs,907,25907,2025-07-01,1304
-Tarragona,43,Paüls,102,43102,2025-07-07,2190
-Cáceres,10,Trujillo,195,10195,2025-07-16,837
-Toledo / Madrid,45,Méntrida / Villamanta,99,45099,2025-07-17,1736.73
-Ávila,5,Navaluenga,163,5163,2025-07-18,1171.1
-Badajoz,6,Valdecaballeros,137,6137,2025-07-19,2368.3
-Cáceres,10,Arroyomolinos,23,10023,2025-07-24,675
-Ávila,5,Cuevas del Valle,66,5066,2025-07-28,3118.99
-Cáceres,10,Caminomorisco,41,10041,2025-07-29,2564.15
-Ourense,32,Vilardevós - Terroso,91,32091,2025-08-01,563.62
-Badajoz,6,Oliva de Mérida,94,6094,2025-08-04,788
-León,24,Benuza,16,24016,2025-08-08,22258.2
-León / Asturias,24,Páramo del Sil / Degaña,110,24110,2025-08-08,7159
-Ourense,32,Chandrexa de Queixa - Requeixo,29,32029,2025-08-08,6320.29
-León,24,Murias de Paredes - Fasgar,101,24101,2025-08-08,6091.06
-León / Asturias,24,Villablino (Orallo) / Cangas del Narcea (Genestoso),202,24202,2025-08-08,4247.5
-Cáceres,10,Aldea del Cano / Sierra de Fuentes,12,10012,2025-08-08,1233
-Ávila,5,San Bartolomé de Pinares,201,5201,2025-08-08,734.64
-León,24,Puente de Domingo Flórez,122,24122,2025-08-09,3804.06
-Ourense,32,Maceda - Castro de Escuadro,43,32043,2025-08-09,1856.18
-Zamora / León,49,Molezuelas de la Carballeda / Castrocalbón,120,49120,2025-08-10,24426
-Ourense,32,Vilariño de Conso - Mormentelos,92,32092,2025-08-10,5490
-Palencia,34,Cervera de Pisuerga,56,34056,2025-08-10,1269.5
-León,24,Villafranca del Bierzo,209,24209,2025-08-10,547.5
-Zamora,49,Gallegos del Río,87,49087,2025-08-11,4958.8
-Toledo / Cáceres,45,Navalmoralejo / Villar del Pedroso,111,45111,2025-08-11,2733.78
-Madrid,28,Tres Cantos,903,28903,2025-08-11,1844.95
-Ourense,32,Vilardevós - Moialde,91,32091,2025-08-11,1106.12
-Ourense,32,Oímbra - A Granxa,53,32053,2025-08-12,22414
-Cáceres,10,Jarilla,106,10106,2025-08-12,16315.06
-Ourense,32,Chandrexa de Queixa - Parafita,29,32029,2025-08-12,12851.81
-Ourense,32,A Mezquita,48,32048,2025-08-12,10743
-Cáceres,10,Arroyo de la Luz / Casar de Cáceres,21,10021,2025-08-12,3261.05
-Ourense,32,Maceda - Santiso,43,32043,2025-08-12,2649.5
-Asturias,33,Cabrales,8,33008,2025-08-12,1090
-Ourense / Lugo / León,32,Larouco / Quiroga / Oencia,38,32038,2025-08-13,37765
-León,24,Boca de Huérgano,20,24020,2025-08-13,14462
-Salamanca,37,Cipérez (Puertas),106,37106,2025-08-13,9684.07
-Ourense,32,Vilardevós - Vilar de Cervos,91,32091,2025-08-13,1807.94
-Zamora / León / Ourense,49,Porto / Encinedo / Carballeda de Valdeorras,162,49162,2025-08-14,21373
-León / Palencia,24,Almanza / Guardo,4,24004,2025-08-14,6887
-Badajoz,6,Llerena,74,6074,2025-08-14,4867.35
-Badajoz,6,Alburquerque,6,6006,2025-08-14,2217.46
-Badajoz,6,Azuaga,14,6014,2025-08-14,845.48
-León,24,Acebedo / Burón,1,24001,2025-08-14,549.09
-Badajoz,6,Burguillos del Cerro,22,6022,2025-08-14,538.37
-Cáceres,10,Cáceres,37,10037,2025-08-15,3697.75
-Ourense,32,Carballeda de Avia - Vilar de Condes,18,32018,2025-08-15,3017.9
-Ávila,5,El Herradón / Tornadizos de Ávila,93,5093,2025-08-15,2975.81
-Ourense,32,Xinzo de Limia,32,32032,2025-08-15,1023.35
-Pontevedra,36,Agolada,20,36020,2025-08-15,522.32
-León,24,Igüeña,83,24083,2025-08-19,860.24
-León,24,Soto y Amío,167,24167,2025-08-24,1627
-Lugo,27,A Pobra do Brollón,47,27047,2025-08-25,1015.36
-Almería,4,Lubrín,59,4059,2025-08-28,783.3
-Ourense,32,Carballeda de Valdeorras - Casaio,17,32017,2025-09-06,973.56
-Lugo,27,Pantón,41,27041,2025-09-18,1909.54
-Guadalajara / Segovia,19,El Cardoso de la Sierra / Cerezo de Arriba,67,19067,2025-09-21,2652
-Cantabria,39,Selaya,82,39082,2026-02-24,519
-Cantabria,39,Arredondo,7,39007,2026-02-25,698.83
-Cantabria,39,Soba,83,39083,2026-02-26,813
-Cáceres,10,Losar de la Vera,110,10110,2026-03-29,962.56
-Asturias,33,Allande,1,33001,2026-04-05,619.37
-Pontevedra,36,Ponteareas,42,36042,2026-04-06,886.78
-Badajoz,6,Valencia de las Torres,139,6139,2026-05-28,572.8
-Badajoz,6,Hornachos,69,6069,2026-05-30,1024.52
-Badajoz,6,Montemolín,86,6086,2026-06-01,502.48
-Huelva,21,Alosno,6,21006,2026-06-04,1030.69
-Huelva,21,Villanueva de los Castillejos,76,21076,2026-06-08,4388.62
-León,24,Congosto,57,24057,2026-06-24,524
-Huesca,22,Alcampell,16,22016,2026-06-25,1932.14
-León,24,Oseja de Sajambre,106,24106,2026-06-26,525
-Zaragoza,50,Leciñena,137,50137,2026-06-30,1508.12
-Girona,17,La Bisbal d'Empordà,22,17022,2026-07-03,1921.82
-Badajoz,6,Jerez de los Caballeros,70,6070,2026-07-06,541.05
-Toledo,45,La Guardia,71,45071,2026-07-08,510
-Almería,4,Los Gallardos,48,4048,2026-07-09,4507.41
-Zaragoza,50,Orés,197,50197,2026-07-15,11319
-Ciudad Real,13,Hinojosas de Calatrava,48,13048,2026-07-15,787
-Guadalajara,19,La Mierla,182,19182,2026-07-16,33078
-Madrid,28,Lozoyuela-Navas-Sieteiglesias,901,28901,2026-07-16,836.76
-Segovia,40,Brieva,33,40033,2026-07-20,2275.1
-Guadalajara,19,Selas,254,19254,2026-07-21,2637
-Teruel,44,Ejulve,96,44096,2026-07-21,2403.57
-Huelva,21,El Cerro de Andévalo,23,21023,2026-07-21,1697.39
-Ávila,5,Burgohondo,41,5041,2026-07-22,33943
-Madrid,28,Villa del Prado,171,28171,2026-07-22,2879.02
-León,24,Valdesamario,184,24184,2026-07-22,2000
-León,24,Castropodame,49,24049,2026-07-22,777
-Madrid,28,San Martín de Valdeiglesias,133,28133,2026-07-23,18177.25
-Ciudad Real,13,Retuerta del Bullaque,72,13072,2026-07-23,942
-Castellón,12,"Vall d'Uixó, la",126,12126,2026-07-25,8291.0741
-Zamora,49,Fermoselle,65,49065,2026-07-29,8043
-León,24,Vegas del Condado,201,24201,2026-07-29,1262
-León,24,Villafranca del Bierzo,209,24209,2026-07-29,1208
-Cáceres,10,Casas de Millán,56,10056,2026-08-01,1035.07
-Huelva,21,Niebla,53,21053,2026-08-06,39821.31
-Castellón,12,Tírig,111,12111,2026-08-07,561.2709
-Segovia,40,Navas de San Antonio,146,40146,2026-08-08,1093.24
-Huesca,22,Las Peñas de Riglos,173,22173,2026-08-10,16521.92
-Cáceres,10,Pinofranqueado,146,10146,2026-08-18,3715.46
-Castellón,12,Segorbe,104,12104,2026-08-20,594.8
-Valencia,46,Tuéjar,247,46247,2026-09-15,748.8978
-Ourense,32,Calvos de Randín,16,32016,2026-09-24,518.1
-Málaga,29,Igualeja,60,29060,2026-09-26,587.47
+prov_name,cpro,munic_name,cmun,codmun,date,area_forestal_ha,fire_id,egif_part_ids,source,source_url,source_date,data_status,area_wooded_ha,area_non_wooded_ha,match_status,notes,longitude,latitude,location_method,location_part_id
+Gipuzkoa,20,Hondarribia,036,20036,2010-02-27,500.0000,GIF-e09595c88ebd5768,2010200006,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,142.0000,358.0000,confirmed_match,,-1.7912983,43.3630124,municipal_seat,
+Zaragoza,50,Sos del Rey Católico,248,50248,2010-03-17,794.1300,GIF-dd240f84a9925510,2010500051,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,510.9800,283.1500,confirmed_match,,-1.2153991,42.4973004,municipal_seat,
+Salamanca,37,Villarino de los Aires,364,37364,2010-07-30,982.5300,GIF-64571625ebc25fc2,2010370111,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,74.8300,907.7000,confirmed_match,,-6.467696,41.2696912,municipal_seat,
+León,24,Barjas,011,24011,2010-08-08,1077.6600,GIF-954bed37b5cb59d2,2010240126,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,276.2100,801.4500,confirmed_match,,-6.9794493,42.611303,municipal_seat,
+León,24,Encinedo,067,24067,2010-08-09,577.0000,GIF-d496f5ad4e3c532b,2010240135,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,215.0000,362.0000,confirmed_match,,-6.5944498,42.2714765,municipal_seat,
+León,24,Benuza,016,24016,2010-08-24,990.0000,GIF-f016498dee17554e,2010240181,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,990.0000,confirmed_match,,-6.7075785,42.4016736,municipal_seat,
+Ourense,32,Laza,039,32039,2010-08-29,1715.0000,GIF-9c0011d600b456f8,2010320988,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,24.0000,1691.0000,confirmed_match,,-7.4615355,42.0606944,municipal_seat,
+Ourense,32,Chandrexa de Queixa,029,32029,2010-08-30,698.0600,GIF-b7a50e0fa01d5231,2010321016,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,698.0600,confirmed_match,,-7.3790671,42.2608148,municipal_seat,
+Valencia,46,Ontinyent,184,46184,2010-09-06,2512.0600,GIF-97e5506a5f375362,2010460119;2010030107,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,269.7800,2242.2800,confirmed_match,Partes provinciales agrupados por detección y extinción coincidentes; se conserva la agrupación documentada en la conciliación.,-0.6065332,38.8228958,municipal_seat,
+Valencia,46,Rafelguaraf,209,46209,2010-09-07,2059.3500,GIF-abe7dff690795654,2010460123,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,914.9900,1144.3600,confirmed_match,,-0.456969,39.051097,municipal_seat,
+Murcia,30,Calasparra,013,30013,2010-09-07,633.0000,GIF-2d9243bcaf7b5111,2010300139,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,476.0000,157.0000,confirmed_match,,-1.6939363,38.2311642,municipal_seat,
+Cantabria,39,Vega de Pas,097,39097,2011-02-07,530.0000,GIF-426cdbecf9f15d86,2011390123,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,6.0000,524.0000,confirmed_match,,-3.782789,43.159662,municipal_seat,
+Cantabria,39,Arredondo,007,39007,2011-03-24,768.6000,GIF-b4aee781f08c5d02,2011390363,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,10.5600,758.0400,confirmed_match,,-3.602209,43.2749605,municipal_seat,
+Valencia,46,Benicolet,057,46057,2011-04-08,1449.3000,GIF-1bf2c47a78a35313,2011460066,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,304.7000,1144.6000,confirmed_match,,-0.3455954,38.9186735,municipal_seat,
+Zamora,49,Lubián,100,49100,2011-04-09,538.0000,GIF-8d7fe52da63e57a0,2011490152,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,10.0000,528.0000,confirmed_match,,-6.9059909,42.0354305,municipal_seat,
+Illes Balears,07,Sant Joan de Labritja,050,07050,2011-05-25,1443.1900,GIF-8598dabcaae15c21,2011070065,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1415.5300,27.6600,confirmed_match,,1.5140034,39.0779131,municipal_seat,
+Ourense,32,Carballeda de Valdeorras,017,32017,2011-08-13,512.6500,GIF-ac2f70bdc198503b,2011321190,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,440.0000,72.6500,confirmed_match,,-6.8784085,42.3773209,municipal_seat,
+Ávila,05,Navalacruz,157,05157,2011-08-19,709.4500,GIF-7672b9d37cec563d,2011050100,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,122.4000,587.0500,confirmed_match,,-4.9322078,40.4399593,municipal_seat,
+León,24,Encinedo,067,24067,2011-09-09,654.0000,GIF-b0fe037c49e65482,2011240403,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,654.0000,confirmed_match,,-6.5944498,42.2714765,municipal_seat,
+Málaga,29,Mijas,070,29070,2011-09-11,576.9500,GIF-17c023ded0035944,2011290110,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,103.9700,472.9800,confirmed_match,,-4.6389871,36.5934057,municipal_seat,
+Ourense,32,Manzaneda,044,32044,2011-10-13,3236.7000,GIF-fd7a5b444ad35707,2011322255,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,3236.7000,confirmed_match,,-7.234851,42.3103143,municipal_seat,
+Ourense,32,Lobios,042,32042,2011-10-13,2424.4200,GIF-cc53a059d2c05b22,2011322226,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,52.0000,2372.4200,inferred_legacy_match,Origen Portugal en EGIF; se conserva la referencia territorial Lobios de la base anterior. Asociación territorial pendiente de una clave documental común.,-8.08576,41.9053357,municipal_seat,
+Ourense,32,Maceda,043,32043,2011-10-14,722.7400,GIF-ad3caac034df52e5,2011322285,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,169.6300,553.1100,confirmed_match,,-7.6500003,42.2692241,municipal_seat,
+Ourense,32,Monterrei,050,32050,2011-10-15,1097.3200,GIF-38f64e1317db542f,2011322307,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1.6000,1095.7200,confirmed_match,,-7.4496083,41.9470723,municipal_seat,
+Ourense,32,Viana do Bolo,086,32086,2011-10-15,979.8300,GIF-ac79ce29fba7564d,2011322342,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,435.4400,544.3900,confirmed_match,,-7.113097,42.179974,municipal_seat,
+Ourense,32,Montederramo,049,32049,2011-10-15,770.0000,GIF-506fb8986ddd5880,2011322310,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,70.0000,700.0000,confirmed_match,,-7.5014164,42.2746248,municipal_seat,
+Ourense,32,Maceda,043,32043,2011-10-16,978.6200,GIF-54f9116cd0995004,2011322366,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,162.4500,816.1700,confirmed_match,,-7.6500003,42.2692241,municipal_seat,
+Asturias,33,Cangas del Narcea,011,33011,2011-10-16,727.2700,GIF-c9441eaf2bf050fe,2011331456,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,42.0000,685.2700,confirmed_match,,-6.5520317,43.1771561,municipal_seat,
+Ourense,32,Vilariño de Conso,092,32092,2011-10-17,1486.1500,GIF-fc480b5b1eab55f9,2011322415,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1486.1500,confirmed_match,,-7.1834296,42.1647399,municipal_seat,
+Asturias,33,Cangas del Narcea,011,33011,2011-10-17,901.0000,GIF-481f2682fbfb5fc9,2011331489,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,71.6500,829.3500,confirmed_match,,-6.5520317,43.1771561,municipal_seat,
+Ourense,32,Manzaneda,044,32044,2011-10-17,828.9300,GIF-2777fa84ad3d57e4,2011322401,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,828.9300,confirmed_match,,-7.234851,42.3103143,municipal_seat,
+Ourense,32,Laza,039,32039,2011-10-17,821.7000,GIF-dc3721b123235d75,2011322417,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,821.7000,confirmed_match,,-7.4615355,42.0606944,municipal_seat,
+Ourense,32,Manzaneda,044,32044,2011-10-18,1285.4500,GIF-004c7db367c65b3f,2011322445,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1285.4500,confirmed_match,,-7.234851,42.3103143,municipal_seat,
+León,24,Castrillo de Cabrera,043,24043,2011-10-18,580.0000,GIF-a8fa10fa82285f12,2011240586,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,580.0000,confirmed_match,,-6.5444992,42.3399452,municipal_seat,
+Asturias,33,Allande,001,33001,2011-10-23,2012.2000,GIF-df598a9e2f425a86,2011331578,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,310.0000,1702.2000,confirmed_match,,-6.6083531,43.2722332,municipal_seat,
+Zamora,49,Pías,154,49154,2012-01-08,1115.0000,GIF-7300002d5ff55074,2012490002,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1115.0000,confirmed_match,,-6.9986376,42.0857112,municipal_seat,
+Málaga,29,Pujerra,081,29081,2012-02-04,797.6500,GIF-1b1eeaae421457b0,2012290004,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,232.2300,565.4200,confirmed_match,,-5.1493371,36.6129355,municipal_seat,
+Zamora,49,Hermisende,094,49094,2012-02-28,2329.7600,GIF-610056eae506576b,2012490225,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3.5000,2326.2600,confirmed_match,,-6.8930497,41.9698958,municipal_seat,
+Ourense,32,A Veiga,083,32083,2012-02-28,554.4200,GIF-36875a41fe255378,2012320503,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,52.2100,502.2100,confirmed_match,,-7.0250744,42.2504067,municipal_seat,
+Huesca,22,Montanuy,157,22157,2012-03-08,2730.0000,GIF-1d8ee968bd155221,2012220135,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,646.0000,2084.0000,confirmed_match,,0.6946611,42.4657689,municipal_seat,
+León,24,Truchas,172,24172,2012-03-09,905.0000,GIF-de6a52c8b3605cf0,2012240228,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,46.0000,859.0000,confirmed_match,,-6.4345884,42.2608937,municipal_seat,
+León,24,Palacios del Sil,109,24109,2012-03-11,519.4300,GIF-a60f019ebc905041,2012240253,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,6.0000,513.4300,confirmed_match,,-6.4338473,42.8753232,municipal_seat,
+Asturias,33,Cangas del Narcea,011,33011,2012-03-26,698.5000,GIF-9296c01491d35497,2012330859,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,191.7000,506.8000,confirmed_match,,-6.5520317,43.1771561,municipal_seat,
+Asturias,33,Piloña,049,33049,2012-03-26,692.2300,GIF-b9a5b3b65b9252e1,2012330846,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,68.8200,623.4100,confirmed_match,,-5.3647217,43.3477828,municipal_seat,
+A Coruña,15,A Capela,018,15018,2012-03-31,804.9400,GIF-30aa550a60bf568e,2012150310,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,673.1800,131.7600,confirmed_match,,-8.0129173,43.4393584,municipal_seat,
+Tarragona,43,Rasquera,121,43121,2012-05-15,2735.0400,GIF-827edd1a4d8b5478,2012430143,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,239.6400,2495.4000,confirmed_match,,0.5975277,41.0013725,municipal_seat,
+Valencia,46,Chelva,106,46106,2012-06-01,702.2900,GIF-89aade46ab8b538a,2012460147,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,672.3000,29.9900,confirmed_match,,-0.9973349,39.7473316,municipal_seat,
+Valencia,46,Llocnou de Sant Jeroni,153,46153,2012-06-12,1330.9400,GIF-8b1a3b9e535c5ce4,2012460157,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,353.9800,976.9600,confirmed_match,,-0.2853132,38.9126826,municipal_seat,
+Barcelona,08,Castellet i la Gornal,058,08058,2012-06-12,567.9000,GIF-90040040f9d05ece,2012080314,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,288.4000,279.5000,confirmed_match,,1.6334236,41.2631949,municipal_seat,
+Valencia,46,Cortes de Pallás,099,46099,2012-06-28,28879.1000,GIF-7b56879983735d0a,2012460248,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,5823.2800,23055.8200,confirmed_match,,-0.9409217,39.2429284,municipal_seat,
+Valencia,46,Andilla,038,46038,2012-06-29,20064.9000,GIF-e2bab688d5a65ef3,2012460247;2012120050,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,14981.9100,5082.9900,confirmed_match,Partes provinciales agrupados por detección y extinción coincidentes; se conserva la agrupación documentada en la conciliación.,-0.8135311,39.8359035,municipal_seat,
+Albacete / Murcia,02,Hellín / Moratalla,037,02037,2012-07-01,6549.4700,GIF-63545026b8a65b38,2012020224;2012300087,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,4462.2600,2087.2100,confirmed_match,Un incendio Hellín/Moratalla con dos partes provinciales; el informe definitivo confirma la agrupación.,-1.7034745,38.5122001,municipal_seat,
+ALICANTE,03,COCENTAINA,056,03056,2012-07-12,541.0200,GIF-d993c39a739a5bb9,2012030081,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,220.1100,320.9100,new_egif_record,Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.,-0.4402669,38.745427,municipal_seat,
+Santa Cruz de Tenerife,38,Adeje,001,38001,2012-07-15,6512.0000,GIF-93a5dc4211e15182,2012380717,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,4620.8200,1891.1800,confirmed_match,,-16.7238684,28.1219173,municipal_seat,
+Santa Cruz de Tenerife,38,El Paso,027,38027,2012-07-16,752.0000,GIF-52a380ff0c5a52c6,2012386016,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,550.0000,202.0000,confirmed_match,,-17.8798224,28.6515943,municipal_seat,
+Girona,17,La Jonquera,086,17086,2012-07-22,8729.8000,GIF-c6156c7738685267,2012170124,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,5621.8000,3108.0000,confirmed_match,,2.8733637,42.4173251,municipal_seat,
+Cáceres,10,Caminomorisco,041,10041,2012-07-23,620.0000,GIF-8ad5e0f4de75546c,2012100691,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,350.0000,270.0000,confirmed_match,,-6.2898498,40.327918,municipal_seat,
+Guadalajara,19,Chequilla,104,19104,2012-08-01,1125.5500,GIF-a97cb543bd865499,2012190469,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,823.6600,301.8900,confirmed_match,,-1.8276718,40.6058697,municipal_seat,
+Cáceres,10,Gata,084,10084,2012-08-03,646.0300,GIF-8da2845306905343,2012100875,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,455.7600,190.2700,confirmed_match,,-6.5961451,40.2372202,municipal_seat,
+Santa Cruz de Tenerife,38,Alajeró,003,38003,2012-08-04,2676.8100,GIF-3b98ee11324159ee,2012384008,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1255.8600,1420.9500,confirmed_match,,-17.2392944,28.0638003,municipal_seat,
+Santa Cruz de Tenerife,38,Villa de Mazo,053,38053,2012-08-04,2028.0000,GIF-9986ada079515009,2012386018,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1207.0000,821.0000,confirmed_match,,-17.7765164,28.6060613,municipal_seat,
+Ourense,32,O Barco de Valdeorras,009,32009,2012-08-10,1749.8800,GIF-910a26e58c1f55e8,2012321177,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,791.1300,958.7500,confirmed_match,,-6.9820288,42.4171532,municipal_seat,
+Salamanca,37,Valdehijaderos,332,37332,2012-08-11,1034.5100,GIF-883276b9d718575f,2012370236,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,51.0000,983.5100,confirmed_match,,-5.8484219,40.4185816,municipal_seat,
+Guadalajara,19,El Cubillo de Uceda,102,19102,2012-08-11,836.8000,GIF-d313f5fda351504b,2012190494,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,330.8300,505.9700,confirmed_match,,-3.4060735,40.8246263,municipal_seat,
+Ciudad Real,13,Navas de Estena,060,13060,2012-08-11,511.1200,GIF-607c265385fc5e29,2012130402,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,307.0000,204.1200,confirmed_match,,-4.520694,39.4952601,municipal_seat,
+Alicante,03,Torremanzanas/la Torre de les Maçanes,132,03132,2012-08-12,705.9200,GIF-72ccdde3b6ea5acc,2012030092,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,518.3700,187.5500,confirmed_match,Nombre bilingüe del mismo municipio.,-0.4188971,38.6067836,municipal_seat,
+Ávila,05,Solana de Ávila,236,05236,2012-08-18,1242.4000,GIF-eb92e1f71e7e5592,2012050237,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,295.5900,946.8100,confirmed_match,,-5.6147568,40.3147002,municipal_seat,
+Zamora,49,Cubo de Benavente,057,49057,2012-08-18,650.4600,GIF-ef3342e9407f5b56,2012490462,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,194.8200,455.6400,confirmed_match,,-6.1627653,42.1234624,municipal_seat,
+León,24,Castrocontrigo,047,24047,2012-08-19,11592.0000,GIF-664e73379dd65b86,2012240531,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,10096.0000,1496.0000,confirmed_match,,-6.1910052,42.1823374,municipal_seat,
+Navarra,31,Aras,026,31026,2012-08-21,620.4900,GIF-4bbf9dda15db5319,2012310584,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,392.9300,227.5600,confirmed_match,,-2.3555173,42.5622214,municipal_seat,
+Zaragoza,50,Calcena,069,50069,2012-08-27,4281.0700,GIF-78609a08a02b5eea,2012500249,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1583.9100,2697.1600,confirmed_match,,-1.7169197,41.6551071,municipal_seat,
+Madrid,28,Robledo de Chavela,125,28125,2012-08-27,1488.0700,GIF-23b503c2fda35cce,2012280349,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,750.9500,737.1200,confirmed_match,,-4.2393797,40.5017609,municipal_seat,
+Málaga,29,Coín,042,29042,2012-08-30,8037.1400,GIF-1ec2451594025d41,2012290166,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1701.3600,6335.7800,confirmed_match,,-4.7595454,36.6598836,municipal_seat,
+León,24,Riello,132,24132,2012-09-01,882.0000,GIF-3b884dacb122554f,2012240577,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,130.0000,752.0000,confirmed_match,,-5.9447103,42.7729962,municipal_seat,
+Toledo,45,El Real de San Vicente,144,45144,2012-09-01,606.6800,GIF-be76e2f1a0a25c1e,2012450617,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,456.9800,149.7000,confirmed_match,,-4.6903164,40.1356836,municipal_seat,
+Zamora,49,Pedralba de la Pradería,145,49145,2012-09-22,2571.2700,GIF-e0c91dae44755b39,2012490510,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,850.0000,1721.2700,confirmed_match,,-6.6931773,42.0241436,municipal_seat,
+Valencia,46,Chulilla,112,46112,2012-09-23,5713.6500,GIF-da75f75c63015ff1,2012460249,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,4326.1200,1387.5300,confirmed_match,,-0.8933042,39.6556424,municipal_seat,
+León,24,Valdefresno,175,24175,2013-05-14,599.5000,GIF-cae8abc7c5b25c02,2013240056,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,525.5500,73.9500,confirmed_match,,-5.4925047,42.5936935,municipal_seat,
+Toledo,45,Almorox,013,45013,2013-07-16,1251.3000,GIF-54a86b8074b65abb,2013450327,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,632.3000,619.0000,confirmed_match,,-4.3915912,40.2331365,municipal_seat,
+Valencia,46,Ayora,044,46044,2013-07-25,606.6800,GIF-980d302d04fe5435,2013460091,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,578.6600,28.0200,confirmed_match,,-1.0561219,39.0598085,municipal_seat,
+Illes Balears,07,Andratx,005,07005,2013-07-26,2347.1000,GIF-829cf6f7774355a8,2013070090,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,917.0000,1430.1000,confirmed_match,,2.4215616,39.5770273,municipal_seat,
+Cáceres,10,Trujillo,195,10195,2013-07-26,1378.1300,GIF-8827e656abf35dd1,2013100215,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1378.1300,confirmed_match,,-5.882828,39.4624908,municipal_seat,
+Guadalajara,19,Tortuero,288,19288,2013-07-31,919.0000,GIF-3bc61d19b6de5b22,2013190179,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,268.5000,650.5000,confirmed_match,,-3.3527695,40.9366756,municipal_seat,
+Zamora,49,Fonfría,071,49071,2013-08-01,837.5600,GIF-52ff27379f29508d,2013490107,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,446.4300,391.1300,inferred_legacy_match,Origen Portugal en EGIF; Fonfría es la referencia territorial española conservada por decisión del mantenedor.,-6.1398607,41.6357005,municipal_seat,
+Ávila,05,Cebreros,057,05057,2013-08-03,1095.0100,GIF-0007e64350055bb9,2013050059,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1059.4200,35.5900,confirmed_match,,-4.4644001,40.4547614,municipal_seat,
+Zamora,49,Villardiegua de la Ribera,265,49265,2013-08-22,1643.4000,GIF-c70b167a628c59ae,2013490131,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,264.3200,1379.0800,confirmed_match,,-6.1820051,41.5363259,municipal_seat,
+Ourense,32,Cualedro,028,32028,2013-08-24,883.0000,GIF-b8bd1aae9db05be0,2013320589,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,91.7500,791.2500,confirmed_match,,-7.5935484,41.9899301,municipal_seat,
+Ourense,32,Cualedro,028,32028,2013-08-24,690.3000,GIF-35bcd6dee3225799,2013320594,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,23.3200,666.9800,confirmed_match,,-7.5935484,41.9899301,municipal_seat,
+Pontevedra,36,Oia,036,36036,2013-08-26,1824.0000,GIF-2c594011b9df52bd,2013360531,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1491.0000,333.0000,confirmed_match,,-8.8738564,42.0011261,municipal_seat,
+Zamora,49,Hermisende,094,49094,2013-09-04,1592.4700,GIF-a7bc13a30a9952c9,2013490149,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1592.4700,confirmed_match,,-6.8930497,41.9698958,municipal_seat,
+Pontevedra,36,Ponte Caldelas,043,36043,2013-09-04,689.6300,GIF-d522b3ba075453c0,2013360732,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,639.7600,49.8700,confirmed_match,,-8.5012503,42.3943663,municipal_seat,
+A Coruña,15,Carnota,020,15020,2013-09-11,2166.4800,GIF-cc6a9388bb0c5d05,2013150740,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,358.5900,1807.8900,confirmed_match,,-9.0883158,42.8231498,municipal_seat,
+A Coruña,15,Negreira,056,15056,2013-09-11,646.2000,GIF-5c0f28b42fc2548f,2013150724,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,305.0000,341.2000,confirmed_match,,-8.743242,42.9045232,municipal_seat,
+Girona,17,Vilopriu,232,17232,2013-11-11,520.3600,GIF-4c7a3b1bec2c5662,2013170102,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,431.7200,88.6400,confirmed_match,,2.9920103,42.1043201,municipal_seat,
+Cantabria,39,Arredondo,007,39007,2014-03-09,533.6000,GIF-00ee180cbaa859dc,2014390274,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3.8500,529.7500,confirmed_match,,-3.602209,43.2749605,municipal_seat,
+Almería,04,Alhama de Almería,011,04011,2014-03-25,3259.0000,GIF-0469a2b4cbfe56cc,2014040052,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,3259.0000,confirmed_match,,-2.5697747,36.9572086,municipal_seat,
+Almería,04,Lucainena de las Torres,060,04060,2014-04-20,1550.4800,GIF-3f1638288e3f5689,2014040066,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1550.4800,confirmed_match,,-2.2011924,37.0402948,municipal_seat,
+Tarragona,43,Tivissa,150,43150,2014-06-15,872.9300,GIF-884ddbb5db3f5101,2014430100,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,496.0500,376.8800,confirmed_match,,0.7320033,41.0433883,municipal_seat,
+Guadalajara,19,Cogolludo,092,19092,2014-07-17,1735.5000,GIF-4b68dd0af102514c,2014190226,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1315.6300,419.8700,confirmed_match,,-3.0889324,40.9489997,municipal_seat,
+Guadalajara,19,Bustares,057,19057,2014-07-18,1227.6700,GIF-4d195b8ac0fc55dc,2014190228,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,58.2500,1169.4200,confirmed_match,,-3.0726945,41.1359735,municipal_seat,
+Burgos,09,Mecerreyes,208,09208,2014-09-01,626.6500,GIF-eca3d5640d0350f1,2014090119,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,494.3600,132.2900,confirmed_match,,-3.5739326,42.0955,municipal_seat,
+Alicante,03,La Vall d'Ebo,135,03135,2015-05-14,1761.1600,GIF-fa258cbd86695e3e,2015030031,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,149.4000,1611.7600,confirmed_match,Variante del nombre municipal Vall de Ebo / la Vall d’Ebo.,-0.1599042,38.805759,municipal_seat,
+Zaragoza,50,Luna,151,50151,2015-07-04,7160.9900,GIF-e22dd5257afc5258,2015500088,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3979.6000,3181.3900,confirmed_match,,-0.9302031,42.1690707,municipal_seat,
+Jaén,23,Quesada,073,23073,2015-07-05,9756.7600,GIF-ae364b52cec152f3,2015230068,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3088.8200,6667.9400,confirmed_match,,-3.0677791,37.8474853,municipal_seat,
+Granada,18,Lújar,124,18124,2015-07-08,1582.9000,GIF-2b633809c37956fc,2015180074,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,203.7000,1379.2000,confirmed_match,,-3.4031771,36.7876066,municipal_seat,
+León,24,Quintana del Castillo,123,24123,2015-07-15,2209.0000,GIF-d16da77cd54e5ed4,2015240252,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1158.7000,1050.3000,confirmed_match,,-6.0459478,42.6612485,municipal_seat,
+Toledo,45,Navalcán,110,45110,2015-07-16,961.3500,GIF-e0b71adab9ae53cd,2015450447,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,218.7000,742.6500,confirmed_match,,-5.0928991,40.0682709,municipal_seat,
+Zamora,49,Trabazos,223,49223,2015-07-21,878.0200,GIF-b5552fb0b45f5e18,2015490190,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,688.1300,189.8900,confirmed_match,,-6.4921765,41.7475,municipal_seat,
+León,24,Lucillo,090,24090,2015-07-26,1113.0000,GIF-fc72ae12d39558b1,2015240279,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1113.0000,confirmed_match,,-6.3033808,42.4094387,municipal_seat,
+Barcelona,08,Òdena,143,08143,2015-07-26,1059.4000,GIF-063c8e5e3d305975,2015080225,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,905.3000,154.1000,confirmed_match,,1.6383729,41.6054177,municipal_seat,
+Asturias,33,Tineo,073,33073,2015-07-27,553.1400,GIF-00f432fc2e9653d1,2015330637,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,305.3100,247.8300,confirmed_match,,-6.4149666,43.335188,municipal_seat,
+Soria,42,Burgo de Osma-Ciudad de Osma,043,42043,2015-07-28,528.0800,GIF-9ae840788f5d599a,2015420060,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,493.6700,34.4100,confirmed_match,,-3.0715411,41.5857582,municipal_seat,
+Cáceres,10,Acebo,003,10003,2015-08-06,6830.9900,GIF-ddc7e08faa5f527f,2015100515,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3674.8600,3156.1300,confirmed_match,,-6.7171672,40.2016266,municipal_seat,
+Cáceres,10,Logrosán,109,10109,2015-08-10,776.2000,GIF-43dc7a3743a257d5,2015100445,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,776.2000,confirmed_match,,-5.4935469,39.3381365,municipal_seat,
+Ourense,32,Cualedro,028,32028,2015-08-30,1490.0900,GIF-8b702b7b8b9c564e,2015320972,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,615.8500,874.2400,confirmed_match,,-7.5935484,41.9899301,municipal_seat,
+Asturias,33,Boal,007,33007,2015-12-19,2554.0000,GIF-bb540cd5df8c5a16,2015331172,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2450.0000,104.0000,confirmed_match,,-6.8175632,43.4289324,municipal_seat,
+Asturias,33,Tineo,073,33073,2015-12-20,575.2400,GIF-82d540d806cb57ad,2015331282,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,575.2400,confirmed_match,,-6.4149666,43.335188,municipal_seat,
+Valencia,46,Bolbaite,073,46073,2016-06-15,1564.3200,GIF-0891753e40a55519,2016460111,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,348.2400,1216.0800,confirmed_match,,-0.668597606084247,39.0649841970003,egif_part,2016460111
+Valencia,46,Carcaixent,083,46083,2016-06-16,2239.5800,GIF-61100250c363581c,2016460113,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,100.6200,2138.9600,confirmed_match,,-0.423668201680614,39.0876934135803,egif_part,2016460113
+Albacete,02,Liétor,044,02044,2016-06-30,871.0000,GIF-1b5b90c573df52f5,2016020169,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,871.0000,0.0000,confirmed_match,,-1.84922339946634,38.5293979740043,egif_part,2016020169
+Cáceres,10,Cáceres,037,10037,2016-07-23,1394.3600,GIF-a363639171f85211,2016100119,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,30.3000,1364.0600,confirmed_match,,-6.44065682846443,39.4235506051499,egif_part,2016100119
+Castellón,12,Artana,016,12016,2016-07-25,1487.4100,GIF-c947f08825f65bf5,2016120033,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1376.5700,110.8400,confirmed_match,,-0.247799819197244,39.9086240652832,egif_part,2016120033
+Santa Cruz de Tenerife,38,El Paso,027,38027,2016-08-03,4648.4100,GIF-3c8567968f3357fb,2016386010,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3709.2100,939.2000,confirmed_match,,-17.8752977070523,28.5720586132998,egif_part,2016386010
+Pontevedra,36,Arbo,001,36001,2016-08-10,1992.0500,GIF-2b6fc67d1e16588e,2016360389,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,709.7000,1282.3500,confirmed_match,,-8.3146793,42.1127294,municipal_seat,
+A Coruña,15,Santiago de Compostela,078,15078,2016-08-10,825.1800,GIF-55fe83b435455dfc,2016150335,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,735.1700,90.0100,confirmed_match,,-8.5441656,42.8802155,municipal_seat,
+A Coruña,15,Porto do Son,071,15071,2016-08-10,823.0800,GIF-a6a6c3ce52da5447,2016150355,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,408.5500,414.5300,confirmed_match,,-9.0045081,42.7259285,municipal_seat,
+A Coruña,15,Porto do Son,071,15071,2016-08-10,714.6700,GIF-a31ea1e5a3eb50bf,2016150353,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,397.0900,317.5800,confirmed_match,,-9.0045081,42.7259285,municipal_seat,
+Cáceres,10,Jerte,107,10107,2016-08-18,1093.9800,GIF-3735a75ec0f35604,2016100183,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,1093.9800,confirmed_match,,-5.70619507155296,40.1994400588863,egif_part,2016100183
+Navarra,31,Tafalla,227,31227,2016-08-25,1454.1000,GIF-19eef8f023b45ebe,2016310116,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,528.0000,926.1000,confirmed_match,,-1.66369613713416,42.5427298702075,egif_part,2016310116
+Sevilla,41,El Castillo de las Guardas,031,41031,2016-08-28,1829.0400,GIF-fa5737be6b445018,2016410093,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,518.7900,1310.2500,confirmed_match,,-6.33828214039216,37.7470922907519,egif_part,2016410093
+Alicante,03,Benitachell/el Poble Nou de Benitatxell,042,03042,2016-09-04,685.0500,GIF-aa0193313c745552,2016030074,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,359.4900,325.5600,confirmed_match,Nombre bilingüe del mismo municipio.,0.160127419606416,38.7316798367046,egif_part,2016030074
+Ourense,32,Entrimo,030,32030,2016-09-06,2973.9400,GIF-35d7e7f9ebf25f7a,2016320568,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1288.9100,1685.0300,confirmed_match,,-8.1145338,41.9323682,municipal_seat,
+Ourense,32,Oímbra,053,32053,2016-09-06,1363.2500,GIF-2270aeebfc69579f,2016320559,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,185.1200,1178.1300,confirmed_match,,-7.54516307142783,41.8516643339868,egif_part,2016320559
+Ourense,32,Muíños,051,32051,2016-09-06,745.4500,GIF-f532aa5561215b4d,2016320556,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,15.0000,730.4500,confirmed_match,,-7.9847434,41.9546208,municipal_seat,
+Zamora / León,49,San Justo (San Ciprián) / Encinedo (Santa Eulalia de Cabrera),189,49189,2016-09-11,1197.5200,GIF-7ef6fa40dd3b5efe,2016490107,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,43.7300,1153.7900,confirmed_match,Se conserva la descripción territorial San Justo / Encinedo documentada en la base anterior.,-6.64112086509123,42.1934503186783,egif_part,2016490107
+León,24,Fabero,070,24070,2016-09-12,2544.1900,GIF-3ec78b1bbb765053,2016240316,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,979.2300,1564.9600,confirmed_match,,-6.64174892458595,42.7934486791568,egif_part,2016240316
+Ourense,32,Cualedro,028,32028,2016-09-12,1588.4400,GIF-e79c0bff69fe5a1a,2016320642,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,395.0400,1193.4000,confirmed_match,,-7.5935484,41.9899301,municipal_seat,
+Salamanca,37,Olmedo de Camaces,223,37223,2016-09-24,656.43,GIF-848a944fc67755e9,,MITECO annual report,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2016.pdf,,definitive_report,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-6.6238746,40.8789877,municipal_seat,
+Lleida,25,La Guingueta d'Àneu,903,25903,2016-10-29,632.2500,GIF-71ae7761c79c5d45,2016250072,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,81.8900,550.3600,confirmed_match,,1.13708733615186,42.6721408055801,egif_part,2016250072
+Salamanca,37,Candelario,078,37078,2017-01-25,516.6000,GIF-e3821fde3a065b9c,2017370008,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,23.4000,493.2000,confirmed_match,,-5.73378678635584,40.3318888075024,egif_part,2017370008
+Cantabria,39,Vega de Pas,097,39097,2017-03-10,675.0000,GIF-da36ec882dc85301,2017390627,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.6900,674.3100,confirmed_match,,-3.70133073697822,43.1490908996767,egif_part,2017390627
+León,24,Ponferrada,115,24115,2017-04-19,1251.0400,GIF-5a14d43ae7875a01,2017240395,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,431.4000,819.6400,confirmed_match,,-6.52353250950235,42.4428703597149,egif_part,2017240395
+León,24,Benuza,016,24016,2017-04-20,798.3400,GIF-a03ebb6da035511a,2017240403,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,132.3700,665.9700,confirmed_match,,-6.66043714971228,42.4232943716505,egif_part,2017240403
+Asturias,33,Allande,001,33001,2017-04-20,745.2500,GIF-3e1fe4c3d24f59d0,2017331088,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,18.0000,727.2500,confirmed_match,,-6.68742914496971,43.3462447669085,egif_part,2017331088
+ASTURIAS,33,IBIAS,028,33028,2017-04-20,647.7900,GIF-ccf43f21064a5999,2017331093,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,46.0000,601.7900,new_egif_record,Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.,-6.73764130458641,42.9948368168395,egif_part,2017331093
+Asturias,33,Grandas de Salime,027,33027,2017-04-20,590.4900,GIF-99c58dd5be665641,2017331075,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,340.5700,249.9200,confirmed_match,,-6.84272791531831,43.232108720313,egif_part,2017331075
+Huelva,21,Moguer,050,21050,2017-06-24,8071.9300,GIF-b5ab1f95f4ae5eea,2017210050,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,5763.2800,2308.6500,confirmed_match,,-6.80691985853607,37.2313219309934,egif_part,2017210050
+Cáceres,10,Calzadilla,040,10040,2017-06-24,606.8100,GIF-c3a6654254db5b13,2017100575,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,13.8800,592.9300,confirmed_match,,-6.53094667398203,40.0646804553484,egif_part,2017100575
+Valencia,46,Gátova,902,46902,2017-06-28,1212.7100,GIF-0b0dfd3ca30c57e3,2017460089,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,570.6800,642.0300,confirmed_match,,-0.535994389138239,39.7908376786085,egif_part,2017460089
+Huelva,21,Minas de Riotinto,049,21049,2017-07-03,777.1300,GIF-6a35da948edf5b2b,2017210059,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,326.2600,450.8700,confirmed_match,,-6.59919338718324,37.6973244812873,egif_part,2017210059
+Albacete,02,Yeste,086,02086,2017-07-27,3074.4300,GIF-b887f0ef41445e98,2017020250,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3051.2200,23.2100,confirmed_match,,-2.36894716464833,38.4259652577481,egif_part,2017020250
+Zamora,49,Pino del Oro,157,49157,2017-07-29,2355.6900,GIF-b237841430eb5b8e,2017490373,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,653.4700,1702.2200,confirmed_match,,-6.14698468159331,41.5840710829255,egif_part,2017490373
+Cuenca,16,Campillo de Altobuey,042,16042,2017-07-31,1009.0000,GIF-7c8678d3a99055f7,2017160294,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1009.0000,0.0000,confirmed_match,,-1.75550345601574,39.5978429842835,egif_part,2017160294
+Ourense,32,Verín,085,32085,2017-08-03,1372.1800,GIF-d79aa255e2c75e81,2017320770,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,907.0000,465.1800,confirmed_match,,-7.40703134733707,41.9693465145525,egif_part,2017320770
+Jaén,23,Segura de la Sierra,081,23081,2017-08-03,683.9100,GIF-13847c32afa35caf,2017230114,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,604.5500,79.3600,confirmed_match,,-2.64626756855138,38.2808335672029,egif_part,2017230114
+Ávila,05,Navarredonda de Gredos,165,05165,2017-08-07,541.2200,GIF-5ee238d09b855b77,2017050136,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,38.2300,502.9900,confirmed_match,,-5.08518345422198,40.3591541725058,egif_part,2017050136
+León,24,Encinedo,067,24067,2017-08-21,9816.6600,GIF-2e8d85be32c05361,2017240584,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3042.4400,6774.2200,confirmed_match,,-6.62658457965286,42.2533954527958,egif_part,2017240584
+Salamanca,37,Puente del Congosto,261,37261,2017-08-24,1719.95,GIF-cc8a844beb015652,,MITECO annual report,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf,,definitive_report,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-5.5267402,40.4914329,municipal_seat,
+Zamora,49,Fermoselle,065,49065,2017-08-26,1632.4400,GIF-c7a432d03f6d5066,2017490409,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1017.6900,614.7500,confirmed_match,,-6.39054364535313,41.2801171245416,egif_part,2017490409
+Ávila,05,Hoyocasero,101,05101,2017-08-26,924.0400,GIF-79b86c2caa295975,2017050156,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,49.4300,874.6100,confirmed_match,,-4.96991147085914,40.362454982637,egif_part,2017050156
+Huelva,21,La Granada de Río-Tinto,036,21036,2017-09-08,4161.4600,GIF-5e62f43e3e295455,2017210113,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2103.8300,2057.6300,confirmed_match,,-6.50502921449743,37.7717595545959,egif_part,2017210113
+Sevilla,41,Almadén de la Plata,009,41009,2017-09-08,1165.9200,GIF-aa25d137678d58da,2017410094,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,279.9300,885.9900,confirmed_match,,-6.01005205404576,37.8271748031586,egif_part,2017410094
+Zamora,49,Vegalatrave,233,49233,2017-09-09,527.2600,GIF-9252f4a08d845c6d,2017490429,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,527.2600,confirmed_match,,-6.08633776974107,41.7046907069869,egif_part,2017490429
+Las Palmas,35,Tejeda,025,35025,2017-09-20,1825.7900,GIF-e8d059f5f4d65fd2,2017350035,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1084.8700,740.9200,confirmed_match,,-15.6077269240032,28.001587403056,egif_part,2017350035
+Asturias,33,Ibias,028,33028,2017-10-09,2662.4100,GIF-2901de5a3f115020,2017331561,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,560.6300,2101.7800,confirmed_match,,-6.84426109444415,43.0836547212109,egif_part,2017331561
+Ourense,32,Lobios,042,32042,2017-10-10,683.4300,GIF-6580916a63c95dd4,2017321264,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,630.0000,53.4300,confirmed_match,,-8.13504927978916,41.8226758618799,egif_part,2017321264
+Asturias,33,Degaña,022,33022,2017-10-11,1953.5300,GIF-09d334ead16d59d1,2017331563,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,696.4000,1257.1300,confirmed_match,,-6.58865402654371,42.9432137338137,egif_part,2017331563
+Lugo,27,Cervantes,012,27012,2017-10-12,864.0000,GIF-de8615000cc95ad9,2017270664,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,533.5000,330.5000,confirmed_match,,-6.88861441479436,42.8394369571626,egif_part,2017270664
+León,24,Palacios del Sil,109,24109,2017-10-12,573.5,GIF-739f9d1720f45c4a,,MITECO annual report,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf,,definitive_report,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-6.4338473,42.8753232,municipal_seat,
+Lugo,27,Cervantes,012,27012,2017-10-13,1893.3200,GIF-fb8a9e9f673b5852,2017270674,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,597.0000,1296.3200,confirmed_match,,-6.93594960503789,42.7627858177426,egif_part,2017270674
+León,24,Villablino,202,24202,2017-10-13,719.4400,GIF-db039362f74d5cdd,2017240754,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,719.4400,confirmed_match,,-6.32546079994049,42.9760606385477,egif_part,2017240754
+Ourense,32,Lobios,042,32042,2017-10-14,3485.4600,GIF-d8de36a5b610574e,2017321362,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2100.0000,1385.4600,confirmed_match,,-8.01487762919699,41.8761088597882,egif_part,2017321362
+Asturias,33,Ibias,028,33028,2017-10-14,3379.8000,GIF-d385c33bef8958f7,2017331592,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,605.7000,2774.1000,confirmed_match,,-6.80736489941605,43.0590013575962,egif_part,2017331592
+ASTURIAS,33,ALLANDE,001,33001,2017-10-14,661.0800,GIF-1f6e5ffb162f5c37,2017331590,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,118.4100,542.6700,new_egif_record,Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.,-6.77126399491355,43.2618929120923,egif_part,2017331590
+Pontevedra,36,Ponteareas,042,36042,2017-10-15,8729.4000,GIF-2d673b61ef255c77,2017360698,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,6673.3200,2056.0800,confirmed_match,,-8.55212115982283,42.2444418850958,egif_part,2017360698
+Ourense,32,Melón,046,32046,2017-10-15,5970.7000,GIF-6074888bf9ef5f5f,2017321367,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3233.7000,2737.0000,confirmed_match,,-8.23883954452928,42.2523552767568,egif_part,2017321367
+Pontevedra,36,As Neves,034,36034,2017-10-15,3084.5200,GIF-70009ef965e05a82,2017360704,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2012.0600,1072.4600,inferred_legacy_match,Origen Portugal en EGIF; asociación con As Neves heredada de la revisión anterior y marcada como inferencia.,-8.41746121802057,42.0880449987137,egif_part,2017360704
+Ourense,32,A Gudiña,034,32034,2017-10-15,1809.1400,GIF-00f6ce23469c5dd6,2017321393,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,823.0000,986.1400,confirmed_match,,-7.15448028137078,42.0711154731919,egif_part,2017321393
+Ourense,32,Baños de Molgas,007,32007,2017-10-15,1599.9700,GIF-0e7b2eaf11235df2,2017321366,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,450.6900,1149.2800,confirmed_match,,-7.69646029414703,42.2602255281258,egif_part,2017321366
+León,24,Benuza,016,24016,2017-10-15,1521.7600,GIF-9aed80fc381551b8,2017240760,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,495.5000,1026.2600,confirmed_match,,-6.66678672447122,42.3166414461322,egif_part,2017240760
+Ourense,32,San Cristovo de Cea,076,32076,2017-10-15,1520.3400,GIF-f397de8c290c5c89,2017321360,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,802.1000,718.2400,confirmed_match,,-7.94755188341591,42.5094498796151,egif_part,2017321360
+Pontevedra,36,Tui,055,36055,2017-10-15,1512.5900,GIF-8d67d6991315533b,2017360721,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1503.3000,9.2900,confirmed_match,,-8.61443009185095,42.0639817901626,egif_part,2017360721
+Pontevedra,36,Nigrán,035,36035,2017-10-15,1484.0300,GIF-b94dd12342c8503d,2017360713,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1357.2400,126.7900,confirmed_match,,-8.76041025048106,42.1422675626615,egif_part,2017360713
+Pontevedra,36,Gondomar,021,36021,2017-10-15,1384.9200,GIF-1c3316c5256e56f2,2017360700,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1115.3000,269.6200,confirmed_match,,-8.70858471342705,42.1092650614004,egif_part,2017360700
+Ourense,32,Parada de Sil,057,32057,2017-10-15,1275.6200,GIF-8504cd8252ae5c20,2017321373,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,278.0000,997.6200,confirmed_match,,-7.60075848239499,42.3432941994586,egif_part,2017321373
+Pontevedra,36,Caldas de Reis,005,36005,2017-10-15,1067.8700,GIF-2fe6377536b25514,2017360715,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1042.1200,25.7500,confirmed_match,,-8.69681062017658,42.6130080374333,egif_part,2017360715
+Asturias,33,Cangas del Narcea,011,33011,2017-10-15,962.9000,GIF-d0fcb1b45e7259cb,2017331596,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,134.5000,828.4000,confirmed_match,,-6.53441734346702,43.0058277965154,egif_part,2017331596
+Pontevedra,36,Salvaterra de Miño,050,36050,2017-10-15,770.1400,GIF-e20ce9f2d5865b1f,2017360705,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,688.0300,82.1100,confirmed_match,,-8.49060020116006,42.1109091522119,egif_part,2017360705
+Ourense,32,Chandrexa de Queixa,029,32029,2017-10-15,742.3500,GIF-5028fa558b0b5d25,2017321369,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,15.0000,727.3500,confirmed_match,,-7.35829908462161,42.323831928186,egif_part,2017321369
+Ourense,32,Esgos,031,32031,2017-10-15,573.0400,GIF-5111305c16625652,2017321380,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,343.9800,229.0600,confirmed_match,,-7.65294073875795,42.3612465348338,egif_part,2017321380
+Pontevedra,36,Mondariz,030,36030,2017-10-15,568.8900,GIF-973b79baae79500e,2017360699,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,547.6800,21.2100,confirmed_match,,-8.47462830309139,42.2315493799688,egif_part,2017360699
+Ourense,32,Maceda,043,32043,2017-10-15,560.0000,GIF-f0c18b87bcce50bd,2017321388,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,50.0000,510.0000,confirmed_match,,-7.56429469684154,42.2427153635979,egif_part,2017321388
+Asturias,33,Allande,001,33001,2017-10-15,553.8000,GIF-cfd913f7d544534e,2017331623,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,12.0000,541.8000,confirmed_match,,-6.69026203685894,43.3014704277514,egif_part,2017331623
+Lugo,27,Negueira de Muñiz,035,27035,2017-10-16,1104.0000,GIF-da3e90d26133554e,2017270738,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,321.0000,783.0000,confirmed_match,,-6.8460311431823,43.1582270907004,egif_part,2017270738
+Castellón,12,Culla,051,12051,2017-12-29,600.3600,GIF-78461b62bed65ab6,2017120061,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,51.0100,549.3500,confirmed_match,,-0.0454242278875269,40.321024364547,egif_part,2017120061
+León,24,Santa Colomba de Curueño,151,24151,2018-05-12,645.0000,GIF-e0b79d7e917e5df7,2018240080,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,115.8300,529.1700,confirmed_match,Santa abreviado como STA en EGIF.,-5.39588034320812,42.7524403246872,egif_part,2018240080
+Huelva,21,Nerva,052,21052,2018-08-02,1327.2800,GIF-f570ec2a56635e82,2018210062,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,361.0400,966.2400,confirmed_match,,-6.52323239183529,37.7172341614687,egif_part,2018210062
+Valencia,46,Llutxent,150,46150,2018-08-06,2952.2868,GIF-07ad14349c3e55ab,2018460126,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,211.3000,2740.9868,confirmed_match,Variante Lutxent / Llutxent.,-0.322125795469116,38.9655718486175,egif_part,2018460126
+León,24,Encinedo,067,24067,2019-01-06,539.5400,GIF-f31924383a355f38,2019240009,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,539.5400,confirmed_match,,-6.70993896659522,42.2573441954215,egif_part,2019240009
+Asturias,33,Salas,059,33059,2019-03-02,770.2200,GIF-78859021ab115c9b,2019330646,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,330.0000,440.2200,confirmed_match,,-6.26830221363327,43.3511506486303,egif_part,2019330646
+A Coruña,15,Dodro,033,15033,2019-03-25,1192.7100,GIF-1f76781f87fd535f,2019150054,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1005.3500,187.3600,confirmed_match,,-8.75479497839203,42.6975835742633,egif_part,2019150054
+Huelva,21,Beas,011,21011,2019-06-01,1574.5600,GIF-bc9b1aba90635547,2019210066,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,879.8700,694.6900,confirmed_match,,-6.86524954334201,37.486053238252,egif_part,2019210066
+Tarragona,43,La Torre de l'Espanyol,152,43152,2019-06-26,4281.5100,GIF-92382c08e03956c8,2019430119,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1778.8700,2502.6400,confirmed_match,,0.642720195117881,41.2095795517977,egif_part,2019430119
+Toledo,45,Almorox,013,45013,2019-06-28,3014.4800,GIF-4d1050b799205120,2019450439,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1526.7200,1487.7600,confirmed_match,,-4.37541087298677,40.2495706626219,egif_part,2019450439
+Ávila,05,Gavilanes,082,05082,2019-06-28,1414.8600,GIF-74350ee7468053c1,2019050103,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,348.5000,1066.3600,confirmed_match,,-4.86818040905441,40.2683560113271,egif_part,2019050103
+Toledo,45,Toledo,168,45168,2019-06-28,1017.6400,GIF-96fd7eb25b3f5b23,2019450437,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,823.3400,194.3000,confirmed_match,,-4.06285198056138,39.8461138615814,egif_part,2019450437
+Almería,04,Terque,091,04091,2019-07-13,1119.8000,GIF-dcd4810b527652bc,2019040057,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1119.8000,0.0000,confirmed_match,,-2.6733482224957,36.9243576993714,egif_part,2019040057
+Alicante,03,Beneixama,023,03023,2019-07-15,841.0800,GIF-80e4f654da755977,2019030041,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,280.2500,560.8300,confirmed_match,,-0.789871224090209,38.7380555154821,egif_part,2019030041
+Zaragoza,50,Perdiguera,206,50206,2019-07-23,592.1000,GIF-f9d88e0c608057ab,2019509003,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,345.3000,246.8000,confirmed_match,,-0.53091511862571,41.7849525259373,egif_part,2019509003
+Cuenca,16,Barchín del Hoyo,029,16029,2019-07-30,2591.0000,GIF-b7f60c9d7d6b5885,2019160335,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2591.0000,0.0000,confirmed_match,,-2.01388570944636,39.6699986869966,egif_part,2019160335
+Las Palmas,35,Artenara,005,35005,2019-08-10,1164.0800,GIF-1a018c3b5c455baf,2019350024,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,169.6500,994.4300,confirmed_match,,-15.6345396622189,28.0264799991089,egif_part,2019350024
+Las Palmas,35,Valleseco,032,35032,2019-08-17,9179.5100,GIF-fa31c43eaf575918,2019350027,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,4094.2400,5085.2700,confirmed_match,,-15.5933000485742,28.0358988554887,egif_part,2019350027
+Huelva,21,Paterna del Campo,056,21056,2019-09-12,1496.0000,GIF-e5adbce91c9b56ef,2019210161,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,953.4200,542.5800,confirmed_match,,-6.43980407748469,37.493161316367,egif_part,2019210161
+Asturias,33,Tineo,073,33073,2020-02-15,770.2900,GIF-7a17a4824a4454e0,2020330178,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,169.5000,600.7900,confirmed_match,,-6.6306479811451,43.4128734105788,egif_part,2020330178
+Las Palmas,35,La Aldea de San Nicolás,020,35020,2020-02-22,930.4701,GIF-1b32f246bfa55b13,2020350002,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,599.1832,331.2869,confirmed_match,,-15.7462612360627,27.9282566760271,egif_part,2020350002
+Asturias,33,Tineo,073,33073,2020-02-23,566.1800,GIF-2ce8cf364a6e56c7,2020330270,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,215.0000,351.1800,confirmed_match,,-6.60920339709208,43.3385306785239,egif_part,2020330270
+Ourense,32,Cualedro,028,32028,2020-07-29,1036.7200,GIF-56a5e3f4073d5c6c,2020320268,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,50.0000,986.7200,confirmed_match,,-7.59271628621176,41.8876347556849,egif_part,2020320268
+Madrid,28,Robledo de Chavela,125,28125,2020-08-02,1073.0600,GIF-cd963fbe0a955a40,2020280212,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,75.4400,997.6200,confirmed_match,,-4.21290996318994,40.5378248339257,egif_part,2020280212
+Cáceres,10,Plasencia,148,10148,2020-08-03,558.5000,GIF-61fdea0689ed514e,2020100341,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,69.8800,488.6200,confirmed_match,,-6.0924151923613,40.0182825687437,egif_part,2020100341
+Zamora,49,Gallegos del Río,087,49087,2020-08-15,1151.4300,GIF-63909676e529552f,2020490098,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,53.6000,1097.8300,confirmed_match,,-6.20091193022926,41.706668575541,egif_part,2020490098
+Santa Cruz de Tenerife,38,Garafía,016,38016,2020-08-21,1061.2600,GIF-ebe2d1e9f4a1567b,2020386013,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,615.5800,445.6800,confirmed_match,,-17.9404959622649,28.7929568294993,egif_part,2020386013
+Huelva,21,Almonaster la Real,004,21004,2020-08-27,14953.5166,GIF-9760d284a8375f90,2020210064,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,8485.9397,6467.5769,confirmed_match,,-6.83072194413073,37.7867235378757,egif_part,2020210064
+Cáceres,10,Cabezuela del Valle,035,10035,2020-08-27,4068.7600,GIF-14fa5d67e4265adf,2020100452,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1116.3600,2952.4000,confirmed_match,,-5.77012382652719,40.1740743290107,egif_part,2020100452
+Ourense,32,Lobios,042,32042,2020-09-12,2025.9500,GIF-0a775d2fbfa45b53,2020320512,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,200.0000,1825.9500,confirmed_match,,-8.06399545773791,41.8325126705203,egif_part,2020320512
+Ourense,32,Vilar de Barrio,089,32089,2020-09-12,504.6200,GIF-783439ce583052ee,2020320506,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,27.5100,477.1100,confirmed_match,,-7.49993800518259,42.1693749641309,egif_part,2020320506
+Ourense,32,Cualedro,028,32028,2020-09-13,1309.5600,GIF-44233b6f01115783,2020320525,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,30.0000,1279.5600,confirmed_match,,-7.56473298089161,41.946641131783,egif_part,2020320525
+Ourense,32,Vilariño de Conso,092,32092,2020-09-13,817.2900,GIF-e40fbacd6bbb5f30,2020320516,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,49.7800,767.5100,confirmed_match,,-7.20798239101621,42.1465787101659,egif_part,2020320516
+Ourense,32,Manzaneda,044,32044,2020-09-13,810.5200,GIF-76fdcc7ddf745b17,2020320540,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,0.0000,810.5200,confirmed_match,,-7.27452910513729,42.2307871658438,egif_part,2020320540
+Ourense,32,Chandrexa de Queixa,029,32029,2020-09-13,705.7400,GIF-3c9ee0d20c9c583a,2020320528,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,26.0000,679.7400,confirmed_match,,-7.40188487057329,42.2228432784329,egif_part,2020320528
+Ourense,32,A Mezquita,048,32048,2020-09-14,649.9000,GIF-294150ce62a557ef,2020320543,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,44.2200,605.6800,confirmed_match,,-6.99624904430292,41.9736362138766,egif_part,2020320543
+Cantabria,39,Arredondo,007,39007,2020-11-21,575.5000,GIF-7db3ac5128a058ab,2020390600,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,7.8300,567.6700,confirmed_match,,-3.64869391242493,43.2351086450005,egif_part,2020390600
+Granada,18,Torvizcón,179,18179,2020-12-28,617.5100,GIF-ebbc1601ed0e52a0,2020180118,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,130.1400,487.3700,confirmed_match,,-3.33321860100066,36.8853065377919,egif_part,2020180118
+Almería,04,Berja,029,04029,2021-01-22,624.6100,GIF-2e47cf7a20fd5576,2021040005,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,75.5100,549.1000,confirmed_match,,-2.91471746552556,36.8902233739091,egif_part,2021040005
+Almería,04,Olula de Castro,068,04068,2021-02-01,689.3900,GIF-be60f2a6cc7e5ebd,2021040012,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,4.5900,684.8000,confirmed_match,,-2.46303725212854,37.180264689862,egif_part,2021040012
+Navarra / Gipuzkoa / Francia,31,Bera-Lesaka-Irún,250,31250,2021-02-20,1068.1747,GIF-d105ba33a7565401,2021310020,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,751.3313,316.8434,confirmed_match,Se conserva la descripción territorial Bera-Lesaka-Irún de la base anterior.,-1.71188061907398,43.2940327120133,egif_part,2021310020
+Cantabria,39,Udías,090,39090,2021-02-20,729.8000,GIF-ff606322ce765a1c,2021390133,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,310.3700,419.4300,confirmed_match,,-4.23025319602576,43.3495879961801,egif_part,2021390133
+Cantabria,39,Soba,083,39083,2021-03-29,783.1100,GIF-b79aaafdb247500f,2021390324,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3.7400,779.3700,confirmed_match,,-3.67444002802308,43.1854067846185,egif_part,2021390324
+Santa Cruz de Tenerife,38,Arico,005,38005,2021-05-20,3052.0000,GIF-02791bfba46f566d,2021386009,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2552.0000,500.0000,confirmed_match,,-16.4916319500226,28.2297350476313,egif_part,2021386009
+Ciudad Real,13,Chillón/Almadén,038,13038,2021-07-12,868.9400,GIF-f248fccb97a15492,2021130246,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,747.7800,121.1600,confirmed_match,Se conserva la descripción territorial Chillón/Almadén de la base anterior.,-4.8572175902765,38.7488019620824,egif_part,2021130246
+Albacete,02,Liétor,044,02044,2021-07-24,1932.7400,GIF-f6e2d90380eb5a63,2021020193,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1173.8200,758.9200,confirmed_match,,-1.86100773673442,38.501594956019,egif_part,2021020193
+Tarragona / Barcelona,43,Santa Coloma de Queralt / Bellprat,139,43139,2021-07-24,1312.7900,GIF-d38d5525cd8c5988,2021430249,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1123.0100,189.7800,confirmed_match,Se conserva Santa Coloma de Queralt / Bellprat como descripción territorial.,1.36880326645888,41.523133686184,egif_part,2021430249
+Huelva,21,Villarrasa,077,21077,2021-07-24,787.4800,GIF-2257f6702d9f5708,2021210092,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,256.4800,531.0000,confirmed_match,,-6.63545972059128,37.4526557049707,egif_part,2021210092
+Albacete,02,Tobarra,074,02074,2021-07-24,556.5100,GIF-296d34227830588a,2021020192,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,459.1600,97.3500,confirmed_match,,-1.63033318687352,38.6206976976096,egif_part,2021020192
+Cuenca,16,Víllora,274,16274,2021-07-25,501.9600,GIF-5838d3eabedf5943,2021160232,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,501.9600,0.0000,confirmed_match,,-1.5903712704632,39.7502225040674,egif_part,2021160232
+Ávila,05,El Tiemblo,241,05241,2021-08-06,622.2700,GIF-130c1abd7a225397,2021050071,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,361.1500,261.1200,confirmed_match,,-4.53022359532891,40.4252703711507,egif_part,2021050071
+Ávila,05,Sotalbo,239,05239,2021-08-14,21138.6600,GIF-41dad6589ebe5c15,2021050074,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2738.7300,18399.9300,confirmed_match,SOTALVO es la grafía del parte EGIF; Sotalbo es el municipio de referencia.,-5.02488045167682,40.4535246343697,egif_part,2021050074
+Salamanca,37,San Felices de los Gallegos,285,37285,2021-08-17,1735.2300,GIF-f6b9246012d5569a,2021370127,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,90.3400,1644.8900,confirmed_match,San abreviado como S en EGIF.,-6.68506720746947,40.82725116478,egif_part,2021370127
+Badajoz,06,Alburquerque,006,06006,2021-08-18,697.5500,GIF-f15f3750d27e52c9,2021060408,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,264.4000,433.1500,confirmed_match,,-7.06644042952607,39.2313984105886,egif_part,2021060408
+Lugo,27,Ribas de Sil,052,27052,2021-09-06,1477.6000,GIF-6b11df95d3ad57ae,2021270178,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1181.8000,295.8000,confirmed_match,,-7.29355025107975,42.4477232603237,egif_part,2021270178
+Málaga,29,Genalguacil,057,29057,2021-09-08,8651.2600,GIF-e070f7b1f6a0534b,2021290095,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,6555.1800,2096.0800,confirmed_match,,-5.20509793510204,36.5297050363055,egif_part,2021290095
+Zamora,49,Hermisende,094,49094,2022-01-28,1421.1300,GIF-cb0890b64a505860,2022490016,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,220.2000,1200.9300,spatial_legacy_match,"EGIF declara origen Portugal. Las coordenadas ETRS89 del parte caen en el municipio español de referencia de la base anterior, con la misma fecha de detección. Se conserva el origen declarado y se documenta la correspondencia espacial.",-6.81104282226592,41.9772003291243,egif_part,2022490016
+Zamora,49,Lubián,100,49100,2022-02-25,503.3600,GIF-849f603300cd5dbe,2022490076,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,5.8000,497.5600,confirmed_match,,-6.94891764130541,42.0594980053835,egif_part,2022490076
+Málaga,29,Júzcar,065,29065,2022-06-08,4751.3100,GIF-46651d179d85529a,2022290044,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3234.4800,1516.8300,confirmed_match,,-5.14056104046804,36.5727749841539,egif_part,2022290044
+Zamora,49,Riofrío de Aliste,176,49176,2022-06-15,22233.1200,GIF-4fd911578ee553d0,2022490141,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,9836.0400,12397.0800,confirmed_match,,-6.16302382176466,41.8696006223932,egif_part,2022490141
+Lleida,25,Artesa de Segre,034,25034,2022-06-15,2504.9100,GIF-07f8e8eb6fde5812,2022250092,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1174.8600,1330.0500,confirmed_match,,1.00699256090079,41.9243974971041,egif_part,2022250092
+Zaragoza,50,Nonaspe,189,50189,2022-06-16,1559.9655,GIF-e3db9a0644a95320,2022500113,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1388.0902,171.8753,confirmed_match,,0.264494443461694,41.2218668569196,egif_part,2022500113
+Toledo,45,Toledo,168,45168,2022-06-17,1738.0000,GIF-7160647d36eb5e46,2022450212,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1592.0000,146.0000,confirmed_match,,-4.09363472048416,39.8273847437495,egif_part,2022450212
+Navarra,31,Legarda/Guirguillano,147,31147,2022-06-19,6247.64,GIF-7281e1aa82f057b7,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-1.7737096,42.7116259,municipal_seat,
+Navarra,31,Arguedas/Valtierra,032,31032,2022-06-19,2060.38,GIF-471ff1b8e4885ec3,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-1.5975856,42.1774712,municipal_seat,
+Navarra,31,Gallipienzo/San Martín de Unx,110,31110,2022-06-20,6598.64,GIF-a1acba8f726b5191,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-1.4097449,42.5236399,municipal_seat,
+Teruel,44,Castejón de Tornos,065,44065,2022-06-20,1350,GIF-d3656cf67fe458ef,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-1.4278666,40.9974504,municipal_seat,
+Valencia,46,Venta del Moro,254,46254,2022-07-03,1330.5964,GIF-3999413f40ef52e1,2022460077,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,596.0564,734.5400,confirmed_match,,-1.42022255604851,39.4234261396564,egif_part,2022460077
+Cáceres / Salamanca,10,Ladrillar/Monsagro,108,10108,2022-07-11,10373.5100,GIF-06062df552175598,2022100507,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,9280.1700,1093.3400,confirmed_match,Ladrillar es el municipio de origen indicado por EGIF; se conserva la descripción Ladrillar/Monsagro.,-6.17978337435744,40.4490982329604,egif_part,2022100507
+Salamanca,37,Candelario,078,37078,2022-07-11,538.1500,GIF-5e596135bbb551f7,2022370093,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,31.4800,506.6700,confirmed_match,,-5.7645689893127,40.3057372783626,egif_part,2022370093
+Ourense,32,Carballeda de Valdeorras/Riodolas,017,32017,2022-07-14,12984.2300,GIF-1cd78da0f59e5db4,2022320385,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2957.0000,10027.2300,confirmed_match,Riodolas es una localidad de Carballeda de Valdeorras; se conserva la descripción anterior.,-6.91693187863952,42.3307819024501,egif_part,2022320385
+Lugo,27,A Pobra do Brollón/Saa,047,27047,2022-07-14,12768.2200,GIF-5007b2c24fcd5899,2022270109,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,5351.7200,7416.5000,confirmed_match,POBLA DO BROLLÓN en EGIF corresponde a A Pobra do Brollón; se conserva Saa como localidad de la descripción anterior.,-7.3223750070316,42.5989910392404,egif_part,2022270109
+Cáceres,10,Casas de Miravete,057,10057,2022-07-14,2694.3600,GIF-a6a29d66fb415702,2022100520,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,532.6500,2161.7100,confirmed_match,,-5.75283322718781,39.737525471977,egif_part,2022100520
+JAEN,23,TORRES DE ALBÁNCHEZ,091,23091,2022-07-14,1432.7663,GIF-20ec595c356c58c3,2022230066,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,25.4822,1407.2841,new_egif_record,Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.,-2.739419161917,38.5130892422551,egif_part,2022230066
+Ourense,32,Vilariño de Conso,092,32092,2022-07-15,6999.3600,GIF-3c94ca9ede6d590d,2022320388,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1276.0000,5723.3600,confirmed_match,,-7.3239369282003,42.1541676056108,egif_part,2022320388
+Málaga,29,Mijas,070,29070,2022-07-15,1861.6510,GIF-e99b664942e356c2,2022290065,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1010.0050,851.6460,confirmed_match,,-4.61517105395661,36.6029131417357,egif_part,2022290065
+Zamora,49,Figueruela de Arriba,069,49069,2022-07-15,1077.7600,GIF-3393c755dca25a2f,2022490161,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,507.7200,570.0400,confirmed_match,,-6.457804107171,41.8683255842941,egif_part,2022490161
+Ciudad Real,13,Montiel,057,13057,2022-07-15,799.08,GIF-329f1c857e8c5232,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-2.8621371,38.6963795,municipal_seat,
+Segovia,40,Navafría,139,40139,2022-07-15,763.0800,GIF-55bd3e45ef1c5361,2022400047,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,236.9600,526.1200,confirmed_match,,-3.83888022236941,41.0538599547283,egif_part,2022400047
+Zamora,49,Roelos de Sayago,180,49180,2022-07-15,574.8400,GIF-13061d2eed3e5587,2022490162,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,225.9100,348.9300,confirmed_match,,-6.18085120409705,41.2463649673064,egif_part,2022490162
+Ávila,05,Cebreros,057,05057,2022-07-16,4071.9100,GIF-2e5327005d795d19,2022050079,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3102.6200,969.2900,confirmed_match,,-4.4684142127537,40.4591608250766,egif_part,2022050079
+Zamora,49,Losacio,099,49099,2022-07-17,23611.4800,GIF-85eeabaf9f995849,2022490166,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,11719.6000,11891.8800,confirmed_match,,-6.00583737081311,41.731574053441,egif_part,2022490166
+Barcelona,08,El Pont de Vilomara i Rocafort,182,08182,2022-07-17,1422.3100,GIF-9c01aa6b919555dc,2022080173,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1073.0700,349.2400,confirmed_match,,1.89944456267217,41.6879438578548,egif_part,2022080173
+León,24,Ponferrada,115,24115,2022-07-17,1407.3000,GIF-26f53796b4655073,2022240230,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,560.9400,846.3600,confirmed_match,,-6.59070120169353,42.443502637548,egif_part,2022240230
+Ourense,32,Oímbra (Videferre),053,32053,2022-07-17,901.1000,GIF-071f9b1361b25456,2022320396,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,76.0000,825.1000,spatial_legacy_match,"EGIF declara origen Portugal. Las coordenadas ETRS89 del parte caen en el municipio español de referencia de la base anterior, con la misma fecha de detección. Se conserva el origen declarado y se documenta la correspondencia espacial.",-7.60731297398344,41.8315485497949,egif_part,2022320396
+Zaragoza,50,Ateca,038,50038,2022-07-18,11019.2100,GIF-3d42fc9de7d057b8,2022500144,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,4484.5500,6534.6600,confirmed_match,,-1.91376182425534,41.3600912772058,egif_part,2022500144
+Ourense,32,Oímbra (Rabal),053,32053,2022-07-18,1931.0800,GIF-8e71f17ff0815714,2022320398,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,852.8900,1078.1900,spatial_legacy_match,"EGIF declara origen Portugal. Las coordenadas ETRS89 del parte caen en el municipio español de referencia de la base anterior, con la misma fecha de detección. Se conserva el origen declarado y se documenta la correspondencia espacial.",-7.43606117522489,41.8506085272704,egif_part,2022320398
+Zamora,49,Villaseco,269,49269,2022-07-18,588.6400,GIF-176230f6e65950dc,2022490167,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,282.1800,306.4600,confirmed_match,Nombre completo Villaseco del Pan en EGIF.,-5.95269874761811,41.4691353118967,egif_part,2022490167
+Guadalajara,19,Valdepeñas de la Sierra,305,19305,2022-07-19,2478.2900,GIF-23b7bfedff1d5ecf,2022190287,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,636.8400,1841.4500,confirmed_match,,-3.36454228864415,40.8867742131201,egif_part,2022190287
+Santa Cruz de Tenerife,38,Los Realejos,031,38031,2022-07-21,2710.2000,GIF-cde99cbaa0b4585d,2022386013,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2710.2000,0.0000,confirmed_match,,-16.6067145566208,28.35289422629,egif_part,2022386013
+Burgos,09,Quintanilla del Coco,295,09295,2022-07-24,1819.69,GIF-fa623e8aec7151c1,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-3.515789,41.9786919,municipal_seat,
+Zamora,49,Losacino,098,49098,2022-07-24,732.0700,GIF-8800188de9da5179,2022490171,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,70.8500,661.2200,confirmed_match,,-6.0706027257651,41.6947561374054,egif_part,2022490171
+Ciudad Real,13,Malagón,052,13052,2022-07-25,1819.0600,GIF-e9cf933d67c85c34,2022130224,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,451.7400,1367.3200,confirmed_match,,-4.12429449763516,39.2792825301716,egif_part,2022130224
+Ciudad Real,13,Almadén,011,13011,2022-07-25,1563.7400,GIF-f93dcae9d8e958bc,2022130223,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1030.8200,532.9200,confirmed_match,,-4.63364765765066,38.8750493199024,egif_part,2022130223
+Guadalajara,19,Humanes,151,19151,2022-07-25,974.6200,GIF-f9bd14fe85e1511f,2022190307,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,626.0100,348.6100,confirmed_match,,-3.12179983042299,40.8612786502079,egif_part,2022190307
+HUELVA,21,BONARES,014,21014,2022-07-25,573.4900,GIF-36456fe2cf5e5a3c,2022210075,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,434.9500,138.5400,new_egif_record,Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.,-6.65900432716876,37.3077483220532,egif_part,2022210075
+Huelva,21,Almonte,005,21005,2022-07-26,880.79,GIF-00f29a94a1ed52ad,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-6.5174365,37.2625141,municipal_seat,
+Toledo,45,Sevilleja de la Jara,162,45162,2022-07-29,538.5000,GIF-2282185edba25a7a,2022450417,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,396.0000,142.5000,confirmed_match,,-4.91210504835113,39.5804567801143,egif_part,2022450417
+Ourense,32,Verín,085,32085,2022-08-03,706.7600,GIF-4944d055f6e65503,2022320477,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,219.4200,487.3400,confirmed_match,,-7.4211978636542,41.9327602166932,egif_part,2022320477
+A Coruña,15,Boiro,011,15011,2022-08-04,2058.7500,GIF-31f2d5584e755588,2022150258,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,696.2100,1362.5400,confirmed_match,,-8.91016749354885,42.6967931724902,egif_part,2022150258
+JAEN,23,JÓDAR,053,23053,2022-08-04,586.9012,GIF-7747d43fce515afb,2022230085,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,167.5547,419.3465,new_egif_record,Parte EGIF sin correspondencia en la base anterior. Se incorpora al adoptar EGIF como fuente principal; agrupación revisable si aparece evidencia de otros partes del mismo incendio.,-3.28305042741728,37.7596054293452,egif_part,2022230085
+Pontevedra,36,Caldas de Reis,005,36005,2022-08-04,561.3900,GIF-0d8c70c90acb5d4e,2022360360,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,531.3900,30.0000,confirmed_match,,-8.6964103395641,42.620112463068,egif_part,2022360360
+Ávila,05,Santa Cruz del Valle,221,05221,2022-08-05,1495.3200,GIF-9276a64ace165632,2022050092,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,1392.4100,102.9100,confirmed_match,Santa abreviado como STA en EGIF.,-5.00855788087942,40.2093762353394,egif_part,2022050092
+León,24,Boca de Huérgano,020,24020,2022-08-07,1229.9100,GIF-7bda714a358e57e4,2022240276,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,109.9300,1119.9800,confirmed_match,,-4.90330210614967,42.9479482251763,egif_part,2022240276
+Ourense,32,Laza/Camba,039,32039,2022-08-09,2937.4800,GIF-c45d8a62848e5444,2022320514,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,977.3900,1960.0900,confirmed_match,Se conserva la localidad Camba dentro de la descripción Laza/Camba.,-7.39930183465871,42.1355748127022,egif_part,2022320514
+Ourense,32,Chandrexa de Queixa,029,32029,2022-08-09,616.2200,GIF-0294a6a7eac4595e,2022320513,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,50.0000,566.2200,confirmed_match,,-7.41083297024372,42.1853945856239,egif_part,2022320513
+Ourense,32,Carballeda de Valdeorras/Casaio,017,32017,2022-08-09,526.4500,GIF-49a492ccbacf552e,2022320510,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,82.0000,444.4500,confirmed_match,Se conserva la localidad Casaio dentro de la descripción municipal.,-6.80403043447087,42.3061064942131,egif_part,2022320510
+Cáceres,10,Santibáñez el Alto,171,10171,2022-08-10,910.2700,GIF-a15ab71ac80e5e5c,2022100621,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,647.4100,262.8600,confirmed_match,,-6.58100729967707,40.1838304553508,egif_part,2022100621
+Ourense,32,O Irixo,035,32035,2022-08-10,796.4300,GIF-64f3de29b5a35044,2022320515,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,491.7500,304.6800,confirmed_match,,-8.10262394303102,42.5528979667692,egif_part,2022320515
+Alicante,03,Vall d' Ebo,135,03135,2022-08-13,10609.0415,GIF-068bd0da7c3a5125,2022030044,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2126.8482,8482.1933,confirmed_match,Variante del nombre municipal Vall de Ebo / Vall d’Ebo.,-0.185984733579982,38.7924883238876,egif_part,2022030044
+Zaragoza,50,Añón de Moncayo,030,50030,2022-08-13,5891.1253,GIF-9e224f293fe25d66,2022500168,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2507.2329,3383.8924,confirmed_match,,-1.71575485182674,41.7774120677586,egif_part,2022500168
+Castellón,12,Costur,049,12049,2022-08-14,727.7869,GIF-979f9945f90b5786,2022120051,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,176.2842,551.5027,confirmed_match,,-0.173229381464365,40.1398530153071,egif_part,2022120051
+Castellón / Valencia,12,Bejis,022,12022,2022-08-15,16836.4737,GIF-bb28293d8d9759d0,2022120052,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,5180.8895,11655.5842,confirmed_match,,-0.748539439270416,39.8924712716972,egif_part,2022120052
+Ourense,32,Lobeira,041,32041,2022-08-24,625.2000,GIF-92196d695d2b5801,2022320591,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,46.3600,578.8400,confirmed_match,,-8.0587457514033,42.009675788016,egif_part,2022320591
+Granada,18,Los Guajares,906,18906,2022-09-08,4653.8550,GIF-f3bccd50b96558cd,2022180083,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2576.3260,2077.5290,confirmed_match,,-3.60672939210979,36.8493477659323,egif_part,2022180083
+Bizkaia / Burgos,48,Balmaseda (VI) / Valle de Mena (BU),090,48090,2022-10-23,739.8100,GIF-430f57746c295774,2022480031,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,696.3200,43.4900,confirmed_match,Balmaseda es el municipio indicado por EGIF; se conserva Valle de Mena como ámbito territorial de la base anterior.,-3.20129645438379,43.173890505472,egif_part,2022480031
+Asturias,33,Belmonte de Miranda,005,33005,2023-03-09,527.0400,GIF-d0dc54c9dace5683,2023330360,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,55.7000,471.3400,confirmed_match,,-6.28685615695692,43.2911219014317,egif_part,2023330360
+Castellón / Teruel,12,Villanueva de Viver/San Agustín,133,12133,2023-03-23,4289.6852,GIF-1e553b69f9225fc8,2023120011,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,3616.7634,672.9218,confirmed_match,Villanueva de Viver es el origen indicado por EGIF; se conserva San Agustín como ámbito territorial de la base anterior.,-0.643600270004329,40.0668888918387,egif_part,2023120011
+Asturias,33,Piloña,049,33049,2023-03-23,552,GIF-05727ce796065954,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-5.3647217,43.3477828,municipal_seat,
+Lugo,27,Baleira,004,27004,2023-03-28,1590.0500,GIF-c9c5fbbdd60c5ee6,2023270027,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,703.4800,886.5700,confirmed_match,,-7.20958936292439,43.0962683833165,egif_part,2023270027
+Asturias,33,Ponga,050,33050,2023-03-28,764.6300,GIF-ebf27f4a666d5cd8,2023330756,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,120.5800,644.0500,confirmed_match,,-5.23876188095215,43.248028573659,egif_part,2023330756
+Asturias,33,Parres,045,33045,2023-03-29,1047.6700,GIF-126b101c14165679,2023330752,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,186.5900,861.0800,confirmed_match,,-5.1455592860664,43.3291698966545,egif_part,2023330752
+Asturias,33,Tineo,073,33073,2023-03-29,725,GIF-2357f3867a4f5c84,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Dos registros anteriores de Tineo el 29/03/2023 frente a un parte con esa fecha. No se asigna el mismo parte a dos incendios; correspondencia pendiente.,-6.4149666,43.335188,municipal_seat,
+Asturias,33,Cangas de Onís,012,33012,2023-03-29,570.8100,GIF-12b931f6ac115231,2023331162,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,69.4700,501.3400,confirmed_match,,-5.00639067550617,43.3755564132568,egif_part,2023331162
+Asturias,33,Tineo,073,33073,2023-03-29,556.6200,GIF-c282817fdbde5e67,2023330574,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,31.5000,525.1200,confirmed_match,,-6.33346252768472,43.2815128662872,egif_part,2023330574
+Asturias,33,Piloña,049,33049,2023-03-29,546,GIF-94e394419d015099,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-5.3647217,43.3477828,municipal_seat,
+Asturias,33,Belmonte de Miranda,005,33005,2023-03-31,724.5600,GIF-a9a1d95c8d4e58e3,2023330584,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,31.0000,693.5600,confirmed_match,,-6.30563551347413,43.2482656423164,egif_part,2023330584
+Asturias,33,Piloña,049,33049,2023-04-03,500,GIF-5463d2e9017f53f3,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-5.3647217,43.3477828,municipal_seat,
+Asturias,33,Valdés,034,33034,2023-04-05,9750,GIF-305fbf8112a656b6,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-6.5350963,43.5444539,municipal_seat,
+Asturias,33,Allande,001,33001,2023-04-08,550,GIF-ac5cdf799b785c28,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-6.6083531,43.2722332,municipal_seat,
+Cáceres,10,Pinofranqueado,146,10146,2023-05-17,10483.8600,GIF-e1948c2065d550a4,2023100242,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,9430.3700,1053.4900,confirmed_match,,-6.32177269556626,40.3174844390091,egif_part,2023100242
+Santa Cruz de Tenerife,38,Puntagorda,029,38029,2023-07-15,2600,GIF-34a3266664245183,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-17.9896594,28.7747213,municipal_seat,
+Santa Cruz de Tenerife,38,Arafo,004,38004,2023-08-15,12529.9,GIF-1f4ae71b69e25dd5,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf,,provisional,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.,-16.4182074,28.3399923,municipal_seat,
+Lugo,27,Trabada,061,27061,2023-10-12,2296.5300,GIF-fa6bb8d05df75889,2023270236,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,2196.3300,100.2000,confirmed_match,,-7.1740116458633,43.4413572602386,egif_part,2023270236
+Valencia,46,Montitxelvo,175,46175,2023-11-02,2077.1833,GIF-685b9ef0289c5fbe,2023460216,EGIF,https://servicio.mapa.gob.es/incendios/Search/Publico,2026-11-03,egif_export,153.2373,1923.9460,confirmed_match,Nombre bilingüe Montitxelvo / Montichelvo.,-0.338704878243657,38.889182223802,egif_part,2023460216
+Cantabria,39,Soba,083,39083,2024-01-26,1715,GIF-b2d700d4c820564f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-3.5235095,43.1827714,municipal_seat,
+Almería,04,Enix,041,04041,2024-02-09,580.85,GIF-3503bf0e76fc5031,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-2.6017554,36.876966,municipal_seat,
+Cantabria,39,Rionansa,063,39063,2024-04-06,592.66,GIF-e7855ba6ab905bad,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-4.4071961,43.2531401,municipal_seat,
+Alicante,03,Tàrbena,127,03127,2024-04-14,543.67,GIF-9fc82d882e615e15,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-0.1019787,38.6940188,municipal_seat,
+Almería,04,Níjar,066,04066,2024-06-06,2122.19,GIF-6915a7a5f2af5c1c,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-2.2061163,36.9658356,municipal_seat,
+Badajoz,06,Cabeza del Buey,023,06023,2024-07-05,754.91,GIF-929a22cacaa550f8,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-5.2188976,38.721484,municipal_seat,
+Badajoz,06,La Coronada,039,06039,2024-07-19,779.73,GIF-11c7626bc4885a4d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-5.6708663,38.9205231,municipal_seat,
+Cáceres,10,Talavan,178,10178,2024-07-20,728.55,GIF-c71352dbfbdf52cc,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-6.282567,39.7184538,municipal_seat,
+Badajoz,06,Ribera del Fresno,113,06113,2024-07-24,1138.77,GIF-58234028fb545569,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-6.2392674,38.551548,municipal_seat,
+Badajoz,06,Puebla del Maestre,105,06105,2024-07-24,943.8,GIF-5922c3b2285757a4,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-6.0794504,38.084654,municipal_seat,
+Ciudad Real,13,Argamasilla de Calatrava,020,13020,2024-07-24,702.05,GIF-66a5a49b221f5429,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-4.0809443,38.7275101,municipal_seat,
+Cuenca,16,Valverdejo,237,16237,2024-07-30,2226.98,GIF-aab1939b8ce55a52,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-2.0236755,39.6157425,municipal_seat,
+Toledo,45,La Estrella,065,45065,2024-08-06,1829.54,GIF-f2e2659ee43855f7,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-5.0929279,39.6870448,municipal_seat,
+Jaén,23,Andújar,005,23005,2024-08-18,786.88,GIF-4d4b63d2cd065800,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-4.0540691,38.0371327,municipal_seat,
+León,24,Astorga,008,24008,2024-08-19,589.74,GIF-eec6d58884d75052,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-6.0571232,42.4575911,municipal_seat,
+Madrid,28,Tres Cantos,903,28903,2024-08-22,528.71,GIF-09fcb8ac91b05ff6,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf,,provisional,,,legacy_only,,-3.7087747,40.5857383,municipal_seat,
+Almería,04,Huércal de Almería,052,04052,2025-05-03,1305,GIF-e75e0cc31e75541c,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-2.4359962,36.8840923,municipal_seat,
+Sevilla,41,Burguillos / Castilblanco de los Arroyos,019,41019,2025-06-10,1377.07,GIF-f3a439a80b58514d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.9667421,37.5868242,municipal_seat,
+Cáceres,10,Campo Lugar,043,10043,2025-06-16,836.97,GIF-4013f64600dc52cf,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.7699794,39.1968501,municipal_seat,
+Cáceres,10,Cáceres / Trujillo,037,10037,2025-06-17,1050.66,GIF-588fc1812a4255ce,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.3712042,39.4731533,municipal_seat,
+Badajoz,06,Casas de Don Pedro,033,06033,2025-06-20,761.59,GIF-95ff3ebef1285ff7,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.3306483,39.1039637,municipal_seat,
+Lleida,25,Torrefeta i Florejacs,907,25907,2025-07-01,1304,GIF-c232aecea28d5897,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,1.2732056,41.7544519,municipal_seat,
+Tarragona,43,Paüls,102,43102,2025-07-07,2190,GIF-fb5f0beeac1a59ae,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,0.3985343,40.9222856,municipal_seat,
+Cáceres,10,Trujillo,195,10195,2025-07-16,837,GIF-5a40298a63cf5b0e,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.882828,39.4624908,municipal_seat,
+Toledo / Madrid,45,Méntrida / Villamanta,099,45099,2025-07-17,1736.73,GIF-22ac3ec9f94a547b,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.1958424,40.2378115,municipal_seat,
+Ávila,05,Navaluenga,163,05163,2025-07-18,1171.1,GIF-28a8fe9c337850fb,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.7081438,40.4127157,municipal_seat,
+Badajoz,06,Valdecaballeros,137,06137,2025-07-19,2368.3,GIF-6e1e5e3d46475354,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.1901074,39.2438346,municipal_seat,
+Cáceres,10,Arroyomolinos,023,10023,2025-07-24,675,GIF-9cab9788b0425ad2,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.1632986,39.1850608,municipal_seat,
+Ávila,05,Cuevas del Valle,066,05066,2025-07-28,3118.99,GIF-80e031bb755b5f48,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.0093876,40.2941872,municipal_seat,
+Cáceres,10,Caminomorisco,041,10041,2025-07-29,2564.15,GIF-958f8e83931f53f1,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.2898498,40.327918,municipal_seat,
+Ourense,32,Vilardevós - Terroso,091,32091,2025-08-01,563.62,GIF-babd464d43d15435,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.3136335,41.9077563,municipal_seat,
+Badajoz,06,Oliva de Mérida,094,06094,2025-08-04,788,GIF-2a24e772364b582d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.1235948,38.7904188,municipal_seat,
+León,24,Benuza,016,24016,2025-08-08,22258.2,GIF-46c038e2df1c5940,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.7075785,42.4016736,municipal_seat,
+León / Asturias,24,Páramo del Sil / Degaña,110,24110,2025-08-08,7159,GIF-1597ba9287785549,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.4901132,42.8199831,municipal_seat,
+Ourense,32,Chandrexa de Queixa - Requeixo,029,32029,2025-08-08,6320.29,GIF-d60ef57419a7594d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.3790671,42.2608148,municipal_seat,
+León,24,Murias de Paredes - Fasgar,101,24101,2025-08-08,6091.06,GIF-d566a50fc60c51d1,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.191229,42.8501429,municipal_seat,
+León / Asturias,24,Villablino (Orallo) / Cangas del Narcea (Genestoso),202,24202,2025-08-08,4247.5,GIF-7507160f4d785915,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.3169769,42.939784,municipal_seat,
+Cáceres,10,Aldea del Cano / Sierra de Fuentes,012,10012,2025-08-08,1233,GIF-ae57ffe1507253a0,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.3192369,39.2880107,municipal_seat,
+Ávila,05,San Bartolomé de Pinares,201,05201,2025-08-08,734.64,GIF-c1c8f671a4855d30,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.5400797,40.543168,municipal_seat,
+León,24,Puente de Domingo Flórez,122,24122,2025-08-09,3804.06,GIF-2043944675825e06,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.818328,42.4106749,municipal_seat,
+Ourense,32,Maceda - Castro de Escuadro,043,32043,2025-08-09,1856.18,GIF-5e7dd21b2d8a5758,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.6500003,42.2692241,municipal_seat,
+Zamora / León,49,Molezuelas de la Carballeda / Castrocalbón,120,49120,2025-08-10,24426,GIF-78b319d64ad75bad,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.1863886,42.0817185,municipal_seat,
+Ourense,32,Vilariño de Conso - Mormentelos,092,32092,2025-08-10,5490,GIF-dd1591d3840a50e9,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.1834296,42.1647399,municipal_seat,
+Palencia,34,Cervera de Pisuerga,056,34056,2025-08-10,1269.5,GIF-44756b121b875421,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.4992338,42.8657417,municipal_seat,
+León,24,Villafranca del Bierzo,209,24209,2025-08-10,547.5,GIF-9d15def743835650,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.8107959,42.605944,municipal_seat,
+Zamora,49,Gallegos del Río,087,49087,2025-08-11,4958.8,GIF-fe0ceebb44875420,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.1742812,41.7351649,municipal_seat,
+Toledo / Cáceres,45,Navalmoralejo / Villar del Pedroso,111,45111,2025-08-11,2733.78,GIF-640b81f5a6305e8b,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.1430341,39.739833,municipal_seat,
+Madrid,28,Tres Cantos,903,28903,2025-08-11,1844.95,GIF-1ace17126fcb5cfd,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-3.7087747,40.5857383,municipal_seat,
+Ourense,32,Vilardevós - Moialde,091,32091,2025-08-11,1106.12,GIF-af87efef086f5648,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.3136335,41.9077563,municipal_seat,
+Ourense,32,Oímbra - A Granxa,053,32053,2025-08-12,22414,GIF-b6b47480156b56dd,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.4728401,41.8869863,municipal_seat,
+Cáceres,10,Jarilla,106,10106,2025-08-12,16315.06,GIF-5e8669cf38b65230,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.0012758,40.1713911,municipal_seat,
+Ourense,32,Chandrexa de Queixa - Parafita,029,32029,2025-08-12,12851.81,GIF-add7b337b1d65edf,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.3790671,42.2608148,municipal_seat,
+Ourense,32,A Mezquita,048,32048,2025-08-12,10743,GIF-361ed42d846a5fc8,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.0452877,42.0097261,municipal_seat,
+Cáceres,10,Arroyo de la Luz / Casar de Cáceres,021,10021,2025-08-12,3261.05,GIF-b1e423bad13750b2,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.5850693,39.4839524,municipal_seat,
+Ourense,32,Maceda - Santiso,043,32043,2025-08-12,2649.5,GIF-3741a51f45315c88,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.6500003,42.2692241,municipal_seat,
+Asturias,33,Cabrales,008,33008,2025-08-12,1090,GIF-89f1dd0f6ba15dee,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.8463049,43.3167131,municipal_seat,
+Ourense / Lugo / León,32,Larouco / Quiroga / Oencia,038,32038,2025-08-13,37765,GIF-61625456c94154eb,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.1623408,42.346243,municipal_seat,
+León,24,Boca de Huérgano,020,24020,2025-08-13,14462,GIF-2c8ee32ad6fa53d3,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.9254086,42.9723036,municipal_seat,
+Salamanca,37,Cipérez (Puertas),106,37106,2025-08-13,9684.07,GIF-13364d4d2504548b,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.2656463,40.9619202,municipal_seat,
+Ourense,32,Vilardevós - Vilar de Cervos,091,32091,2025-08-13,1807.94,GIF-a7117f5b97b45e4e,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.3136335,41.9077563,municipal_seat,
+Zamora / León / Ourense,49,Porto / Encinedo / Carballeda de Valdeorras,162,49162,2025-08-14,21373,GIF-20c50a98cfb75dcd,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.8989046,42.1679087,municipal_seat,
+León / Palencia,24,Almanza / Guardo,004,24004,2025-08-14,6887,GIF-cebb752e252c5e6d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.0358807,42.6588237,municipal_seat,
+Badajoz,06,Llerena,074,06074,2025-08-14,4867.35,GIF-9909de68f4f05b33,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.0152419,38.237501,municipal_seat,
+Badajoz,06,Alburquerque,006,06006,2025-08-14,2217.46,GIF-d4aa76f22761549c,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.0010039,39.2198528,municipal_seat,
+Badajoz,06,Azuaga,014,06014,2025-08-14,845.48,GIF-2a3c05e63a075ece,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.6752526,38.2578507,municipal_seat,
+León,24,Acebedo / Burón,001,24001,2025-08-14,549.09,GIF-cfdab0e811b25f1f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.1165524,43.039343,municipal_seat,
+Badajoz,06,Burguillos del Cerro,022,06022,2025-08-14,538.37,GIF-f79e74b35a905ace,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.591668,38.3813714,municipal_seat,
+Cáceres,10,Cáceres,037,10037,2025-08-15,3697.75,GIF-8161783d0a435f27,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.3712042,39.4731533,municipal_seat,
+Ourense,32,Carballeda de Avia - Vilar de Condes,018,32018,2025-08-15,3017.9,GIF-e4f4bffa3e5e5520,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-8.1640713,42.3206642,municipal_seat,
+Ávila,05,El Herradón / Tornadizos de Ávila,093,05093,2025-08-15,2975.81,GIF-3c8808959b9e5349,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-4.5602307,40.5652922,municipal_seat,
+Ourense,32,Xinzo de Limia,032,32032,2025-08-15,1023.35,GIF-6ae2f93315bb521f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.7269048,42.0634367,municipal_seat,
+Pontevedra,36,Agolada,020,36020,2025-08-15,522.32,GIF-81b4be5c5a645d3c,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-8.0176377,42.7630597,municipal_seat,
+León,24,Igüeña,083,24083,2025-08-19,860.24,GIF-e6ca512bc0ff5488,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.2786194,42.7278077,municipal_seat,
+León,24,Soto y Amío,167,24167,2025-08-24,1627,GIF-4ccb5a6e67be5ee7,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-5.8873434,42.7746834,municipal_seat,
+Lugo,27,A Pobra do Brollón,047,27047,2025-08-25,1015.36,GIF-1ccbdaecd0a25955,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.3911538,42.5572518,municipal_seat,
+Almería,04,Lubrín,059,04059,2025-08-28,783.3,GIF-ba609a9401435586,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-2.065929,37.216509,municipal_seat,
+Ourense,32,Carballeda de Valdeorras - Casaio,017,32017,2025-09-06,973.56,GIF-332d53f3daea5f38,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-6.8784085,42.3773209,municipal_seat,
+Lugo,27,Pantón,041,27041,2025-09-18,1909.54,GIF-f0408fda1fd35ede,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-7.6200904,42.5067986,municipal_seat,
+Guadalajara / Segovia,19,El Cardoso de la Sierra / Cerezo de Arriba,067,19067,2025-09-21,2652,GIF-355c14b1ce7c545c,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf,,provisional,,,legacy_only,,-3.4650208,41.0967923,municipal_seat,
+Cantabria,39,Selaya,082,39082,2026-02-24,519,GIF-1e11e8935fdf515f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-3.8067678,43.2170711,municipal_seat,
+Cantabria,39,Arredondo,007,39007,2026-02-25,698.83,GIF-507c255a02f55edb,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-3.602209,43.2749605,municipal_seat,
+Cantabria,39,Soba,083,39083,2026-02-26,813,GIF-227887dd7dea53af,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-3.5235095,43.1827714,municipal_seat,
+Cáceres,10,Losar de la Vera,110,10110,2026-03-29,962.56,GIF-f535c48915dc52ad,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-5.6029967,40.1209558,municipal_seat,
+Asturias,33,Allande,001,33001,2026-04-05,619.37,GIF-f5fbe4bfc3535c92,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.6083531,43.2722332,municipal_seat,
+Pontevedra,36,Ponteareas,042,36042,2026-04-06,886.78,GIF-7b3f389ddc16500d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-8.5046619,42.1740264,municipal_seat,
+Badajoz,06,Valencia de las Torres,139,06139,2026-05-28,572.8,GIF-2aa66cb27ec55710,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.0029587,38.4022109,municipal_seat,
+Badajoz,06,Hornachos,069,06069,2026-05-30,1024.52,GIF-9130b70a42a45115,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.0672844,38.5547437,municipal_seat,
+Badajoz,06,Montemolín,086,06086,2026-06-01,502.48,GIF-ae706f41367b5d21,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.2127905,38.1540283,municipal_seat,
+Huelva,21,Alosno,006,21006,2026-06-04,1030.69,GIF-73f591b7c9e75b4f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-7.1149256,37.5494585,municipal_seat,
+Huelva,21,Villanueva de los Castillejos,076,21076,2026-06-08,4388.62,GIF-cf45a8ee55d350c4,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-7.2723179,37.5006789,municipal_seat,
+León,24,Congosto,057,24057,2026-06-24,524,GIF-6b0b0e6652fc5345,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.5197028,42.6178444,municipal_seat,
+Huesca,22,Alcampell,016,22016,2026-06-25,1932.14,GIF-92423b9ee7225506,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,0.431908,41.9058617,municipal_seat,
+León,24,Oseja de Sajambre,106,24106,2026-06-26,525,GIF-455a5ff132595032,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-5.0384765,43.1355779,municipal_seat,
+Zaragoza,50,Leciñena,137,50137,2026-06-30,1508.12,GIF-164b376120745421,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-0.6105265,41.7993284,municipal_seat,
+Girona,17,La Bisbal d'Empordà,022,17022,2026-07-03,1921.82,GIF-09dfa5261de15633,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,3.0381681,41.960147,municipal_seat,
+Badajoz,06,Jerez de los Caballeros,070,06070,2026-07-06,541.05,GIF-4289bde13d615040,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.7713995,38.3220333,municipal_seat,
+Toledo,45,La Guardia,071,45071,2026-07-08,510,GIF-2fd0feefbfda51e3,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-3.47668,39.7883111,municipal_seat,
+Almería,04,Los Gallardos,048,04048,2026-07-09,4507.41,GIF-f4ba0e04928858a9,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-1.9417094,37.170297,municipal_seat,
+Zaragoza,50,Orés,197,50197,2026-07-15,11319,GIF-f06290b555b855ba,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-0.9997905,42.2791121,municipal_seat,
+Ciudad Real,13,Hinojosas de Calatrava,048,13048,2026-07-15,787,GIF-e3f8134937445424,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.1407131,38.6156518,municipal_seat,
+Guadalajara,19,La Mierla,182,19182,2026-07-16,33078,GIF-b9118c95f14f5339,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-3.2357201,40.9380733,municipal_seat,
+Madrid,28,Lozoyuela-Navas-Sieteiglesias,901,28901,2026-07-16,836.76,GIF-11738b6781a5590f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-3.6184162,40.9278098,municipal_seat,
+Segovia,40,Brieva,033,40033,2026-07-20,2275.1,GIF-3008235ceed65b63,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.053643,41.0347133,municipal_seat,
+Guadalajara,19,Selas,254,19254,2026-07-21,2637,GIF-d6cddeba1b565979,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-2.1021722,40.9510963,municipal_seat,
+Teruel,44,Ejulve,096,44096,2026-07-21,2403.57,GIF-71f25fb98c715e9a,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-0.5548039,40.7748059,municipal_seat,
+Huelva,21,El Cerro de Andévalo,023,21023,2026-07-21,1697.39,GIF-0e41c95b6f315dea,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.9388058,37.7353626,municipal_seat,
+Ávila,05,Burgohondo,041,05041,2026-07-22,33943,GIF-163ff1a4fc7f52f8,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.7859231,40.4161254,municipal_seat,
+Madrid,28,Villa del Prado,171,28171,2026-07-22,2879.02,GIF-26808c0b6ecf5ab4,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.3055335,40.2764182,municipal_seat,
+León,24,Valdesamario,184,24184,2026-07-22,2000,GIF-b5b1ae8f081f5af0,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-5.9514285,42.7214528,municipal_seat,
+León,24,Castropodame,049,24049,2026-07-22,777,GIF-743a71fb49d55254,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.4681134,42.5790717,municipal_seat,
+Madrid,28,San Martín de Valdeiglesias,133,28133,2026-07-23,18177.25,GIF-9d932b0f2ccd5c82,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.3969611,40.3615552,municipal_seat,
+Ciudad Real,13,Retuerta del Bullaque,072,13072,2026-07-23,942,GIF-414d0b3eb9e254f8,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.4095365,39.4615222,municipal_seat,
+Castellón,12,"Vall d'Uixó, la",126,12126,2026-07-25,8291.0741,GIF-617ecac2150d57ce,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-0.2281115,39.8242237,municipal_seat,
+Zamora,49,Fermoselle,065,49065,2026-07-29,8043,GIF-57df80eb56bb509b,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.3992733,41.3185453,municipal_seat,
+León,24,Vegas del Condado,201,24201,2026-07-29,1262,GIF-bfc7a3dd7d215d58,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-5.3649352,42.6847376,municipal_seat,
+León,24,Villafranca del Bierzo,209,24209,2026-07-29,1208,GIF-2d5c38b14dae597f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.8107959,42.605944,municipal_seat,
+Cáceres,10,Casas de Millán,056,10056,2026-08-01,1035.07,GIF-ce3d28f43968562d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.3282897,39.8206532,municipal_seat,
+Huelva,21,Niebla,053,21053,2026-08-06,39821.31,GIF-53e28c21e227554a,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.679575,37.3615419,municipal_seat,
+Castellón,12,Tírig,111,12111,2026-08-07,561.2709,GIF-84fb260c3516529f,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,0.0777606,40.4240206,municipal_seat,
+Segovia,40,Navas de San Antonio,146,40146,2026-08-08,1093.24,GIF-a14d54bc91aa52d5,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-4.329422,40.7615514,municipal_seat,
+Huesca,22,Las Peñas de Riglos,173,22173,2026-08-10,16521.92,GIF-f1ccdfe44e695f7d,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-0.7260279,42.3494465,municipal_seat,
+Cáceres,10,Pinofranqueado,146,10146,2026-08-18,3715.46,GIF-b8d0eab462d55ed7,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-6.333876,40.3021308,municipal_seat,
+Castellón,12,Segorbe,104,12104,2026-08-20,594.8,GIF-5dbe2650a74a5ae9,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-0.4881267,39.8523723,municipal_seat,
+Valencia,46,Tuéjar,247,46247,2026-09-15,748.8978,GIF-170b7863699e5bcd,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-1.0396952,39.7635506,municipal_seat,
+Ourense,32,Calvos de Randín,016,32016,2026-09-24,518.1,GIF-89190f7153c053a9,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-7.8960724,41.9438158,municipal_seat,
+Málaga,29,Igualeja,060,29060,2026-09-26,587.47,GIF-e8dda1d0a72950c5,,MITECO provisional bulletin,https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html,,provisional,,,legacy_only,,-5.1216761,36.6308357,municipal_seat,

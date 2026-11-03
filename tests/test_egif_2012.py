@@ -9,7 +9,7 @@ from scripts.audit_egif_2012 import AUDIT, ROOT, read_csv, reconcile
 
 class Egif2012Tests(unittest.TestCase):
     def setUp(self):
-        self.records = read_csv(ROOT / "rdata/gif_d2010.csv")
+        self.records = read_csv(ROOT / "data-raw/legacy/fires.csv")
         self.parts = read_csv(AUDIT / "egif-parts.csv")
         self.dates = read_csv(AUDIT / "report-dates.csv")
 

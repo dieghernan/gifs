@@ -27,6 +27,8 @@ jobs:
         run: python -m pip install -r scripts/requirements-croissant.txt -r scripts/requirements-microformats.txt
       - name: Check generated Croissant metadata
         run: python scripts/build_croissant.py --check
+      - name: Check generated EGIF products
+        run: python scripts/build_dataset.py --check
       - name: Validate Croissant descriptor
         run: mlcroissant validate --jsonld croissant.json
       - name: Set up Ruby

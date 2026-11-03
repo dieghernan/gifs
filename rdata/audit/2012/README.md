@@ -1,5 +1,9 @@
 # Conciliación de 2012
 
+Auditoría histórica anterior a la migración a EGIF. Sus valores de referencia
+proceden de `data-raw/legacy/fires.csv`. La migración posterior adopta las
+superficies EGIF; véase la [metodología actual](../../../METODOLOGIA.md).
+
 Esta auditoría recupera las fechas de los 41 incendios del conjunto, sin
 cambiar sus superficies ni incorporar nuevos incendios.
 
@@ -22,19 +26,13 @@ Reproducir el cruce desde los extractos versionados:
 py scripts/audit_egif_2012.py
 ```
 
-Aplicar únicamente las fechas confirmadas al CSV principal:
-
-```sh
-py scripts/audit_egif_2012.py --apply-dates
-```
-
-Este último comando no modifica el Excel. Debe sincronizarse su hoja
-principal con el CSV, conservando el resto del libro, antes de publicar.
+Este comando solo reproduce la comparación histórica y no modifica los
+productos finales. Estos se regeneran con `py scripts/build_dataset.py`.
 La aritmética de superficies usa decimales exactos. Las agrupaciones son
 explícitas; no se emparejan partes únicamente por superficie.
 
-Se conservan las superficies del informe para Chulilla y Llocnou de Sant
-Jeroni. Cocentaina no se incorpora todavía. La asociación provincial de
+En aquella revisión se conservaron las superficies del informe para Chulilla
+y Llocnou de Sant Jeroni y no se incorporó Cocentaina. La asociación provincial de
 Andilla se sustenta en las fechas y horas coincidentes y en la suma del
 informe, sin una clave común disponible en el extracto. Véase
 [la metodología](../../../METODOLOGIA.md#conciliación-de-egif-de-2012).

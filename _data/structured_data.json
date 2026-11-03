@@ -8,7 +8,7 @@
   },
   "dataset": {
     "name": "Grandes incendios forestales en España",
-    "description": "Conjunto de 449 grandes incendios forestales en España, con al menos 500 hectáreas forestales quemadas, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye municipios, provincias, códigos INE, fecha y superficie forestal en hectáreas; una fila por incendio. Recopilado del MITECO: estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026. Las fechas de 2012 se han contrastado con el informe definitivo y EGIF. Disponible en CSV; no representa cobertura anual completa ni seguimiento en tiempo real.",
+    "description": "Exportaciones EGIF de 2010–2023 con 329 partes seleccionados de grandes incendios forestales y una vista conciliada de 455 registros de incendios de 2010–2026. EGIF tiene prioridad donde existe una correspondencia documentada; se conservan informes y avances para los demás registros. Incluye identificadores, superficies, procedencia, notas y coordenadas EPSG:4326 cuando se pueden interpretar. Hay correspondencias pendientes y la cobertura de EGIF no es completa en todas las provincias y años.",
     "isAccessibleForFree": true,
     "inLanguage": "es",
     "creator": {
@@ -114,6 +114,11 @@
           "@type": "CreativeWork",
           "name": "MITECO: grandes incendios forestales de 2026 (avance)",
           "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "EGIF: exportaciones de partes de 2010–2023, descargadas el 03/11/2026",
+          "url": "https://servicio.mapa.gob.es/incendios/Search/Publico"
         }
       ]
     },
@@ -148,7 +153,7 @@
         "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv"
       }
     ],
-    "measurementTechnique": "Recopilación y contraste de listados anuales de grandes incendios forestales del MITECO; extracción de tablas PDF, OCR con comprobación visual cuando es necesario, transcripción de la tabla definitiva Power BI de 2019 y lectura del listado provisional de 2026. Normalización de nombres y códigos INE y una fila por incendio, sin repartir su superficie entre municipios. Los códigos corresponden al primer municipio y provincia mencionados. Las fechas de 2012 se contrastan entre el cuadro 37 del informe definitivo y EGIF; se mantienen las superficies del informe mientras se revisan las discrepancias; la asociación As Neves/Portugal de 2017 es una inferencia documentada.",
+    "measurementTechnique": "Importación reproducible de ZIP/XLSX EGIF completos, normalización de tipos y conciliación mediante un registro estable de incendios y partes. Umbral de 500 ha aplicado después de agrupaciones explícitas. Se conservan las descripciones territoriales de la base anterior; las asociaciones inferidas se identifican. Las coordenadas con huso y datum conocidos se transforman a EPSG:4326; los incendios sin coordenadas utilizables emplean una capital municipal identificada como referencia. Se conservan los registros anteriores sin correspondencia y no se suman automáticamente partes sin asignar a la vista de incendios.",
     "subjectOf": {
       "@type": "CreativeWork",
       "name": "Metodología de recopilación y validación",
@@ -158,7 +163,28 @@
   },
   "croissant": {
     "sourceRevision": "bff934fb0da61f82811c2d8b9f21afb9438aa1a9",
-    "sourcePath": "rdata/gif_d2010.csv",
-    "recordSet": "fires"
-  }
+    "sourcePath": "rdata/egif_parts.csv",
+    "recordSet": "parts",
+    "resources": [
+      {
+        "path": "rdata/egif_parts.csv",
+        "id": "egif-parts-csv",
+        "recordSet": "parts",
+        "fields": "_data/egif_part_fields.json",
+        "key": "egif_part_id",
+        "name": "Partes EGIF de grandes incendios forestales",
+        "description": "Una fila por parte seleccionado. egif_part_id es único. fire_id puede estar vacío si la correspondencia con un incendio está pendiente. Los campos vacíos representan información ausente o no interpretable, nunca ceros inferidos. No se deben contar filas como incendios ni sumarse este recurso y la vista fires."
+      },
+      {
+        "path": "rdata/gif_d2010.csv",
+        "id": "gif-csv",
+        "recordSet": "fires",
+        "fields": "_data/croissant_fields.json",
+        "key": "fire_id",
+        "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
+        "description": "Una fila por incendio registrado, con fire_id estable. EGIF tiene prioridad en registros vinculados; los demás conservan informes o avances y su estado de conciliación. Hay casos pendientes. Los campos vacíos representan información desconocida o no aplicable; no se rellenan con cero. Las coordenadas son una ubicación de referencia, no un perímetro."
+      }
+    ]
+  },
+  "developmentVersion": "2.0.0-dev"
 }

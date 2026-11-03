@@ -2,6 +2,10 @@
 
 ## Sin publicar
 
+- Migración a fuentes EGIF estructuradas de 2010–2023, con una fila por parte, identificadores estables, notas, procedencia y una vista de incendios que conserva informes y avances de respaldo.
+- Coordenadas EPSG:4326, contraste municipal y distinción explícita de ubicaciones municipales de respaldo; se conservan las coordenadas originales y los casos sin datum.
+- Excel anterior archivado; generación reproducible de CSV, auditorías y metadatos desde fuentes versionadas.
+
 - Recuperadas las fechas de inicio de los 41 incendios de 2012, contrastadas entre el informe definitivo y EGIF, con auditoría reproducible de partes provinciales y discrepancias de superficie.
 
 - Tarjeta de descarga del CSV con tamaño, fecha, versión, SHA-256 y DOI, adaptada a móvil y escritorio.

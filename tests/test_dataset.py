@@ -11,39 +11,32 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class DatasetTests(unittest.TestCase):
-    def test_audited_records_and_methodology_are_preserved(self):
+    def test_reconciled_view_preserves_legacy_records_and_source_priority(self):
         with (ROOT / "rdata/gif_d2010.csv").open(encoding="utf-8", newline="") as stream:
             records = list(csv.DictReader(stream))
-        self.assertEqual(len(records), 449)
-        self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in records),
-                         Decimal("1311239.9728"))
-        self.assertEqual(records, sorted(records, key=lambda row:
-                         (row["date"], -Decimal(row["area_forestal_ha"]))))
-        self.assertEqual(len({tuple(row.values()) for row in records}), len(records))
+        with (ROOT / "data-raw/legacy/fires.csv").open(encoding="utf-8", newline="") as stream:
+            legacy = list(csv.DictReader(stream))
+        with (ROOT / "data-raw/fire-registry.csv").open(encoding="utf-8", newline="") as stream:
+            registry = list(csv.DictReader(stream))
+        self.assertEqual(len(legacy), 449)
+        self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in legacy), Decimal("1311239.9728"))
+        self.assertEqual({int(row["legacy_row"]) for row in registry if row["legacy_row"]}, set(range(1, 450)))
+        self.assertEqual(len(records), 455)
+        self.assertEqual(records, sorted(records, key=lambda row: (row["date"], -Decimal(row["area_forestal_ha"]), row["fire_id"])))
+        self.assertEqual(len({row["fire_id"] for row in records}), len(records))
         for row in records:
-            with self.subTest(date=row["date"], municipality=row["munic_name"]):
+            with self.subTest(fire=row["fire_id"]):
                 self.assertGreaterEqual(Decimal(row["area_forestal_ha"]), Decimal(500))
-                self.assertEqual(row["cpro"].zfill(2) + row["cmun"].zfill(3),
-                                 row["codmun"].zfill(5))
-        year_2012 = [row for row in records if row["date"].startswith("2012-")]
-        self.assertEqual(len(year_2012), 41)
-        with (ROOT / "rdata/audit/2012/comparison.csv").open(encoding="utf-8", newline="") as stream:
-            confirmed = {row["codmun"]: row["date"] for row in csv.DictReader(stream)}
-        self.assertEqual({row["codmun"].zfill(5): row["date"] for row in year_2012}, confirmed)
-        self.assertEqual(min(row["date"] for row in year_2012), "2012-01-08")
-        self.assertEqual(max(row["date"] for row in year_2012), "2012-09-23")
+                self.assertEqual(row["cpro"] + row["cmun"], row["codmun"])
+                self.assertEqual(len(row["codmun"]), 5)
         year_2019 = [row for row in records if row["date"].startswith("2019-")]
         self.assertEqual(len(year_2019), 15)
-        self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in year_2019),
-                         Decimal("30789.09"))
+        self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in year_2019), Decimal("30789.09"))
         descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
         self.assertEqual(descriptor["creator"]["name"], "Diego HH")
-        self.assertEqual(descriptor["creator"]["url"], "https://dieghernan.github.io/")
         self.assertIn("EGIF", descriptor["description"])
-        self.assertIn("inferencia", descriptor["measurementTechnique"])
-        self.assertEqual(len(descriptor["isBasedOn"]["hasPart"]), 17)
-        self.assertEqual(descriptor["subjectOf"]["url"],
-                         "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md")
+        self.assertEqual(descriptor["version"], "2.0.0-dev")
+        self.assertNotIn("identifier", descriptor)
 
     def test_metadata_matches_the_downloadable_records(self):
         html = (ROOT / "_site/index.html").read_text(encoding="utf-8")
@@ -68,15 +61,15 @@ class DatasetTests(unittest.TestCase):
         self.assertEqual(dataset["isBasedOn"]["url"], "https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-datos.html")
         self.assertIn("Origen de los datos", dataset["creditText"])
         self.assertIn("Superficie forestal quemada en hectáreas", dataset["variableMeasured"])
-        download, = dataset["distribution"]
-        self.assertEqual(download["encodingFormat"], "text/csv")
-        self.assertEqual(download["dateModified"], dataset["dateModified"])
         snapshot = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]
-        self.assertEqual(download["contentUrl"],
-                         f'https://raw.githubusercontent.com/dieghernan/gifs/{snapshot["sourceRevision"]}/{snapshot["sourcePath"]}')
-        self.assertIn("sc:DataDownload", download["@type"])
-        self.assertIn("cr:FileObject", download["@type"])
-        self.assertIn(download["contentUrl"], html)
+        self.assertEqual(len(dataset["distribution"]), 2)
+        for download, resource in zip(dataset["distribution"], snapshot["resources"]):
+            self.assertEqual(download["encodingFormat"], "text/csv")
+            self.assertEqual(download["dateModified"], dataset["dateModified"])
+            self.assertEqual(download["contentUrl"], f'https://raw.githubusercontent.com/dieghernan/gifs/{snapshot["sourceRevision"]}/{resource["path"]}')
+            self.assertIn("sc:DataDownload", download["@type"])
+            self.assertIn("cr:FileObject", download["@type"])
+            self.assertIn(download["contentUrl"], html)
         self.assertNotIn('content="noindex', html)
 
 

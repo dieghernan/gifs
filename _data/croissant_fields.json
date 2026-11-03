@@ -1,44 +1,128 @@
 [
   {
     "column": "prov_name",
-    "label": "Provincia",
+    "label": "prov_name",
     "dataType": "sc:Text",
-    "description": "Nombre de la provincia asociado al registro. Se conserva la grafía del CSV; no es un identificador estable. Puede incluir varias provincias separadas por /; el código provincial corresponde a la primera."
+    "description": "Provincia declarada en el parte EGIF; en la vista de incendios se conserva la descripción territorial anterior cuando existe."
   },
   {
     "column": "cpro",
-    "label": "Código de provincia",
+    "label": "cpro",
     "dataType": "sc:Text",
-    "description": "Código de provincia INE, leído como texto con la representación del CSV. Para reconstruir su formato de dos dígitos deben completarse los ceros iniciales. Si se citan varias provincias, corresponde a la primera mencionada."
+    "description": "Código de provincia de dos dígitos, como texto. En partes procede del número de parte; en incendios identifica la provincia de referencia."
   },
   {
     "column": "munic_name",
-    "label": "Municipio",
+    "label": "munic_name",
     "dataType": "sc:Text",
-    "description": "Nombre del municipio asociado al incendio, conservado como aparece en el CSV. No describe necesariamente todos los municipios afectados. Puede incluir varios municipios y localidades; se conserva una sola fila por incendio."
+    "description": "Municipio de origen declarado en EGIF; puede indicar Portugal u otra provincia. En la vista de incendios se conserva la descripción territorial de referencia anterior."
   },
   {
     "column": "cmun",
-    "label": "Código de municipio",
+    "label": "cmun",
     "dataType": "sc:Text",
-    "description": "Código municipal INE dentro de la provincia, leído como texto. No es único a escala nacional. Para reconstruir su formato de tres dígitos deben completarse los ceros iniciales. Si se citan varios municipios, corresponde al primero mencionado."
+    "description": "Código municipal de tres dígitos, como texto. Vacío si el nombre declarado no puede vincularse inequívocamente al diccionario municipal."
   },
   {
     "column": "codmun",
-    "label": "Código INE del municipio",
+    "label": "codmun",
     "dataType": "sc:Text",
-    "description": "Código combinado provincial y municipal tal como se almacena en el CSV, conservado como texto sin rellenar ceros. Puede repetirse entre incendios y no es una clave de registro. Si se citan varios municipios, identifica el primero y sirve como referencia para situar el incendio en el mapa; no delimita toda la superficie afectada."
+    "description": "Código INE municipal de cinco dígitos, como texto. Puede diferir del municipio obtenido mediante coordenadas; no se sustituye automáticamente."
   },
   {
     "column": "date",
-    "label": "Fecha del incendio",
+    "label": "date",
     "dataType": "sc:Date",
-    "description": "Fecha de inicio del incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo. Las fechas de 2012 se han contrastado entre el cuadro 37 del informe definitivo y EGIF."
+    "description": "Fecha de detección EGIF o fecha de inicio de la fuente de respaldo, en formato AAAA-MM-DD. No es la fecha de descarga."
   },
   {
     "column": "area_forestal_ha",
-    "label": "Superficie forestal quemada",
+    "label": "area_forestal_ha",
     "dataType": "sc:Float",
-    "description": "Superficie forestal quemada declarada para el incendio, en hectáreas (1 ha = 10.000 m²). No es superficie total quemada ni una medida calculada a partir del mapa. El conjunto selecciona incendios de al menos 500 hectáreas forestales."
+    "description": "Superficie forestal quemada en hectáreas. En partes corresponde solo al parte; en incendios suma exclusivamente los partes vinculados o conserva la fuente de respaldo."
+  },
+  {
+    "column": "fire_id",
+    "label": "fire_id",
+    "dataType": "sc:Text",
+    "description": "Identificador propio y estable del incendio. En partes sin correspondencia revisada permanece vacío; no se infiere un incendio nuevo automáticamente."
+  },
+  {
+    "column": "egif_part_ids",
+    "label": "egif_part_ids",
+    "dataType": "sc:Text",
+    "description": "Números de parte EGIF vinculados al incendio, separados por punto y coma. Vacío cuando solo se dispone de una fuente de respaldo."
+  },
+  {
+    "column": "source",
+    "label": "source",
+    "dataType": "sc:Text",
+    "description": "Fuente utilizada en esta fila: EGIF, informe anual MITECO o avance provisional MITECO."
+  },
+  {
+    "column": "source_url",
+    "label": "source_url",
+    "dataType": "sc:Text",
+    "description": "Enlace a la fuente de datos utilizada."
+  },
+  {
+    "column": "source_date",
+    "label": "source_date",
+    "dataType": "sc:Text",
+    "description": "Fecha de descarga de la fuente EGIF en formato AAAA-MM-DD. Vacía para las fuentes anteriores cuya fecha de descarga no se conserva."
+  },
+  {
+    "column": "data_status",
+    "label": "data_status",
+    "dataType": "sc:Text",
+    "description": "egif_export identifica una exportación EGIF y no garantiza cobertura anual completa; definitive_report y provisional distinguen las fuentes de respaldo."
+  },
+  {
+    "column": "area_wooded_ha",
+    "label": "area_wooded_ha",
+    "dataType": "sc:Float",
+    "description": "Superficie forestal arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose."
+  },
+  {
+    "column": "area_non_wooded_ha",
+    "label": "area_non_wooded_ha",
+    "dataType": "sc:Float",
+    "description": "Superficie forestal no arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose."
+  },
+  {
+    "column": "match_status",
+    "label": "match_status",
+    "dataType": "sc:Text",
+    "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes."
+  },
+  {
+    "column": "notes",
+    "label": "notes",
+    "dataType": "sc:Text",
+    "description": "Notas de procedencia, agrupación territorial y decisiones de conciliación. Vacío si no se necesita una aclaración específica."
+  },
+  {
+    "column": "longitude",
+    "label": "longitude",
+    "dataType": "sc:Float",
+    "description": "Longitud en grados decimales, EPSG:4326, orden longitud/latitud. Vacía en partes cuyo datum o coordenadas no se pueden interpretar."
+  },
+  {
+    "column": "latitude",
+    "label": "latitude",
+    "dataType": "sc:Float",
+    "description": "Latitud en grados decimales, EPSG:4326, orden longitud/latitud. No utiliza el desplazamiento cartográfico de Canarias."
+  },
+  {
+    "column": "location_method",
+    "label": "location_method",
+    "dataType": "sc:Text",
+    "description": "Método de ubicación: coordenadas originales transformadas o parte de referencia EGIF; municipal_seat indica una capital municipal de respaldo. unknown_crs y missing_coordinates no proporcionan coordenadas de origen interpretables."
+  },
+  {
+    "column": "location_part_id",
+    "label": "location_part_id",
+    "dataType": "sc:Text",
+    "description": "Parte EGIF del que se toma el punto de referencia del incendio. Puede ser uno de varios partes; no es un centroide del incendio. Vacío para ubicaciones municipales."
   }
 ]

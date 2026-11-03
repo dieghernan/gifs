@@ -81,21 +81,12 @@ def write_csv(path, rows):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--apply-dates", action="store_true",
-                        help="Apply only dates confirmed by both sources to the main CSV.")
-    args = parser.parse_args()
-    records = read_csv(ROOT / "rdata/gif_d2010.csv")
+    parser.parse_args()
+    records = read_csv(ROOT / "data-raw/legacy/fires.csv")
     comparison, unmatched = reconcile(records, read_csv(AUDIT / "egif-parts.csv"),
                                       read_csv(AUDIT / "report-dates.csv"))
     write_csv(AUDIT / "comparison.csv", comparison)
     write_csv(AUDIT / "unmatched-parts.csv", unmatched)
-    if args.apply_dates:
-        confirmed = {row["codmun"]: row["date"] for row in comparison}
-        for row in records:
-            if row["date"].startswith("2012-"):
-                row["date"] = confirmed[row["codmun"].zfill(5)]
-        records.sort(key=lambda row: (row["date"], -Decimal(row["area_forestal_ha"])))
-        write_csv(ROOT / "rdata/gif_d2010.csv", records)
     print(f"{len(comparison)} dates confirmed; {len(unmatched)} unmatched part(s); "
           f"{sum(Decimal(row['difference_ha']) != 0 for row in comparison)} area discrepancies")
 

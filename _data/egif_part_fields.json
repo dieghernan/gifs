@@ -1,0 +1,296 @@
+[
+  {
+    "column": "egif_part_id",
+    "label": "egif_part_id",
+    "dataType": "sc:Text",
+    "description": "Número de parte EGIF conservado como texto; clave única de la fila. No identifica por sí solo un incendio completo."
+  },
+  {
+    "column": "fire_id",
+    "label": "fire_id",
+    "dataType": "sc:Text",
+    "description": "Identificador propio y estable del incendio. En partes sin correspondencia revisada permanece vacío; no se infiere un incendio nuevo automáticamente."
+  },
+  {
+    "column": "year",
+    "label": "year",
+    "dataType": "sc:Text",
+    "description": "Campaña anual declarada en EGIF."
+  },
+  {
+    "column": "source_state",
+    "label": "source_state",
+    "dataType": "sc:Text",
+    "description": "Estado literal del parte en la exportación EGIF. No se interpreta como garantía de cobertura completa."
+  },
+  {
+    "column": "community",
+    "label": "community",
+    "dataType": "sc:Text",
+    "description": "Campo Comunidad de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "prov_name",
+    "label": "prov_name",
+    "dataType": "sc:Text",
+    "description": "Provincia declarada en el parte EGIF; en la vista de incendios se conserva la descripción territorial anterior cuando existe."
+  },
+  {
+    "column": "munic_name",
+    "label": "munic_name",
+    "dataType": "sc:Text",
+    "description": "Municipio de origen declarado en EGIF; puede indicar Portugal u otra provincia. En la vista de incendios se conserva la descripción territorial de referencia anterior."
+  },
+  {
+    "column": "district",
+    "label": "district",
+    "dataType": "sc:Text",
+    "description": "Campo ComarcaIsla de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "locality",
+    "label": "locality",
+    "dataType": "sc:Text",
+    "description": "Campo EntidadMenor de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "affected_municipalities",
+    "label": "affected_municipalities",
+    "dataType": "sc:Text",
+    "description": "Campo NumeroMunicipiosAfectados de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "map_sheet",
+    "label": "map_sheet",
+    "dataType": "sc:Text",
+    "description": "Campo Hoja de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "map_grid",
+    "label": "map_grid",
+    "dataType": "sc:Text",
+    "description": "Campo Cuadricula de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "utm_zone",
+    "label": "utm_zone",
+    "dataType": "sc:Text",
+    "description": "Huso UTM declarado por EGIF. No basta por sí solo para identificar el sistema de referencia."
+  },
+  {
+    "column": "coordinate_x",
+    "label": "coordinate_x",
+    "dataType": "sc:Text",
+    "description": "Coordenada X original de EGIF, en el sistema indicado por datum y utm_zone. Se conserva sin inferir el sistema cuando falta datum."
+  },
+  {
+    "column": "coordinate_y",
+    "label": "coordinate_y",
+    "dataType": "sc:Text",
+    "description": "Coordenada Y original de EGIF, en el sistema indicado por datum y utm_zone."
+  },
+  {
+    "column": "datum",
+    "label": "datum",
+    "dataType": "sc:Text",
+    "description": "Datum original declarado por EGIF; vacío si no consta."
+  },
+  {
+    "column": "ignition_points",
+    "label": "ignition_points",
+    "dataType": "sc:Text",
+    "description": "Campo NumeroPuntosInicioIncendio de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "detected_at",
+    "label": "detected_at",
+    "dataType": "sc:Text",
+    "description": "Fecha y hora de detección transcritas en formato ISO 8601. EGIF no declara zona horaria en esta exportación; no se añade una."
+  },
+  {
+    "column": "extinguished_at",
+    "label": "extinguished_at",
+    "dataType": "sc:Text",
+    "description": "Fecha y hora de extinción transcritas en formato ISO 8601, sin zona horaria añadida."
+  },
+  {
+    "column": "cause",
+    "label": "cause",
+    "dataType": "sc:Text",
+    "description": "Código y descripción de causa tal como aparecen en EGIF; no se agregan causas de distintos partes."
+  },
+  {
+    "column": "motivation",
+    "label": "motivation",
+    "dataType": "sc:Text",
+    "description": "Código y descripción de motivación según EGIF; vacío cuando no consta o no resulta aplicable."
+  },
+  {
+    "column": "area_wooded_ha",
+    "label": "area_wooded_ha",
+    "dataType": "sc:Float",
+    "description": "Superficie forestal arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose."
+  },
+  {
+    "column": "area_non_wooded_ha",
+    "label": "area_non_wooded_ha",
+    "dataType": "sc:Float",
+    "description": "Superficie forestal no arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose."
+  },
+  {
+    "column": "area_forestal_ha",
+    "label": "area_forestal_ha",
+    "dataType": "sc:Float",
+    "description": "Superficie forestal quemada en hectáreas. En partes corresponde solo al parte; en incendios suma exclusivamente los partes vinculados o conserva la fuente de respaldo."
+  },
+  {
+    "column": "area_agricultural_ha",
+    "label": "area_agricultural_ha",
+    "dataType": "sc:Float",
+    "description": "Superficie agrícola afectada en hectáreas; no forma parte de la superficie forestal."
+  },
+  {
+    "column": "area_other_non_forest_ha",
+    "label": "area_other_non_forest_ha",
+    "dataType": "sc:Float",
+    "description": "Otras superficies no forestales afectadas en hectáreas."
+  },
+  {
+    "column": "affected_wildland_urban_interface",
+    "label": "affected_wildland_urban_interface",
+    "dataType": "sc:Text",
+    "description": "Campo AfectoZonasInterfazUrbanoForestal de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "interface_type",
+    "label": "interface_type",
+    "dataType": "sc:Text",
+    "description": "Campo TipoInterfazAfectado de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "affected_protected_area",
+    "label": "affected_protected_area",
+    "dataType": "sc:Text",
+    "description": "Campo AfectoEspacioProtegido de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "affected_agricultural_land",
+    "label": "affected_agricultural_land",
+    "dataType": "sc:Text",
+    "description": "Campo AfectoTierrasAgrarias de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "affected_zar",
+    "label": "affected_zar",
+    "dataType": "sc:Text",
+    "description": "Campo AfectoZar de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "source_related_part_id",
+    "label": "source_related_part_id",
+    "dataType": "sc:Text",
+    "description": "Campo NumeroPartePss de la exportación EGIF, conservado como texto. Vacío si no consta."
+  },
+  {
+    "column": "cpro",
+    "label": "cpro",
+    "dataType": "sc:Text",
+    "description": "Código de provincia de dos dígitos, como texto. En partes procede del número de parte; en incendios identifica la provincia de referencia."
+  },
+  {
+    "column": "cmun",
+    "label": "cmun",
+    "dataType": "sc:Text",
+    "description": "Código municipal de tres dígitos, como texto. Vacío si el nombre declarado no puede vincularse inequívocamente al diccionario municipal."
+  },
+  {
+    "column": "codmun",
+    "label": "codmun",
+    "dataType": "sc:Text",
+    "description": "Código INE municipal de cinco dígitos, como texto. Puede diferir del municipio obtenido mediante coordenadas; no se sustituye automáticamente."
+  },
+  {
+    "column": "date",
+    "label": "date",
+    "dataType": "sc:Date",
+    "description": "Fecha de detección EGIF o fecha de inicio de la fuente de respaldo, en formato AAAA-MM-DD. No es la fecha de descarga."
+  },
+  {
+    "column": "source",
+    "label": "source",
+    "dataType": "sc:Text",
+    "description": "Fuente utilizada en esta fila: EGIF, informe anual MITECO o avance provisional MITECO."
+  },
+  {
+    "column": "source_url",
+    "label": "source_url",
+    "dataType": "sc:Text",
+    "description": "Enlace a la fuente de datos utilizada."
+  },
+  {
+    "column": "source_date",
+    "label": "source_date",
+    "dataType": "sc:Text",
+    "description": "Fecha de descarga de la fuente EGIF en formato AAAA-MM-DD. Vacía para las fuentes anteriores cuya fecha de descarga no se conserva."
+  },
+  {
+    "column": "source_file",
+    "label": "source_file",
+    "dataType": "sc:Text",
+    "description": "Ruta de la instantánea ZIP original conservada y verificada mediante SHA-256."
+  },
+  {
+    "column": "match_status",
+    "label": "match_status",
+    "dataType": "sc:Text",
+    "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes."
+  },
+  {
+    "column": "notes",
+    "label": "notes",
+    "dataType": "sc:Text",
+    "description": "Notas de procedencia, agrupación territorial y decisiones de conciliación. Vacío si no se necesita una aclaración específica."
+  },
+  {
+    "column": "longitude",
+    "label": "longitude",
+    "dataType": "sc:Float",
+    "description": "Longitud en grados decimales, EPSG:4326, orden longitud/latitud. Vacía en partes cuyo datum o coordenadas no se pueden interpretar."
+  },
+  {
+    "column": "latitude",
+    "label": "latitude",
+    "dataType": "sc:Float",
+    "description": "Latitud en grados decimales, EPSG:4326, orden longitud/latitud. No utiliza el desplazamiento cartográfico de Canarias."
+  },
+  {
+    "column": "source_epsg",
+    "label": "source_epsg",
+    "dataType": "sc:Text",
+    "description": "Código EPSG utilizado para interpretar las coordenadas originales. Vacío cuando el datum no está identificado."
+  },
+  {
+    "column": "location_method",
+    "label": "location_method",
+    "dataType": "sc:Text",
+    "description": "Método de ubicación: coordenadas originales transformadas o parte de referencia EGIF; municipal_seat indica una capital municipal de respaldo. unknown_crs y missing_coordinates no proporcionan coordenadas de origen interpretables."
+  },
+  {
+    "column": "geo_codmun",
+    "label": "geo_codmun",
+    "dataType": "sc:Text",
+    "description": "Código municipal obtenido por intersección del punto EGIF con límites GISCO 2024. No sustituye el código declarado ni describe todos los municipios afectados."
+  },
+  {
+    "column": "geo_municipality",
+    "label": "geo_municipality",
+    "dataType": "sc:Text",
+    "description": "Municipio obtenido del cruce espacial con límites GISCO 2024, que pueden diferir de los límites del año del incendio."
+  },
+  {
+    "column": "municipality_check",
+    "label": "municipality_check",
+    "dataType": "sc:Text",
+    "description": "Resultado del cruce espacial: coincidencia, discrepancia, código declarado no disponible, fuera de límites, múltiples límites o no comprobado."
+  }
+]
