@@ -234,10 +234,7 @@
   "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://doi.org/10.5281/zenodo.23932940",
   "identifier": "https://doi.org/10.5281/zenodo.23932940",
   "sameAs": "https://doi.org/10.5281/zenodo.23932940",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "@id": "https://doi.org/10.5281/zenodo.23929996"
-  },
+  "isPartOf": "https://doi.org/10.5281/zenodo.23929996",
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",

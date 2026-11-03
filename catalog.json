@@ -228,9 +228,7 @@
       },
       "version": "2.0.0",
       "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://doi.org/10.5281/zenodo.23932940",
-      "isPartOf": {
-        "@id": "https://dieghernan.github.io/gifs/#catalog"
-      },
+      "isPartOf": "https://doi.org/10.5281/zenodo.23932940",
       "@context": {
         "@language": "es",
         "@vocab": "https://schema.org/",
@@ -1252,9 +1250,7 @@
       },
       "version": "2.0.0",
       "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://doi.org/10.5281/zenodo.23932940",
-      "isPartOf": {
-        "@id": "https://dieghernan.github.io/gifs/#catalog"
-      },
+      "isPartOf": "https://doi.org/10.5281/zenodo.23932940",
       "@context": {
         "@language": "es",
         "@vocab": "https://schema.org/",
@@ -1647,10 +1643,7 @@
       }
     }
   ],
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "@id": "https://doi.org/10.5281/zenodo.23929996"
-  },
+  "isPartOf": "https://doi.org/10.5281/zenodo.23929996",
   "identifier": "https://doi.org/10.5281/zenodo.23932940",
   "sameAs": "https://doi.org/10.5281/zenodo.23932940",
   "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://doi.org/10.5281/zenodo.23932940"
