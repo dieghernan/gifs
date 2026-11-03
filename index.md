@@ -19,7 +19,11 @@ project_links:
       label: GitHub
 ---
 
-![Mapa de España con grandes incendios forestales de 2010 a 2026. El tamaño de los círculos naranjas indica las hectáreas forestales quemadas; un gráfico resume la superficie por año.](https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png)
+<p data-photoswipe-gallery="infographic">
+  <a class="chulapa-photoswipe-item" href="https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png" aria-label="Ampliar la infografía de grandes incendios forestales">
+    <img class="img-fluid" src="https://raw.githubusercontent.com/dieghernan/gifs/refs/heads/main/gif_spain.png" alt="Mapa de España con grandes incendios forestales de 2010 a 2026. El tamaño de los círculos naranjas indica las hectáreas forestales quemadas; un gráfico resume la superficie por año.">
+  </a>
+</p>
 
 Este proyecto reúne los datos y el código en **R** utilizados para crear una
 infografía de grandes incendios forestales (GIF) en España. En este contexto,
