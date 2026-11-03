@@ -62,8 +62,8 @@ class DatasetTests(unittest.TestCase):
         self.assertIn("Origen de los datos", dataset["creditText"])
         self.assertIn("Superficie forestal quemada en hectáreas", dataset["variableMeasured"])
         snapshot = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]
-        self.assertEqual(len(dataset["distribution"]), 2)
-        for download, resource in zip(dataset["distribution"], snapshot["resources"]):
+        self.assertEqual(len(dataset["distribution"]), 4)
+        for download, resource in zip(dataset["distribution"][::2], snapshot["resources"]):
             self.assertEqual(download["encodingFormat"], "text/csv")
             self.assertEqual(download["dateModified"], dataset["dateModified"])
             self.assertEqual(download["contentUrl"], f'https://raw.githubusercontent.com/dieghernan/gifs/{snapshot["sourceRevision"]}/{resource["path"]}')

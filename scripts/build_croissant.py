@@ -37,12 +37,23 @@ def build():
             "encodingFormat": "text/csv", "contentSize": f"{len(content)} bytes",
             "sha256": hashlib.sha256(content).hexdigest(), "dateModified": metadata["publication"]["dateModified"],
         })
+        structured_content = subprocess.check_output(["git", "show", f'HEAD:{resource["structuredPath"]}'], cwd=ROOT)
+        if json.loads(structured_content) != json.loads((ROOT / resource["structuredPath"]).read_text(encoding="utf-8")):
+            raise ValueError("Commit JSON changes before generating its Croissant snapshot.")
+        structured_id = file_id + "-json"
+        distributions.append({
+            "@type": ["cr:FileObject", "sc:DataDownload"], "@id": structured_id,
+            "name": resource["name"] + " (JSON)",
+            "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/" + snapshot["sourceRevision"] + "/" + resource["structuredPath"],
+            "encodingFormat": "application/json", "contentSize": f"{len(structured_content)} bytes",
+            "sha256": hashlib.sha256(structured_content).hexdigest(), "dateModified": metadata["publication"]["dateModified"],
+        })
         record_sets.append({
             "@type": "cr:RecordSet", "@id": record_set, "name": record_set,
             "description": resource["description"], "key": {"@id": f'{record_set}/{resource["key"]}'},
             "field": [{"@type": "cr:Field", "@id": f'{record_set}/{field["column"]}', "name": field["column"],
                        "description": field["description"], "dataType": field["dataType"],
-                       "source": {"fileObject": {"@id": file_id}, "extract": {"column": field["column"]}}}
+                       "source": {"fileObject": {"@id": structured_id}, "extract": {"jsonPath": "$[*]." + field["column"]}}}
                       for field in fields],
         })
     dates = sorted(all_dates)
@@ -52,6 +63,8 @@ def build():
     context = json.loads((ROOT / "_data/croissant_context.json").read_text(encoding="utf-8"))
     dataset = dict(metadata["dataset"])
     dataset["version"] = metadata.get("developmentVersion", citation["version"])
+    if "developmentVersion" in metadata:
+        dataset["citeAs"] = f'Diego HH. Grandes incendios forestales en España ({metadata["developmentVersion"]}). Instantánea del repositorio {snapshot["sourceRevision"]}; sin DOI de versión.'
     if "developmentVersion" not in metadata:
         dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"], citeAs=citation["citeAs"])
     dataset.update({

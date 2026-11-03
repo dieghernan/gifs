@@ -1,6 +1,6 @@
 {
   "name": "Grandes incendios forestales en España",
-  "description": "Conjunto de 449 grandes incendios forestales en España, con al menos 500 hectáreas forestales quemadas, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye municipios, provincias, códigos INE, fecha y superficie forestal en hectáreas; una fila por incendio. Recopilado del MITECO: estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026. Las fechas de 2012 se han contrastado con el informe definitivo y EGIF. Disponible en CSV; no representa cobertura anual completa ni seguimiento en tiempo real.",
+  "description": "Exportaciones EGIF de 2010–2023 con 329 partes seleccionados de grandes incendios forestales y una vista conciliada de 455 registros de incendios de 2010–2026. EGIF tiene prioridad donde existe una correspondencia documentada; se conservan informes y avances para los demás registros. Incluye identificadores, superficies, procedencia, notas y coordenadas EPSG:4326 cuando se pueden interpretar. Hay correspondencias pendientes y la cobertura de EGIF no es completa en todas las provincias y años.",
   "isAccessibleForFree": true,
   "inLanguage": "es",
   "creator": {
@@ -107,6 +107,11 @@
         "@type": "CreativeWork",
         "name": "MITECO: grandes incendios forestales de 2026 (avance)",
         "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "EGIF: exportaciones de partes de 2010–2023, descargadas el 03/11/2026",
+        "url": "https://servicio.mapa.gob.es/incendios/Search/Publico"
       }
     ]
   },
@@ -139,26 +144,63 @@
         "cr:FileObject",
         "sc:DataDownload"
       ],
-      "@id": "gif-csv",
-      "name": "Grandes incendios forestales en España (CSV)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/bff934fb0da61f82811c2d8b9f21afb9438aa1a9/rdata/gif_d2010.csv",
+      "@id": "egif-parts-csv",
+      "name": "Partes EGIF de grandes incendios forestales",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/88dea8e21d3d78cb79699e76c2b8bd6b2cea09eb/rdata/egif_parts.csv",
       "encodingFormat": "text/csv",
-      "contentSize": "23880 bytes",
-      "sha256": "1b2d06523f3c85bd6f30b67c79908531a3cacbfe0e55ea32db1d67d7609fd69b",
+      "contentSize": "182758 bytes",
+      "sha256": "8475817e549ef23d3811f02b199310f68f1483eb3e237800df83b68cb82af6f2",
+      "dateModified": "2026-11-03"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "egif-parts-csv-json",
+      "name": "Partes EGIF de grandes incendios forestales (JSON)",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/88dea8e21d3d78cb79699e76c2b8bd6b2cea09eb/rdata/egif_parts.json",
+      "encodingFormat": "application/json",
+      "contentSize": "553309 bytes",
+      "sha256": "02ad3e81f57f03ecf61ec93fc4dfdecd8750d0b87097f08dd12602a2b833e406",
+      "dateModified": "2026-11-03"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "gif-csv",
+      "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/88dea8e21d3d78cb79699e76c2b8bd6b2cea09eb/rdata/gif_d2010.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "127390 bytes",
+      "sha256": "58ea27ca24beeb266191923d1817e8a77ecc5cdc1ce577760c668c83f99805ec",
+      "dateModified": "2026-11-03"
+    },
+    {
+      "@type": [
+        "cr:FileObject",
+        "sc:DataDownload"
+      ],
+      "@id": "gif-csv-json",
+      "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (JSON)",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/88dea8e21d3d78cb79699e76c2b8bd6b2cea09eb/rdata/gif_d2010.json",
+      "encodingFormat": "application/json",
+      "contentSize": "327088 bytes",
+      "sha256": "3b574cf81d50573bf4025377e0c8c65fae79cdb5248bedea68655d6da216d23a",
       "dateModified": "2026-11-03"
     }
   ],
-  "measurementTechnique": "Recopilación y contraste de listados anuales de grandes incendios forestales del MITECO; extracción de tablas PDF, OCR con comprobación visual cuando es necesario, transcripción de la tabla definitiva Power BI de 2019 y lectura del listado provisional de 2026. Normalización de nombres y códigos INE y una fila por incendio, sin repartir su superficie entre municipios. Los códigos corresponden al primer municipio y provincia mencionados. Las fechas de 2012 se contrastan entre el cuadro 37 del informe definitivo y EGIF; se mantienen las superficies del informe mientras se revisan las discrepancias; la asociación As Neves/Portugal de 2017 es una inferencia documentada.",
+  "measurementTechnique": "Importación reproducible de ZIP/XLSX EGIF completos, normalización de tipos y conciliación mediante un registro estable de incendios y partes. Umbral de 500 ha aplicado después de agrupaciones explícitas. Se conservan las descripciones territoriales de la base anterior; las asociaciones inferidas se identifican. Las coordenadas con huso y datum conocidos se transforman a EPSG:4326; los incendios sin coordenadas utilizables emplean una capital municipal identificada como referencia. Se conservan los registros anteriores sin correspondencia y no se suman automáticamente partes sin asignar a la vista de incendios.",
   "subjectOf": {
     "@type": "CreativeWork",
     "name": "Metodología de recopilación y validación",
     "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
     "inLanguage": "es"
   },
-  "version": "1.0.0",
-  "identifier": "https://doi.org/10.5281/zenodo.23929997",
-  "sameAs": "https://doi.org/10.5281/zenodo.23929997",
-  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 1.0.0) [Data set]. https://doi.org/10.5281/zenodo.23929997",
+  "version": "2.0.0-dev",
+  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio 88dea8e21d3d78cb79699e76c2b8bd6b2cea09eb; sin DOI de versión.",
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",
@@ -220,22 +262,771 @@
   "recordSet": [
     {
       "@type": "cr:RecordSet",
+      "@id": "parts",
+      "name": "parts",
+      "description": "Una fila por parte seleccionado. egif_part_id es único. fire_id puede estar vacío si la correspondencia con un incendio está pendiente. Los campos vacíos representan información ausente o no interpretable, nunca ceros inferidos. No se deben contar filas como incendios ni sumarse este recurso y la vista fires.",
+      "key": {
+        "@id": "parts/egif_part_id"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "parts/egif_part_id",
+          "name": "egif_part_id",
+          "description": "Número de parte EGIF conservado como texto; clave única de la fila. No identifica por sí solo un incendio completo.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].egif_part_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/fire_id",
+          "name": "fire_id",
+          "description": "Identificador propio y estable del incendio. En partes sin correspondencia revisada permanece vacío; no se infiere un incendio nuevo automáticamente.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].fire_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/year",
+          "name": "year",
+          "description": "Campaña anual declarada en EGIF.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].year"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source_state",
+          "name": "source_state",
+          "description": "Estado literal del parte en la exportación EGIF. No se interpreta como garantía de cobertura completa.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_state"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/community",
+          "name": "community",
+          "description": "Campo Comunidad de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].community"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/prov_name",
+          "name": "prov_name",
+          "description": "Provincia declarada en el parte EGIF; en la vista de incendios se conserva la descripción territorial anterior cuando existe.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].prov_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/munic_name",
+          "name": "munic_name",
+          "description": "Municipio de origen declarado en EGIF; puede indicar Portugal u otra provincia. En la vista de incendios se conserva la descripción territorial de referencia anterior.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].munic_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/district",
+          "name": "district",
+          "description": "Campo ComarcaIsla de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].district"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/locality",
+          "name": "locality",
+          "description": "Campo EntidadMenor de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].locality"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/affected_municipalities",
+          "name": "affected_municipalities",
+          "description": "Campo NumeroMunicipiosAfectados de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].affected_municipalities"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/map_sheet",
+          "name": "map_sheet",
+          "description": "Campo Hoja de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].map_sheet"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/map_grid",
+          "name": "map_grid",
+          "description": "Campo Cuadricula de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].map_grid"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/utm_zone",
+          "name": "utm_zone",
+          "description": "Huso UTM declarado por EGIF. No basta por sí solo para identificar el sistema de referencia.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].utm_zone"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/coordinate_x",
+          "name": "coordinate_x",
+          "description": "Coordenada X original de EGIF, en el sistema indicado por datum y utm_zone. Se conserva sin inferir el sistema cuando falta datum.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].coordinate_x"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/coordinate_y",
+          "name": "coordinate_y",
+          "description": "Coordenada Y original de EGIF, en el sistema indicado por datum y utm_zone.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].coordinate_y"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/datum",
+          "name": "datum",
+          "description": "Datum original declarado por EGIF; vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].datum"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/ignition_points",
+          "name": "ignition_points",
+          "description": "Campo NumeroPuntosInicioIncendio de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].ignition_points"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/detected_at",
+          "name": "detected_at",
+          "description": "Fecha y hora de detección transcritas en formato ISO 8601. EGIF no declara zona horaria en esta exportación; no se añade una.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].detected_at"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/extinguished_at",
+          "name": "extinguished_at",
+          "description": "Fecha y hora de extinción transcritas en formato ISO 8601, sin zona horaria añadida.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].extinguished_at"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/cause",
+          "name": "cause",
+          "description": "Código y descripción de causa tal como aparecen en EGIF; no se agregan causas de distintos partes.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cause"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/motivation",
+          "name": "motivation",
+          "description": "Código y descripción de motivación según EGIF; vacío cuando no consta o no resulta aplicable.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].motivation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/area_wooded_ha",
+          "name": "area_wooded_ha",
+          "description": "Superficie forestal arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_wooded_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/area_non_wooded_ha",
+          "name": "area_non_wooded_ha",
+          "description": "Superficie forestal no arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_non_wooded_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/area_forestal_ha",
+          "name": "area_forestal_ha",
+          "description": "Superficie forestal quemada en hectáreas. En partes corresponde solo al parte; en incendios suma exclusivamente los partes vinculados o conserva la fuente de respaldo.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_forestal_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/area_agricultural_ha",
+          "name": "area_agricultural_ha",
+          "description": "Superficie agrícola afectada en hectáreas; no forma parte de la superficie forestal.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_agricultural_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/area_other_non_forest_ha",
+          "name": "area_other_non_forest_ha",
+          "description": "Otras superficies no forestales afectadas en hectáreas.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_other_non_forest_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/affected_wildland_urban_interface",
+          "name": "affected_wildland_urban_interface",
+          "description": "Campo AfectoZonasInterfazUrbanoForestal de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].affected_wildland_urban_interface"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/interface_type",
+          "name": "interface_type",
+          "description": "Campo TipoInterfazAfectado de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].interface_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/affected_protected_area",
+          "name": "affected_protected_area",
+          "description": "Campo AfectoEspacioProtegido de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].affected_protected_area"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/affected_agricultural_land",
+          "name": "affected_agricultural_land",
+          "description": "Campo AfectoTierrasAgrarias de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].affected_agricultural_land"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/affected_zar",
+          "name": "affected_zar",
+          "description": "Campo AfectoZar de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].affected_zar"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source_related_part_id",
+          "name": "source_related_part_id",
+          "description": "Campo NumeroPartePss de la exportación EGIF, conservado como texto. Vacío si no consta.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_related_part_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/cpro",
+          "name": "cpro",
+          "description": "Código de provincia de dos dígitos, como texto. En partes procede del número de parte; en incendios identifica la provincia de referencia.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cpro"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/cmun",
+          "name": "cmun",
+          "description": "Código municipal de tres dígitos, como texto. Vacío si el nombre declarado no puede vincularse inequívocamente al diccionario municipal.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].cmun"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/codmun",
+          "name": "codmun",
+          "description": "Código INE municipal de cinco dígitos, como texto. Puede diferir del municipio obtenido mediante coordenadas; no se sustituye automáticamente.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].codmun"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/date",
+          "name": "date",
+          "description": "Fecha de detección EGIF o fecha de inicio de la fuente de respaldo, en formato AAAA-MM-DD. No es la fecha de descarga.",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source",
+          "name": "source",
+          "description": "Fuente utilizada en esta fila: EGIF, informe anual MITECO o avance provisional MITECO.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source_url",
+          "name": "source_url",
+          "description": "Enlace a la fuente de datos utilizada.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source_date",
+          "name": "source_date",
+          "description": "Fecha de descarga de la fuente EGIF en formato AAAA-MM-DD. Vacía para las fuentes anteriores cuya fecha de descarga no se conserva.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source_file",
+          "name": "source_file",
+          "description": "Ruta de la instantánea ZIP original conservada y verificada mediante SHA-256.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_file"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/match_status",
+          "name": "match_status",
+          "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].match_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/notes",
+          "name": "notes",
+          "description": "Notas de procedencia, agrupación territorial y decisiones de conciliación. Vacío si no se necesita una aclaración específica.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/longitude",
+          "name": "longitude",
+          "description": "Longitud en grados decimales, EPSG:4326, orden longitud/latitud. Vacía en partes cuyo datum o coordenadas no se pueden interpretar.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].longitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/latitude",
+          "name": "latitude",
+          "description": "Latitud en grados decimales, EPSG:4326, orden longitud/latitud. No utiliza el desplazamiento cartográfico de Canarias.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].latitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/source_epsg",
+          "name": "source_epsg",
+          "description": "Código EPSG utilizado para interpretar las coordenadas originales. Vacío cuando el datum no está identificado.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_epsg"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/location_method",
+          "name": "location_method",
+          "description": "Método de ubicación: coordenadas originales transformadas o parte de referencia EGIF; municipal_seat indica una capital municipal de respaldo. unknown_crs y missing_coordinates no proporcionan coordenadas de origen interpretables.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].location_method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/geo_codmun",
+          "name": "geo_codmun",
+          "description": "Código municipal obtenido por intersección del punto EGIF con límites GISCO 2024. No sustituye el código declarado ni describe todos los municipios afectados.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geo_codmun"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/geo_municipality",
+          "name": "geo_municipality",
+          "description": "Municipio obtenido del cruce espacial con límites GISCO 2024, que pueden diferir de los límites del año del incendio.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].geo_municipality"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "parts/municipality_check",
+          "name": "municipality_check",
+          "description": "Resultado del cruce espacial: coincidencia, discrepancia, código declarado no disponible, fuera de límites, múltiples límites o no comprobado.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "egif-parts-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].municipality_check"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
       "@id": "fires",
       "name": "fires",
-      "description": "Un registro por incendio incluido en el CSV; los municipios y las fechas pueden repetirse. No se declara una clave única ni se distingue el estado definitivo o provisional de cada registro. No hay celdas vacías en esta instantánea; no se infieren valores ausentes ni se completan series anuales.",
+      "description": "Una fila por incendio registrado, con fire_id estable. EGIF tiene prioridad en registros vinculados; los demás conservan informes o avances y su estado de conciliación. Hay casos pendientes. Los campos vacíos representan información desconocida o no aplicable; no se rellenan con cero. Las coordenadas son una ubicación de referencia, no un perímetro.",
+      "key": {
+        "@id": "fires/fire_id"
+      },
       "field": [
         {
           "@type": "cr:Field",
           "@id": "fires/prov_name",
           "name": "prov_name",
-          "description": "Nombre de la provincia asociado al registro. Se conserva la grafía del CSV; no es un identificador estable. Puede incluir varias provincias separadas por /; el código provincial corresponde a la primera.",
+          "description": "Provincia declarada en el parte EGIF; en la vista de incendios se conserva la descripción territorial anterior cuando existe.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "prov_name"
+              "jsonPath": "$[*].prov_name"
             }
           }
         },
@@ -243,14 +1034,14 @@
           "@type": "cr:Field",
           "@id": "fires/cpro",
           "name": "cpro",
-          "description": "Código de provincia INE, leído como texto con la representación del CSV. Para reconstruir su formato de dos dígitos deben completarse los ceros iniciales. Si se citan varias provincias, corresponde a la primera mencionada.",
+          "description": "Código de provincia de dos dígitos, como texto. En partes procede del número de parte; en incendios identifica la provincia de referencia.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "cpro"
+              "jsonPath": "$[*].cpro"
             }
           }
         },
@@ -258,14 +1049,14 @@
           "@type": "cr:Field",
           "@id": "fires/munic_name",
           "name": "munic_name",
-          "description": "Nombre del municipio asociado al incendio, conservado como aparece en el CSV. No describe necesariamente todos los municipios afectados. Puede incluir varios municipios y localidades; se conserva una sola fila por incendio.",
+          "description": "Municipio de origen declarado en EGIF; puede indicar Portugal u otra provincia. En la vista de incendios se conserva la descripción territorial de referencia anterior.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "munic_name"
+              "jsonPath": "$[*].munic_name"
             }
           }
         },
@@ -273,14 +1064,14 @@
           "@type": "cr:Field",
           "@id": "fires/cmun",
           "name": "cmun",
-          "description": "Código municipal INE dentro de la provincia, leído como texto. No es único a escala nacional. Para reconstruir su formato de tres dígitos deben completarse los ceros iniciales. Si se citan varios municipios, corresponde al primero mencionado.",
+          "description": "Código municipal de tres dígitos, como texto. Vacío si el nombre declarado no puede vincularse inequívocamente al diccionario municipal.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "cmun"
+              "jsonPath": "$[*].cmun"
             }
           }
         },
@@ -288,14 +1079,14 @@
           "@type": "cr:Field",
           "@id": "fires/codmun",
           "name": "codmun",
-          "description": "Código combinado provincial y municipal tal como se almacena en el CSV, conservado como texto sin rellenar ceros. Puede repetirse entre incendios y no es una clave de registro. Si se citan varios municipios, identifica el primero y sirve como referencia para situar el incendio en el mapa; no delimita toda la superficie afectada.",
+          "description": "Código INE municipal de cinco dígitos, como texto. Puede diferir del municipio obtenido mediante coordenadas; no se sustituye automáticamente.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "codmun"
+              "jsonPath": "$[*].codmun"
             }
           }
         },
@@ -303,14 +1094,14 @@
           "@type": "cr:Field",
           "@id": "fires/date",
           "name": "date",
-          "description": "Fecha de inicio del incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo. Las fechas de 2012 se han contrastado entre el cuadro 37 del informe definitivo y EGIF.",
+          "description": "Fecha de detección EGIF o fecha de inicio de la fuente de respaldo, en formato AAAA-MM-DD. No es la fecha de descarga.",
           "dataType": "sc:Date",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "date"
+              "jsonPath": "$[*].date"
             }
           }
         },
@@ -318,14 +1109,224 @@
           "@type": "cr:Field",
           "@id": "fires/area_forestal_ha",
           "name": "area_forestal_ha",
-          "description": "Superficie forestal quemada declarada para el incendio, en hectáreas (1 ha = 10.000 m²). No es superficie total quemada ni una medida calculada a partir del mapa. El conjunto selecciona incendios de al menos 500 hectáreas forestales.",
+          "description": "Superficie forestal quemada en hectáreas. En partes corresponde solo al parte; en incendios suma exclusivamente los partes vinculados o conserva la fuente de respaldo.",
           "dataType": "sc:Float",
           "source": {
             "fileObject": {
-              "@id": "gif-csv"
+              "@id": "gif-csv-json"
             },
             "extract": {
-              "column": "area_forestal_ha"
+              "jsonPath": "$[*].area_forestal_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/fire_id",
+          "name": "fire_id",
+          "description": "Identificador propio y estable del incendio. En partes sin correspondencia revisada permanece vacío; no se infiere un incendio nuevo automáticamente.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].fire_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/egif_part_ids",
+          "name": "egif_part_ids",
+          "description": "Números de parte EGIF vinculados al incendio, separados por punto y coma. Vacío cuando solo se dispone de una fuente de respaldo.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].egif_part_ids"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/source",
+          "name": "source",
+          "description": "Fuente utilizada en esta fila: EGIF, informe anual MITECO o avance provisional MITECO.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/source_url",
+          "name": "source_url",
+          "description": "Enlace a la fuente de datos utilizada.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/source_date",
+          "name": "source_date",
+          "description": "Fecha de descarga de la fuente EGIF en formato AAAA-MM-DD. Vacía para las fuentes anteriores cuya fecha de descarga no se conserva.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/data_status",
+          "name": "data_status",
+          "description": "egif_export identifica una exportación EGIF y no garantiza cobertura anual completa; definitive_report y provisional distinguen las fuentes de respaldo.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].data_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/area_wooded_ha",
+          "name": "area_wooded_ha",
+          "description": "Superficie forestal arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_wooded_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/area_non_wooded_ha",
+          "name": "area_non_wooded_ha",
+          "description": "Superficie forestal no arbolada en hectáreas. Vacía cuando la fuente de respaldo no proporciona este desglose.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].area_non_wooded_ha"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/match_status",
+          "name": "match_status",
+          "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].match_status"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/notes",
+          "name": "notes",
+          "description": "Notas de procedencia, agrupación territorial y decisiones de conciliación. Vacío si no se necesita una aclaración específica.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].notes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/longitude",
+          "name": "longitude",
+          "description": "Longitud en grados decimales, EPSG:4326, orden longitud/latitud. Vacía en partes cuyo datum o coordenadas no se pueden interpretar.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].longitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/latitude",
+          "name": "latitude",
+          "description": "Latitud en grados decimales, EPSG:4326, orden longitud/latitud. No utiliza el desplazamiento cartográfico de Canarias.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].latitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/location_method",
+          "name": "location_method",
+          "description": "Método de ubicación: coordenadas originales transformadas o parte de referencia EGIF; municipal_seat indica una capital municipal de respaldo. unknown_crs y missing_coordinates no proporcionan coordenadas de origen interpretables.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].location_method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fires/location_part_id",
+          "name": "location_part_id",
+          "description": "Parte EGIF del que se toma el punto de referencia del incendio. Puede ser uno de varios partes; no es un centroide del incendio. Vacío para ubicaciones municipales.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "gif-csv-json"
+            },
+            "extract": {
+              "jsonPath": "$[*].location_part_id"
             }
           }
         }

@@ -162,7 +162,7 @@
     }
   },
   "croissant": {
-    "sourceRevision": "bff934fb0da61f82811c2d8b9f21afb9438aa1a9",
+    "sourceRevision": "88dea8e21d3d78cb79699e76c2b8bd6b2cea09eb",
     "sourcePath": "rdata/egif_parts.csv",
     "recordSet": "parts",
     "resources": [
@@ -173,7 +173,8 @@
         "fields": "_data/egif_part_fields.json",
         "key": "egif_part_id",
         "name": "Partes EGIF de grandes incendios forestales",
-        "description": "Una fila por parte seleccionado. egif_part_id es único. fire_id puede estar vacío si la correspondencia con un incendio está pendiente. Los campos vacíos representan información ausente o no interpretable, nunca ceros inferidos. No se deben contar filas como incendios ni sumarse este recurso y la vista fires."
+        "description": "Una fila por parte seleccionado. egif_part_id es único. fire_id puede estar vacío si la correspondencia con un incendio está pendiente. Los campos vacíos representan información ausente o no interpretable, nunca ceros inferidos. No se deben contar filas como incendios ni sumarse este recurso y la vista fires.",
+        "structuredPath": "rdata/egif_parts.json"
       },
       {
         "path": "rdata/gif_d2010.csv",
@@ -182,7 +183,8 @@
         "fields": "_data/croissant_fields.json",
         "key": "fire_id",
         "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
-        "description": "Una fila por incendio registrado, con fire_id estable. EGIF tiene prioridad en registros vinculados; los demás conservan informes o avances y su estado de conciliación. Hay casos pendientes. Los campos vacíos representan información desconocida o no aplicable; no se rellenan con cero. Las coordenadas son una ubicación de referencia, no un perímetro."
+        "description": "Una fila por incendio registrado, con fire_id estable. EGIF tiene prioridad en registros vinculados; los demás conservan informes o avances y su estado de conciliación. Hay casos pendientes. Los campos vacíos representan información desconocida o no aplicable; no se rellenan con cero. Las coordenadas son una ubicación de referencia, no un perímetro.",
+        "structuredPath": "rdata/gif_d2010.json"
       }
     ]
   },

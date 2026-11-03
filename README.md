@@ -21,7 +21,9 @@ El producto principal, `rdata/egif_parts.csv`, contiene una fila por parte,
 con `egif_part_id`, `fire_id` cuando está asignado, datos de origen,
 superficies, causa, procedencia, notas y coordenadas. La vista
 `rdata/gif_d2010.csv` conserva una fila por incendio registrado y sirve para
-la infografía. Los identificadores y códigos deben leerse como texto.
+la infografía. Los identificadores y códigos deben leerse como texto. Ambos productos
+se ofrecen también en JSON con tipos explícitos y valores nulos para datos
+ausentes. Croissant utiliza el JSON para evitar inferencias de tipos del CSV.
 
 Las columnas `longitude` y `latitude` utilizan **EPSG:4326**, sin desplazar
 Canarias. `location_method` distingue las coordenadas EGIF de las capitales

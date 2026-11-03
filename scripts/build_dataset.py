@@ -61,6 +61,15 @@ def csv_text(rows, fields):
     return stream.getvalue()
 
 
+def typed_json(rows):
+    records = []
+    for row in rows:
+        records.append({key: None if value == "" else float(value)
+                        if key.startswith("area_") or key in {"longitude", "latitude"} else value
+                        for key, value in row.items()})
+    return json.dumps(records, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
+
+
 def clean(value):
     value = value.strip()
     return "" if value in {"-", "\\xa0"} else value
@@ -293,6 +302,8 @@ def build(root=ROOT, prepare_locations=False):
     return {
         "rdata/egif_parts.csv": csv_text(selected, PART_FIELDS),
         "rdata/gif_d2010.csv": csv_text(fires, FIRE_FIELDS),
+        "rdata/egif_parts.json": typed_json(selected),
+        "rdata/gif_d2010.json": typed_json(fires),
         "rdata/audit/egif-comparison.csv": csv_text(comparison, AUDIT_FIELDS),
         "rdata/audit/egif-unassigned-parts.csv": csv_text(unassigned, PART_FIELDS),
         "rdata/audit/egif-coverage.csv": csv_text(coverage, ["year", "cpro", "parts", "coverage_status"]),

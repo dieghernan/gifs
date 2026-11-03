@@ -8,6 +8,7 @@
     <p class="card-text">Partes EGIF y vista conciliada de incendios, con procedencia, notas y coordenadas EPSG:4326 cuando están disponibles.</p>
     {% for resource in resources %}
     <p><a class="btn btn-primary" href="https://raw.githubusercontent.com/dieghernan/gifs/{{ snapshot.sourceRevision }}/{{ resource.path }}">{{ resource.name | escape }} · CSV</a></p>
+    <p class="small"><a href="https://raw.githubusercontent.com/dieghernan/gifs/{{ snapshot.sourceRevision }}/{{ resource.structuredPath }}">Descargar JSON con tipos explícitos</a></p>
     {% endfor %}
     <p class="small mb-0">No sumar ambos archivos: un incendio puede tener varios partes. Las correspondencias pendientes están identificadas.</p>
   </div>

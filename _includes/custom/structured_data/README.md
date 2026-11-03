@@ -27,8 +27,10 @@ CSV changes; do not use the website build date.
 
 `measurementTechnique` describes collection and processing. `subjectOf`
 links to `METODOLOGIA.md`, and `isBasedOn.hasPart` lists the annual MITECO
-sources. The description and field metadata retain the conventional 2012
-dates and the provisional status of the recent annual sources.
+sources. The description and field metadata document EGIF source priority, nullable
+coordinates and unresolved matches. The development descriptor includes
+part and fire resources in CSV and typed JSON; it does not reuse the
+archived release DOI for the development data.
 
 Build with `bundle exec jekyll build`, then run
 `py -m unittest discover -s tests` to verify the rendered metadata against the CSV.
