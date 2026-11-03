@@ -117,7 +117,12 @@
   },
   "spatialCoverage": {
     "@type": "Place",
-    "name": "España"
+    "name": "España",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "27.9282566760271 -17.9404959622649 43.4413572602386 1.89944456267217",
+      "description": "Extensión de los puntos con coordenadas disponibles; no representa los perímetros quemados ni implica cobertura territorial completa."
+    }
   },
   "temporalCoverage": "2010-02-27/2023-11-02",
   "variableMeasured": [

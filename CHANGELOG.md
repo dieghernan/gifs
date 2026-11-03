@@ -2,6 +2,7 @@
 
 ## Sin publicar
 
+- JSON-LD con el nombre de España y una caja geográfica calculada desde los puntos disponibles de cada conjunto, incluidas las coordenadas reales de Canarias.
 - Compresión local sin pérdida de los PNG con OptiPNG, también al regenerar la infografía cuando la herramienta está disponible.
 
 ## 2.0.0 — 2026-11-03
