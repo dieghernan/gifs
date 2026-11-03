@@ -28,7 +28,7 @@ now comes from the generated Croissant descriptor.
 Install the pinned validator into a Python 3.12 virtual environment:
 
 ```sh
-python -m pip install -r scripts/requirements-croissant.txt
+python -m pip install -r scripts/requirements-croissant.txt -r scripts/requirements-microformats.txt
 python scripts/build_croissant.py
 python scripts/build_croissant.py --check
 mlcroissant validate --jsonld croissant.json
@@ -37,7 +37,7 @@ python -m unittest discover -s tests
 ```
 
 The integration test uses the official library to download the real immutable
-CSV, verify its hash and read all 404 records. It compares every code, name,
+CSV, verify its hash and read every record. It compares every code, name,
 date and area with the local CSV. Municipality codes are text; dates are dates;
 area values are numeric hectares. No record key is asserted because several
 fires can share a municipality and date.
@@ -60,6 +60,22 @@ commit containing that snapshot, review dates and coverage, and regenerate.
 Hashes and sizes use Git blob bytes to avoid Windows newline conversions.
 The official reader's integration test confirms that the pinned URL and the
 current CSV contain the same records and that the checksum is correct.
+
+Update the record count and date range in `README.md`, `index.md` and
+`llms.txt`, together with the dataset description and temporal coverage in
+`_data/structured_data.json`. Review the publication modification date and
+the landing page's `last_modified_at`; keep the original publication date.
+
+Regenerate the sharing cards with Pillow installed:
+
+```sh
+python scripts/social_banners.py
+```
+
+The generator reads the current CSV to update the map and year range in
+`assets/social-preview.jpg` and `assets/github-preview.jpg`. Review both
+images and their alt text after regeneration. Updating the local GitHub card
+also requires replacing the social preview image in the repository settings.
 
 No numbered release or formal citation has been invented. The validator may
 recommend `version` and `citeAs`; these recommendations do not prevent loading.
