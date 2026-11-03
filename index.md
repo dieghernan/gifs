@@ -80,7 +80,8 @@ limitaciones. Se utilizan estadísticas definitivas de 2010–2021 y avances
 provisionales de 2022–2026.
 
 El listado de GIF se recopila en `rdata/gif_d2010.xlsx`. El script
-`incendios.R` lee ese archivo y exporta los registros a
+[incendios.R](https://github.com/dieghernan/gifs/blob/main/incendios.R)
+lee ese archivo y exporta los registros a
 `rdata/gif_d2010.csv`. Los códigos de provincia y municipio corresponden a la
 codificación del INE
 ([Códigos de municipios del INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990)).
