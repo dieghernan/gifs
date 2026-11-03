@@ -235,7 +235,7 @@ Almería,4,Olula de Castro,68,4068,2021-02-01,718.27
 Navarra/Guipúzcoa/Francia,31,Bera-Lesaka-Irún,250,31250,2021-02-20,1125.96
 Cantabria,39,Udías,90,39090,2021-02-20,731.09
 Cantabria,39,Soba,83,39083,2021-03-29,793.72
-S.C. Tenerife,38,Arico,5,38005,2021-05-20,3052
+Santa Cruz de Tenerife,38,Arico,5,38005,2021-05-20,3052
 Ciudad Real,13,Chillón/Almadén,38,13038,2021-07-12,868.94
 Albacete,2,Liétor,44,2044,2021-07-24,1932.74
 Albacete,2,Tobarra,74,2074,2021-07-24,556.51
@@ -280,7 +280,7 @@ Zamora,49,Villaseco,269,49269,2022-07-18,589.28
 Guadalajara,19,Valdepeñas de la Sierra,305,19305,2022-07-19,2478.29
 Ourense,32,Oímbra (Rabal),53,32053,2022-07-18,1931.08
 Ourense,32,Oímbra (Videferre),53,32053,2022-07-17,901.33
-S.C. Tenerife,38,Los Realejos,31,38031,2022-07-21,2739.3
+Santa Cruz de Tenerife,38,Los Realejos,31,38031,2022-07-21,2739.3
 Burgos,9,Quintanilla del Coco,295,9295,2022-07-24,1819.69
 Zamora,49,Losacino,98,49098,2022-07-24,690.8
 Guadalajara,19,Humanes,151,19151,2022-07-25,974.62
@@ -320,8 +320,8 @@ Asturias,33,Piloña,49,33049,2023-04-03,500
 Asturias,33,Valdés,34,33034,2023-04-05,9750
 Asturias,33,Allande,1,33001,2023-04-08,550
 Cáceres,10,Pinofranqueado,146,10146,2023-05-17,10470.13
-S.C Tenerife,38,Puntagorda,29,38029,2023-07-15,2600
-S.C Tenerife,38,Arafo,4,38004,2023-08-15,12529.9
+Santa Cruz de Tenerife,38,Puntagorda,29,38029,2023-07-15,2600
+Santa Cruz de Tenerife,38,Arafo,4,38004,2023-08-15,12529.9
 Lugo,27,Trabada,61,27061,2023-10-12,2296.53
 Valencia,46,Montitxelvo,175,46175,2023-11-02,2077.18
 Cantabria,39,Soba,83,39083,2024-01-26,1715
@@ -403,3 +403,50 @@ Almería,40,Lubrín,59,4059,2025-08-28,783.3
 Ourense,32,Carballeda de Valdeorras,17,32017,2025-09-06,973.56
 Lugo,27,Pantón,41,27041,2025-09-18,1909.54
 Guadalajara,19,El Cardoso de la Sierra,67,19067,2025-09-21,2652
+Cantabria,39,Selaya,82,39082,2026-02-24,519
+Cantabria,39,Arredondo,7,39007,2026-02-25,698.83
+Cantabria,39,Soba,83,39083,2026-02-26,813
+Cáceres,10,Losar de la Vera,110,10110,2026-03-29,962.56
+Asturias,33,Allande,1,33001,2026-04-05,619.37
+Pontevedra,36,Ponteareas,42,36042,2026-04-06,886.78
+Badajoz,6,Valencia de las Torres,139,6139,2026-05-28,572.8
+Badajoz,6,Hornachos,69,6069,2026-05-30,1024.52
+Badajoz,6,Montemolín,86,6086,2026-06-01,502.48
+Huelva,21,Alosno,6,21006,2026-06-04,1030.69
+Huelva,21,Villanueva de los Castillejos,76,21076,2026-06-08,4388.62
+León,24,Congosto,57,24057,2026-06-24,524
+Huesca,22,Alcampell,16,22016,2026-06-25,1932.14
+León,24,Oseja de Sajambre,106,24106,2026-06-26,525
+Zaragoza,50,Leciñena,137,50137,2026-06-30,1508.12
+Girona,17,La Bisbal d'Empordà,22,17022,2026-07-03,1921.82
+Badajoz,6,Jerez de los Caballeros,70,6070,2026-07-06,541.05
+Toledo,45,La Guardia,71,45071,2026-07-08,510
+Almería,4,Los Gallardos,48,4048,2026-07-09,4507.41
+Ciudad Real,13,Hinojosa de Calatrava,48,13048,2026-07-15,787
+Zaragoza,50,Orés,197,50197,2026-07-15,11319
+Madrid,28,Lozoyuela - Navas - Sieteiglesias,901,28901,2026-07-16,836.76
+Guadalajara,19,La Mierla,182,19182,2026-07-16,33078
+Segovia,40,Brieva,33,40033,2026-07-20,2275.1
+Huelva,21,El Cerro del Andévalo,23,21023,2026-07-21,1697.39
+Teruel,44,Ejulve,96,44096,2026-07-21,2403.57
+Guadalajara,19,Selas,254,19254,2026-07-21,2637
+León,24,Castropodame,49,24049,2026-07-22,777
+León,24,Valdesamario,185,24185,2026-07-22,2000
+Madrid,28,Villa del Prado,171,28171,2026-07-22,2879.02
+Ávila,5,Burgohondo,41,5041,2026-07-22,33943
+Ciudad Real,13,Retuerta del Bullaque,72,13072,2026-07-23,942
+Madrid,28,S. Martin de Valdeiglesias,133,28133,2026-07-23,18177.25
+Castellón,12,"Vall d'Uixó, la",126,12126,2026-07-25,8291.0741
+León,24,Villafranca del Bierzo,209,24209,2026-07-29,1208
+León,24,Vegas del Condado,201,24201,2026-07-29,1262
+Zamora,49,Fermoselle,65,49065,2026-07-29,8043
+Cáceres,10,Casas de Millán,56,10056,2026-08-01,1035.07
+Huelva,21,Niebla,53,21053,2026-08-06,39821.31
+Castellón,12,Tírig,111,12111,2026-08-07,561.2709
+Segovia,40,Navas de San Antonio,146,40146,2026-08-08,1093.24
+Huesca,22,Las Peñas de Riglos,173,22173,2026-08-10,16521.92
+Cáceres,10,Pinofranqueado,146,10146,2026-08-18,3715.46
+Castellón,12,Segorbe,104,12104,2026-08-20,594.8
+Valencia,46,Tuéjar,247,46247,2026-09-15,748.8978
+Ourense,32,Calvos de Randín,16,32016,2026-09-24,518.1
+Málaga,29,Igualeja,60,29060,2026-09-26,587.47
