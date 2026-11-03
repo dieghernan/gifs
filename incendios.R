@@ -380,9 +380,9 @@ ggsave(
 
 # 6. Utilities ----
 
+# Escribe info de sesión
+sessioninfo::session_info(to_file = "sessioninfo.txt")
+
 # Comprime imágenes
 resmush::resmush_dir(overwrite = TRUE, dir = ".")
 xfun::optipng()
-
-# Escribe info de sesión
-sessioninfo::session_info(to_file = "sessioninfo.txt")

@@ -8,6 +8,8 @@ og_image_alt: Grandes incendios forestales en España, 2010–2026. Mapa oscuro 
 og_image_width: 1200
 og_image_height: 630
 og_image_type: image/jpeg
+date: 2025-02-21
+last_modified_at: 2026-11-03
 excerpt: |
     Infografía de grandes incendios forestales en España a partir de datos de MITECO.
     Elaborada con R.
