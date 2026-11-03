@@ -1,9 +1,9 @@
 # Historial de cambios
 
-## 1.0.0 — En preparación
+## 1.0.0 — 2026-11-03
 
 Primera versión auditada del conjunto de grandes incendios forestales en
-España. La fecha de publicación y el DOI están pendientes de asignación.
+España.
 
 - Conjunto de 449 incendios con al menos 500 hectáreas forestales quemadas, fechado entre el 27 de febrero de 2010 y el 26 de septiembre de 2026 y disponible en CSV y Excel.
 - Revisión de registros frente a las estadísticas definitivas del MITECO de 2010–2021 y los avances provisionales de 2022–2026, con correcciones de fechas, superficies, nombres y códigos territoriales.
