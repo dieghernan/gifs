@@ -1,5 +1,9 @@
 # Historial de cambios
 
+## Sin publicar
+
+- Compresión local sin pérdida de los PNG con OptiPNG, también al regenerar la infografía cuando la herramienta está disponible.
+
 ## 2.0.0 — 2026-11-03
 
 - Publicación de 329 partes EGIF y una vista conciliada de 455 registros, con nueve identidades anteriores y ocho partes pendientes documentados y dos registros de Canarias de 2023 conservados por falta de cobertura EGIF provincial.

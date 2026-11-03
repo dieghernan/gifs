@@ -1,10 +1,10 @@
 {
   "version": "2.0.0",
   "dateReleased": "2026-11-03",
-  "doi": null,
-  "doiUrl": null,
+  "doi": "10.5281/zenodo.23932940",
+  "doiUrl": "https://doi.org/10.5281/zenodo.23932940",
   "conceptDoiUrl": "https://doi.org/10.5281/zenodo.23929996",
   "releaseUrl": "https://github.com/dieghernan/gifs/releases/tag/v2.0.0",
-  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://github.com/dieghernan/gifs/releases/tag/v2.0.0",
-  "bibtex": "@misc{hernangomez_grandes_incendios,\n  author = {Hernangómez, Diego},\n  title = {Grandes incendios forestales en España},\n  year = {2026},\n  version = {2.0.0},\n  url = {https://github.com/dieghernan/gifs/releases/tag/v2.0.0},\n  note = {Data set}\n}\n"
+  "citeAs": "Hernangómez, D. (2026). Grandes incendios forestales en España (Version 2.0.0) [Data set]. https://doi.org/10.5281/zenodo.23932940",
+  "bibtex": "@misc{hernangomez_grandes_incendios,\n  author = {Hernangómez, Diego},\n  title = {Grandes incendios forestales en España},\n  year = {2026},\n  version = {2.0.0},\n  doi = {10.5281/zenodo.23932940},\n  url = {https://doi.org/10.5281/zenodo.23932940},\n  note = {Data set}\n}\n"
 }

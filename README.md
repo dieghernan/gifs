@@ -80,7 +80,7 @@ corresponde a la versión archivada **1.0.0**, anterior a esta migración.
 
 > Hernangómez, D. (2026). *Grandes incendios forestales en España*
 > (Version 2.0.0) [Data set].
-> https://github.com/dieghernan/gifs/releases/tag/v2.0.0
+> https://doi.org/10.5281/zenodo.23932940
 
 <details markdown="1">
 <summary>Referencia en BibTeX</summary>
@@ -91,7 +91,8 @@ corresponde a la versión archivada **1.0.0**, anterior a esta migración.
   title = {Grandes incendios forestales en España},
   year = {2026},
   version = {2.0.0},
-  url = {https://github.com/dieghernan/gifs/releases/tag/v2.0.0},
+  doi = {10.5281/zenodo.23932940},
+  url = {https://doi.org/10.5281/zenodo.23932940},
   note = {Data set}
 }
 ```
