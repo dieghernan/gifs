@@ -195,6 +195,12 @@ def build_fire_view(baseline, registry, parts, source_urls, centers=None):
                 row = dict(old)
             else:
                 row = {field: primary[field] for field in BASE_FIELDS}
+            reference = entry.get("reference_location", "")
+            if reference not in {"", "egif_origin"}:
+                raise ValueError("Unknown reference location policy")
+            if reference == "egif_origin":
+                for field in ("cpro", "cmun", "codmun", "prov_name", "munic_name"):
+                    row[field] = primary[field]
             row.update(date=min(part["date"] for part in group), area_forestal_ha=str(area),
                        source="EGIF", source_url=primary["source_url"], source_date=primary["source_date"],
                        data_status="egif_export",

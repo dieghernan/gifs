@@ -42,8 +42,8 @@ La selección no garantiza que se hayan descubierto todas las agrupaciones
 posibles de partes menores de 500 ha.
 
 La vista de incendios contiene 455 registros. Conserva
-18 correspondencias anteriores pendientes y no suma automáticamente
-los 15 partes seleccionados sin asignar. Por ello, sus agregados
+15 correspondencias anteriores pendientes y no suma automáticamente
+los 12 partes seleccionados sin asignar. Por ello, sus agregados
 describen la vista conciliada y no un recuento nacional definitivo.
 
 ## Conciliación y cambios
@@ -52,6 +52,16 @@ Los enlaces revisados se basan en fecha, provincia y municipio, variantes
 documentadas de nombres y decisiones territoriales de la base anterior.
 Las asociaciones históricas de Lobios/Portugal, Fonfría/Portugal y
 As Neves/Portugal se conservan como inferencias identificadas.
+
+La revisión documental de 2016–2017 enlaza Olmedo de Camaces con el parte
+de Sancti-Spíritus, Puente del Congosto con Medinilla y Palacios del Sil
+con Páramo del Sil. Los informes definitivos y EGIF coinciden en municipio,
+fecha y superficie forestal; las denominaciones anteriores procedían de
+los avances. Se conservan los identificadores de incendio y se actualiza
+el municipio de referencia mediante `reference_location=egif_origin` en
+el registro. Las fuentes y páginas constan en
+`data-raw/reconciliation/2016-2017.json`. Esta decisión no añade ni elimina
+incendios ni altera sus superficies.
 
 En Hermisende y Oímbra, las coordenadas ETRS89 caen en los municipios
 españoles de referencia y coinciden en fecha con la base anterior, aunque

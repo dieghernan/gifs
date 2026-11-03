@@ -1,6 +1,4 @@
 fire_id,legacy_date,legacy_municipality,egif_part_id,egif_date,egif_municipality,egif_area_ha,day_difference,evidence
-GIF-848a944fc67755e9,2016-09-24,Olmedo de Camaces,2016370174,2016-09-24,SANCTI-SPIRITUS,656.4300,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
-GIF-739f9d1720f45c4a,2017-10-12,Palacios del Sil,2017240751,2017-10-12,PARAMO DEL SIL,573.5000,0,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
 GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310161,2022-06-17,VALTIERRA,1785.4909,-2,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
 GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310162,2022-06-18,SAN MARTÍN DE UNX,5227.1253,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match
 GIF-7281e1aa82f057b7,2022-06-19,Legarda/Guirguillano,2022310181,2022-06-18,LEGARDA,4281.3734,-1,same_province_within_3_days_area_at_least_400ha_not_a_confirmed_match

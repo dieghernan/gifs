@@ -15,6 +15,23 @@ from scripts.egif import read_export
 
 
 class EgifPipelineTests(unittest.TestCase):
+    def test_documented_municipality_corrections_preserve_fire_identity(self):
+        fires = {row['fire_id']: row for row in read_csv(ROOT / 'rdata/gif_d2010.csv')}
+        evidence = json.loads((ROOT / 'data-raw/reconciliation/2016-2017.json').read_text(encoding='utf-8'))
+        baseline = read_csv(ROOT / 'data-raw/legacy/fires.csv')
+        parts = {row['egif_part_id']: row for row in read_csv(ROOT / 'rdata/egif_parts.csv')}
+        for decision in evidence:
+            fire = fires[decision['fire_id']]
+            part = parts[decision['egif_part_id']]
+            old = baseline[decision['legacy_row'] - 1]
+            with self.subTest(fire=fire['fire_id']):
+                self.assertEqual(fire['egif_part_ids'], decision['egif_part_id'])
+                self.assertEqual(fire['source'], 'EGIF')
+                self.assertEqual(fire['codmun'], part['codmun'])
+                self.assertNotEqual(fire['codmun'], old['codmun'])
+                self.assertEqual(fire['date'], old['date'])
+                self.assertEqual(Decimal(fire['area_forestal_ha']), Decimal(old['area_forestal_ha']))
+
     def test_geolocation_provenance_is_pinned_to_ign_siane(self):
         locations = read_csv(ROOT / 'data-derived/egif-locations.csv')
         self.assertEqual({row['boundary_source'] for row in locations}, {'IGN CartoBase ANE / SIANE'})

@@ -135,7 +135,7 @@ GIF-f532aa5561215b4d,2016-09-06,Muíños,745.45,2016320556,2016-09-06,745.4500,0
 GIF-7ef6fa40dd3b5efe,2016-09-11,San Justo (San Ciprián) / Encinedo (Santa Eulalia de Cabrera),1197.52,2016490107,2016-09-11,1197.5200,0.0000,confirmed_match,Se conserva la descripción territorial San Justo / Encinedo documentada en la base anterior.
 GIF-3ec78b1bbb765053,2016-09-12,Fabero,2544.19,2016240316,2016-09-12,2544.1900,0.0000,confirmed_match,
 GIF-e79c0bff69fe5a1a,2016-09-12,Cualedro,1588.44,2016320642,2016-09-12,1588.4400,0.0000,confirmed_match,
-GIF-848a944fc67755e9,2016-09-24,Olmedo de Camaces,656.43,,,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.
+GIF-848a944fc67755e9,2016-09-24,Olmedo de Camaces,656.43,2016370174,2016-09-24,656.4300,0.0000,confirmed_match,"Conciliación documental: el avance identifica Olmedo de Camaces; el informe definitivo MITECO 2016, p. 13, y EGIF identifican Sancti-Spíritus, con la misma fecha y superficie forestal. Se conserva el fire_id y se actualiza el municipio de referencia al origen EGIF."
 GIF-71ae7761c79c5d45,2016-10-29,La Guingueta d'Àneu,632.25,2016250072,2016-10-29,632.2500,0.0000,confirmed_match,
 GIF-e3821fde3a065b9c,2017-01-25,Candelario,516.6,2017370008,2017-01-25,516.6000,0.0000,confirmed_match,
 GIF-da36ec882dc85301,2017-03-10,Vega de Pas,675,2017390627,2017-03-10,675.0000,0.0000,confirmed_match,
@@ -154,7 +154,7 @@ GIF-d79aa255e2c75e81,2017-08-03,Verín,1372.18,2017320770,2017-08-03,1372.1800,0
 GIF-13847c32afa35caf,2017-08-03,Segura de la Sierra,683.91,2017230114,2017-08-03,683.9100,0.0000,confirmed_match,
 GIF-5ee238d09b855b77,2017-08-07,Navarredonda de Gredos,541.22,2017050136,2017-08-07,541.2200,0.0000,confirmed_match,
 GIF-2e8d85be32c05361,2017-08-21,Encinedo,9816.66,2017240584,2017-08-21,9816.6600,0.0000,confirmed_match,
-GIF-cc8a844beb015652,2017-08-24,Puente del Congosto,1719.95,,,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.
+GIF-cc8a844beb015652,2017-08-24,Puente del Congosto,1719.95,2017050154,2017-08-24,1719.9500,0.0000,confirmed_match,"Conciliación documental: el avance identifica Puente del Congosto / Medinilla; el informe definitivo MITECO 2017, p. 13, y EGIF identifican Medinilla, con la misma fecha y superficie forestal. Se conserva el fire_id y se actualiza el municipio de referencia al origen EGIF."
 GIF-c7a432d03f6d5066,2017-08-26,Fermoselle,1632.44,2017490409,2017-08-26,1632.4400,0.0000,confirmed_match,
 GIF-79b86c2caa295975,2017-08-26,Hoyocasero,924.04,2017050156,2017-08-26,924.0400,0.0000,confirmed_match,
 GIF-5e62f43e3e295455,2017-09-08,La Granada de Río-Tinto,4161.46,2017210113,2017-09-08,4161.4600,0.0000,confirmed_match,
@@ -165,7 +165,7 @@ GIF-2901de5a3f115020,2017-10-09,Ibias,2662.41,2017331561,2017-10-09,2662.4100,0.
 GIF-6580916a63c95dd4,2017-10-10,Lobios,683.43,2017321264,2017-10-10,683.4300,0.0000,confirmed_match,
 GIF-09d334ead16d59d1,2017-10-11,Degaña,1953.53,2017331563,2017-10-11,1953.5300,0.0000,confirmed_match,
 GIF-de8615000cc95ad9,2017-10-12,Cervantes,864,2017270664,2017-10-12,864.0000,0.0000,confirmed_match,
-GIF-739f9d1720f45c4a,2017-10-12,Palacios del Sil,573.5,,,,,pending_egif_match,Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.
+GIF-739f9d1720f45c4a,2017-10-12,Palacios del Sil,573.5,2017240751,2017-10-12,573.5000,0.0000,confirmed_match,"Conciliación documental: el avance identifica Palacios del Sil; el informe definitivo MITECO 2017, p. 15, y EGIF identifican Páramo del Sil, con la misma fecha y superficie forestal. Se conserva el fire_id y se actualiza el municipio de referencia al origen EGIF."
 GIF-fb8a9e9f673b5852,2017-10-13,Cervantes,1893.32,2017270674,2017-10-13,1893.3200,0.0000,confirmed_match,
 GIF-db039362f74d5cdd,2017-10-13,Villablino,719.44,2017240754,2017-10-13,719.4400,0.0000,confirmed_match,
 GIF-d8de36a5b610574e,2017-10-14,Lobios,3485.46,2017321362,2017-10-14,3485.4600,0.0000,confirmed_match,

@@ -17,10 +17,10 @@
   ],
   "source_parts": 149290,
   "selected_parts": 329,
-  "unassigned_selected_parts": 15,
+  "unassigned_selected_parts": 12,
   "fire_view_records": 455,
   "fire_view_area_ha": "1315234.5723",
-  "pending_legacy_matches": 18,
+  "pending_legacy_matches": 15,
   "fire_view_note": "La vista conserva registros anteriores pendientes de conciliación; no se suman partes sin asignar a esos registros.",
   "years": [
     {

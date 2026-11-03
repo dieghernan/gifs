@@ -8,6 +8,7 @@ El Excel anterior se conserva solo como archivo histórico.
 - `legacy/gif_d2010.xlsx`: Excel histórico, no utilizado por el generador.
 - `legacy/sources.csv`: enlaces anuales de informes y avances de respaldo.
 - `fire-registry.csv`: identificadores estables, enlaces a partes y decisiones.
+- `reconciliation/`: evidencia documental de las correspondencias revisadas.
 - `municipalities.csv`: diccionario IGN SIANE 2024 (resolución 3); códigos como texto.
 - `municipality-aliases.csv`: variantes explícitas de nombres EGIF.
 - `municipal-centers-4326.csv`: capitales municipales IGN sin desplazar Canarias.
@@ -25,6 +26,10 @@ cambios. El importador no decide correspondencias ni elimina registros.
 Mantener los identificadores existentes al editar `fire-registry.csv`;
 asignar un nuevo identificador una sola vez cuando se incorpora un incendio.
 Las filas de respaldo sin partes no deben convertirse en partes ficticios.
+El campo opcional `reference_location=egif_origin` sustituye el municipio
+de referencia anterior por el origen del primer parte enlazado cuando
+existe una corrección documental. Si está vacío se conserva la referencia
+anterior. No equivale a una lista de todos los municipios afectados.
 
 Regenerar coordenadas cuando cambien las fuentes, las agrupaciones o los
 alias municipales:

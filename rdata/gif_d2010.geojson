@@ -4665,32 +4665,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.6238746,
-          40.8789877
+          -6.51015749553013,
+          40.8010203268851
         ]
       },
       "properties": {
-        "prov_name": "Salamanca",
+        "prov_name": "SALAMANCA",
         "cpro": "37",
-        "munic_name": "Olmedo de Camaces",
-        "cmun": "223",
-        "codmun": "37223",
+        "munic_name": "SANCTI-SPIRITUS",
+        "cmun": "279",
+        "codmun": "37279",
         "date": "2016-09-24",
         "area_forestal_ha": 656.43,
-        "source": "MITECO annual report",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2016.pdf",
-        "source_date": null,
-        "data_status": "definitive_report",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 0.0,
+        "area_non_wooded_ha": 656.43,
         "fire_id": "GIF-848a944fc67755e9",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -6.6238746,
-        "latitude": 40.8789877,
-        "location_method": "municipal_seat",
-        "location_part_id": null
+        "egif_part_ids": "2016370174",
+        "match_status": "confirmed_match",
+        "notes": "Conciliación documental: el avance identifica Olmedo de Camaces; el informe definitivo MITECO 2016, p. 13, y EGIF identifican Sancti-Spíritus, con la misma fecha y superficie forestal. Se conserva el fire_id y se actualiza el municipio de referencia al origen EGIF.",
+        "longitude": -6.51015749553013,
+        "latitude": 40.8010203268851,
+        "location_method": "egif_part",
+        "location_part_id": "2016370174"
       }
     },
     {
@@ -5345,32 +5345,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.5267402,
-          40.4914329
+          -5.62978381842049,
+          40.4550222804341
         ]
       },
       "properties": {
-        "prov_name": "Salamanca",
-        "cpro": "37",
-        "munic_name": "Puente del Congosto",
-        "cmun": "261",
-        "codmun": "37261",
+        "prov_name": "AVILA",
+        "cpro": "05",
+        "munic_name": "MEDINILLA",
+        "cmun": "124",
+        "codmun": "05124",
         "date": "2017-08-24",
         "area_forestal_ha": 1719.95,
-        "source": "MITECO annual report",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf",
-        "source_date": null,
-        "data_status": "definitive_report",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 740.0,
+        "area_non_wooded_ha": 979.95,
         "fire_id": "GIF-cc8a844beb015652",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -5.5267402,
-        "latitude": 40.4914329,
-        "location_method": "municipal_seat",
-        "location_part_id": null
+        "egif_part_ids": "2017050154",
+        "match_status": "confirmed_match",
+        "notes": "Conciliación documental: el avance identifica Puente del Congosto / Medinilla; el informe definitivo MITECO 2017, p. 13, y EGIF identifican Medinilla, con la misma fecha y superficie forestal. Se conserva el fire_id y se actualiza el municipio de referencia al origen EGIF.",
+        "longitude": -5.62978381842049,
+        "latitude": 40.4550222804341,
+        "location_method": "egif_part",
+        "location_part_id": "2017050154"
       }
     },
     {
@@ -5719,32 +5719,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.4338473,
-          42.8753232
+          -6.45202064799195,
+          42.8385906207412
         ]
       },
       "properties": {
-        "prov_name": "León",
+        "prov_name": "LEON",
         "cpro": "24",
-        "munic_name": "Palacios del Sil",
-        "cmun": "109",
-        "codmun": "24109",
+        "munic_name": "PARAMO DEL SIL",
+        "cmun": "110",
+        "codmun": "24110",
         "date": "2017-10-12",
         "area_forestal_ha": 573.5,
-        "source": "MITECO annual report",
-        "source_url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf",
-        "source_date": null,
-        "data_status": "definitive_report",
-        "area_wooded_ha": null,
-        "area_non_wooded_ha": null,
+        "source": "EGIF",
+        "source_url": "https://servicio.mapa.gob.es/incendios/Search/Publico",
+        "source_date": "2026-11-03",
+        "data_status": "egif_export",
+        "area_wooded_ha": 168.5,
+        "area_non_wooded_ha": 405.0,
         "fire_id": "GIF-739f9d1720f45c4a",
-        "egif_part_ids": null,
-        "match_status": "pending_egif_match",
-        "notes": "Registro de la base anterior conservado: falta una correspondencia inequívoca con EGIF. No se sustituye ni se elimina por ausencia.",
-        "longitude": -6.4338473,
-        "latitude": 42.8753232,
-        "location_method": "municipal_seat",
-        "location_part_id": null
+        "egif_part_ids": "2017240751",
+        "match_status": "confirmed_match",
+        "notes": "Conciliación documental: el avance identifica Palacios del Sil; el informe definitivo MITECO 2017, p. 15, y EGIF identifican Páramo del Sil, con la misma fecha y superficie forestal. Se conserva el fire_id y se actualiza el municipio de referencia al origen EGIF.",
+        "longitude": -6.45202064799195,
+        "latitude": 42.8385906207412,
+        "location_method": "egif_part",
+        "location_part_id": "2017240751"
       }
     },
     {
