@@ -580,8 +580,5 @@
         }
       ]
     }
-  ],
-  "includedInDataCatalog": {
-    "@id": "https://dieghernan.github.io/gifs/#catalog"
-  }
+  ]
 }
