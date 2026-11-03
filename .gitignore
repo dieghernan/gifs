@@ -9,3 +9,4 @@ _site/
 .jekyll-cache/
 scripts/__pycache__/
 tests/__pycache__/
+gifs-miteco-audit/

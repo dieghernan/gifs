@@ -29,7 +29,7 @@ Este proyecto reúne los datos y el código en **R** utilizados para crear una
 infografía de grandes incendios forestales (GIF) en España. En este contexto,
 GIF se refiere a incendios con al menos 500 hectáreas forestales quemadas.
 
-El conjunto actual contiene 451 registros fechados entre el 27 de febrero de
+El conjunto actual contiene 449 registros fechados entre el 27 de febrero de
 2010 y el 26 de septiembre de 2026. Estas fechas corresponden al primer y al último
 registro del archivo, no a años completos de cobertura. El conjunto no es un
 servicio de seguimiento de incendios en tiempo real.
@@ -37,6 +37,15 @@ servicio de seguimiento de incendios en tiempo real.
 El CSV incluye la provincia, el municipio y sus códigos, la fecha y la
 superficie forestal quemada en hectáreas. Los códigos deben leerse como texto
 para conservar los ceros iniciales.
+
+En los registros de 2012, `2012-12-31` es una fecha convencional para
+identificar el año: el informe utilizado no aporta fechas individuales.
+No debe interpretarse como la fecha real de inicio de esos incendios.
+
+Cada fila representa un incendio. Cuando la descripción menciona varios
+municipios o provincias, se conserva un único registro y su superficie
+completa. Los códigos corresponden al primer municipio y a la primera
+provincia mencionados; el mapa utiliza ese municipio como referencia.
 
 <a class="btn btn-primary mb-3" href="https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv">Descargar los datos en CSV</a>
 
@@ -56,14 +65,18 @@ combina ambas fuentes sin identificar en cada registro si el dato es
 definitivo o provisional.
 
 Origen de los datos: Ministerio para la Transición Ecológica y el Reto
-Demográfico (MITECO). Recopilación y adaptación: Diego Hernangómez. Los datos
+Demográfico (MITECO). Recopilación y adaptación: Diego HH. Los datos
 se reutilizan conforme al [aviso legal del MITECO](https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html),
 con obligación de citar la fuente y conservar las condiciones y metadatos
 originales. La licencia MIT del repositorio corresponde al código y la
 documentación. Este proyecto es independiente y no implica participación ni
 respaldo del Ministerio.
 
-<!-- FIXME: Confirmar por año qué datos son definitivos y cuáles provisionales. -->
+La [metodología de recopilación y validación](https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md)
+detalla las fuentes por año, las decisiones, los agregados y las
+limitaciones. Se utilizan estadísticas definitivas de 2010–2021 y avances
+provisionales de 2022–2026.
+
 El listado de GIF se recopila en `rdata/gif_d2010.xlsx`. El script
 `incendios.R` lee ese archivo y exporta los registros a
 `rdata/gif_d2010.csv`. Los códigos de provincia y municipio corresponden a la

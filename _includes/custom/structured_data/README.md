@@ -8,9 +8,15 @@ reuse terms, keywords and CSV distribution. Publication dates are separate
 from the temporal coverage of the fire records. They come from the CSV's Git
 history; there is no numbered dataset release.
 
-`dataset.html`, `release.html` and `distribution.html` generate the JSON-LD.
+`dataset.html` embeds the generated Croissant Dataset JSON-LD. The older
+`release.html` and `distribution.html` partials are not used by that descriptor.
 The distribution shares the dataset's modification date. Review it when the
 CSV changes; do not use the website build date.
+
+`measurementTechnique` describes collection and processing. `subjectOf`
+links to `METODOLOGIA.md`, and `isBasedOn.hasPart` lists the annual MITECO
+sources. The description and field metadata retain the conventional 2012
+dates and the provisional status of the recent annual sources.
 
 Build with `bundle exec jekyll build`, then run
 `py -m unittest discover -s tests` to verify the rendered metadata against the CSV.

@@ -3,37 +3,37 @@
     "column": "prov_name",
     "label": "Provincia",
     "dataType": "sc:Text",
-    "description": "Nombre de la provincia asociado al registro. Se conserva la grafía del CSV; no es un identificador estable."
+    "description": "Nombre de la provincia asociado al registro. Se conserva la grafía del CSV; no es un identificador estable. Puede incluir varias provincias separadas por /; el código provincial corresponde a la primera."
   },
   {
     "column": "cpro",
     "label": "Código de provincia",
     "dataType": "sc:Text",
-    "description": "Código provincial del registro, conservado como texto con la representación del CSV; no se añaden ceros iniciales ni se actualizan códigos históricos."
+    "description": "Código de provincia INE, leído como texto con la representación del CSV. Para reconstruir su formato de dos dígitos deben completarse los ceros iniciales. Si se citan varias provincias, corresponde a la primera mencionada."
   },
   {
     "column": "munic_name",
     "label": "Municipio",
     "dataType": "sc:Text",
-    "description": "Nombre del municipio asociado al incendio, conservado como aparece en el CSV. No describe necesariamente todos los municipios afectados."
+    "description": "Nombre del municipio asociado al incendio, conservado como aparece en el CSV. No describe necesariamente todos los municipios afectados. Puede incluir varios municipios y localidades; se conserva una sola fila por incendio."
   },
   {
     "column": "cmun",
     "label": "Código de municipio",
     "dataType": "sc:Text",
-    "description": "Código municipal dentro de la provincia, conservado como texto. No es único a escala nacional; no se rellena con ceros ni se sustituye por un código vigente."
+    "description": "Código municipal INE dentro de la provincia, leído como texto. No es único a escala nacional. Para reconstruir su formato de tres dígitos deben completarse los ceros iniciales. Si se citan varios municipios, corresponde al primero mencionado."
   },
   {
     "column": "codmun",
     "label": "Código INE del municipio",
     "dataType": "sc:Text",
-    "description": "Código combinado provincial y municipal tal como se almacena en el CSV, conservado como texto sin rellenar ceros. Puede repetirse entre incendios y no es una clave de registro."
+    "description": "Código combinado provincial y municipal tal como se almacena en el CSV, conservado como texto sin rellenar ceros. Puede repetirse entre incendios y no es una clave de registro. Si se citan varios municipios, identifica el primero y sirve como referencia para situar el incendio en el mapa; no delimita toda la superficie afectada."
   },
   {
     "column": "date",
     "label": "Fecha del incendio",
     "dataType": "sc:Date",
-    "description": "Fecha consignada para el incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo."
+    "description": "Fecha consignada para el incendio, expresada como día en formato ISO 8601 (AAAA-MM-DD), sin hora ni zona horaria. No es la fecha de publicación o actualización del archivo. Para los registros de 2012 se utiliza 2012-12-31 como fecha convencional que identifica únicamente el año, porque la tabla fuente no aporta fechas individuales; no representa una fecha de inicio confirmada."
   },
   {
     "column": "area_forestal_ha",

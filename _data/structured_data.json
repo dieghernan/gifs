@@ -5,17 +5,17 @@
   },
   "dataset": {
     "name": "Grandes incendios forestales en España",
-    "description": "Conjunto de 451 registros de grandes incendios forestales en España, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye provincia, municipio, sus códigos, fecha y superficie forestal quemada en hectáreas, para incendios de al menos 500 hectáreas forestales. Se recopila de estadísticas definitivas y avances informativos del MITECO, sin distinguir en cada registro su carácter definitivo o provisional. Disponible en CSV; no representa años completos de cobertura ni un servicio de seguimiento en tiempo real.",
+    "description": "Conjunto de 449 grandes incendios forestales en España, con al menos 500 hectáreas forestales quemadas, fechados entre el 27 de febrero de 2010 y el 26 de septiembre de 2026. Incluye municipios, provincias, códigos INE, fecha y superficie forestal en hectáreas; una fila por incendio. Recopilado del MITECO: estadísticas definitivas de 2010–2021 y avances provisionales de 2022–2026. En 2012, 31/12 es una fecha convencional que solo identifica el año. Disponible en CSV; no representa cobertura anual completa ni seguimiento en tiempo real.",
     "isAccessibleForFree": true,
     "inLanguage": "es",
     "creator": {
       "@type": "Person",
-      "name": "Diego Hernangómez",
+      "name": "Diego HH",
       "url": "https://dieghernan.github.io/",
       "sameAs": "https://orcid.org/0000-0001-8457-4658"
     },
     "license": "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html",
-    "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego Hernangómez. Proyecto independiente, sin respaldo del Ministerio.",
+    "creditText": "Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO). Recopilación y adaptación: Diego HH. Proyecto independiente, sin respaldo del Ministerio.",
     "isBasedOn": {
       "@type": "CreativeWork",
       "name": "Estadísticas de incendios forestales del MITECO",
@@ -25,7 +25,94 @@
         "name": "Ministerio para la Transición Ecológica y el Reto Demográfico",
         "alternateName": "MITECO",
         "url": "https://www.miteco.gob.es/"
-      }
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2010 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/publicacion2010_def_tcm30-132568.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2011 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/losincendiosforestalesenespanaano2011_tcm30-132591.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2012 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2012_tcm30-132581.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2013 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/los_incendios_forestales_en_espana_2013_tcm30-132601.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2014 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/incendios_forestales_en_espana_2014_tcm30-425396.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2015 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/iiff_2015_def_tcm30-442974.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2016 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2016.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2017 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2017.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2018 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2018.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2019 (definitiva)",
+          "url": "https://app.powerbi.com/view?r=eyJrIjoiYzE0MzhkZGItYzZlOC00NGU1LTlkNWUtZjdkZjY1NTM1MWFhIiwidCI6ImRlODFhNTc4LTgxYWEtNGQzNS1hNWQ0LWZlZWQ4MTZiMTY1NCIsImMiOjl9"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2020 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2020.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2021 (definitiva)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/IIFF_2021.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2022 (avance)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/avance_1_enero_31_diciembre_2022_tcm30-560521.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2023 (avance)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2023.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2024 (avance)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_1_enero_31_diciembre_2024.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2025 (avance)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/Avance_IIFF_2025_rev.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "MITECO: grandes incendios forestales de 2026 (avance)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/incendios-forestales/estimacion_provisional.html"
+        }
+      ]
     },
     "spatialCoverage": {
       "@type": "Place",
@@ -57,10 +144,17 @@
         "encodingFormat": "text/csv",
         "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/main/rdata/gif_d2010.csv"
       }
-    ]
+    ],
+    "measurementTechnique": "Recopilación y contraste de listados anuales de grandes incendios forestales del MITECO; extracción de tablas PDF, OCR con comprobación visual cuando es necesario, transcripción de la tabla definitiva Power BI de 2019 y lectura del listado provisional de 2026. Normalización de nombres y códigos INE y una fila por incendio, sin repartir su superficie entre municipios. Los códigos corresponden al primer municipio y provincia mencionados. Las fechas de 2012 son convencionales; la asociación As Neves/Portugal de 2017 es una inferencia documentada.",
+    "subjectOf": {
+      "@type": "CreativeWork",
+      "name": "Metodología de recopilación y validación",
+      "url": "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md",
+      "inLanguage": "es"
+    }
   },
   "croissant": {
-    "sourceRevision": "b93d776d5b6129c9f9109fafa455ecee949019bd",
+    "sourceRevision": "c3f5a23b82d7ab3a3c7dbb96de0af73cc5a15f3a",
     "sourcePath": "rdata/gif_d2010.csv",
     "recordSet": "fires"
   }

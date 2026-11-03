@@ -4,12 +4,43 @@ import csv
 import json
 import re
 import unittest
+from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class DatasetTests(unittest.TestCase):
+    def test_audited_records_and_methodology_are_preserved(self):
+        with (ROOT / "rdata/gif_d2010.csv").open(encoding="utf-8", newline="") as stream:
+            records = list(csv.DictReader(stream))
+        self.assertEqual(len(records), 449)
+        self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in records),
+                         Decimal("1311239.9728"))
+        self.assertEqual(records, sorted(records, key=lambda row:
+                         (row["date"], -Decimal(row["area_forestal_ha"]))))
+        self.assertEqual(len({tuple(row.values()) for row in records}), len(records))
+        for row in records:
+            with self.subTest(date=row["date"], municipality=row["munic_name"]):
+                self.assertGreaterEqual(Decimal(row["area_forestal_ha"]), Decimal(500))
+                self.assertEqual(row["cpro"].zfill(2) + row["cmun"].zfill(3),
+                                 row["codmun"].zfill(5))
+        year_2012 = [row for row in records if row["date"].startswith("2012-")]
+        self.assertEqual(len(year_2012), 41)
+        self.assertEqual({row["date"] for row in year_2012}, {"2012-12-31"})
+        year_2019 = [row for row in records if row["date"].startswith("2019-")]
+        self.assertEqual(len(year_2019), 15)
+        self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in year_2019),
+                         Decimal("30789.09"))
+        descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
+        self.assertEqual(descriptor["creator"]["name"], "Diego HH")
+        self.assertEqual(descriptor["creator"]["url"], "https://dieghernan.github.io/")
+        self.assertIn("convencional", descriptor["description"])
+        self.assertIn("inferencia", descriptor["measurementTechnique"])
+        self.assertEqual(len(descriptor["isBasedOn"]["hasPart"]), 17)
+        self.assertEqual(descriptor["subjectOf"]["url"],
+                         "https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md")
+
     def test_metadata_matches_the_downloadable_records(self):
         html = (ROOT / "_site/index.html").read_text(encoding="utf-8")
         schemas = [json.loads(raw) for raw in re.findall(

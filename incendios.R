@@ -27,6 +27,7 @@ gif_fires |>
   mutate(date = as.character(date)) |>
   write_csv("rdata/gif_d2010.csv")
 
+sum(gif_fires$area_forestal_ha)
 
 gif_fires |>
   as_tibble() |>
@@ -200,7 +201,7 @@ main <- ggplot(ccaa) +
     caption = paste0(
       "©",
       year(Sys.Date()),
-      " Diego Hernangómez https://dieghernan.github.io.",
+      " Diego HH https://dieghernan.github.io.",
       " Las hectáreas se refieren únicamente a hectáreas forestales",
       " afectadas.\nDatos: Estadísticas de Incendios Forestales, MITECO.",
       " Estadísticas definitivas y Avances"
@@ -258,7 +259,7 @@ inset1 <- ggplot(years, aes(x = year)) +
     plot.subtitle = element_text(
       size = 45,
       color = firepal[4],
-      margin = margin(t = -10),
+      margin = margin(t = 10),
       hjust = 0
     ),
     axis.title.x = element_text(size = 30, hjust = .5),
@@ -303,9 +304,13 @@ topfires <- gif_fires |>
   # Crea etiquetas
   mutate(
     labs = paste0(
-      munic_name,
+      if_else(
+        str_detect(munic_name, fixed(" / ")),
+        paste0(str_trim(str_extract(munic_name, "^[^/]+")), " y otros"),
+        munic_name
+      ),
       ", ",
-      prov_name,
+      str_trim(str_extract(prov_name, "^[^/]+")),
       " (",
       year,
       ")"
