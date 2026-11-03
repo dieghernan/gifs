@@ -19,7 +19,9 @@ class CroissantTests(unittest.TestCase):
         self.assertEqual(json.loads((ROOT / "_data/croissant.json").read_text(encoding="utf-8")), descriptor)
         self.assertEqual(json.loads((ROOT / "_site/croissant.json").read_text(encoding="utf-8")), descriptor)
         self.assertEqual(descriptor["conformsTo"], "http://mlcommons.org/croissant/1.1")
-        self.assertNotIn("version", descriptor)  # No numbered data release exists.
+        self.assertEqual(descriptor["version"], "1.0.0")
+        self.assertEqual(descriptor["identifier"], "https://doi.org/10.5281/zenodo.23929997")
+        self.assertIn(descriptor["identifier"], descriptor["citeAs"])
         # Google rejects language-container objects in the embedded context.
         self.assertEqual(descriptor["@context"]["name"], "sc:name")
         self.assertEqual(descriptor["@context"]["description"], "sc:description")

@@ -1,7 +1,9 @@
 # Preparación de la primera release
 
 Versión: `1.0.0`; etiqueta: `v1.0.0`. Fecha: 3 de noviembre de 2026.
-El DOI se incorporará cuando Zenodo lo asigne.
+Release publicada: [v1.0.0](https://github.com/dieghernan/gifs/releases/tag/v1.0.0).
+DOI de la versión: [10.5281/zenodo.23929997](https://doi.org/10.5281/zenodo.23929997).
+DOI general: [10.5281/zenodo.23929996](https://doi.org/10.5281/zenodo.23929996).
 
 ## Notas de la release
 

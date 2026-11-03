@@ -77,8 +77,9 @@ The generator reads the current CSV to update the map and year range in
 images and their alt text after regeneration. Updating the local GitHub card
 also requires replacing the social preview image in the repository settings.
 
-No numbered release or formal citation has been invented. The validator may
-recommend `version` and `citeAs`; these recommendations do not prevent loading.
+Version 1.0.0 is archived at <https://doi.org/10.5281/zenodo.23929997>.
+The descriptor includes its version, DOI and citation in `version`,
+`identifier` and `citeAs`.
 The dataset's reuse terms remain the MITECO legal notice, not the code's MIT
 license. Existing provisional/final-data and completeness limitations remain.
 

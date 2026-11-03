@@ -94,6 +94,16 @@ gráfico anual también resume únicamente los registros incluidos en el conjunt
 La información de la sesión con la que se ha generado la infografía se
 proporciona en el archivo [sessioninfo.txt](sessioninfo.txt).
 
+## Cómo citar
+
+Hernangómez, Diego. (2026). *Grandes incendios forestales en España*
+(v1.0.0) [Conjunto de datos]. Zenodo.
+[https://doi.org/10.5281/zenodo.23929997](https://doi.org/10.5281/zenodo.23929997).
+
+El [DOI general](https://doi.org/10.5281/zenodo.23929996) reúne las versiones
+del proyecto. Para identificar los datos utilizados en un análisis, cite
+el DOI de la versión correspondiente.
+
 ## Referencias
 
 Royé, Dominic. 2021. “Firefly Cartography.” June 1.
