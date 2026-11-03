@@ -146,10 +146,10 @@
       ],
       "@id": "egif-parts-csv",
       "name": "Partes EGIF de grandes incendios forestales",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8/rdata/egif_parts.csv",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/fa5787126c672a185fbfc5763506c68dc3fc58ba/rdata/egif_parts.csv",
       "encodingFormat": "text/csv",
-      "contentSize": "184926 bytes",
-      "sha256": "11e250753fff1683fbf93de533743c04d6b92179af6d945467187eb8abf934b6",
+      "contentSize": "186283 bytes",
+      "sha256": "39476453975fb4a229610381961e81518238b148e53eb0288938acd83c117a27",
       "dateModified": "2026-11-03"
     },
     {
@@ -159,10 +159,10 @@
       ],
       "@id": "egif-parts-csv-json",
       "name": "Partes EGIF de grandes incendios forestales (JSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8/rdata/egif_parts.json",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/fa5787126c672a185fbfc5763506c68dc3fc58ba/rdata/egif_parts.json",
       "encodingFormat": "application/json",
-      "contentSize": "564941 bytes",
-      "sha256": "c804fc295a24117abe2a248dacf99ff63101d6e149b4f39f6e0627194fa89cd5",
+      "contentSize": "566280 bytes",
+      "sha256": "e8297ce29c9b7977883117b0e6f8f47838209621e8cc567a0503721ce39a4002",
       "dateModified": "2026-11-03"
     },
     {
@@ -172,10 +172,10 @@
       ],
       "@id": "egif-parts-csv-geojson",
       "name": "Partes EGIF de grandes incendios forestales (GeoJSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8/rdata/egif_parts.geojson",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/fa5787126c672a185fbfc5763506c68dc3fc58ba/rdata/egif_parts.geojson",
       "encodingFormat": "application/geo+json",
-      "contentSize": "691057 bytes",
-      "sha256": "e22c545476f7d0cc3cb3a2ad4a8b9fd392c20d153da9044f9018133cfc5facd3",
+      "contentSize": "692396 bytes",
+      "sha256": "29af52ae09cabf7f8e8e66e77d1aa7e31d6d19a5574d6aa179a098f1ef705ac7",
       "dateModified": "2026-11-03"
     }
   ],
@@ -187,7 +187,7 @@
     "inLanguage": "es"
   },
   "version": "2.0.0-dev",
-  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8; sin DOI de versión.",
+  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio fa5787126c672a185fbfc5763506c68dc3fc58ba; sin DOI de versión.",
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",

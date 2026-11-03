@@ -146,10 +146,10 @@
       ],
       "@id": "gif-csv",
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8/rdata/gif_d2010.csv",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/fa5787126c672a185fbfc5763506c68dc3fc58ba/rdata/gif_d2010.csv",
       "encodingFormat": "text/csv",
-      "contentSize": "127732 bytes",
-      "sha256": "6d768bc027200407b48585fb0f60fc8663c2a3dbd94023adcf2e1d3e4a7cc703",
+      "contentSize": "128470 bytes",
+      "sha256": "0c58e750cfbbbffaf582543204916a22fbb02e55617c52cdede25cb859353393",
       "dateModified": "2026-11-03"
     },
     {
@@ -159,10 +159,10 @@
       ],
       "@id": "gif-csv-json",
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (JSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8/rdata/gif_d2010.json",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/fa5787126c672a185fbfc5763506c68dc3fc58ba/rdata/gif_d2010.json",
       "encodingFormat": "application/json",
-      "contentSize": "327359 bytes",
-      "sha256": "4c826963beca10fd9326c9ffc6b3e6093ed65405f896c2a34c429dc53faa9b4a",
+      "contentSize": "328029 bytes",
+      "sha256": "cfa9582d9f36d6ecab7084543314a29bffd54672a98b0a3618d6d957a400c53f",
       "dateModified": "2026-11-03"
     },
     {
@@ -172,10 +172,10 @@
       ],
       "@id": "gif-csv-geojson",
       "name": "Vista conciliada de incendios EGIF y fuentes MITECO de respaldo (GeoJSON)",
-      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8/rdata/gif_d2010.geojson",
+      "contentUrl": "https://raw.githubusercontent.com/dieghernan/gifs/fa5787126c672a185fbfc5763506c68dc3fc58ba/rdata/gif_d2010.geojson",
       "encodingFormat": "application/geo+json",
-      "contentSize": "471281 bytes",
-      "sha256": "9163928a4e547219378686494edea05e0a8dd454b8e092d36811a75e295e041c",
+      "contentSize": "472003 bytes",
+      "sha256": "7ce25ccf2c46553c5d742bb2697e46c317cf88223bac195b54b766f082ff2a48",
       "dateModified": "2026-11-03"
     }
   ],
@@ -187,7 +187,7 @@
     "inLanguage": "es"
   },
   "version": "2.0.0-dev",
-  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8; sin DOI de versión.",
+  "citeAs": "Diego HH. Grandes incendios forestales en España (2.0.0-dev). Instantánea del repositorio fa5787126c672a185fbfc5763506c68dc3fc58ba; sin DOI de versión.",
   "@context": {
     "@language": "es",
     "@vocab": "https://schema.org/",
@@ -486,7 +486,7 @@
           "@type": "cr:Field",
           "@id": "fires/match_status",
           "name": "match_status",
-          "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones y casos pendientes.",
+          "description": "Estado de correspondencia con la base anterior. Distingue coincidencias, asociaciones espaciales o inferidas, nuevas incorporaciones, identidades pendientes y respaldo sin cobertura EGIF provincial (fallback_no_egif_coverage).",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {

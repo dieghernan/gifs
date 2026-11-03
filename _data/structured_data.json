@@ -162,7 +162,7 @@
     }
   },
   "croissant": {
-    "sourceRevision": "b0c4aaa43f6e7d60d5b1a7531c800493a0bca4f8",
+    "sourceRevision": "fa5787126c672a185fbfc5763506c68dc3fc58ba",
     "sourcePath": "rdata/egif_parts.csv",
     "recordSet": "parts",
     "resources": [
