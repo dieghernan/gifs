@@ -11,8 +11,8 @@
   coordenadas reales están en los productos finales y en las columnas
   `source_longitude` y `source_latitude` de este archivo.
 
-Las capitales municipales de respaldo proceden de IGN mediante mapSpain.
-Los límites municipales proceden de IGN SIANE, edición 2024, resolución 3, mediante mapSpain.
+Las capitales municipales de respaldo proceden de IGN mediante **mapSpain**.
+Los límites municipales proceden de IGN SIANE, edición 2024, resolución 3, mediante **mapSpain**.
 No se supone que esos límites reproduzcan los del año de cada incendio.
 
 Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.

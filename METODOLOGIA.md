@@ -8,7 +8,7 @@ Versión en desarrollo de la migración a EGIF. Fuentes descargadas el
 
 Se conserva la base anterior de 449 incendios como referencia inmutable,
 incluidas las fechas de 2012 ya recuperadas y las decisiones territoriales
-documentadas. El Excel original queda archivado y deja de ser el maestro.
+documentadas. El archivo **Excel** original queda archivado y deja de ser el maestro.
 
 La fuente principal es [EGIF](https://servicio.mapa.gob.es/incendios/Search/Publico).
 Se importan las 14 exportaciones completas de 2010–2023, con
@@ -151,7 +151,7 @@ rechaza una fuente distinta de IGN SIANE 2024, resolución 3.
 1. Los ZIP originales se conservan en `data-raw/egif/` con SHA-256,
    fecha de descarga, recuentos y estado observado. No se dispone de
    capturas de los filtros; el año se verifica en cada fila de `Campania`.
-2. `scripts/egif.py` lee los XLSX sin Excel ni dependencias Python externas.
+2. `scripts/egif.py` lee los XLSX sin **Excel** ni dependencias externas de **Python**.
 3. `scripts/build_dataset.py` valida identificadores, años, duplicados,
    superficies y relaciones; utiliza aritmética decimal exacta.
 4. `scripts/geolocate_parts.R` genera la transformación y el contraste

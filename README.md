@@ -2,7 +2,7 @@
 
 Este proyecto reúne datos estructurados de grandes incendios forestales
 (GIF) en España, con al menos 500 hectáreas forestales quemadas, y el código
-en R de la infografía.
+en **R** de la infografía.
 
 La versión publicada **2.0.0** ofrece **329 partes EGIF de 2010–2023** y una
 **vista conciliada de 455 registros de incendios de 2010–2026**. Los dos
@@ -14,7 +14,7 @@ partes en la exportación EGIF de 2023.
 
 EGIF tiene prioridad cuando existe una correspondencia documentada. Los
 registros sin correspondencia conservan su informe o avance de origen.
-Las exportaciones no prueban cobertura anual completa; en 2023 no hay
+Las exportaciones no prueban cobertura anual completa. En 2023 no hay
 registros de siete provincias. No es un servicio de seguimiento en tiempo real.
 
 ![Mapa de incendios con coordenadas EGIF cuando están disponibles y ubicaciones municipales de respaldo. El tamaño representa la superficie forestal quemada.](gif_spain.png)
@@ -30,14 +30,14 @@ ausentes. Croissant utiliza el JSON para evitar inferencias de tipos del CSV.
 También se ofrecen `rdata/egif_parts.geojson` y `rdata/gif_d2010.geojson`,
 con puntos en EPSG:4326 y las mismas propiedades que los JSON. Canarias
 conserva su ubicación real. Los registros sin coordenadas interpretables
-permanecen en el archivo con `geometry: null`; no se dibujan puntos ficticios.
+permanecen en el archivo con `geometry: null`.
 
 Las columnas `longitude` y `latitude` utilizan **EPSG:4326**, sin desplazar
 Canarias. `location_method` distingue las coordenadas EGIF de las capitales
 municipales utilizadas como referencia. En partes sin datum conocido o sin
 coordenadas, las coordenadas geográficas permanecen vacías. Los códigos
 declarados y el municipio obtenido mediante cruce espacial se conservan
-por separado; no se corrigen automáticamente.
+por separado. Cualquier corrección requiere revisión.
 
 Los incendios con varios partes comparten `fire_id`. El umbral de 500 ha
 se aplica a su suma después de las agrupaciones explícitas. Los partes
@@ -57,13 +57,13 @@ Origen de los datos: MITECO. Recopilación y adaptación: Diego HH. Los datos
 se reutilizan conforme al [aviso legal del MITECO](https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html).
 La licencia MIT corresponde al código y la documentación. El proyecto es
 independiente y no implica respaldo del Ministerio. La cartografía municipal
-y las capitales municipales proceden de IGN mediante SIANE y mapSpain.
+y las capitales municipales proceden de IGN mediante SIANE y **mapSpain**.
 Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.
 
 La [metodología](METODOLOGIA.md) y la [guía de datos](data-raw/README.md)
 describen la prioridad de fuentes, las agrupaciones y las limitaciones.
-El archivo Excel anterior queda archivado en `data-raw/legacy/`; ya no
-es el origen del proceso. Los CSV se regeneran con
+El archivo **Excel** anterior se conserva en `data-raw/legacy/` como
+referencia histórica. Los CSV se regeneran con
 `py scripts/build_dataset.py` y la infografía lee directamente su vista de
 incendios. Véase [incendios.R](incendios.R).
 

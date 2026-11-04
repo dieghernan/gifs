@@ -4,23 +4,23 @@
 
 - JSON-LD alineado con Celestial Data: colección `Dataset` con dos conjuntos hijos mediante `hasPart`, DOI exclusivo de la colección y relaciones `isPartOf` expresadas como URL.
 - JSON-LD con el nombre de España y una caja geográfica calculada desde los puntos disponibles de cada conjunto, incluidas las coordenadas reales de Canarias.
-- Compresión local sin pérdida de los PNG con OptiPNG, también al regenerar la infografía cuando la herramienta está disponible.
+- Compresión local sin pérdida de los PNG con **OptiPNG**, también al regenerar la infografía cuando la herramienta está disponible.
 
 ## 2.0.0 — 2026-11-03
 
 - Publicación de 329 partes EGIF y una vista conciliada de 455 registros, con nueve identidades anteriores y ocho partes pendientes documentados y dos registros de Canarias de 2023 conservados por falta de cobertura EGIF provincial.
 - Conciliación documental de tres cambios municipales de 2016–2017 y cuatro incendios de 2022, manteniendo los identificadores estables y adoptando fechas y superficies EGIF.
-- Previews para compartir sin el recuadro de Canarias; las descargas conservan sus coordenadas reales y la infografía mantiene su desplazamiento cartográfico.
+- Imágenes para compartir sin el recuadro de Canarias. Las descargas conservan sus coordenadas reales y la infografía mantiene su desplazamiento cartográfico.
 
-- Límites y diccionario municipales derivados de IGN SIANE mediante mapSpain, con fuente, año y resolución registrados y separación de códigos de territorios no municipales.
+- Límites y diccionario municipales derivados de IGN SIANE mediante **mapSpain**, con fuente, año y resolución registrados y separación de códigos de territorios no municipales.
 
-- Tarjetas de descarga tras la infografía, con formato y tamaño de archivo; JSON-LD como catálogo con dos conjuntos independientes y descriptores Croissant por conjunto.
+- Tarjetas de descarga tras la infografía, con formato y tamaño de archivo. JSON-LD como catálogo con dos conjuntos independientes y descriptores Croissant por conjunto.
 
 - Productos GeoJSON de partes e incendios en EPSG:4326, con todas sus propiedades y geometría nula cuando no hay coordenadas interpretables.
 
 - Migración a fuentes EGIF estructuradas de 2010–2023, con una fila por parte, identificadores estables, notas, procedencia y una vista de incendios que conserva informes y avances de respaldo.
-- Coordenadas EPSG:4326, contraste municipal y distinción explícita de ubicaciones municipales de respaldo; se conservan las coordenadas originales y los casos sin datum.
-- Excel anterior archivado; generación reproducible de CSV, auditorías y metadatos desde fuentes versionadas.
+- Coordenadas EPSG:4326, contraste municipal y distinción explícita de ubicaciones municipales de respaldo. Se conservan las coordenadas originales y los casos sin datum.
+- Archivo **Excel** anterior archivado. Generación reproducible de CSV, auditorías y metadatos desde fuentes versionadas.
 
 - Recuperadas las fechas de inicio de los 41 incendios de 2012, contrastadas entre el informe definitivo y EGIF, con auditoría reproducible de partes provinciales y discrepancias de superficie.
 
