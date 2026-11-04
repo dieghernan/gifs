@@ -25,7 +25,7 @@ desarrollo no tiene DOI propio.
 ## Generar y verificar
 
 Primero reconstruir los productos como indica `data-raw/README.md`.
-Guardar los cambios de CSV y JSON en un commit local, actualizar
+Guardar los cambios de CSV, JSON y GeoJSON en un commit local, actualizar
 `croissant.sourceRevision` al commit que los contiene y ejecutar:
 
 ```sh

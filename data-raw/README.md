@@ -55,5 +55,5 @@ coordenadas, datum, huso o código municipal declarado hayan cambiado.
 esa actualización requiere repetir el contraste espacial.
 
 Los metadatos Croissant se regeneran después del commit de datos, usando
-el commit que contiene ambos CSV como `croissant.sourceRevision`.
+el commit que contiene los CSV, JSON y GeoJSON de ambos conjuntos como `croissant.sourceRevision`.
 La lectura pública de esa URL solo puede comprobarse después del push.
