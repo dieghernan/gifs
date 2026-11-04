@@ -7,8 +7,8 @@
   "scope": "/gifs/",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#1a1a2e",
-  "theme_color": "#1a1a2e",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "lang": "es-ES",
   "icons": [
     {
