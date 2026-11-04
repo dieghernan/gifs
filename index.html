@@ -198,7 +198,7 @@ registros se conservan con el avance oficial porque su provincia no tiene
 partes en la exportación EGIF de 2023.</p>
 <p>EGIF tiene prioridad cuando existe una correspondencia documentada. Los
 registros sin correspondencia conservan su informe o avance de origen.
-Las exportaciones no prueban cobertura anual completa; en 2023 no hay
+Las exportaciones no prueban cobertura anual completa. En 2023 no hay
 registros de siete provincias. No es un servicio de seguimiento en tiempo real.</p>
 <p><img src="gif_spain.png" alt="Mapa de incendios con coordenadas EGIF cuando están disponibles y ubicaciones municipales de respaldo. El tamaño representa la superficie forestal quemada." /></p>
 <div class="dataset-downloads">
@@ -248,7 +248,7 @@ Canarias. <code class="language-plaintext highlighter-rouge">location_method</co
 municipales utilizadas como referencia. En partes sin datum conocido o sin
 coordenadas, las coordenadas geográficas permanecen vacías. Los códigos
 declarados y el municipio obtenido mediante cruce espacial se conservan
-por separado; no se corrigen automáticamente.</p>
+por separado. Cualquier corrección requiere revisión.</p>
 <p>Los incendios con varios partes comparten <code class="language-plaintext highlighter-rouge">fire_id</code>. El umbral de 500 ha
 se aplica a su suma después de las agrupaciones explícitas. Los partes
 sin correspondencia permanecen sin <code class="language-plaintext highlighter-rouge">fire_id</code> y no se añaden automáticamente
@@ -264,12 +264,12 @@ fuentes de respaldo identificadas por registro.</p>
 se reutilizan conforme al <a href="https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html">aviso legal del MITECO</a>.
 La licencia MIT corresponde al código y la documentación. El proyecto es
 independiente y no implica respaldo del Ministerio. La cartografía municipal
-y las capitales municipales proceden de IGN mediante SIANE y mapSpain.
+y las capitales municipales proceden de IGN mediante SIANE y <strong>mapSpain</strong>.
 Obra derivada de CartoBase ANE 2006-2024 CC-BY 4.0 ign.es.</p>
 <p>La <a href="https://github.com/dieghernan/gifs/blob/main/METODOLOGIA.md">metodología</a> y la <a href="https://github.com/dieghernan/gifs/blob/main/data-raw/README.md">guía de datos</a>
 describen la prioridad de fuentes, las agrupaciones y las limitaciones.
-El archivo Excel anterior queda archivado en <code class="language-plaintext highlighter-rouge">data-raw/legacy/</code>; ya no
-es el origen del proceso. Los CSV se regeneran con
+El archivo <strong>Excel</strong> anterior se conserva en <code class="language-plaintext highlighter-rouge">data-raw/legacy/</code> como
+referencia histórica. Los CSV se regeneran con
 <code class="language-plaintext highlighter-rouge">py scripts/build_dataset.py</code> y la infografía lee directamente su vista de
 incendios. Véase <a href="incendios.R">incendios.R</a>.</p>
 <p>Los puntos del mapa utilizan las coordenadas EGIF interpretables y una
