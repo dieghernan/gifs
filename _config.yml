@@ -55,7 +55,7 @@ publisher:
 
 # Navigation
 navbar:
-  expand: never
+  expand: always
   brand:
     title: '<i class="fas fa-fire mr-1" aria-hidden="true"></i> GIFs'
   nav:
