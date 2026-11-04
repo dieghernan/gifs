@@ -57,7 +57,7 @@ publisher:
 navbar:
   expand: always
   brand:
-    title: '<i class="fas fa-fire mr-1" aria-hidden="true"></i> GIFs'
+    title: '<span class="brand-flame mr-1" aria-hidden="true"></span> GIFs'
   nav:
   - title: '<i class="fab fa-github mr-1" aria-hidden="true"></i> GitHub'
     url: https://github.com/dieghernan/gifs
