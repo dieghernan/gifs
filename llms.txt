@@ -1,6 +1,6 @@
 # Grandes incendios forestales en España
 
-Versión en desarrollo: EGIF como fuente principal cuando hay correspondencia documentada; informes y avances MITECO como respaldo.
+Versión publicada 2.0.0. EGIF es la fuente principal cuando hay correspondencia documentada. Los informes y avances del MITECO sirven de respaldo.
 Partes: rdata/egif_parts.csv, una fila por parte EGIF seleccionado de 2010–2023.
 Incendios: rdata/gif_d2010.csv, vista conciliada de 2010–2026, con casos pendientes identificados.
 No sumar ni contar conjuntamente los dos archivos: las unidades son distintas.
@@ -11,4 +11,4 @@ EGIF 2023 tiene cobertura provincial incompleta; una ausencia no justifica elimi
 Metodología: METODOLOGIA.md. Fuentes y reproducción: data-raw/README.md.
 El Excel histórico está archivado en data-raw/legacy/ y no es el maestro.
 Datos: MITECO; reutilización según su aviso legal. Código y documentación: MIT.
-DOI 10.5281/zenodo.23929997: versión archivada 1.0.0, anterior a esta migración; no identifica la versión en desarrollo.
+DOI de la versión 2.0.0: https://doi.org/10.5281/zenodo.23932940. DOI de la versión anterior 1.0.0: https://doi.org/10.5281/zenodo.23929997.
