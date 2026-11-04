@@ -36,5 +36,8 @@
   {% endfor %}
   <p class="mt-3 small">Los GeoJSON conservan la ubicación real de Canarias. Los registros sin coordenadas interpretables tienen geometría nula. La vista de incendios identifica las ubicaciones municipales de respaldo.</p>
   <p class="small">Los dos conjuntos están relacionados: no sumar sus filas ni sus superficies. Las correspondencias pendientes y la cobertura incompleta de EGIF están documentadas.</p>
-  <p class="small mb-0">Versión en desarrollo {{ site.data.structured_data.developmentVersion }}. Descargas EGIF: 03/11/2026. El <a href="{{ site.data.citation.doiUrl }}">DOI de la versión archivada 1.0.0</a> corresponde a los datos anteriores a esta migración.</p>
+  <p class="small mb-0">
+    Descargas EGIF del 03/11/2026.
+    <a href="{{ site.data.citation.doiUrl }}">DOI de la versión {{ site.data.citation.version }}</a>.
+  </p>
 </div>
