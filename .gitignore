@@ -10,3 +10,4 @@ _site/
 scripts/__pycache__/
 tests/__pycache__/
 gifs-miteco-audit/
+Gemfile.lock
