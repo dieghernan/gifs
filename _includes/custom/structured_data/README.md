@@ -26,8 +26,8 @@ children use the archived collection's DOI URL for `isPartOf` and have no
 separate DOI. Google accepts Dataset or URL values for these relationships.
 `spatialCoverage` preserves the place name España and adds a `GeoShape.box`
 computed from the available GeoJSON points for each dataset. Its order is
-south latitude, west longitude, north latitude, east longitude, as required
-by Google's Dataset documentation. The parent Dataset uses the combined extent.
+west longitude, south latitude, east longitude, north latitude to match the
+observed Google Dataset Search map behavior. The parent Dataset uses the combined extent.
 Null geometries are excluded and Canary Islands coordinates remain real.
 The box describes available point locations, including municipal fallbacks;
 it does not represent burned perimeters or complete territorial coverage.

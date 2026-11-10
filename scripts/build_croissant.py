@@ -24,7 +24,7 @@ def spatial_coverage(place, collections):
         coverage["geo"] = {
             "@type": "GeoShape",
             "box": " ".join(str(value) for value in (
-                min(latitudes), min(longitudes), max(latitudes), max(longitudes))),
+                min(longitudes), min(latitudes), max(longitudes), max(latitudes))),
             "description": "Extensión de los puntos con coordenadas disponibles; no representa los perímetros quemados ni implica cobertura territorial completa.",
         }
     return coverage
