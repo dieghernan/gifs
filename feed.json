@@ -1,0 +1,17 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "GIFs",
+  "home_page_url": "https://dieghernan.github.io/gifs/",
+  "feed_url": "https://dieghernan.github.io/gifs/feed.json",
+  "language": "es-ES",
+  "description": "Infografía de grandes incendios forestales en España, elaborada con R a partir de datos de MITECO.",
+  "icon": "https://dieghernan.github.io/gifs/assets/social-preview.jpg",
+  
+  "authors": [{
+    "name": "Diego HH",
+    "url": "https://dieghernan.github.io/"
+  }],
+  "items": [
+    
+  ]
+}
