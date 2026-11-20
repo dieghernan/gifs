@@ -94,7 +94,7 @@ def build():
     dataset["spatialCoverage"] = spatial_coverage(dataset["spatialCoverage"], geo_collections)
     dataset["version"] = metadata.get("developmentVersion", citation["version"])
     if "developmentVersion" in metadata:
-        dataset["citeAs"] = f'Diego HH. Grandes incendios forestales en España ({metadata["developmentVersion"]}). Instantánea del repositorio {snapshot["sourceRevision"]}; sin DOI de versión.'
+        dataset["citeAs"] = f'{dataset["creator"]["name"]}. Grandes incendios forestales en España ({metadata["developmentVersion"]}). Instantánea del repositorio {snapshot["sourceRevision"]}; sin DOI de versión.'
     if "developmentVersion" not in metadata:
         dataset["citeAs"] = citation["citeAs"]
         if citation.get("doiUrl"):

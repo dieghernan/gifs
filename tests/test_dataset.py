@@ -33,7 +33,7 @@ class DatasetTests(unittest.TestCase):
         self.assertEqual(len(year_2019), 15)
         self.assertEqual(sum(Decimal(row["area_forestal_ha"]) for row in year_2019), Decimal("30789.09"))
         descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
-        self.assertEqual(descriptor["creator"]["name"], "Diego HH")
+        self.assertEqual(descriptor["creator"]["name"], "Diego Hernangómez")
         self.assertIn("EGIF", descriptor["description"])
         citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
         self.assertEqual(descriptor["version"], citation["version"])
@@ -49,6 +49,10 @@ class DatasetTests(unittest.TestCase):
         self.assertNotIn("distribution", catalog)
         self.assertNotIn("recordSet", catalog)
         self.assertEqual(len(catalog["hasPart"]), 2)
+        author, = [item for item in schemas if item.get("@id") == catalog["creator"]["@id"]]
+        self.assertEqual(author["name"], "Diego Hernangómez")
+        self.assertEqual(author["name"], catalog["creator"]["name"])
+        self.assertEqual(author["url"], catalog["creator"]["url"])
         self.assertEqual(catalog["creator"]["sameAs"], "https://orcid.org/0000-0001-8457-4658")
         self.assertEqual(catalog["license"], "https://www.miteco.gob.es/es/atencion-al-ciudadano/aviso-legal.html")
         snapshot = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))["croissant"]

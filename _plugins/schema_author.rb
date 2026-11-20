@@ -14,6 +14,10 @@ Jekyll::Hooks.register [:pages, :documents], :post_render do |page|
         if value["@type"] == "Person" &&
             (value["@id"].to_s.match?(/#(?:author|publisher)\z/) ||
              ["dieghernan", "Diego Hernangómez"].include?(value["name"]))
+          if ["Diego HH", "dieghernan"].include?(value["name"])
+            value["name"] = "Diego Hernangómez"
+            changed = true
+          end
           unless value["url"] == "https://dieghernan.github.io/"
             value["url"] = "https://dieghernan.github.io/"
             changed = true
