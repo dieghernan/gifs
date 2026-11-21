@@ -12,7 +12,7 @@
     <description>Infografía de grandes incendios forestales en España, elaborada con R a partir de datos de MITECO.</description>
     <language>es-ES</language>
     <copyright>(c) 2026, Diego HH</copyright>
-    <lastBuildDate>Fri, 20 Nov 2026 06:37:40 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 08:19:53 +0100</lastBuildDate>
     <category>blog</category>
     <ttl>60</ttl>
     <atom:link href="https://dieghernan.github.io/gifs/rss.xml" rel="self" type="application/rss+xml" />
