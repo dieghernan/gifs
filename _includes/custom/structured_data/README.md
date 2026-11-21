@@ -5,9 +5,9 @@ or modify Chulapa's structured data or the existing author normalization plugin.
 
 `_data/structured_data.json` holds the dataset description, source, creators,
 reuse terms, keywords and CSV distribution. Publication dates are separate
-from the temporal coverage of the fire records. They come from the CSV's Git
-history. Version 2.0.0 is archived in Zenodo; the concept DOI in
-`structured_data.json` identifies all versions.
+from the temporal coverage of the fire records. The parts dataset records its
+first publication in version 2.0.0. That release is archived in Zenodo and
+the concept DOI identifies all versions.
 
 As in codigospostales and celestial_data, the public page embeds the generated
 collection metadata instead of constructing a second independent JSON-LD object.
@@ -21,9 +21,11 @@ Before Zenodo assigns a version DOI, the citation uses the tagged GitHub
 release URL. After archiving, add the DOI to both citation fields in
 `CITATION.cff` and regenerate without moving the published tag. The parent Dataset
 identifies the archived collection and links the concept DOI through
-`isPartOf` as a URL. It groups the child datasets through `hasPart`; the
-children use the archived collection's DOI URL for `isPartOf` and have no
-separate DOI. Google accepts Dataset or URL values for these relationships.
+`isPartOf`. It groups the child datasets through `hasPart`. The children link
+back to `#collection` through `isPartOf`. The context interprets `isPartOf` and
+`sameAs` values as IRIs and maps the collection's `citeAs` to the Croissant term.
+The standalone global Croissant descriptor uses a URL-typed literal for
+its version DOI in `sameAs` so the Croissant reader can load it.
 `spatialCoverage` preserves the place name España and adds a `GeoShape.box`
 computed from the available GeoJSON points for each dataset. Its order is
 west longitude, south latitude, east longitude, north latitude to match the

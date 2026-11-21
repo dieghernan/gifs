@@ -55,7 +55,7 @@ class CroissantTests(unittest.TestCase):
         self.assertEqual(catalog.get('identifier'), citation['doiUrl'])
         for dataset in catalog['hasPart']:
             with self.subTest(dataset=dataset['@id']):
-                self.assertEqual(dataset['isPartOf'], citation['doiUrl'] or 'https://dieghernan.github.io/gifs/')
+                self.assertEqual(dataset['isPartOf'], catalog['@id'])
                 self.assertNotIn('includedInDataCatalog', dataset)
                 self.assertNotIn('identifier', dataset)
                 self.assertNotIn('sameAs', dataset)
@@ -67,14 +67,23 @@ class CroissantTests(unittest.TestCase):
         catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
         graph = rdflib.Graph().parse(data=json.dumps(catalog), format="json-ld")
         schema = rdflib.Namespace("https://schema.org/")
+        croissant = rdflib.Namespace("http://mlcommons.org/croissant/")
+        parent = rdflib.URIRef(catalog["@id"])
         self.assertEqual(len(list(graph.subjects(RDF.type, schema.DataCatalog))), 0)
         self.assertEqual(len(list(graph.subjects(RDF.type, schema.Dataset))), 3)
-        self.assertIn((rdflib.URIRef(catalog['@id']), RDF.type, schema.Dataset), graph)
-        datasets = set(graph.objects(rdflib.URIRef(catalog["@id"]), schema.hasPart))
+        self.assertIn((parent, RDF.type, schema.Dataset), graph)
+        self.assertIn((parent, schema.isPartOf, rdflib.URIRef(catalog["isPartOf"])), graph)
+        self.assertIn((parent, schema.sameAs, rdflib.URIRef(catalog["sameAs"])), graph)
+        author = rdflib.URIRef(catalog["creator"]["@id"])
+        self.assertIn((author, schema.sameAs, rdflib.URIRef(catalog["creator"]["sameAs"])), graph)
+        self.assertEqual(str(graph.value(parent, croissant.citeAs)), catalog["citeAs"])
+        self.assertIsNone(graph.value(parent, schema.citeAs))
+        datasets = set(graph.objects(parent, schema.hasPart))
         self.assertEqual(datasets, {rdflib.URIRef("https://dieghernan.github.io/gifs/#dataset-parts"),
                                     rdflib.URIRef("https://dieghernan.github.io/gifs/#dataset-fires")})
         for dataset in datasets:
             self.assertIn((dataset, RDF.type, schema.Dataset), graph)
+            self.assertIn((dataset, schema.isPartOf, parent), graph)
 
     def test_descriptor_matches_generated_resources_and_keys(self):
         descriptor = json.loads((ROOT / "croissant.json").read_text(encoding="utf-8"))
@@ -97,6 +106,9 @@ class CroissantTests(unittest.TestCase):
     def test_official_reader_preserves_both_products_and_unknown_values(self):
         import mlcroissant
 
+        citation = json.loads((ROOT / "_data/citation.json").read_text(encoding="utf-8"))
+        combined = mlcroissant.Dataset(jsonld=str(ROOT / "croissant.json"))
+        self.assertEqual(combined.metadata.same_as, [citation["doiUrl"]])
         metadata = json.loads((ROOT / "_data/structured_data.json").read_text(encoding="utf-8"))
         for resource in metadata["croissant"]["resources"]:
             mapping = None

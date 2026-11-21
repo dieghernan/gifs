@@ -98,7 +98,10 @@ def build():
     if "developmentVersion" not in metadata:
         dataset["citeAs"] = citation["citeAs"]
         if citation.get("doiUrl"):
-            dataset.update(identifier=citation["doiUrl"], sameAs=citation["doiUrl"])
+            doi = citation["doiUrl"]
+            dataset["identifier"] = doi
+            # mlcroissant expects a URL value for Dataset.sameAs in the global descriptor.
+            dataset["sameAs"] = {"@value": doi, "@type": "sc:URL"}
     dataset["isPartOf"] = citation["conceptDoiUrl"]
     dataset.update({
         "@context": context, "@type": "Dataset", "@id": HOME + "#collection",
@@ -124,9 +127,10 @@ def build_documents():
         dataset["url"] = dataset["@id"]
         dataset["name"] = resource["name"]
         dataset["description"] = resource["description"]
-        dataset["isPartOf"] = citation.get("doiUrl") or HOME
+        dataset["isPartOf"] = combined["@id"]
         dataset.pop("identifier", None)
         dataset.pop("sameAs", None)
+        dataset["datePublished"] = resource.get("datePublished", dataset["datePublished"])
         dataset["distribution"] = [item for item in dataset["distribution"]
                                    if item["@id"] in {resource["id"], resource["id"] + "-json", resource["id"] + "-geojson"}]
         dataset["recordSet"] = [item for item in dataset["recordSet"] if item["@id"] == resource["recordSet"]]
@@ -138,12 +142,16 @@ def build_documents():
         datasets.append(dataset)
         documents[f'croissant/{resource["recordSet"]}.json'] = dataset
     catalog = {key: combined[key] for key in ("name", "description", "creator", "license", "creditText", "version", "datePublished", "dateModified", "isAccessibleForFree", "inLanguage", "temporalCoverage", "spatialCoverage")}
-    catalog.update({"@context": {"@vocab": "https://schema.org/", "@language": "es"}, "@type": "Dataset",
+    catalog_terms = ("@vocab", "@language", "sc", "cr", "isPartOf", "sameAs", "citeAs")
+    context = {key: combined["@context"][key] for key in catalog_terms}
+    catalog.update({"@context": context, "@type": "Dataset",
                     "@id": HOME + "#collection", "url": HOME, "hasPart": datasets})
     catalog["isPartOf"] = combined["isPartOf"]
-    for key in ("identifier", "sameAs", "citeAs"):
+    for key in ("identifier", "citeAs"):
         if key in combined:
             catalog[key] = combined[key]
+    if "sameAs" in combined:
+        catalog["sameAs"] = combined["sameAs"]["@value"]
     documents.update({"catalog.json": catalog, "_data/catalog.json": catalog})
     return {path: json.dumps(value, ensure_ascii=False, indent=2) + "\n" for path, value in documents.items()}
 

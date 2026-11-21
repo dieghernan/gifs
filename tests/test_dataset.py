@@ -49,6 +49,10 @@ class DatasetTests(unittest.TestCase):
         self.assertNotIn("distribution", catalog)
         self.assertNotIn("recordSet", catalog)
         self.assertEqual(len(catalog["hasPart"]), 2)
+        self.assertEqual(
+            {item["@id"].split("#")[1]: item["datePublished"] for item in catalog["hasPart"]},
+            {"dataset-parts": "2026-11-03", "dataset-fires": "2025-02-21"},
+        )
         author, = [item for item in schemas if item.get("@id") == catalog["creator"]["@id"]]
         self.assertEqual(author["name"], "Diego Hernangómez")
         self.assertEqual(author["name"], catalog["creator"]["name"])

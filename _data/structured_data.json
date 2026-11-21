@@ -170,6 +170,7 @@
         "path": "rdata/egif_parts.csv",
         "id": "egif-parts-csv",
         "recordSet": "parts",
+        "datePublished": "2026-11-03",
         "fields": "_data/egif_part_fields.json",
         "key": "egif_part_id",
         "name": "Partes EGIF de grandes incendios forestales",
